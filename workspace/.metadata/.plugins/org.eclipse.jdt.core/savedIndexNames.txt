@@ -1,4 +1,0 @@
-INDEX VERSION 1.132+C:\Users\filippo\Documents\uni\Quizzy\workspace\.metadata\.plugins\org.eclipse.jdt.core
-1657330681.index
-1865797976.index
-3011209426.index

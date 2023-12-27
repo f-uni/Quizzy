@@ -1,0 +1,54 @@
+-- docenti definition
+
+CREATE TABLE docenti (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nome_completo TEXT NOT NULL,
+	email TEXT(320) NOT NULL,
+	password_hash TEXT NOT NULL
+);
+
+
+-- quiz definition
+
+CREATE TABLE quiz (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	id_docente INTEGER NOT NULL,
+	titolo TEXT NOT NULL,
+	json_domande TEXT NOT NULL,
+	CONSTRAINT quiz_docenti_FK FOREIGN KEY (id_docente) REFERENCES docenti(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+-- domande definition
+
+CREATE TABLE domande (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	id_quiz INTEGER NOT NULL,
+	numero_domanda INTEGER,
+	tipo INTEGER NOT NULL,
+	obj TEXT NOT NULL,
+	CONSTRAINT domande_quiz_FK FOREIGN KEY (id_quiz) REFERENCES quiz(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+-- partite definition
+
+CREATE TABLE partite (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	"timestamp" TIMESTAMP NOT NULL,
+	id_docente INTEGER NOT NULL,
+	id_quiz INTEGER NOT NULL,
+	CONSTRAINT partite_docenti_FK FOREIGN KEY (id_docente) REFERENCES docenti(id) ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT partite_quiz_FK FOREIGN KEY (id_quiz) REFERENCES quiz(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+
+-- utenti definition
+
+CREATE TABLE utenti (
+	id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	nickname TEXT NOT NULL,
+	punteggio INTEGER DEFAULT (0) NOT NULL,
+	id_partita INTEGER NOT NULL,
+	CONSTRAINT utenti_partite_FK FOREIGN KEY (id_partita) REFERENCES partite(id) ON DELETE CASCADE ON UPDATE CASCADE
+);

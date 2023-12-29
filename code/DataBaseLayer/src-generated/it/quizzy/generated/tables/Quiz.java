@@ -6,22 +6,29 @@ package it.quizzy.generated.tables;
 
 import it.quizzy.generated.DefaultSchema;
 import it.quizzy.generated.Keys;
+import it.quizzy.generated.tables.Docenti.DocentiPath;
+import it.quizzy.generated.tables.Domande.DomandePath;
+import it.quizzy.generated.tables.Partite.PartitePath;
 import it.quizzy.generated.tables.records.QuizRecord;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
-import java.util.function.Function;
 
+import org.jooq.Condition;
 import org.jooq.Field;
 import org.jooq.ForeignKey;
-import org.jooq.Function4;
 import org.jooq.Identity;
+import org.jooq.InverseForeignKey;
 import org.jooq.Name;
+import org.jooq.Path;
+import org.jooq.PlainSQL;
+import org.jooq.QueryPart;
 import org.jooq.Record;
-import org.jooq.Records;
-import org.jooq.Row4;
+import org.jooq.SQL;
 import org.jooq.Schema;
-import org.jooq.SelectField;
+import org.jooq.Select;
+import org.jooq.Stringly;
 import org.jooq.Table;
 import org.jooq.TableField;
 import org.jooq.TableOptions;
@@ -73,11 +80,11 @@ public class Quiz extends TableImpl<QuizRecord> {
     public final TableField<QuizRecord, String> JSON_DOMANDE = createField(DSL.name("json_domande"), SQLDataType.CLOB.nullable(false), this, "");
 
     private Quiz(Name alias, Table<QuizRecord> aliased) {
-        this(alias, aliased, null);
+        this(alias, aliased, (Field<?>[]) null, null);
     }
 
-    private Quiz(Name alias, Table<QuizRecord> aliased, Field<?>[] parameters) {
-        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table());
+    private Quiz(Name alias, Table<QuizRecord> aliased, Field<?>[] parameters, Condition where) {
+        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table(), where);
     }
 
     /**
@@ -101,8 +108,35 @@ public class Quiz extends TableImpl<QuizRecord> {
         this(DSL.name("quiz"), null);
     }
 
-    public <O extends Record> Quiz(Table<O> child, ForeignKey<O, QuizRecord> key) {
-        super(child, key, QUIZ);
+    public <O extends Record> Quiz(Table<O> path, ForeignKey<O, QuizRecord> childPath, InverseForeignKey<O, QuizRecord> parentPath) {
+        super(path, childPath, parentPath, QUIZ);
+    }
+
+    /**
+     * A subtype implementing {@link Path} for simplified path-based joins.
+     */
+    public static class QuizPath extends Quiz implements Path<QuizRecord> {
+        public <O extends Record> QuizPath(Table<O> path, ForeignKey<O, QuizRecord> childPath, InverseForeignKey<O, QuizRecord> parentPath) {
+            super(path, childPath, parentPath);
+        }
+        private QuizPath(Name alias, Table<QuizRecord> aliased) {
+            super(alias, aliased);
+        }
+
+        @Override
+        public QuizPath as(String alias) {
+            return new QuizPath(DSL.name(alias), this);
+        }
+
+        @Override
+        public QuizPath as(Name alias) {
+            return new QuizPath(alias, this);
+        }
+
+        @Override
+        public QuizPath as(Table<?> alias) {
+            return new QuizPath(alias.getQualifiedName(), this);
+        }
     }
 
     @Override
@@ -125,16 +159,40 @@ public class Quiz extends TableImpl<QuizRecord> {
         return Arrays.asList(Keys.QUIZ__QUIZ_DOCENTI_FK);
     }
 
-    private transient Docenti _docenti;
+    private transient DocentiPath _docenti;
 
     /**
      * Get the implicit join path to the <code>docenti</code> table.
      */
-    public Docenti docenti() {
+    public DocentiPath docenti() {
         if (_docenti == null)
-            _docenti = new Docenti(this, Keys.QUIZ__QUIZ_DOCENTI_FK);
+            _docenti = new DocentiPath(this, Keys.QUIZ__QUIZ_DOCENTI_FK, null);
 
         return _docenti;
+    }
+
+    private transient DomandePath _domande;
+
+    /**
+     * Get the implicit to-many join path to the <code>domande</code> table
+     */
+    public DomandePath domande() {
+        if (_domande == null)
+            _domande = new DomandePath(this, null, Keys.DOMANDE__DOMANDE_QUIZ_FK.getInverseKey());
+
+        return _domande;
+    }
+
+    private transient PartitePath _partite;
+
+    /**
+     * Get the implicit to-many join path to the <code>partite</code> table
+     */
+    public PartitePath partite() {
+        if (_partite == null)
+            _partite = new PartitePath(this, null, Keys.PARTITE__PARTITE_QUIZ_FK.getInverseKey());
+
+        return _partite;
     }
 
     @Override
@@ -176,27 +234,87 @@ public class Quiz extends TableImpl<QuizRecord> {
         return new Quiz(name.getQualifiedName(), null);
     }
 
-    // -------------------------------------------------------------------------
-    // Row4 type methods
-    // -------------------------------------------------------------------------
-
+    /**
+     * Create an inline derived table from this table
+     */
     @Override
-    public Row4<Integer, Integer, String, String> fieldsRow() {
-        return (Row4) super.fieldsRow();
+    public Quiz where(Condition condition) {
+        return new Quiz(getQualifiedName(), aliased() ? this : null, null, condition);
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Function4<? super Integer, ? super Integer, ? super String, ? super String, ? extends U> from) {
-        return convertFrom(Records.mapping(from));
+    @Override
+    public Quiz where(Collection<? extends Condition> conditions) {
+        return where(DSL.and(conditions));
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Class,
-     * Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function4<? super Integer, ? super Integer, ? super String, ? super String, ? extends U> from) {
-        return convertFrom(toType, Records.mapping(from));
+    @Override
+    public Quiz where(Condition... conditions) {
+        return where(DSL.and(conditions));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Quiz where(Field<Boolean> condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Quiz where(SQL condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Quiz where(@Stringly.SQL String condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Quiz where(@Stringly.SQL String condition, Object... binds) {
+        return where(DSL.condition(condition, binds));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Quiz where(@Stringly.SQL String condition, QueryPart... parts) {
+        return where(DSL.condition(condition, parts));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Quiz whereExists(Select<?> select) {
+        return where(DSL.exists(select));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Quiz whereNotExists(Select<?> select) {
+        return where(DSL.notExists(select));
     }
 }

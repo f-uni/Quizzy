@@ -6,20 +6,26 @@ package it.quizzy.generated.tables;
 
 import it.quizzy.generated.DefaultSchema;
 import it.quizzy.generated.Keys;
+import it.quizzy.generated.tables.Partite.PartitePath;
+import it.quizzy.generated.tables.Quiz.QuizPath;
 import it.quizzy.generated.tables.records.DocentiRecord;
 
-import java.util.function.Function;
+import java.util.Collection;
 
+import org.jooq.Condition;
 import org.jooq.Field;
 import org.jooq.ForeignKey;
-import org.jooq.Function4;
 import org.jooq.Identity;
+import org.jooq.InverseForeignKey;
 import org.jooq.Name;
+import org.jooq.Path;
+import org.jooq.PlainSQL;
+import org.jooq.QueryPart;
 import org.jooq.Record;
-import org.jooq.Records;
-import org.jooq.Row4;
+import org.jooq.SQL;
 import org.jooq.Schema;
-import org.jooq.SelectField;
+import org.jooq.Select;
+import org.jooq.Stringly;
 import org.jooq.Table;
 import org.jooq.TableField;
 import org.jooq.TableOptions;
@@ -71,11 +77,11 @@ public class Docenti extends TableImpl<DocentiRecord> {
     public final TableField<DocentiRecord, String> PASSWORD_HASH = createField(DSL.name("password_hash"), SQLDataType.CLOB.nullable(false), this, "");
 
     private Docenti(Name alias, Table<DocentiRecord> aliased) {
-        this(alias, aliased, null);
+        this(alias, aliased, (Field<?>[]) null, null);
     }
 
-    private Docenti(Name alias, Table<DocentiRecord> aliased, Field<?>[] parameters) {
-        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table());
+    private Docenti(Name alias, Table<DocentiRecord> aliased, Field<?>[] parameters, Condition where) {
+        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table(), where);
     }
 
     /**
@@ -99,8 +105,35 @@ public class Docenti extends TableImpl<DocentiRecord> {
         this(DSL.name("docenti"), null);
     }
 
-    public <O extends Record> Docenti(Table<O> child, ForeignKey<O, DocentiRecord> key) {
-        super(child, key, DOCENTI);
+    public <O extends Record> Docenti(Table<O> path, ForeignKey<O, DocentiRecord> childPath, InverseForeignKey<O, DocentiRecord> parentPath) {
+        super(path, childPath, parentPath, DOCENTI);
+    }
+
+    /**
+     * A subtype implementing {@link Path} for simplified path-based joins.
+     */
+    public static class DocentiPath extends Docenti implements Path<DocentiRecord> {
+        public <O extends Record> DocentiPath(Table<O> path, ForeignKey<O, DocentiRecord> childPath, InverseForeignKey<O, DocentiRecord> parentPath) {
+            super(path, childPath, parentPath);
+        }
+        private DocentiPath(Name alias, Table<DocentiRecord> aliased) {
+            super(alias, aliased);
+        }
+
+        @Override
+        public DocentiPath as(String alias) {
+            return new DocentiPath(DSL.name(alias), this);
+        }
+
+        @Override
+        public DocentiPath as(Name alias) {
+            return new DocentiPath(alias, this);
+        }
+
+        @Override
+        public DocentiPath as(Table<?> alias) {
+            return new DocentiPath(alias.getQualifiedName(), this);
+        }
     }
 
     @Override
@@ -116,6 +149,30 @@ public class Docenti extends TableImpl<DocentiRecord> {
     @Override
     public UniqueKey<DocentiRecord> getPrimaryKey() {
         return Keys.DOCENTI__PK_DOCENTI;
+    }
+
+    private transient PartitePath _partite;
+
+    /**
+     * Get the implicit to-many join path to the <code>partite</code> table
+     */
+    public PartitePath partite() {
+        if (_partite == null)
+            _partite = new PartitePath(this, null, Keys.PARTITE__PARTITE_DOCENTI_FK.getInverseKey());
+
+        return _partite;
+    }
+
+    private transient QuizPath _quiz;
+
+    /**
+     * Get the implicit to-many join path to the <code>quiz</code> table
+     */
+    public QuizPath quiz() {
+        if (_quiz == null)
+            _quiz = new QuizPath(this, null, Keys.QUIZ__QUIZ_DOCENTI_FK.getInverseKey());
+
+        return _quiz;
     }
 
     @Override
@@ -157,27 +214,87 @@ public class Docenti extends TableImpl<DocentiRecord> {
         return new Docenti(name.getQualifiedName(), null);
     }
 
-    // -------------------------------------------------------------------------
-    // Row4 type methods
-    // -------------------------------------------------------------------------
-
+    /**
+     * Create an inline derived table from this table
+     */
     @Override
-    public Row4<Integer, String, String, String> fieldsRow() {
-        return (Row4) super.fieldsRow();
+    public Docenti where(Condition condition) {
+        return new Docenti(getQualifiedName(), aliased() ? this : null, null, condition);
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Function4<? super Integer, ? super String, ? super String, ? super String, ? extends U> from) {
-        return convertFrom(Records.mapping(from));
+    @Override
+    public Docenti where(Collection<? extends Condition> conditions) {
+        return where(DSL.and(conditions));
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Class,
-     * Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function4<? super Integer, ? super String, ? super String, ? super String, ? extends U> from) {
-        return convertFrom(toType, Records.mapping(from));
+    @Override
+    public Docenti where(Condition... conditions) {
+        return where(DSL.and(conditions));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Docenti where(Field<Boolean> condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Docenti where(SQL condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Docenti where(@Stringly.SQL String condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Docenti where(@Stringly.SQL String condition, Object... binds) {
+        return where(DSL.condition(condition, binds));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Docenti where(@Stringly.SQL String condition, QueryPart... parts) {
+        return where(DSL.condition(condition, parts));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Docenti whereExists(Select<?> select) {
+        return where(DSL.exists(select));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Docenti whereNotExists(Select<?> select) {
+        return where(DSL.notExists(select));
     }
 }

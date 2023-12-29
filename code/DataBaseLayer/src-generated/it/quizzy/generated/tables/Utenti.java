@@ -6,22 +6,27 @@ package it.quizzy.generated.tables;
 
 import it.quizzy.generated.DefaultSchema;
 import it.quizzy.generated.Keys;
+import it.quizzy.generated.tables.Partite.PartitePath;
 import it.quizzy.generated.tables.records.UtentiRecord;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
-import java.util.function.Function;
 
+import org.jooq.Condition;
 import org.jooq.Field;
 import org.jooq.ForeignKey;
-import org.jooq.Function4;
 import org.jooq.Identity;
+import org.jooq.InverseForeignKey;
 import org.jooq.Name;
+import org.jooq.Path;
+import org.jooq.PlainSQL;
+import org.jooq.QueryPart;
 import org.jooq.Record;
-import org.jooq.Records;
-import org.jooq.Row4;
+import org.jooq.SQL;
 import org.jooq.Schema;
-import org.jooq.SelectField;
+import org.jooq.Select;
+import org.jooq.Stringly;
 import org.jooq.Table;
 import org.jooq.TableField;
 import org.jooq.TableOptions;
@@ -73,11 +78,11 @@ public class Utenti extends TableImpl<UtentiRecord> {
     public final TableField<UtentiRecord, Integer> ID_PARTITA = createField(DSL.name("id_partita"), SQLDataType.INTEGER.nullable(false), this, "");
 
     private Utenti(Name alias, Table<UtentiRecord> aliased) {
-        this(alias, aliased, null);
+        this(alias, aliased, (Field<?>[]) null, null);
     }
 
-    private Utenti(Name alias, Table<UtentiRecord> aliased, Field<?>[] parameters) {
-        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table());
+    private Utenti(Name alias, Table<UtentiRecord> aliased, Field<?>[] parameters, Condition where) {
+        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table(), where);
     }
 
     /**
@@ -101,8 +106,35 @@ public class Utenti extends TableImpl<UtentiRecord> {
         this(DSL.name("utenti"), null);
     }
 
-    public <O extends Record> Utenti(Table<O> child, ForeignKey<O, UtentiRecord> key) {
-        super(child, key, UTENTI);
+    public <O extends Record> Utenti(Table<O> path, ForeignKey<O, UtentiRecord> childPath, InverseForeignKey<O, UtentiRecord> parentPath) {
+        super(path, childPath, parentPath, UTENTI);
+    }
+
+    /**
+     * A subtype implementing {@link Path} for simplified path-based joins.
+     */
+    public static class UtentiPath extends Utenti implements Path<UtentiRecord> {
+        public <O extends Record> UtentiPath(Table<O> path, ForeignKey<O, UtentiRecord> childPath, InverseForeignKey<O, UtentiRecord> parentPath) {
+            super(path, childPath, parentPath);
+        }
+        private UtentiPath(Name alias, Table<UtentiRecord> aliased) {
+            super(alias, aliased);
+        }
+
+        @Override
+        public UtentiPath as(String alias) {
+            return new UtentiPath(DSL.name(alias), this);
+        }
+
+        @Override
+        public UtentiPath as(Name alias) {
+            return new UtentiPath(alias, this);
+        }
+
+        @Override
+        public UtentiPath as(Table<?> alias) {
+            return new UtentiPath(alias.getQualifiedName(), this);
+        }
     }
 
     @Override
@@ -125,14 +157,14 @@ public class Utenti extends TableImpl<UtentiRecord> {
         return Arrays.asList(Keys.UTENTI__UTENTI_PARTITE_FK);
     }
 
-    private transient Partite _partite;
+    private transient PartitePath _partite;
 
     /**
      * Get the implicit join path to the <code>partite</code> table.
      */
-    public Partite partite() {
+    public PartitePath partite() {
         if (_partite == null)
-            _partite = new Partite(this, Keys.UTENTI__UTENTI_PARTITE_FK);
+            _partite = new PartitePath(this, Keys.UTENTI__UTENTI_PARTITE_FK, null);
 
         return _partite;
     }
@@ -176,27 +208,87 @@ public class Utenti extends TableImpl<UtentiRecord> {
         return new Utenti(name.getQualifiedName(), null);
     }
 
-    // -------------------------------------------------------------------------
-    // Row4 type methods
-    // -------------------------------------------------------------------------
-
+    /**
+     * Create an inline derived table from this table
+     */
     @Override
-    public Row4<Integer, String, Integer, Integer> fieldsRow() {
-        return (Row4) super.fieldsRow();
+    public Utenti where(Condition condition) {
+        return new Utenti(getQualifiedName(), aliased() ? this : null, null, condition);
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Function4<? super Integer, ? super String, ? super Integer, ? super Integer, ? extends U> from) {
-        return convertFrom(Records.mapping(from));
+    @Override
+    public Utenti where(Collection<? extends Condition> conditions) {
+        return where(DSL.and(conditions));
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Class,
-     * Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function4<? super Integer, ? super String, ? super Integer, ? super Integer, ? extends U> from) {
-        return convertFrom(toType, Records.mapping(from));
+    @Override
+    public Utenti where(Condition... conditions) {
+        return where(DSL.and(conditions));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Utenti where(Field<Boolean> condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Utenti where(SQL condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Utenti where(@Stringly.SQL String condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Utenti where(@Stringly.SQL String condition, Object... binds) {
+        return where(DSL.condition(condition, binds));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Utenti where(@Stringly.SQL String condition, QueryPart... parts) {
+        return where(DSL.condition(condition, parts));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Utenti whereExists(Select<?> select) {
+        return where(DSL.exists(select));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Utenti whereNotExists(Select<?> select) {
+        return where(DSL.notExists(select));
     }
 }

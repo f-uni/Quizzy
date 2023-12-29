@@ -6,23 +6,30 @@ package it.quizzy.generated.tables;
 
 import it.quizzy.generated.DefaultSchema;
 import it.quizzy.generated.Keys;
+import it.quizzy.generated.tables.Docenti.DocentiPath;
+import it.quizzy.generated.tables.Quiz.QuizPath;
+import it.quizzy.generated.tables.Utenti.UtentiPath;
 import it.quizzy.generated.tables.records.PartiteRecord;
 
 import java.time.LocalDateTime;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
-import java.util.function.Function;
 
+import org.jooq.Condition;
 import org.jooq.Field;
 import org.jooq.ForeignKey;
-import org.jooq.Function4;
 import org.jooq.Identity;
+import org.jooq.InverseForeignKey;
 import org.jooq.Name;
+import org.jooq.Path;
+import org.jooq.PlainSQL;
+import org.jooq.QueryPart;
 import org.jooq.Record;
-import org.jooq.Records;
-import org.jooq.Row4;
+import org.jooq.SQL;
 import org.jooq.Schema;
-import org.jooq.SelectField;
+import org.jooq.Select;
+import org.jooq.Stringly;
 import org.jooq.Table;
 import org.jooq.TableField;
 import org.jooq.TableOptions;
@@ -74,11 +81,11 @@ public class Partite extends TableImpl<PartiteRecord> {
     public final TableField<PartiteRecord, Integer> ID_QUIZ = createField(DSL.name("id_quiz"), SQLDataType.INTEGER.nullable(false), this, "");
 
     private Partite(Name alias, Table<PartiteRecord> aliased) {
-        this(alias, aliased, null);
+        this(alias, aliased, (Field<?>[]) null, null);
     }
 
-    private Partite(Name alias, Table<PartiteRecord> aliased, Field<?>[] parameters) {
-        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table());
+    private Partite(Name alias, Table<PartiteRecord> aliased, Field<?>[] parameters, Condition where) {
+        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table(), where);
     }
 
     /**
@@ -102,8 +109,35 @@ public class Partite extends TableImpl<PartiteRecord> {
         this(DSL.name("partite"), null);
     }
 
-    public <O extends Record> Partite(Table<O> child, ForeignKey<O, PartiteRecord> key) {
-        super(child, key, PARTITE);
+    public <O extends Record> Partite(Table<O> path, ForeignKey<O, PartiteRecord> childPath, InverseForeignKey<O, PartiteRecord> parentPath) {
+        super(path, childPath, parentPath, PARTITE);
+    }
+
+    /**
+     * A subtype implementing {@link Path} for simplified path-based joins.
+     */
+    public static class PartitePath extends Partite implements Path<PartiteRecord> {
+        public <O extends Record> PartitePath(Table<O> path, ForeignKey<O, PartiteRecord> childPath, InverseForeignKey<O, PartiteRecord> parentPath) {
+            super(path, childPath, parentPath);
+        }
+        private PartitePath(Name alias, Table<PartiteRecord> aliased) {
+            super(alias, aliased);
+        }
+
+        @Override
+        public PartitePath as(String alias) {
+            return new PartitePath(DSL.name(alias), this);
+        }
+
+        @Override
+        public PartitePath as(Name alias) {
+            return new PartitePath(alias, this);
+        }
+
+        @Override
+        public PartitePath as(Table<?> alias) {
+            return new PartitePath(alias.getQualifiedName(), this);
+        }
     }
 
     @Override
@@ -126,27 +160,40 @@ public class Partite extends TableImpl<PartiteRecord> {
         return Arrays.asList(Keys.PARTITE__PARTITE_DOCENTI_FK, Keys.PARTITE__PARTITE_QUIZ_FK);
     }
 
-    private transient Docenti _docenti;
-    private transient Quiz _quiz;
+    private transient DocentiPath _docenti;
 
     /**
      * Get the implicit join path to the <code>docenti</code> table.
      */
-    public Docenti docenti() {
+    public DocentiPath docenti() {
         if (_docenti == null)
-            _docenti = new Docenti(this, Keys.PARTITE__PARTITE_DOCENTI_FK);
+            _docenti = new DocentiPath(this, Keys.PARTITE__PARTITE_DOCENTI_FK, null);
 
         return _docenti;
     }
 
+    private transient QuizPath _quiz;
+
     /**
      * Get the implicit join path to the <code>quiz</code> table.
      */
-    public Quiz quiz() {
+    public QuizPath quiz() {
         if (_quiz == null)
-            _quiz = new Quiz(this, Keys.PARTITE__PARTITE_QUIZ_FK);
+            _quiz = new QuizPath(this, Keys.PARTITE__PARTITE_QUIZ_FK, null);
 
         return _quiz;
+    }
+
+    private transient UtentiPath _utenti;
+
+    /**
+     * Get the implicit to-many join path to the <code>utenti</code> table
+     */
+    public UtentiPath utenti() {
+        if (_utenti == null)
+            _utenti = new UtentiPath(this, null, Keys.UTENTI__UTENTI_PARTITE_FK.getInverseKey());
+
+        return _utenti;
     }
 
     @Override
@@ -188,27 +235,87 @@ public class Partite extends TableImpl<PartiteRecord> {
         return new Partite(name.getQualifiedName(), null);
     }
 
-    // -------------------------------------------------------------------------
-    // Row4 type methods
-    // -------------------------------------------------------------------------
-
+    /**
+     * Create an inline derived table from this table
+     */
     @Override
-    public Row4<Integer, LocalDateTime, Integer, Integer> fieldsRow() {
-        return (Row4) super.fieldsRow();
+    public Partite where(Condition condition) {
+        return new Partite(getQualifiedName(), aliased() ? this : null, null, condition);
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Function4<? super Integer, ? super LocalDateTime, ? super Integer, ? super Integer, ? extends U> from) {
-        return convertFrom(Records.mapping(from));
+    @Override
+    public Partite where(Collection<? extends Condition> conditions) {
+        return where(DSL.and(conditions));
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Class,
-     * Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function4<? super Integer, ? super LocalDateTime, ? super Integer, ? super Integer, ? extends U> from) {
-        return convertFrom(toType, Records.mapping(from));
+    @Override
+    public Partite where(Condition... conditions) {
+        return where(DSL.and(conditions));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Partite where(Field<Boolean> condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Partite where(SQL condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Partite where(@Stringly.SQL String condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Partite where(@Stringly.SQL String condition, Object... binds) {
+        return where(DSL.condition(condition, binds));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Partite where(@Stringly.SQL String condition, QueryPart... parts) {
+        return where(DSL.condition(condition, parts));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Partite whereExists(Select<?> select) {
+        return where(DSL.exists(select));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Partite whereNotExists(Select<?> select) {
+        return where(DSL.notExists(select));
     }
 }

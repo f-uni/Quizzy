@@ -21,19 +21,19 @@
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq</artifactId>
-			<version>3.18.7</version>
+			<version>3.19.1</version>
 		</dependency>
 		<!-- These may not be required, unless you use the GenerationTool
 		manually for code generation -->
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq-meta</artifactId>
-			<version>3.18.7</version>
+			<version>3.19.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.jooq</groupId>
 			<artifactId>jooq-codegen</artifactId>
-			<version>3.18.7</version>
+			<version>3.19.1</version>
 		</dependency>
 
 		<dependency>

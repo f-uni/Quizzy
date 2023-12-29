@@ -7,7 +7,7 @@ import org.jooq.meta.jaxb.Generator;
 import org.jooq.meta.jaxb.Jdbc;
 import org.jooq.meta.jaxb.Target;
 
-public class JooqTest {
+public class JooqCodeGenerator {
 	public static void main(String[] args) {
 		Configuration configuration = new Configuration()
 				.withJdbc(new Jdbc().withDriver("org.sqlite.JDBC")

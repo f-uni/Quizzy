@@ -6,22 +6,27 @@ package it.quizzy.generated.tables;
 
 import it.quizzy.generated.DefaultSchema;
 import it.quizzy.generated.Keys;
+import it.quizzy.generated.tables.Quiz.QuizPath;
 import it.quizzy.generated.tables.records.DomandeRecord;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
-import java.util.function.Function;
 
+import org.jooq.Condition;
 import org.jooq.Field;
 import org.jooq.ForeignKey;
-import org.jooq.Function5;
 import org.jooq.Identity;
+import org.jooq.InverseForeignKey;
 import org.jooq.Name;
+import org.jooq.Path;
+import org.jooq.PlainSQL;
+import org.jooq.QueryPart;
 import org.jooq.Record;
-import org.jooq.Records;
-import org.jooq.Row5;
+import org.jooq.SQL;
 import org.jooq.Schema;
-import org.jooq.SelectField;
+import org.jooq.Select;
+import org.jooq.Stringly;
 import org.jooq.Table;
 import org.jooq.TableField;
 import org.jooq.TableOptions;
@@ -78,11 +83,11 @@ public class Domande extends TableImpl<DomandeRecord> {
     public final TableField<DomandeRecord, String> OBJ = createField(DSL.name("obj"), SQLDataType.CLOB.nullable(false), this, "");
 
     private Domande(Name alias, Table<DomandeRecord> aliased) {
-        this(alias, aliased, null);
+        this(alias, aliased, (Field<?>[]) null, null);
     }
 
-    private Domande(Name alias, Table<DomandeRecord> aliased, Field<?>[] parameters) {
-        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table());
+    private Domande(Name alias, Table<DomandeRecord> aliased, Field<?>[] parameters, Condition where) {
+        super(alias, null, aliased, parameters, DSL.comment(""), TableOptions.table(), where);
     }
 
     /**
@@ -106,8 +111,35 @@ public class Domande extends TableImpl<DomandeRecord> {
         this(DSL.name("domande"), null);
     }
 
-    public <O extends Record> Domande(Table<O> child, ForeignKey<O, DomandeRecord> key) {
-        super(child, key, DOMANDE);
+    public <O extends Record> Domande(Table<O> path, ForeignKey<O, DomandeRecord> childPath, InverseForeignKey<O, DomandeRecord> parentPath) {
+        super(path, childPath, parentPath, DOMANDE);
+    }
+
+    /**
+     * A subtype implementing {@link Path} for simplified path-based joins.
+     */
+    public static class DomandePath extends Domande implements Path<DomandeRecord> {
+        public <O extends Record> DomandePath(Table<O> path, ForeignKey<O, DomandeRecord> childPath, InverseForeignKey<O, DomandeRecord> parentPath) {
+            super(path, childPath, parentPath);
+        }
+        private DomandePath(Name alias, Table<DomandeRecord> aliased) {
+            super(alias, aliased);
+        }
+
+        @Override
+        public DomandePath as(String alias) {
+            return new DomandePath(DSL.name(alias), this);
+        }
+
+        @Override
+        public DomandePath as(Name alias) {
+            return new DomandePath(alias, this);
+        }
+
+        @Override
+        public DomandePath as(Table<?> alias) {
+            return new DomandePath(alias.getQualifiedName(), this);
+        }
     }
 
     @Override
@@ -130,14 +162,14 @@ public class Domande extends TableImpl<DomandeRecord> {
         return Arrays.asList(Keys.DOMANDE__DOMANDE_QUIZ_FK);
     }
 
-    private transient Quiz _quiz;
+    private transient QuizPath _quiz;
 
     /**
      * Get the implicit join path to the <code>quiz</code> table.
      */
-    public Quiz quiz() {
+    public QuizPath quiz() {
         if (_quiz == null)
-            _quiz = new Quiz(this, Keys.DOMANDE__DOMANDE_QUIZ_FK);
+            _quiz = new QuizPath(this, Keys.DOMANDE__DOMANDE_QUIZ_FK, null);
 
         return _quiz;
     }
@@ -181,27 +213,87 @@ public class Domande extends TableImpl<DomandeRecord> {
         return new Domande(name.getQualifiedName(), null);
     }
 
-    // -------------------------------------------------------------------------
-    // Row5 type methods
-    // -------------------------------------------------------------------------
-
+    /**
+     * Create an inline derived table from this table
+     */
     @Override
-    public Row5<Integer, Integer, Integer, Integer, String> fieldsRow() {
-        return (Row5) super.fieldsRow();
+    public Domande where(Condition condition) {
+        return new Domande(getQualifiedName(), aliased() ? this : null, null, condition);
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Function5<? super Integer, ? super Integer, ? super Integer, ? super Integer, ? super String, ? extends U> from) {
-        return convertFrom(Records.mapping(from));
+    @Override
+    public Domande where(Collection<? extends Condition> conditions) {
+        return where(DSL.and(conditions));
     }
 
     /**
-     * Convenience mapping calling {@link SelectField#convertFrom(Class,
-     * Function)}.
+     * Create an inline derived table from this table
      */
-    public <U> SelectField<U> mapping(Class<U> toType, Function5<? super Integer, ? super Integer, ? super Integer, ? super Integer, ? super String, ? extends U> from) {
-        return convertFrom(toType, Records.mapping(from));
+    @Override
+    public Domande where(Condition... conditions) {
+        return where(DSL.and(conditions));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Domande where(Field<Boolean> condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Domande where(SQL condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Domande where(@Stringly.SQL String condition) {
+        return where(DSL.condition(condition));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Domande where(@Stringly.SQL String condition, Object... binds) {
+        return where(DSL.condition(condition, binds));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    @PlainSQL
+    public Domande where(@Stringly.SQL String condition, QueryPart... parts) {
+        return where(DSL.condition(condition, parts));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Domande whereExists(Select<?> select) {
+        return where(DSL.exists(select));
+    }
+
+    /**
+     * Create an inline derived table from this table
+     */
+    @Override
+    public Domande whereNotExists(Select<?> select) {
+        return where(DSL.notExists(select));
     }
 }

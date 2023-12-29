@@ -77,15 +77,15 @@ public class DomandeRecord extends UpdatableRecordImpl<DomandeRecord> {
     /**
      * Setter for <code>domande.obj</code>.
      */
-    public void setObj(String value) {
+    public void setObj(byte[] value) {
         set(4, value);
     }
 
     /**
      * Getter for <code>domande.obj</code>.
      */
-    public String getObj() {
-        return (String) get(4);
+    public byte[] getObj() {
+        return (byte[]) get(4);
     }
 
     // -------------------------------------------------------------------------
@@ -111,7 +111,7 @@ public class DomandeRecord extends UpdatableRecordImpl<DomandeRecord> {
     /**
      * Create a detached, initialised DomandeRecord
      */
-    public DomandeRecord(Integer id, Integer idQuiz, Integer numeroDomanda, Integer tipo, String obj) {
+    public DomandeRecord(Integer id, Integer idQuiz, Integer numeroDomanda, Integer tipo, byte[] obj) {
         super(Domande.DOMANDE);
 
         setId(id);

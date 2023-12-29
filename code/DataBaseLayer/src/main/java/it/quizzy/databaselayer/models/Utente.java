@@ -27,6 +27,14 @@ public class Utente {
 			throw new RecordNotFoundException();
 	}
 	
+	/**
+	 * Costruttore per l'inserimento di un nuovo utente
+	 * 
+	 * @param nickname
+	 * @param punteggio
+	 * @param idPartita
+	 * @throws InvalidRecordInsertionException
+	 */
 	public Utente(String nickname, Integer punteggio, Integer idPartita) throws InvalidRecordInsertionException {
 		this.record = new UtentiRecord(null, nickname, punteggio, idPartita);
 		DSLContext create = DBConnection.getConnection();

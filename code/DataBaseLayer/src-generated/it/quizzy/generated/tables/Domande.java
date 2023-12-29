@@ -80,7 +80,7 @@ public class Domande extends TableImpl<DomandeRecord> {
     /**
      * The column <code>domande.obj</code>.
      */
-    public final TableField<DomandeRecord, String> OBJ = createField(DSL.name("obj"), SQLDataType.CLOB.nullable(false), this, "");
+    public final TableField<DomandeRecord, byte[]> OBJ = createField(DSL.name("obj"), SQLDataType.BLOB.nullable(false), this, "");
 
     private Domande(Name alias, Table<DomandeRecord> aliased) {
         this(alias, aliased, (Field<?>[]) null, null);

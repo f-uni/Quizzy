@@ -1,4 +1,4 @@
-package it.quizzy.DataBaseLayer;
+package it.quizzy.databaselayer;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,10 +11,8 @@ import org.jooq.impl.DSL;
 import it.quizzy.generated.tables.Docenti;
 import it.quizzy.generated.tables.records.DocentiRecord;
 
-/**
- * Hello world!
- *
- */
+
+
 public class App 
 {
     public static void main( String[] args )
@@ -31,9 +29,7 @@ public class App
 	    	System.out.println(result);
 	    	
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    	
     }
 }

@@ -74,11 +74,6 @@ public class Quiz extends TableImpl<QuizRecord> {
      */
     public final TableField<QuizRecord, String> TITOLO = createField(DSL.name("titolo"), SQLDataType.CLOB.nullable(false), this, "");
 
-    /**
-     * The column <code>quiz.json_domande</code>.
-     */
-    public final TableField<QuizRecord, String> JSON_DOMANDE = createField(DSL.name("json_domande"), SQLDataType.CLOB.nullable(false), this, "");
-
     private Quiz(Name alias, Table<QuizRecord> aliased) {
         this(alias, aliased, (Field<?>[]) null, null);
     }

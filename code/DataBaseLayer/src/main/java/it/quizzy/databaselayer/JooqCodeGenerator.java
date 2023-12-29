@@ -1,4 +1,4 @@
-package it.quizzy.DataBaseLayer;
+package it.quizzy.databaselayer;
 
 import org.jooq.codegen.GenerationTool;
 import org.jooq.meta.jaxb.Configuration;

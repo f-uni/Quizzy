@@ -60,20 +60,6 @@ public class QuizRecord extends UpdatableRecordImpl<QuizRecord> {
         return (String) get(2);
     }
 
-    /**
-     * Setter for <code>quiz.json_domande</code>.
-     */
-    public void setJsonDomande(String value) {
-        set(3, value);
-    }
-
-    /**
-     * Getter for <code>quiz.json_domande</code>.
-     */
-    public String getJsonDomande() {
-        return (String) get(3);
-    }
-
     // -------------------------------------------------------------------------
     // Primary key information
     // -------------------------------------------------------------------------
@@ -97,13 +83,12 @@ public class QuizRecord extends UpdatableRecordImpl<QuizRecord> {
     /**
      * Create a detached, initialised QuizRecord
      */
-    public QuizRecord(Integer id, Integer idDocente, String titolo, String jsonDomande) {
+    public QuizRecord(Integer id, Integer idDocente, String titolo) {
         super(Quiz.QUIZ);
 
         setId(id);
         setIdDocente(idDocente);
         setTitolo(titolo);
-        setJsonDomande(jsonDomande);
         resetChangedOnNotNull();
     }
 }

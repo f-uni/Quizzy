@@ -7,12 +7,12 @@ package it.quizzy.generated;
 import it.quizzy.generated.tables.Docenti;
 import it.quizzy.generated.tables.Domande;
 import it.quizzy.generated.tables.Partite;
-import it.quizzy.generated.tables.Quizs;
+import it.quizzy.generated.tables.Quizzies;
 import it.quizzy.generated.tables.Utenti;
 import it.quizzy.generated.tables.records.DocentiRecord;
 import it.quizzy.generated.tables.records.DomandeRecord;
 import it.quizzy.generated.tables.records.PartiteRecord;
-import it.quizzy.generated.tables.records.QuizsRecord;
+import it.quizzy.generated.tables.records.QuizziesRecord;
 import it.quizzy.generated.tables.records.UtentiRecord;
 
 import org.jooq.ForeignKey;
@@ -36,16 +36,16 @@ public class Keys {
     public static final UniqueKey<DocentiRecord> DOCENTI__PK_DOCENTI = Internal.createUniqueKey(Docenti.DOCENTI, DSL.name("pk_docenti"), new TableField[] { Docenti.DOCENTI.ID }, true);
     public static final UniqueKey<DomandeRecord> DOMANDE__PK_DOMANDE = Internal.createUniqueKey(Domande.DOMANDE, DSL.name("pk_domande"), new TableField[] { Domande.DOMANDE.ID }, true);
     public static final UniqueKey<PartiteRecord> PARTITE__PK_PARTITE = Internal.createUniqueKey(Partite.PARTITE, DSL.name("pk_partite"), new TableField[] { Partite.PARTITE.ID }, true);
-    public static final UniqueKey<QuizsRecord> QUIZS__PK_QUIZS = Internal.createUniqueKey(Quizs.QUIZS, DSL.name("pk_quizs"), new TableField[] { Quizs.QUIZS.ID }, true);
+    public static final UniqueKey<QuizziesRecord> QUIZZIES__PK_QUIZZIES = Internal.createUniqueKey(Quizzies.QUIZZIES, DSL.name("pk_quizzies"), new TableField[] { Quizzies.QUIZZIES.ID }, true);
     public static final UniqueKey<UtentiRecord> UTENTI__PK_UTENTI = Internal.createUniqueKey(Utenti.UTENTI, DSL.name("pk_utenti"), new TableField[] { Utenti.UTENTI.ID }, true);
 
     // -------------------------------------------------------------------------
     // FOREIGN KEY definitions
     // -------------------------------------------------------------------------
 
-    public static final ForeignKey<DomandeRecord, QuizsRecord> DOMANDE__DOMANDE_QUIZ_FK = Internal.createForeignKey(Domande.DOMANDE, DSL.name("domande_quiz_FK"), new TableField[] { Domande.DOMANDE.ID_QUIZ }, Keys.QUIZS__PK_QUIZS, new TableField[] { Quizs.QUIZS.ID }, true);
+    public static final ForeignKey<DomandeRecord, QuizziesRecord> DOMANDE__DOMANDE_QUIZ_FK = Internal.createForeignKey(Domande.DOMANDE, DSL.name("domande_quiz_FK"), new TableField[] { Domande.DOMANDE.ID_QUIZ }, Keys.QUIZZIES__PK_QUIZZIES, new TableField[] { Quizzies.QUIZZIES.ID }, true);
     public static final ForeignKey<PartiteRecord, DocentiRecord> PARTITE__PARTITE_DOCENTI_FK = Internal.createForeignKey(Partite.PARTITE, DSL.name("partite_docenti_FK"), new TableField[] { Partite.PARTITE.ID_DOCENTE }, Keys.DOCENTI__PK_DOCENTI, new TableField[] { Docenti.DOCENTI.ID }, true);
-    public static final ForeignKey<PartiteRecord, QuizsRecord> PARTITE__PARTITE_QUIZ_FK = Internal.createForeignKey(Partite.PARTITE, DSL.name("partite_quiz_FK"), new TableField[] { Partite.PARTITE.ID_QUIZ }, Keys.QUIZS__PK_QUIZS, new TableField[] { Quizs.QUIZS.ID }, true);
-    public static final ForeignKey<QuizsRecord, DocentiRecord> QUIZS__QUIZ_DOCENTI_FK = Internal.createForeignKey(Quizs.QUIZS, DSL.name("quiz_docenti_FK"), new TableField[] { Quizs.QUIZS.ID_DOCENTE }, Keys.DOCENTI__PK_DOCENTI, new TableField[] { Docenti.DOCENTI.ID }, true);
+    public static final ForeignKey<PartiteRecord, QuizziesRecord> PARTITE__PARTITE_QUIZ_FK = Internal.createForeignKey(Partite.PARTITE, DSL.name("partite_quiz_FK"), new TableField[] { Partite.PARTITE.ID_QUIZ }, Keys.QUIZZIES__PK_QUIZZIES, new TableField[] { Quizzies.QUIZZIES.ID }, true);
+    public static final ForeignKey<QuizziesRecord, DocentiRecord> QUIZZIES__QUIZ_DOCENTI_FK = Internal.createForeignKey(Quizzies.QUIZZIES, DSL.name("quiz_docenti_FK"), new TableField[] { Quizzies.QUIZZIES.ID_DOCENTE }, Keys.DOCENTI__PK_DOCENTI, new TableField[] { Docenti.DOCENTI.ID }, true);
     public static final ForeignKey<UtentiRecord, PartiteRecord> UTENTI__UTENTI_PARTITE_FK = Internal.createForeignKey(Utenti.UTENTI, DSL.name("utenti_partite_FK"), new TableField[] { Utenti.UTENTI.ID_PARTITA }, Keys.PARTITE__PK_PARTITE, new TableField[] { Partite.PARTITE.ID }, true);
 }

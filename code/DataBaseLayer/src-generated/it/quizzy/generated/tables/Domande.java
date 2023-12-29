@@ -6,7 +6,7 @@ package it.quizzy.generated.tables;
 
 import it.quizzy.generated.DefaultSchema;
 import it.quizzy.generated.Keys;
-import it.quizzy.generated.tables.Quizs.QuizsPath;
+import it.quizzy.generated.tables.Quizzies.QuizziesPath;
 import it.quizzy.generated.tables.records.DomandeRecord;
 
 import java.util.Arrays;
@@ -162,16 +162,16 @@ public class Domande extends TableImpl<DomandeRecord> {
         return Arrays.asList(Keys.DOMANDE__DOMANDE_QUIZ_FK);
     }
 
-    private transient QuizsPath _quizs;
+    private transient QuizziesPath _quizzies;
 
     /**
-     * Get the implicit join path to the <code>quizs</code> table.
+     * Get the implicit join path to the <code>quizzies</code> table.
      */
-    public QuizsPath quizs() {
-        if (_quizs == null)
-            _quizs = new QuizsPath(this, Keys.DOMANDE__DOMANDE_QUIZ_FK, null);
+    public QuizziesPath quizzies() {
+        if (_quizzies == null)
+            _quizzies = new QuizziesPath(this, Keys.DOMANDE__DOMANDE_QUIZ_FK, null);
 
-        return _quizs;
+        return _quizzies;
     }
 
     @Override

@@ -7,7 +7,7 @@ package it.quizzy.generated;
 import it.quizzy.generated.tables.Docenti;
 import it.quizzy.generated.tables.Domande;
 import it.quizzy.generated.tables.Partite;
-import it.quizzy.generated.tables.Quizs;
+import it.quizzy.generated.tables.Quizzies;
 import it.quizzy.generated.tables.Utenti;
 
 import java.util.Arrays;
@@ -47,9 +47,9 @@ public class DefaultSchema extends SchemaImpl {
     public final Partite PARTITE = Partite.PARTITE;
 
     /**
-     * The table <code>quizs</code>.
+     * The table <code>quizzies</code>.
      */
-    public final Quizs QUIZS = Quizs.QUIZS;
+    public final Quizzies QUIZZIES = Quizzies.QUIZZIES;
 
     /**
      * The table <code>utenti</code>.
@@ -75,7 +75,7 @@ public class DefaultSchema extends SchemaImpl {
             Docenti.DOCENTI,
             Domande.DOMANDE,
             Partite.PARTITE,
-            Quizs.QUIZS,
+            Quizzies.QUIZZIES,
             Utenti.UTENTI
         );
     }

@@ -7,7 +7,7 @@ package it.quizzy.generated.tables;
 import it.quizzy.generated.DefaultSchema;
 import it.quizzy.generated.Keys;
 import it.quizzy.generated.tables.Partite.PartitePath;
-import it.quizzy.generated.tables.Quizs.QuizsPath;
+import it.quizzy.generated.tables.Quizzies.QuizziesPath;
 import it.quizzy.generated.tables.records.DocentiRecord;
 
 import java.util.Collection;
@@ -163,16 +163,16 @@ public class Docenti extends TableImpl<DocentiRecord> {
         return _partite;
     }
 
-    private transient QuizsPath _quizs;
+    private transient QuizziesPath _quizzies;
 
     /**
-     * Get the implicit to-many join path to the <code>quizs</code> table
+     * Get the implicit to-many join path to the <code>quizzies</code> table
      */
-    public QuizsPath quizs() {
-        if (_quizs == null)
-            _quizs = new QuizsPath(this, null, Keys.QUIZS__QUIZ_DOCENTI_FK.getInverseKey());
+    public QuizziesPath quizzies() {
+        if (_quizzies == null)
+            _quizzies = new QuizziesPath(this, null, Keys.QUIZZIES__QUIZ_DOCENTI_FK.getInverseKey());
 
-        return _quizs;
+        return _quizzies;
     }
 
     @Override

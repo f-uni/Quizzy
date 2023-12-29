@@ -14,6 +14,12 @@ import it.quizzy.generated.tables.records.UtentiRecord;
 public class Utente {
 	public UtentiRecord record;
 	
+	/**
+	 * Costruttore per la ricerca e lettura di un utente già esistente
+	 * 
+	 * @param id utente da cercare
+	 * @throws RecordNotFoundException
+	 */
 	public Utente(Integer id) throws RecordNotFoundException {
 		DSLContext create = DBConnection.getConnection();
 		this.record = create.fetchOne(Utenti.UTENTI, Utenti.UTENTI.ID.eq(id));

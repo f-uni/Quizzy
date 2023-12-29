@@ -7,7 +7,7 @@ package it.quizzy.generated.tables;
 import it.quizzy.generated.DefaultSchema;
 import it.quizzy.generated.Keys;
 import it.quizzy.generated.tables.Docenti.DocentiPath;
-import it.quizzy.generated.tables.Quizs.QuizsPath;
+import it.quizzy.generated.tables.Quizzies.QuizziesPath;
 import it.quizzy.generated.tables.Utenti.UtentiPath;
 import it.quizzy.generated.tables.records.PartiteRecord;
 
@@ -172,16 +172,16 @@ public class Partite extends TableImpl<PartiteRecord> {
         return _docenti;
     }
 
-    private transient QuizsPath _quizs;
+    private transient QuizziesPath _quizzies;
 
     /**
-     * Get the implicit join path to the <code>quizs</code> table.
+     * Get the implicit join path to the <code>quizzies</code> table.
      */
-    public QuizsPath quizs() {
-        if (_quizs == null)
-            _quizs = new QuizsPath(this, Keys.PARTITE__PARTITE_QUIZ_FK, null);
+    public QuizziesPath quizzies() {
+        if (_quizzies == null)
+            _quizzies = new QuizziesPath(this, Keys.PARTITE__PARTITE_QUIZ_FK, null);
 
-        return _quizs;
+        return _quizzies;
     }
 
     private transient UtentiPath _utenti;

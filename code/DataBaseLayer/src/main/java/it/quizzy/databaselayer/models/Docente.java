@@ -31,6 +31,19 @@ public class Docente {
 	}
 	
 	/**
+	 * Costruttore per la ricerca e lettura di un docente già esistente
+	 * 
+	 * @param mail docente da cercare
+	 * @throws RecordNotFoundException
+	 */
+	public Docente(String mail) throws RecordNotFoundException {
+		DSLContext create = DBConnection.getConnection();
+		this.record = create.fetchOne(Docenti.DOCENTI, Docenti.DOCENTI.EMAIL.eq(mail));
+		if(this.record == null)
+			throw new RecordNotFoundException();
+	}
+	
+	/**
 	 * Costruttore per l'inserimento di un nuovo docente
 	 * 
 	 * @param nomeCompleto

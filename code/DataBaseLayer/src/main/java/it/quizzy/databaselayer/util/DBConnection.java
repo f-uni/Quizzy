@@ -12,15 +12,18 @@ import org.jooq.impl.DSL;
  * Classe per la connessione al database mediante JOOQ
  */
 public class DBConnection {
-	
+
+	public static String DB_URL = "jdbc:sqlite:../db";
+
 	/**
 	 * Ritorna un DSLContext per la connessione al database
+	 * 
 	 * @return DSLContext
 	 */
-	public static DSLContext getConnection(){
+	public static DSLContext getConnection() {
 		Connection conn = null;
 		try {
-			conn = DriverManager.getConnection("jdbc:sqlite:db");
+			conn = DriverManager.getConnection(DBConnection.DB_URL);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

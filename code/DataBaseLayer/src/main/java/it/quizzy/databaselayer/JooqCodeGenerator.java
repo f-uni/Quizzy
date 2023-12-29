@@ -7,11 +7,13 @@ import org.jooq.meta.jaxb.Generator;
 import org.jooq.meta.jaxb.Jdbc;
 import org.jooq.meta.jaxb.Target;
 
+import it.quizzy.databaselayer.util.DBConnection;
+
 public class JooqCodeGenerator {
 	public static void main(String[] args) {
 		Configuration configuration = new Configuration()
 				.withJdbc(new Jdbc().withDriver("org.sqlite.JDBC")
-				.withUrl("jdbc:sqlite:db"))
+				.withUrl(DBConnection.DB_URL))
 				.withGenerator(new Generator()
 				.withDatabase(new Database().withName("org.jooq.meta.sqlite.SQLiteDatabase").withIncludes(".*")
 				.withExcludes(""))

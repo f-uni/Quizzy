@@ -7,7 +7,7 @@ package it.quizzy.generated;
 import it.quizzy.generated.tables.Docenti;
 import it.quizzy.generated.tables.Domande;
 import it.quizzy.generated.tables.Partite;
-import it.quizzy.generated.tables.Quiz;
+import it.quizzy.generated.tables.Quizs;
 import it.quizzy.generated.tables.Utenti;
 
 
@@ -33,9 +33,9 @@ public class Tables {
     public static final Partite PARTITE = Partite.PARTITE;
 
     /**
-     * The table <code>quiz</code>.
+     * The table <code>quizs</code>.
      */
-    public static final Quiz QUIZ = Quiz.QUIZ;
+    public static final Quizs QUIZS = Quizs.QUIZS;
 
     /**
      * The table <code>utenti</code>.

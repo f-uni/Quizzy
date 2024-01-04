@@ -1,0 +1,7 @@
+body {
+    background-image: url('/images/background.jpg') !important;
+    background-size: repeat; 
+    margin: 0px !important;
+    justify-content: center;
+    align-items: center;
+}

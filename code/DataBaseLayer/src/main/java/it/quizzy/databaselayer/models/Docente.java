@@ -1,7 +1,5 @@
 package it.quizzy.databaselayer.models;
 
-import java.security.MessageDigest;
-
 import org.jooq.DSLContext;
 
 import it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException;

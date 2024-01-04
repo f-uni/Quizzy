@@ -13,7 +13,7 @@ import it.quizzy.generated.tables.records.UtentiRecord;
  */
 public class Utente {
 	public UtentiRecord record;
-	
+
 	/**
 	 * Costruttore per la ricerca e lettura di un utente già esistente
 	 * 
@@ -23,10 +23,10 @@ public class Utente {
 	public Utente(Integer id) throws RecordNotFoundException {
 		DSLContext create = DBConnection.getConnection();
 		this.record = create.fetchOne(Utenti.UTENTI, Utenti.UTENTI.ID.eq(id));
-		if(this.record == null)
+		if (this.record == null)
 			throw new RecordNotFoundException();
 	}
-	
+
 	/**
 	 * Costruttore per l'inserimento di un nuovo utente
 	 * 
@@ -38,8 +38,19 @@ public class Utente {
 	public Utente(String nickname, Integer punteggio, Integer idPartita) throws InvalidRecordInsertionException {
 		this.record = new UtentiRecord(null, nickname, punteggio, idPartita);
 		DSLContext create = DBConnection.getConnection();
-    	int result = create.insertInto(Utenti.UTENTI).set(this.record).execute();
-    	if(result!=1)
-    		throw new InvalidRecordInsertionException();
+
+		this.record = create.newRecord(Utenti.UTENTI);
+		this.record.setNickname(nickname);
+		this.record.setPunteggio(punteggio);
+		this.record.setIdPartita(idPartita);
+
+		int result = this.record.store();
+		if (result != 1)
+			throw new InvalidRecordInsertionException();
+	}
+	
+	@Override
+	public String toString() {
+		return record.toString();
 	}
 }

@@ -14,7 +14,7 @@ import it.quizzy.generated.tables.records.DocentiRecord;
  */
 public class Docente {
 	public DocentiRecord record;
-	
+
 	/**
 	 * Costruttore per la ricerca e lettura di un docente già esistente
 	 * 
@@ -24,23 +24,23 @@ public class Docente {
 	public Docente(Integer id) throws RecordNotFoundException {
 		DSLContext create = DBConnection.getConnection();
 		this.record = create.fetchOne(Docenti.DOCENTI, Docenti.DOCENTI.ID.eq(id));
-		if(this.record == null)
+		if (this.record == null)
 			throw new RecordNotFoundException();
 	}
-	
+
 	/**
 	 * Costruttore per la ricerca e lettura di un docente già esistente
 	 * 
-	 * @param mail docente da cercare
+	 * @param email docente da cercare
 	 * @throws RecordNotFoundException
 	 */
-	public Docente(String mail) throws RecordNotFoundException {
+	public Docente(String email) throws RecordNotFoundException {
 		DSLContext create = DBConnection.getConnection();
-		this.record = create.fetchOne(Docenti.DOCENTI, Docenti.DOCENTI.EMAIL.eq(mail));
-		if(this.record == null)
+		this.record = create.fetchOne(Docenti.DOCENTI, Docenti.DOCENTI.EMAIL.eq(email));
+		if (this.record == null)
 			throw new RecordNotFoundException();
 	}
-	
+
 	/**
 	 * Costruttore per l'inserimento di un nuovo docente
 	 * 
@@ -50,13 +50,24 @@ public class Docente {
 	 * @throws InvalidRecordInsertionException
 	 */
 	public Docente(String nomeCompleto, String email, String password) throws InvalidRecordInsertionException {
-		String passwordHash=StringHash.hash(password);
-		this.record = new DocentiRecord(null, nomeCompleto, email, passwordHash);
+		String passwordHash = StringHash.hash(password);
 		DSLContext create = DBConnection.getConnection();
-    	int result = create.insertInto(Docenti.DOCENTI).set(this.record).execute();
-    	if(result!=1)
-    		throw new InvalidRecordInsertionException();
+
+		this.record = create.newRecord(Docenti.DOCENTI);
+		this.record.setNomeCompleto(nomeCompleto);
+		this.record.setEmail(email);
+		this.record.setPasswordHash(passwordHash);
+
+		int result = this.record.store();
+
+		if (result != 1)
+			throw new InvalidRecordInsertionException();
+
 	}
 	
-	
+	@Override
+	public String toString() {
+		return record.toString();
+	}
+
 }

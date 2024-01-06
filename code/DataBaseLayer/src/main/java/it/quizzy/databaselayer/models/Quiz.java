@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.jooq.DSLContext;
-import org.jooq.Record1;
 import org.jooq.Record2;
 import org.jooq.Result;
 
-import io.r2dbc.spi.Parameter.In;
 import it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException;
 import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla;

@@ -2,8 +2,6 @@ package it.quizzy.databaselayer.models.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.time.ZoneOffset;
-
 import org.junit.jupiter.api.Test;
 
 import it.quizzy.databaselayer.models.Docente;

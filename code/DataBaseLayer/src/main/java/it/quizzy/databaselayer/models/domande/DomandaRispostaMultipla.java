@@ -1,10 +1,10 @@
 package it.quizzy.databaselayer.models.domande;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.ObjectOutputStream;
+
 import java.util.List;
 
+import org.apache.commons.lang3.SerializationUtils;
 import org.jooq.*;
 import org.jooq.impl.DSL;
 
@@ -13,10 +13,13 @@ import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Domanda;
 import it.quizzy.databaselayer.util.DBConnection;
 import it.quizzy.generated.tables.Domande;
-import it.quizzy.generated.tables.records.DomandeRecord;
 
+/**
+ * Domanda di tipo risposta multipla
+ */
 public class DomandaRispostaMultipla extends Domanda {
 
+	private static final long serialVersionUID = 1L;
 	private String domanda;
 	private String rispostaCorretta;
 	private List<String> possibiliRisposte;
@@ -32,6 +35,12 @@ public class DomandaRispostaMultipla extends Domanda {
 		this.record = create.fetchOne(Domande.DOMANDE, Domande.DOMANDE.ID.eq(id));
 		if (this.record == null)
 			throw new RecordNotFoundException();
+		
+		DomandaRispostaMultipla obj = SerializationUtils.deserialize(this.record.getObj());
+		
+		this.domanda=obj.domanda;
+		this.rispostaCorretta=obj.rispostaCorretta;
+		this.possibiliRisposte=obj.possibiliRisposte;
 	}
 
 	/**
@@ -51,11 +60,7 @@ public class DomandaRispostaMultipla extends Domanda {
 		this.rispostaCorretta = rispostaCorretta;
 		this.possibiliRisposte = possibiliRisposte;
 
-		ByteArrayOutputStream bos = new ByteArrayOutputStream();
-		ObjectOutputStream oos = new ObjectOutputStream(bos);
-		oos.writeObject(this);
-		oos.flush();
-		byte[] data = bos.toByteArray();
+		byte[] data = SerializationUtils.serialize(this);
 
 		DSLContext create = DBConnection.getConnection();
 
@@ -67,9 +72,13 @@ public class DomandaRispostaMultipla extends Domanda {
 			numeroDomanda = res.get(0, int.class) + 1;
 		}
 
-		this.record = new DomandeRecord(null, idQuiz, numeroDomanda, TipoDomanda.RispostaMultipla.ordinal(), data);
-
-		int result = create.insertInto(Domande.DOMANDE).set(this.record).execute();
+		this.record=create.newRecord(Domande.DOMANDE);
+		this.record.setIdQuiz(idQuiz);
+		this.record.setNumeroDomanda(numeroDomanda);
+		this.record.setTipo(TipoDomanda.RispostaMultipla.ordinal());
+		this.record.setObj(data);
+		
+		int result = this.record.store();
 		if (result != 1)
 			throw new InvalidRecordInsertionException();
 	}

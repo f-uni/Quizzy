@@ -6,18 +6,14 @@ import java.util.List;
 import org.jooq.DSLContext;
 import org.jooq.Record1;
 import org.jooq.Result;
-import org.jooq.exception.DataTypeException;
-import org.jooq.impl.DSL;
 
 import it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException;
 import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.util.DBConnection;
 import it.quizzy.databaselayer.util.StringHash;
 import it.quizzy.generated.tables.Docenti;
-import it.quizzy.generated.tables.Domande;
 import it.quizzy.generated.tables.Quizzies;
 import it.quizzy.generated.tables.records.DocentiRecord;
-import it.quizzy.generated.tables.records.QuizziesRecord;
 
 /**
  * Classe model per la creazione e gestione dei docenti

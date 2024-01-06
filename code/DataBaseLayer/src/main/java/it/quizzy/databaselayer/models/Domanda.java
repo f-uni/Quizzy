@@ -1,5 +1,6 @@
 package it.quizzy.databaselayer.models;
 
+import java.io.Serializable;
 import java.util.List;
 
 import it.quizzy.generated.tables.records.DomandeRecord;
@@ -7,7 +8,9 @@ import it.quizzy.generated.tables.records.DomandeRecord;
 /**
  * Classe astratta model per la creazione e gestione delle domande
  */
-public abstract class Domanda {
+public abstract class Domanda implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	public DomandeRecord record;
 
 	/**

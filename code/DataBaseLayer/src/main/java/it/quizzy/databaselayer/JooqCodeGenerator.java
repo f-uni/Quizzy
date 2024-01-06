@@ -9,6 +9,9 @@ import org.jooq.meta.jaxb.Target;
 
 import it.quizzy.databaselayer.util.DBConnection;
 
+/**
+ * Crea le classi che permettono di interfacciarsi con il database embedded
+ */
 public class JooqCodeGenerator {
 	public static void main(String[] args) {
 		Configuration configuration = new Configuration()

@@ -56,6 +56,11 @@ public class Quiz {
 			throw new InvalidRecordInsertionException();
 	}
 
+	/**
+	 * Ritorna la lista di domande che compongono il quiz
+	 * 
+	 * @return
+	 */
 	public List<Domanda> getDomande() {
 		DSLContext create = DBConnection.getConnection();
 

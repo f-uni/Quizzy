@@ -27,7 +27,7 @@ enum Risposta {
 		this.value = str;
 	}
 
-	public static Risposta fromStirng(String str) {
+	public static Risposta fromString(String str) throws IllegalArgumentException {
 		switch (str.toLowerCase()) {
 		case "vero":
 			return Risposta.VERO;
@@ -70,11 +70,11 @@ public class DomandaVeroFalso extends Domanda {
 	 * @throws InvalidRecordInsertionException
 	 * @throws IOException
 	 */
-	public DomandaVeroFalso(Integer idQuiz, String domanda, Risposta rispostaCorretta)
-			throws InvalidRecordInsertionException, IOException {
+	public DomandaVeroFalso(Integer idQuiz, String domanda, String rispostaCorretta)
+			throws InvalidRecordInsertionException, IOException, IllegalArgumentException {
 
 		this.domanda = domanda;
-		this.rispostaCorretta = rispostaCorretta;
+		this.rispostaCorretta = Risposta.fromString(rispostaCorretta);
 
 		ByteArrayOutputStream bos = new ByteArrayOutputStream();
 		ObjectOutputStream oos = new ObjectOutputStream(bos);
@@ -111,7 +111,7 @@ public class DomandaVeroFalso extends Domanda {
 
 	@Override
 	public boolean controllaRisposta(String risp) {
-		Risposta r = Risposta.fromStirng(risp);
+		Risposta r = Risposta.fromString(risp);
 		return r == rispostaCorretta;
 	}
 

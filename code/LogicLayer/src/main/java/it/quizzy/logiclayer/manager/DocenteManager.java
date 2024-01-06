@@ -4,11 +4,21 @@ import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Docente;
 import it.quizzy.databaselayer.util.StringHash;
 
+/**
+ * Gestisce la sessione (login) del docente
+ */
 public class DocenteManager {
 	Docente sessioneDocente;
 	
 	public DocenteManager() {}
 	
+	/**
+	 * Controlla se l'email e la password sono corrette per eseguire il login del docente e crea la sessione attiva
+	 * 
+	 * @param email
+	 * @param password
+	 * @return
+	 */
 	public boolean login(String email, String password) {
 		Docente d;
 		try {
@@ -23,6 +33,12 @@ public class DocenteManager {
 		return false;
 	}
 	
+	
+	/**
+	 * Controlla se la sessione è attiva, quindi se docente è loggato
+	 * 
+	 * @return
+	 */
 	public boolean isLogged() {
 		return sessioneDocente!=null;
 	}

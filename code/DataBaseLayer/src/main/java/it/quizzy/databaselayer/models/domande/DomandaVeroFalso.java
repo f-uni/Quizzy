@@ -96,6 +96,8 @@ public class DomandaVeroFalso extends Domanda {
 		Risposta r = Risposta.fromString(risp);
 		return r == rispostaCorretta;
 	}
+	
+	
 
 }
 

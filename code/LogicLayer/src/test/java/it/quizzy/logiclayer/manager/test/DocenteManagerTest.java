@@ -1,4 +1,4 @@
-package it.quizzy.logiclayer.test;
+package it.quizzy.logiclayer.manager.test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;

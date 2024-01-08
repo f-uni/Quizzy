@@ -33,6 +33,19 @@ public class DocenteManager {
 		return false;
 	}
 	
+	public boolean signUp(String nome, String email, String password) {
+		Docente d;
+		try {
+			d = new Docente(nome, email, password);
+			this.sessioneDocente=d;
+			return true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	
 	
 	/**
 	 * Controlla se la sessione è attiva, quindi se docente è loggato
@@ -41,5 +54,9 @@ public class DocenteManager {
 	 */
 	public boolean isLogged() {
 		return sessioneDocente!=null;
+	}
+	
+	public String getNome() {
+		return sessioneDocente!=null?sessioneDocente.record.getNomeCompleto():null;
 	}
 }

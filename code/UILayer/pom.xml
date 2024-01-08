@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>it.quizzy</groupId>
-	<artifactId>WIE</artifactId>
+	<artifactId>UILayer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>LogicLayer</name>

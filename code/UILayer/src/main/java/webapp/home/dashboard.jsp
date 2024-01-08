@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="it.quizzy.logiclayer.manager.DocenteManager"%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +9,17 @@
     <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
     <title>QUIZZY</title>
 </head>
+<%
+
+DocenteManager dmSession = (DocenteManager)session.getAttribute("dm");  
+if(dmSession==null){
+	response.sendRedirect("/home/login.jsp");
+}else{
+	if(!dmSession.isLogged()){
+		response.sendRedirect("/home/login.jsp");
+	}else{
+		%>
+		
 <body>
     <nav class="navbar is-high shadow has-border-yellow" role="navigation" aria-label="main navigation" >
         <div class="navbar-brand">
@@ -75,8 +87,13 @@
         </div>
       </div>
       <div class="container-fluid">
-
+		benvenuto <% out.print(dmSession.getNome()); %>
       </div>
 </body>
 <script src="/js/dashboard.js"></script>
 </html>
+		<% 
+	}
+}
+
+%>

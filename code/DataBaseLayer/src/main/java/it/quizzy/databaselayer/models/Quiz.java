@@ -87,6 +87,10 @@ public class Quiz {
 		return result;
 
 	}
+	
+	public String getTitolo() {
+		return record.getTitolo();
+	}
 
 	@Override
 	public String toString() {

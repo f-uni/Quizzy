@@ -22,6 +22,9 @@ class PartitaTest {
 			Partita pf=new Partita(p.getRecord().getId());
 			assertEquals(p.getRecord().getTimestamp().toEpochSecond(ZoneOffset.UTC), pf.getRecord().getTimestamp().toEpochSecond(ZoneOffset.UTC));
 			
+			//test toString()
+			System.out.println(p.toString());
+			
 			p.getRecord().delete();
 			q.getRecord().delete();
 			d.getRecord().delete();

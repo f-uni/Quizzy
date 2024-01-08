@@ -1,0 +1,77 @@
+
+body{
+    background-image: url('/images/background.jpg'); /* Replace 'your-background-image.jpg' with the actual path to your image */
+     /* Cover the entire viewport */
+    background-repeat: repeat; /* Do not repeat the background image */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+.inside-form{
+    width: 300px; /* Set the width of your centered div */
+    height: 400px;
+    background: rgb(228,178,70);
+    background: linear-gradient(14deg, rgba(228,178,70,1) 0%, rgba(241,130,56,1) 100%);
+    text-align: center; /* Center text horizontally */
+   
+    backdrop-filter: blur(20px);
+    width: 30%;
+    min-width: 320px;
+    margin: auto;
+    margin-top: 5rem;
+    border-radius: 15px;
+    box-shadow:2px -1px 24px -3px #000000 ;
+    padding-top:15px;
+}
+.login-title{
+    color:aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.signIn{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:10px;
+    height: 2.5rem;
+    width:70%;
+    min-width: 250px;
+    border-radius: 10px;
+    border:0px;
+    border-top: 3px solid #e8560d;
+    filter:drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.397));
+    padding-left: 20px;
+}
+.signIn:focus-visible{
+    outline:none;
+    border-top: 3px solid #bf8600;
+}
+.sign-Up{
+    width:50%;
+    min-width: 150px;
+    padding:7px;
+    height: 2.5rem;
+    border-radius: 15px;
+    border: 4px solid #e8560d;
+    background-color:#e8560d;
+    color:white;
+    font-family:'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow:2px -1px 12px -3px #00000073 ;
+}
+.sign-Up:hover{
+    background-color: #ff732d;
+    border-color: #ff732d;
+}
+.has-margin{
+    margin-top:15px;
+}
+.icon{
+    z-index: 1;
+    position: relative;
+    top: -32px;
+    left: 110px;
+    height: 25px;
+    width:25px;
+}

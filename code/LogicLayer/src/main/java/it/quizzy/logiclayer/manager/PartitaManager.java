@@ -40,6 +40,9 @@ public class PartitaManager {
 	
 	
 	public String prossimaDomanda() {
+		
+		
+		
 		this.domandaCorrente++;
 		if(this.domande.size()<domandaCorrente)
 			return this.domande.get(domandaCorrente-1).getDomanda();

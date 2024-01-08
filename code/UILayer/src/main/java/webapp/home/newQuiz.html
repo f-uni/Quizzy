@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/Logo3.png">
+    <link rel="stylesheet" type="text/css" href="/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="/css/newQuiz.css">
+    <title>QUIZZY</title>
+</head>
+<body>
+    <nav class="navbar is-high shadow has-border-yellow" role="navigation" aria-label="main navigation" >
+        <div class="navbar-brand">
+          <a class="navbar-item " href="https://bulma.io">
+            <img src="/images/logo4.png" width="100" height="100">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item hover-underline-animation is-active">
+              HOME
+            </a>
+
+            <a class="navbar-item hover-underline-animation">
+              My Quiz
+            </a>
+      
+            <a class="navbar-item hover-underline-animation">
+              All Quiz
+            </a>
+      
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+                
+              <div class="buttons">
+                <input class="searchBar" type="text" placeholder="Search...">
+                <a class="button is-warning shadow">
+                  <i class="fa-solid fa-plus" aria-hidden="true" ></i><strong>New Quiz</strong>
+                </a>
+                <a class="button is-profile">
+                    <img class="profile-image" src="/images/profileDoc.png" height="100" width="100">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="nameQuiz">
+            <h1> New Quiz Title: </h1>
+            <input type="text" class="inputName" placeholder="Insert Title...">
+      </div>
+      <div>
+        <div class="question" id="QuestVF">
+            <p style="padding:20px"> Question #1</p>
+            <textarea class="TextQuestion" rows="4" cols="200">
+                
+            </textarea>
+            <fieldset class="rigthAnswer">
+                <legend>Select the right answer:</legend>
+                <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked />
+                    <label for="huey">True</label>
+                    </div>
+                    <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey" />
+                    <label for="dewey">False</label>
+                </div>
+            </fieldset>
+            <button class="delete-button"> Delete </button>
+        </div>
+        <div class="question" id="QuestMultiple">
+            <p style="padding:20px"> Question #1</p>
+            <textarea class="TextQuestion" rows="4" cols="200">
+            
+            </textarea>
+            <fieldset class="rigthAnswer">
+                <legend style="margin-bottom: 10px;">Select the right answer:</legend>
+                <div>
+                  <input type="radio" id="huey" name="drone" value="huey" checked />
+                  <p class="p-answer"> Answer #1</p>
+                  <textarea class="TextQuestion other-display" rows="2" cols="100">
+            
+                  </textarea>
+                </div>
+                <div>
+                  <input type="radio" id="dewey" name="drone" value="dewey" />
+                  <p class="p-answer"> Answer #2</p>
+                  <textarea class="TextQuestion other-display" rows="2" cols="100">
+            
+                  </textarea>
+                </div>
+                <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked />
+                    <p class="p-answer"> Answer #3</p>
+                    <textarea class="TextQuestion other-display" rows="2" cols="100">
+            
+                    </textarea>
+                </div>
+                <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey" />
+                    <p class="p-answer"> Answer #4</p>
+                    <textarea class="TextQuestion other-display" rows="2" cols="100">
+            
+                    </textarea>
+                </div>
+            </fieldset>
+            <button class="delete-button"> Delete</button>
+        </div>
+      </div>
+      <div class="questionName">
+        <button class="addQuestion" onclick=openPop() id="addQ">
+            + 
+            <div class="popup" id="popup">
+                <div class="questionChoser first" onclick=closePop(1)>
+                    Vero o Falso
+                </div>
+                <div class="questionChoser"onclick=closePop(2)>
+                    Scelta Multipla
+                </div>
+            </div>
+        </button>
+    </div>
+</body>
+<script src="/js/newQuiz.js"></script>
+</html>

@@ -1,34 +1,36 @@
 package it.quizzy.databaselayer.models;
 
-import org.jooq.DSLContext;
+import java.io.Serializable;
+import java.util.List;
 
-import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
-import it.quizzy.databaselayer.util.DBConnection;
-import it.quizzy.generated.tables.Domande;
 import it.quizzy.generated.tables.records.DomandeRecord;
 
 /**
- * Classe model per la creazione e gestione delle domande
+ * Classe astratta model per la creazione e gestione delle domande
  */
-public class Domanda {
+public abstract class Domanda implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	public DomandeRecord record;
-	
-	/**
-	 * Costruttore per la ricerca e lettera di un domanda già esistente
-	 * 
-	 * @param id domanda
-	 * @throws RecordNotFoundException
-	 */
-	public Domanda(Integer id) throws RecordNotFoundException {
-		DSLContext create = DBConnection.getConnection();
-		this.record = create.fetchOne(Domande.DOMANDE, Domande.DOMANDE.ID.eq(id));
-		if(this.record == null)
-			throw new RecordNotFoundException();
-	}
 
-	//TODO: scrivere documentazione
-	public Domanda (Integer idQuiz, Integer numeroDomanda, Integer tipo) {
-		//TODO: implementare le domande
+	/**
+	 * @return la stringa contenente la domanda
+	 */
+	public abstract String getDomanda();
+
+	/**
+	 * @return lista di stringhe contenente le possibili risposte
+	 */
+	public abstract List<String> getRisposteDisponibili();
+
+	/**
+	 * @param risp risposta da controllare
+	 * @return true o false se la risposta è rispettivamente corretta o errata
+	 */
+	public abstract boolean controllaRisposta(String risp);
+
+	@Override
+	public String toString() {
+		return record.toString();
 	}
-	
 }

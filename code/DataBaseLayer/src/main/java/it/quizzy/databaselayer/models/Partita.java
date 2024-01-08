@@ -38,10 +38,21 @@ public class Partita {
 	 */
 	public Partita(Integer idDocente, Integer idQuiz) throws InvalidRecordInsertionException {
 		LocalDateTime timestamp = LocalDateTime.now();
-		this.record = new PartiteRecord(null, timestamp, idDocente, idQuiz);
+		
 		DSLContext create = DBConnection.getConnection();
-		int result = create.insertInto(Partite.PARTITE).set(this.record).execute();
+		
+		this.record=create.newRecord(Partite.PARTITE);
+		this.record.setTimestamp(timestamp);
+		this.record.setIdDocente(idDocente);
+		this.record.setIdQuiz(idQuiz);
+		
+		int result = this.record.store();
 		if(result!=1)
     		throw new InvalidRecordInsertionException();
+	}
+	
+	@Override
+	public String toString() {
+		return record.toString();
 	}
 }

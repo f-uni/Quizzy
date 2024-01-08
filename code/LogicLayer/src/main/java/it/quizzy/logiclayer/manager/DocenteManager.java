@@ -1,14 +1,24 @@
-package it.quizzy.logiclayer;
+package it.quizzy.logiclayer.manager;
 
 import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Docente;
 import it.quizzy.databaselayer.util.StringHash;
 
-public class LoginManager {
+/**
+ * Gestisce la sessione (login) del docente
+ */
+public class DocenteManager {
 	Docente sessioneDocente;
 	
-	public LoginManager() {}
+	public DocenteManager() {}
 	
+	/**
+	 * Controlla se l'email e la password sono corrette per eseguire il login del docente e crea la sessione attiva
+	 * 
+	 * @param email
+	 * @param password
+	 * @return
+	 */
 	public boolean login(String email, String password) {
 		Docente d;
 		try {
@@ -18,12 +28,17 @@ public class LoginManager {
 				return true;
 			}
 		} catch (RecordNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return false;
 	}
 	
+	
+	/**
+	 * Controlla se la sessione è attiva, quindi se docente è loggato
+	 * 
+	 * @return
+	 */
 	public boolean isLogged() {
 		return sessioneDocente!=null;
 	}

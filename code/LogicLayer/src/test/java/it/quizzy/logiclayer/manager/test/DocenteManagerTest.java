@@ -1,22 +1,22 @@
-package it.quizzy.logiclayer.test;
+package it.quizzy.logiclayer.manager.test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import it.quizzy.logiclayer.LoginManager;
+import it.quizzy.logiclayer.manager.DocenteManager;
 
-class LoginManagerTest {
+class DocenteManagerTest {
 
 	@Test
 	void login() {
-		LoginManager lm = new LoginManager();
+		DocenteManager lm = new DocenteManager();
 		lm.login("test@test.it", "password");
 		assertTrue(lm.isLogged());
 	}
 
 	@Test
 	void failedLogin() {
-		LoginManager lm = new LoginManager();
+		DocenteManager lm = new DocenteManager();
 		lm.login("test@test.it", "passwordsbagliata");
 		assertFalse(lm.isLogged());
 	}

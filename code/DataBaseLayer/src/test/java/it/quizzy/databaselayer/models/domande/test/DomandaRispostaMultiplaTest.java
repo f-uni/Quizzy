@@ -16,18 +16,18 @@ class DomandaRispostaMultiplaTest {
 	void create() {
 		try {
 			Docente d = new Docente("Docente Test", "test@test.it", "password");
-			Quiz q = new Quiz(d.record.getId(), "Quiz di test");
+			Quiz q = new Quiz(d.getRecord().getId(), "Quiz di test");
 
-			DomandaRispostaMultipla dom = new DomandaRispostaMultipla(q.record.getId(), "domanda di test?", "1",
+			DomandaRispostaMultipla dom = new DomandaRispostaMultipla(q.getRecord().getId(), "domanda di test?", "1",
 					Arrays.asList("1", "2", "3", "4"));
 			
-			DomandaRispostaMultipla domf = new DomandaRispostaMultipla(dom.record.getId());
+			DomandaRispostaMultipla domf = new DomandaRispostaMultipla(dom.getRecord().getId());
 			
 			assertEquals(dom.getDomanda(), domf.getDomanda());
 			
-			dom.record.delete();
-			q.record.delete();
-			d.record.delete();
+			dom.getRecord().delete();
+			q.getRecord().delete();
+			d.getRecord().delete();
 			
 
 		} catch (Exception e) {

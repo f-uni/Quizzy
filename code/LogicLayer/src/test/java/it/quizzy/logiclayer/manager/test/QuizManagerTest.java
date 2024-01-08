@@ -19,7 +19,7 @@ class QuizManagerTest {
 		Docente d;
 		try {
 			d = new Docente("Docente Test", "test@test.it", "password");
-			Quiz q = new Quiz(d.record.getId(), "Quiz di test");
+			Quiz q = new Quiz(d.getRecord().getId(), "Quiz di test");
 			
 			QuizManager qm = new QuizManager(q);
 			
@@ -35,23 +35,23 @@ class QuizManagerTest {
 			assertEquals(3, domande.size());
 		
 			
-			int deleteId=domande.get(1).record.getId();
+			int deleteId=domande.get(1).getRecord().getId();
 			
 			qm.rimuoviDomanda(deleteId);
 			
 			domande = q.getDomande();
 			assertEquals(2,domande.size());
 
-			assertEquals(domande.get(1).record.getNumeroDomanda(), 2);
+			assertEquals(domande.get(1).getRecord().getNumeroDomanda(), 2);
 			
 
 			System.out.println(domande);
 			
 			for(Domanda dom : domande)
-				dom.record.delete();
+				dom.getRecord().delete();
 			
-			q.record.delete();
-			d.record.delete();
+			q.getRecord().delete();
+			d.getRecord().delete();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

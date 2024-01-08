@@ -17,14 +17,14 @@ class PartitaTest {
 
 		try {
 			Docente d = new Docente("Docente Test", "test@test.it", "password");
-			Quiz q = new Quiz(d.record.getId(), "Quiz di test");
-			Partita p = new Partita(d.record.getId(), q.record.getId());
-			Partita pf=new Partita(p.record.getId());
-			assertEquals(p.record.getTimestamp().toEpochSecond(ZoneOffset.UTC), pf.record.getTimestamp().toEpochSecond(ZoneOffset.UTC));
+			Quiz q = new Quiz(d.getRecord().getId(), "Quiz di test");
+			Partita p = new Partita(d.getRecord().getId(), q.getRecord().getId());
+			Partita pf=new Partita(p.getRecord().getId());
+			assertEquals(p.getRecord().getTimestamp().toEpochSecond(ZoneOffset.UTC), pf.getRecord().getTimestamp().toEpochSecond(ZoneOffset.UTC));
 			
-			p.record.delete();
-			q.record.delete();
-			d.record.delete();
+			p.getRecord().delete();
+			q.getRecord().delete();
+			d.getRecord().delete();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

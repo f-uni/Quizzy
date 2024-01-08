@@ -12,7 +12,7 @@ import it.quizzy.generated.tables.records.UtentiRecord;
  * Classe model per la creazione e gestione degli utenti
  */
 public class Utente {
-	public UtentiRecord record;
+	private UtentiRecord record;
 
 	/**
 	 * Costruttore per la ricerca e lettura di un utente già esistente
@@ -53,4 +53,10 @@ public class Utente {
 	public String toString() {
 		return record.toString();
 	}
+
+	public UtentiRecord getRecord() {
+		return record;
+	}
+	
+	
 }

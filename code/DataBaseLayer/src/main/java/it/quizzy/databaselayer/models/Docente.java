@@ -19,7 +19,7 @@ import it.quizzy.generated.tables.records.DocentiRecord;
  * Classe model per la creazione e gestione dei docenti
  */
 public class Docente {
-	public DocentiRecord record;
+	private DocentiRecord record;
 
 	/**
 	 * Costruttore per la ricerca e lettura di un docente già esistente
@@ -114,5 +114,8 @@ public class Docente {
 	public String toString() {
 		return record.toString();
 	}
-
+	
+	public DocentiRecord getRecord() {
+		return this.record;
+	}
 }

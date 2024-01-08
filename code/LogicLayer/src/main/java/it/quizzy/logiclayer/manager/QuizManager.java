@@ -13,6 +13,10 @@ import it.quizzy.databaselayer.models.domande.DomandaVeroFalso;
 public class QuizManager {
 	Quiz quiz;
 
+	/** 
+	 * Costruttore per la creazione di un quiz manager
+	 * @param quiz
+	 */
 	public QuizManager(Quiz quiz) {
 		this.quiz = quiz;
 	}
@@ -26,7 +30,7 @@ public class QuizManager {
 	 */
 	public boolean aggiungiDomandaVeroFalso(String domanda, String rispostaCorretta) {
 		try {
-			new DomandaVeroFalso(quiz.record.getId(), domanda, rispostaCorretta);
+			new DomandaVeroFalso(quiz.getRecord().getId(), domanda, rispostaCorretta);
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -44,7 +48,7 @@ public class QuizManager {
 	 */
 	public boolean aggiungiDomandaRispostaMultipla(String domanda, String rispostaCorretta, List<String> possibiliRisposte) {
 		try {
-			new DomandaRispostaMultipla(quiz.record.getId(), domanda, rispostaCorretta, possibiliRisposte);
+			new DomandaRispostaMultipla(quiz.getRecord().getId(), domanda, rispostaCorretta, possibiliRisposte);
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -62,7 +66,7 @@ public class QuizManager {
 		List<Domanda> domande = quiz.getDomande();
 		Domanda domandaDaEliminare = null;
 		for(Domanda d : domande) {
-			if(d.record.getId().equals(idDomanda)) {
+			if(d.getRecord().getId().equals(idDomanda)) {
 				domandaDaEliminare=d;
 				break;
 			}
@@ -72,13 +76,13 @@ public class QuizManager {
 			return false;
 		
 		for(Domanda d:domande) {
-			if(d.record.getNumeroDomanda()>domandaDaEliminare.record.getNumeroDomanda()) {
-				d.record.setNumeroDomanda(d.record.getNumeroDomanda()-1);
-				d.record.store();
+			if(d.getRecord().getNumeroDomanda()>domandaDaEliminare.getRecord().getNumeroDomanda()) {
+				d.getRecord().setNumeroDomanda(d.getRecord().getNumeroDomanda()-1);
+				d.getRecord().store();
 			}
 		}
 		
-		return domandaDaEliminare.record.delete()==1;
+		return domandaDaEliminare.getRecord().delete()==1;
 		
 	}
 	

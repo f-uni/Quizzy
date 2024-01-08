@@ -14,17 +14,17 @@ class DomandaVeroFalsoTest {
 	void create() {
 		try {
 			Docente d = new Docente("Docente Test", "test@test.it", "password");
-			Quiz q = new Quiz(d.record.getId(), "Quiz di test");
+			Quiz q = new Quiz(d.getRecord().getId(), "Quiz di test");
 
-			DomandaVeroFalso dom = new DomandaVeroFalso(q.record.getId(), "domanda di test?", "vero");
+			DomandaVeroFalso dom = new DomandaVeroFalso(q.getRecord().getId(), "domanda di test?", "vero");
 
-			DomandaVeroFalso domf = new DomandaVeroFalso(dom.record.getId());
+			DomandaVeroFalso domf = new DomandaVeroFalso(dom.getRecord().getId());
 
 			assertEquals(dom.getDomanda(), domf.getDomanda());
 
-			dom.record.delete();
-			q.record.delete();
-			d.record.delete();
+			dom.getRecord().delete();
+			q.getRecord().delete();
+			d.getRecord().delete();
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

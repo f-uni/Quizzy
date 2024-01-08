@@ -20,7 +20,7 @@ import it.quizzy.generated.tables.records.QuizziesRecord;
  * Classe model per la creazione e gestione dei quiz
  */
 public class Quiz {
-	public QuizziesRecord record;
+	private QuizziesRecord record;
 
 	/**
 	 * Costruttore per la ricerca e la lettura di un quiz già esistente
@@ -92,4 +92,10 @@ public class Quiz {
 	public String toString() {
 		return record.toString();
 	}
+
+	public QuizziesRecord getRecord() {
+		return record;
+	}
+	
+	
 }

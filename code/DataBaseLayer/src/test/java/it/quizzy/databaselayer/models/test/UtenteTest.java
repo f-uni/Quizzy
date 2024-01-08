@@ -16,15 +16,15 @@ class UtenteTest {
 
 		try {
 			Docente d = new Docente("Docente Test", "test@test.it", "password");
-			Quiz q = new Quiz(d.record.getId(), "Quiz di test");
-			Partita p = new Partita(d.record.getId(), q.record.getId());
-			Utente u = new Utente("test nick", 0, p.record.getId());
-			Utente uf=new Utente(u.record.getId());
-			assertEquals(u.record.getNickname(), uf.record.getNickname());
-			u.record.delete();
-			p.record.delete();
-			q.record.delete();
-			d.record.delete();
+			Quiz q = new Quiz(d.getRecord().getId(), "Quiz di test");
+			Partita p = new Partita(d.getRecord().getId(), q.getRecord().getId());
+			Utente u = new Utente("test nick", 0, p.getRecord().getId());
+			Utente uf=new Utente(u.getRecord().getId());
+			assertEquals(u.getRecord().getNickname(), uf.getRecord().getNickname());
+			u.getRecord().delete();
+			p.getRecord().delete();
+			q.getRecord().delete();
+			d.getRecord().delete();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

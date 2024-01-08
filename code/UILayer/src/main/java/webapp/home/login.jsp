@@ -48,8 +48,7 @@ if (mail != null && password != null) {
 		</form>
 		<hr class="divider">
 		<p class="login-text">New Here?</p>
-		<a href="/home/signUp.jsp"><button class="sign-Up">Sign
-				Up</button></a>
+		<a href="/home/signUp.jsp"><button class="sign-Up">Sign Up</button></a>
 	</div>
 
 </body>

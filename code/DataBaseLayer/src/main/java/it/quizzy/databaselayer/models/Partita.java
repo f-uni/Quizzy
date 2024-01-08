@@ -14,7 +14,7 @@ import it.quizzy.generated.tables.records.PartiteRecord;
  * Classe model per la creazione e gestione dei partita
  */
 public class Partita {
-	public PartiteRecord record;
+	private PartiteRecord record;
 
 	/**
 	 * Costruttore per la ricerca e la lettura di una partita già esistente
@@ -55,4 +55,10 @@ public class Partita {
 	public String toString() {
 		return record.toString();
 	}
+
+	public PartiteRecord getRecord() {
+		return record;
+	}
+	
+	
 }

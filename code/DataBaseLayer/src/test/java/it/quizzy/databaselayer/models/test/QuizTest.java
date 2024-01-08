@@ -14,11 +14,11 @@ class QuizTest {
 
 		try {
 			Docente d = new Docente("Docente Test", "test@test.it", "password");
-			Quiz q = new Quiz(d.record.getId(), "Quiz di test");
-			Quiz qf=new Quiz(q.record.getId());
-			assertEquals(q.record.getTitolo(), qf.record.getTitolo());
-			d.record.delete();
-			q.record.delete();
+			Quiz q = new Quiz(d.getRecord().getId(), "Quiz di test");
+			Quiz qf=new Quiz(q.getRecord().getId());
+			assertEquals(q.getRecord().getTitolo(), qf.getRecord().getTitolo());
+			d.getRecord().delete();
+			q.getRecord().delete();
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

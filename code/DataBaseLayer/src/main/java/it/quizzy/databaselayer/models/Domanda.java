@@ -11,7 +11,9 @@ import it.quizzy.generated.tables.records.DomandeRecord;
 public abstract class Domanda implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
-	public DomandeRecord record;
+	
+
+	protected DomandeRecord record;
 
 	/**
 	 * @return la stringa contenente la domanda
@@ -33,4 +35,9 @@ public abstract class Domanda implements Serializable {
 	public String toString() {
 		return record.toString();
 	}
+	
+	public DomandeRecord getRecord() {
+		return record;
+	}
+	
 }

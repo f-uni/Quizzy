@@ -23,7 +23,7 @@ public class DocenteManager {
 		Docente d;
 		try {
 			d = new Docente(email);
-			if(StringHash.hash(password).equals(d.record.getPasswordHash())) {
+			if(StringHash.hash(password).equals(d.getRecord().getPasswordHash())) {
 				this.sessioneDocente=d;
 				return true;
 			}
@@ -57,6 +57,13 @@ public class DocenteManager {
 	}
 	
 	public String getNome() {
-		return sessioneDocente!=null?sessioneDocente.record.getNomeCompleto():null;
+		return sessioneDocente!=null?sessioneDocente.getRecord().getNomeCompleto():null;
+	}
+	
+	public boolean addQuiz(String titolo) {
+		if(this.sessioneDocente!=null) {
+			return this.sessioneDocente.creaQuiz(titolo);
+		}
+		return false;
 	}
 }

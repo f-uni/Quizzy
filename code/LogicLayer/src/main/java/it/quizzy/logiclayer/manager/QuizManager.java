@@ -11,7 +11,7 @@ import it.quizzy.databaselayer.models.domande.DomandaVeroFalso;
  * Gestisce le modifiche da parte del docente sui quiz 
  */
 public class QuizManager {
-	Quiz quiz;
+	private Quiz quiz;
 
 	/** 
 	 * Costruttore per la creazione di un quiz manager
@@ -83,7 +83,6 @@ public class QuizManager {
 		}
 		
 		return domandaDaEliminare.getRecord().delete()==1;
-		
 	}
 	
 }

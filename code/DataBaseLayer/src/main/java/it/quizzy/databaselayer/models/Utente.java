@@ -49,6 +49,12 @@ public class Utente {
 			throw new InvalidRecordInsertionException();
 	}
 	
+	
+	public void aggiungiPunti(int punti) {
+		this.record.setPunteggio(this.record.getPunteggio()+punti);
+		this.record.store();
+	}
+	
 	@Override
 	public String toString() {
 		return record.toString();

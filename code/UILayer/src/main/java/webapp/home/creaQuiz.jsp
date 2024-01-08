@@ -8,13 +8,8 @@ if(dmSession==null){
 	if(!dmSession.isLogged()){
 		response.sendRedirect("/home/login.jsp");
 	}else{
-		
 		request.getAttribute("quiz");
-		
 		//process insert
-		
-		
-		
 	}
 }
 %>

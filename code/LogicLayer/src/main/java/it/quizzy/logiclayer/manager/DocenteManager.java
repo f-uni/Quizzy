@@ -8,7 +8,7 @@ import it.quizzy.databaselayer.util.StringHash;
  * Gestisce la sessione (login) del docente
  */
 public class DocenteManager {
-	Docente sessioneDocente;
+	private Docente sessioneDocente;
 	
 	public DocenteManager() {}
 	
@@ -34,18 +34,14 @@ public class DocenteManager {
 	}
 	
 	public boolean signUp(String nome, String email, String password) {
-		Docente d;
 		try {
-			d = new Docente(nome, email, password);
-			this.sessioneDocente=d;
+			this.sessioneDocente = new Docente(nome, email, password);
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return false;
 	}
-	
-	
 	
 	/**
 	 * Controlla se la sessione è attiva, quindi se docente è loggato

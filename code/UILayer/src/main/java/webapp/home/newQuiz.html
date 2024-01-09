@@ -45,10 +45,10 @@
               <div class="buttons">
                 <input class="searchBar" type="text" placeholder="Search...">
                 <a class="button is-warning shadow">
-                  <i class="fa-solid fa-plus" aria-hidden="true" ></i><strong>New Quiz</strong>
+                  <i class="fa-solid fa-plus" aria-hidden="true" ></i><strong>Log Out</strong>
                 </a>
                 <a class="button is-profile">
-                    <img class="profile-image" src="/images/profileDoc.png" height="100" width="100">
+                    <img class="profile-image" src="/images/profileDoc.png" height="100" width="100" onclick=openLog()>
                 </a>
               </div>
             </div>
@@ -59,75 +59,23 @@
             <h1> New Quiz Title: </h1>
             <input type="text" class="inputName" placeholder="Insert Title...">
       </div>
-      <div>
-        <div class="question" id="QuestVF">
-            <p style="padding:20px"> Question #1</p>
-            <textarea class="TextQuestion" rows="4" cols="200">
-                
-            </textarea>
-            <fieldset class="rigthAnswer">
-                <legend>Select the right answer:</legend>
-                <div>
-                    <input type="radio" id="huey" name="drone" value="huey" checked />
-                    <label for="huey">True</label>
-                    </div>
-                    <div>
-                    <input type="radio" id="dewey" name="drone" value="dewey" />
-                    <label for="dewey">False</label>
-                </div>
-            </fieldset>
-            <button class="delete-button"> Delete </button>
-        </div>
-        <div class="question" id="QuestMultiple">
-            <p style="padding:20px"> Question #1</p>
-            <textarea class="TextQuestion" rows="4" cols="200">
-            
-            </textarea>
-            <fieldset class="rigthAnswer">
-                <legend style="margin-bottom: 10px;">Select the right answer:</legend>
-                <div>
-                  <input type="radio" id="huey" name="drone" value="huey" checked />
-                  <p class="p-answer"> Answer #1</p>
-                  <textarea class="TextQuestion other-display" rows="2" cols="100">
-            
-                  </textarea>
-                </div>
-                <div>
-                  <input type="radio" id="dewey" name="drone" value="dewey" />
-                  <p class="p-answer"> Answer #2</p>
-                  <textarea class="TextQuestion other-display" rows="2" cols="100">
-            
-                  </textarea>
-                </div>
-                <div>
-                    <input type="radio" id="huey" name="drone" value="huey" checked />
-                    <p class="p-answer"> Answer #3</p>
-                    <textarea class="TextQuestion other-display" rows="2" cols="100">
-            
-                    </textarea>
-                </div>
-                <div>
-                    <input type="radio" id="dewey" name="drone" value="dewey" />
-                    <p class="p-answer"> Answer #4</p>
-                    <textarea class="TextQuestion other-display" rows="2" cols="100">
-            
-                    </textarea>
-                </div>
-            </fieldset>
-            <button class="delete-button"> Delete</button>
-        </div>
-      </div>
+      <div id="question"></div>
+
       <div class="questionName">
-        <button class="addQuestion" onclick=openPop() id="addQ">
+        <button class="addQuestion " onclick=openPop() id="addQ">
             + 
-            <div class="popup" id="popup">
-                <div class="questionChoser first" onclick=closePop(1)>
-                    Vero o Falso
-                </div>
-                <div class="questionChoser"onclick=closePop(2)>
-                    Scelta Multipla
-                </div>
-            </div>
+        </button>
+        
+        <div class="popup popup-display-none" id="popup">
+          <div class="questionChoser first" onclick=closePop(1)>
+              Vero o Falso
+          </div>
+          <div class="questionChoser"onclick=closePop(2)>
+              Scelta Multipla
+          </div>
+      </div>
+        <button class="addQuestion floated-rigth" onclick=confirmData() id="confirmbutton">
+          Confirm
         </button>
     </div>
 </body>

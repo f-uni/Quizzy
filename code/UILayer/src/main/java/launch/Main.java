@@ -32,7 +32,7 @@ public class Main {
         File additionWebInfClasses = new File("target/classes");
         WebResourceRoot resources = new StandardRoot(ctx);
         resources.addPreResources(new DirResourceSet(resources, "/WEB-INF/classes",
-                additionWebInfClasses.getAbsolutePath(), "/"));
+        additionWebInfClasses.getAbsolutePath(), "/"));
         ctx.setResources(resources);
         tomcat.start();
         tomcat.getServer().await();

@@ -33,6 +33,7 @@ public class ClientUtente {
                 System.out.println("new message from server: "+ line);
             } catch (IOException e) {
                 e.printStackTrace();
+                break;
             }
         }
         try {

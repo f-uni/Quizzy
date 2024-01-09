@@ -1,10 +1,8 @@
 package it.quizzy.logiclayer.manager;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Domanda;
 import it.quizzy.databaselayer.models.Partita;
 import it.quizzy.databaselayer.models.Quiz;

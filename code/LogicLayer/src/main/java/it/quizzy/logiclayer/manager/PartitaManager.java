@@ -1,5 +1,6 @@
 package it.quizzy.logiclayer.manager;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,15 +22,16 @@ public class PartitaManager {
 	private List<Domanda> domande;
 	private ServerPartita server;
 	
-	public PartitaManager(Partita partita) {
+	public PartitaManager(int idDocente, int idQuiz) {
 		try {
-			this.partita=partita;
+			this.partita=new Partita(idDocente, idQuiz);
 			this.quiz=new Quiz(this.partita.getRecord().getIdQuiz());
 			this.domande=this.quiz.getDomande();
 			this.giocatori=new ArrayList<>();
 			this.domandaCorrente=0;
-			
-		} catch (RecordNotFoundException e) {
+			this.server=new ServerPartita();
+			server.start();
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -40,14 +42,13 @@ public class PartitaManager {
 	
 	
 	public String prossimaDomanda() {
-		
-		
-		
 		this.domandaCorrente++;
-		if(this.domande.size()<domandaCorrente)
-			return this.domande.get(domandaCorrente-1).getDomanda();
-		else
-			return "";
+		if(this.domande.size()>=domandaCorrente) {
+			String domanda=this.domande.get(domandaCorrente-1).getDomanda();
+			this.server.broadcastMessage(domanda);
+			return domanda;
+		}
+		return null;
 	}
 	
 	public boolean aggiungiGiocatore(Utente giocatore) {
@@ -56,10 +57,13 @@ public class PartitaManager {
 		}
 		return false;
 	}
-	
-	
-	
-	
-	
+
+	public int getDomandaCorrente() {
+		return domandaCorrente;
+	}
+
+	public ServerPartita getServer() {
+		return server;
+	}
 	
 }

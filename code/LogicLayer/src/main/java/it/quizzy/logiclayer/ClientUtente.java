@@ -15,19 +15,13 @@ public class ClientUtente {
         try{
         	clientSocket = new Socket("127.0.0.1", ServerPartita.PORT);
             out = new DataOutputStream(clientSocket.getOutputStream());
-            this.in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
+            in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
             new Thread(()->{
             	readMessages();
             }).start();
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
-    
-    private void writeMessage(String data) throws IOException {
-        
-        out.writeUTF(data);
-        
     }
     
     public void readMessages(){
@@ -55,14 +49,14 @@ public class ClientUtente {
         in.close();
     }
     
+    public void writeMessage(String text) throws IOException {
+        out.writeUTF(text);
+    }
+
+    
     public static void main(String[] args) {
         ClientUtente c = new ClientUtente();
-        try {
-			c.writeMessage("cico sono ");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+        while(true) {}
     }
 
 }

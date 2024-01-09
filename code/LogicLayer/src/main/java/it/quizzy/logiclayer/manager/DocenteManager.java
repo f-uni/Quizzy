@@ -56,10 +56,15 @@ public class DocenteManager {
 		return sessioneDocente!=null?sessioneDocente.getRecord().getNomeCompleto():null;
 	}
 	
+	public int getId() {
+		return sessioneDocente!=null?sessioneDocente.getRecord().getId():null;
+	}
+	
 	public boolean addQuiz(String titolo) {
 		if(this.sessioneDocente!=null) {
 			return this.sessioneDocente.creaQuiz(titolo);
 		}
 		return false;
 	}
+	
 }

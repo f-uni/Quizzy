@@ -55,7 +55,7 @@ if(dmSession==null){
                 
               <div class="buttons">
                 <input class="searchBar" type="text" placeholder="Search...">
-                <a class="button is-warning shadow">
+                <a class="button is-warning shadow" href="/home/newQuiz.jsp">
                   <i class="fa-solid fa-plus" aria-hidden="true" ></i><strong>New Quiz</strong>
                 </a>
                 <a class="button is-profile">

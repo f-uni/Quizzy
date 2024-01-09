@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="it.quizzy.logiclayer.manager.DocenteManager"%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +10,16 @@
     <link rel="stylesheet" type="text/css" href="/css/newQuiz.css">
     <title>QUIZZY</title>
 </head>
+<%
+
+DocenteManager dmSession = (DocenteManager)session.getAttribute("dm");  
+if(dmSession==null){
+	response.sendRedirect("/home/login.jsp");
+}else{
+	if(!dmSession.isLogged()){
+		response.sendRedirect("/home/login.jsp");
+	}else{
+		%>
 <body>
     <nav class="navbar is-high shadow has-border-yellow" role="navigation" aria-label="main navigation" >
         <div class="navbar-brand">
@@ -57,9 +68,9 @@
       </nav>
       <div class="nameQuiz">
             <h1> New Quiz Title: </h1>
-            <input type="text" class="inputName" placeholder="Insert Title...">
+            <input type="text" class="inputName" placeholder="Insert Title..." id="titoloQuiz">
       </div>
-      <div id="question"></div>
+      <div id="questions"></div>
 
       <div class="questionName">
         <button class="addQuestion " onclick=openPop() id="addQ">
@@ -81,3 +92,9 @@
 </body>
 <script src="/js/newQuiz.js"></script>
 </html>
+
+		<% 
+	}
+}
+
+%>

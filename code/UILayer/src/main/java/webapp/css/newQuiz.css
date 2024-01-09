@@ -79,6 +79,16 @@ h1{
     padding-left: 20px;
     margin:10px;
 }
+.TextAnswer{
+    border:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.63);
+    height: 50px;
+    width: 90% inherit;
+    outline: none;
+    overflow: hidden;
+    padding-left: 20px;
+    margin:10px;
+}
 .rigthAnswer{
     margin:20px;
 }

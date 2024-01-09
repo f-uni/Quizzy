@@ -2,6 +2,7 @@ package it.quizzy.logiclayer.manager;
 
 import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Docente;
+import it.quizzy.databaselayer.models.Quiz;
 import it.quizzy.databaselayer.util.StringHash;
 
 /**
@@ -60,11 +61,11 @@ public class DocenteManager {
 		return sessioneDocente!=null?sessioneDocente.getRecord().getId():null;
 	}
 	
-	public boolean addQuiz(String titolo) {
+	public Quiz addQuiz(String titolo) {
 		if(this.sessioneDocente!=null) {
 			return this.sessioneDocente.creaQuiz(titolo);
 		}
-		return false;
+		return null;
 	}
 	
 }

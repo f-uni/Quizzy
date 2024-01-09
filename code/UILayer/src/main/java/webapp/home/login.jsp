@@ -32,7 +32,7 @@ if (mail != null && password != null) {
 
 <body>
 	<div class="container inside-form">
-		<form action="/home/login.jsp">
+		<form action="/home/login.jsp" method="POST">
 			<p class="login-title">Sign In</p>
 			<div>
 				<input class="signIn email" type="email" placeholder="Email"

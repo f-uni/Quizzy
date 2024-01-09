@@ -15,10 +15,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		
+
 		<tomcat.version>8.5.97</tomcat.version>
 	</properties>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
@@ -45,7 +45,7 @@
 			<artifactId>tomcat-jsp-api</artifactId>
 			<version>${tomcat.version}</version>
 		</dependency>
-		
+
 		<!-- TESTING Dependencies -->
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -58,6 +58,12 @@
 			<groupId>it.quizzy</groupId>
 			<artifactId>LogicLayer</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20230618</version>
 		</dependency>
 	</dependencies>
 

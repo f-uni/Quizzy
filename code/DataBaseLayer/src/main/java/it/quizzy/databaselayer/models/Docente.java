@@ -98,16 +98,16 @@ public class Docente {
 	 * Metodo per la creazione di un quiz da parte del docente
 	 * 
 	 * @param titolo nome del quiz
-	 * @return ripsettivamente true o false se la creazione ha avuto successo o no
+	 * @return ritorna l'oggetto creato o null se è fallito
 	 */
-	public boolean creaQuiz(String titolo) {
+	public Quiz creaQuiz(String titolo) {
 		try {
-			new Quiz(this.record.getId(), titolo);
-			return true;
+			return new Quiz(this.record.getId(), titolo);
+			
 		} catch (InvalidRecordInsertionException e) {
 			e.printStackTrace();
 		}
-		return false;
+		return null;
 	}
 
 	@Override

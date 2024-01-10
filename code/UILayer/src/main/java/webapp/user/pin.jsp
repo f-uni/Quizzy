@@ -8,11 +8,14 @@
     <link rel="stylesheet" type="text/css" href="/css/login.css">
     <link rel="stylesheet" type="text/css" href="/css/background.css">
 </head>
+
+
 <body>
-    <div class="centered-div" style="margin-bottom:auto !important">
+    <form class="centered-div" style="margin-bottom:auto !important" action="/user/login.jsp">
         <p class="loginText"> PIN:</p>
-        <input type="text" class="nameInput">
-    </div>
+        <input type="text" class="nameInput" name="pin" required>
+        <input type="submit" value="Submit">
+    </form>
     
 </body>
 </html>

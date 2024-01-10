@@ -7,16 +7,18 @@ public class UtenteManager {
 	
 	private Utente sessioneUtente;
 	
-	public UtenteManager() {}
-	
-	public boolean login(String nickname, int idPartita) {
+	public UtenteManager(String nickname, int idPartita) {
 		try {
 			this.sessioneUtente=new Utente(nickname,0,idPartita);
-			return true;
 		} catch (InvalidRecordInsertionException e) {
 			e.printStackTrace();
 		}
-		return false;
+	}
+	
+	
+	
+	public Utente getSessioneUtente() {
+		return sessioneUtente;
 	}
 	
 	public String getNickname() {
@@ -26,6 +28,8 @@ public class UtenteManager {
 	public Integer getPunteggio() {
 		return sessioneUtente!=null?sessioneUtente.getRecord().getPunteggio():null;
 	}
+	
+	
 	
 	
 }

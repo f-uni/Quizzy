@@ -19,6 +19,7 @@ if (dmSession == null) {
 				pm.getServer().stopAcceptRequest();
 			}
 			String domanda=pm.prossimaDomanda();
+			out.println(pm.getGiocatori());
 			if(domanda==null){
 				response.sendRedirect("/finePartita.jsp");
 			}else{

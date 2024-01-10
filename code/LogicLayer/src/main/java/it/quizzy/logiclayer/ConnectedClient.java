@@ -36,6 +36,16 @@ public class ConnectedClient {
         System.out.println("Client "+id+ ": Client Disconnected");
     }
     
+    public String getMessage() {
+    	try {
+			return in.readUTF();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+    }
+    
     public void sendMessage(String str) {
     	try {
 			out.writeUTF(str);

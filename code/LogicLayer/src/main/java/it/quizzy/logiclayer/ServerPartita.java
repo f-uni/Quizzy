@@ -5,16 +5,22 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 
 public class ServerPartita extends Thread {
 	private ServerSocket server;
 
-	public static final int PORT = 3030;
+	public static final int PORT = 8702;
 	public static final String STOP_STRING = "##";
 	private List<ConnectedClient> clients;
 	private Thread requestProcessor;
-	public ServerPartita() {}
+	private ConnectedClient clientDocente;
+	private Function<Integer, Boolean> newClientCallback;
+	
+	public ServerPartita(Function<Integer, Boolean> newClientCallback) {
+		this.newClientCallback=newClientCallback;
+	}
 
 	@Override
 	public void run() {
@@ -22,36 +28,42 @@ public class ServerPartita extends Thread {
 		try {
 			System.out.println("Avvio server partita");
 			server = new ServerSocket(PORT);
+			
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		this.clients = new ArrayList<>();
 		this.requestProcessor=new Thread(() -> {
-			try {
-				/*Socket clientSocket = server.accept();
-				if(clientSocket.isConnected())
-					this.clientDocente=new ConnectedClient(clientSocket, PORT);*/
-				while (true) {
-					initConnections();
-				}
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			processConnections();
 		});
 		this.requestProcessor.start();
 		
 		while(true) {}
 	}
 
-	private void initConnections() throws IOException {
-		Socket clientSocket = server.accept();
+	private void processConnections(){
+		try {
+			Socket docenteSocket = server.accept();
+			if(docenteSocket.isConnected()) {
+				System.out.println("docente connesso");
+				this.clientDocente=new ConnectedClient(docenteSocket, 0);
+			}
+			while (true) {
+				Socket clientSocket = server.accept();
 
-		if (clientSocket.isConnected()) {
-			System.out.println("new client");
-			this.clients.add(new ConnectedClient(clientSocket, (int) (Math.random() * 10000)));
-			
-			//this.pm.aggiungiGiocatore(null);
+				if (clientSocket.isConnected()) {
+					System.out.println("new client");
+					ConnectedClient utente = new ConnectedClient(clientSocket, (int) (Math.random() * 10000));
+					if(this.newClientCallback.apply(Integer.parseInt(utente.getMessage()))) {
+						this.clients.add(utente);
+					}else {
+						utente.close();
+					}
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 
@@ -59,6 +71,10 @@ public class ServerPartita extends Thread {
 		this.clients.forEach((client) -> {
 			client.sendMessage(str);
 		});
+	}
+	
+	public void messageDocente(String str) {
+		this.clientDocente.sendMessage(str);
 	}
 
 	public void stopAcceptRequest() {

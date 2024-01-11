@@ -70,6 +70,7 @@ if(dmSession==null){
             <h1> New Quiz Title: </h1>
             <input type="text" class="inputName" placeholder="Insert Title..." id="titoloQuiz">
       </div>
+      <div id="questionWrapped"></div>
       <div id="questions"></div>
 
       <div class="questionName">

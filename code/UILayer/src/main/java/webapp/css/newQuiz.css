@@ -68,22 +68,13 @@ h1{
     border-radius: 10px;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.564);
     margin-top:20px;
+    padding-bottom: 20px;
 }
 .TextQuestion{
     border:none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.63);
-    height: 50px;
-    width: 90% inherit;
-    outline: none;
-    overflow: hidden;
-    padding-left: 20px;
-    margin:10px;
-}
-.TextAnswer{
-    border:none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.63);
-    height: 50px;
-    width: 90% inherit;
+    height: 30px;
+    width: 700px;
     outline: none;
     overflow: hidden;
     padding-left: 20px;
@@ -91,6 +82,9 @@ h1{
 }
 .rigthAnswer{
     margin:20px;
+}
+.is-padded{
+    margin-left:20px;
 }
 .p-answer{
     display: inline;
@@ -111,4 +105,16 @@ h1{
     margin-right: 45px;
     width:100px;
     display:none;
+}
+.deleteSingleQuestion{
+    display: inline-end;
+    height: 30px;
+    width:30px;
+    border: 1px solid #e37c16;
+    border-radius: 5px;
+    padding: 2px;
+}
+.bin{
+    width: 100%;
+    height: 100%;
 }

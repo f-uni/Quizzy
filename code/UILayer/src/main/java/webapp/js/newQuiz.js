@@ -130,7 +130,7 @@ function changeContent(opt){
     if(opt=="QuestVF"){
         document.getElementById("questionWrapped").innerHTML+='<div class="question wrapped" id="'+opt+'Wrapped'+contatore+'">'+
         '<button class="deleteSingleQuestion" onclick="deleteQuest2(this.id)" id="'+ contatore +'"><img class="bin" src="/images/rubbish.png" ></button>'+
-        '<p style="padding:20px">Question#'+ contatore +": <br>" + questions[contatore-1].slice(0,-1)+'</p><p class="p-answer">'+
+        '<p style="padding:20px" class="titleQ" id="titleQ'+contatore+'" >Question#'+ contatore +": <br>" + questions[contatore-1].slice(0,-1)+'</p><p class="p-answer">'+
         '</p><p class="p-answer is-padded">Answer:</p><br><p class="p-answer is-padded">&#8226; True</p><br><p class="p-answer is-padded"> &#8226; False</p><br>'+
         '<p class="p-answer is-padded">Right Answer:'+ checked +'</p></div>'
         document.getElementById("question").removeChild(document.getElementById("question").firstChild);
@@ -140,7 +140,7 @@ function changeContent(opt){
         var ans = answers[contatore-1];
         document.getElementById("questionWrapped").innerHTML+='<div class="question wrapped" id="'+opt+'Wrapped'+contatore+'">'+
         '<button class="deleteSingleQuestion" onclick="deleteQuest2(this.id)" id="'+ contatore +'"><img class="bin" src="/images/rubbish.png" ></button>'+
-        '<p style="padding:20px">Question#'+contatore +": <br>" + questions[contatore-1].slice(0,-1) +'</p><p class="p-answer">'+
+        '<p style="padding:20px" class="titleQ">Question#'+contatore +": <br>" + questions[contatore-1].slice(0,-1) +'</p><p class="p-answer">'+
         '</p><p class="p-answer is-padded">Answer:</p><br><p class="p-answer is-padded">&#8226;'+ ans[0].slice(0,-1)+'<br>'+
         '</p><p class="p-answer is-padded"> &#8226;'+ ans[1].slice(0,-1)+'</p><br>'+
         '</p><p class="p-answer is-padded"> &#8226;'+ ans[2].slice(0,-1)+'</p><br>'+
@@ -204,8 +204,12 @@ function deleteQuest2(id){
     //remove arrays questions and answers
     //removeElement(id);
     //replace tag 
-    for(var j=0; j<wrapped.length ; j++)
-	{}
+	var quest = document.getElementsByClassName("titleQ");
+	var el;
+    for(var j=0; j<quest.length ; j++){
+		el=quest[i];
+		el.innerText = "Question"+(j+1);
+	}
 }
 
 function removeElement(id){

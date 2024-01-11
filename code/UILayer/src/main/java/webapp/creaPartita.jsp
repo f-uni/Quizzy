@@ -19,8 +19,5 @@ if (dmSession == null) {
 <a href="/prossimaDomanda.jsp">Avvia Partita</a>
 
 <script>
-	var source = new EventSource("/partita");
-	source.onmessage = function(event) {
-		console.log("Received event: " + event.data);
-	}
+	
 </script>

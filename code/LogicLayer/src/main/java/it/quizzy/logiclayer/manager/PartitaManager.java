@@ -8,8 +8,8 @@ import it.quizzy.databaselayer.models.Domanda;
 import it.quizzy.databaselayer.models.Partita;
 import it.quizzy.databaselayer.models.Quiz;
 import it.quizzy.databaselayer.models.Utente;
-import it.quizzy.logiclayer.ClientUtente;
-import it.quizzy.logiclayer.ServerPartita;
+import it.quizzy.logiclayer.server.ClientUtente;
+import it.quizzy.logiclayer.server.ServerPartita;
 
 /**
  * Gestisce gestione/creazione di una partita da parte del docente
@@ -26,6 +26,7 @@ public class PartitaManager {
 	public PartitaManager(int idDocente, int idQuiz) {
 		try {
 			this.partita = new Partita(idDocente, idQuiz);
+			System.out.println("Avvio Partita " + this.partita.getRecord().getId());
 			this.quiz = new Quiz(this.partita.getRecord().getIdQuiz());
 			this.domande = this.quiz.getDomande();
 			this.giocatori = new ArrayList<>();
@@ -77,6 +78,4 @@ public class PartitaManager {
 	public List<Utente> getGiocatori() {
 		return giocatori;
 	}
-	
-
 }

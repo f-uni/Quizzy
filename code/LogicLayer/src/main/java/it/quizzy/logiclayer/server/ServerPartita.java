@@ -1,4 +1,4 @@
-package it.quizzy.logiclayer;
+package it.quizzy.logiclayer.server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -26,10 +26,7 @@ public class ServerPartita extends Thread {
 	public void run() {
 		super.run();
 		try {
-			System.out.println("Avvio server partita");
 			server = new ServerSocket(PORT);
-			
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -46,14 +43,12 @@ public class ServerPartita extends Thread {
 		try {
 			Socket docenteSocket = server.accept();
 			if(docenteSocket.isConnected()) {
-				System.out.println("docente connesso");
 				this.clientDocente=new ConnectedClient(docenteSocket, 0);
 			}
 			while (true) {
 				Socket clientSocket = server.accept();
 
 				if (clientSocket.isConnected()) {
-					System.out.println("new client");
 					ConnectedClient utente = new ConnectedClient(clientSocket, (int) (Math.random() * 10000));
 					if(this.newClientCallback.apply(Integer.parseInt(utente.getMessage()))) {
 						this.clients.add(utente);

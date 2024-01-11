@@ -1,4 +1,4 @@
-package it.quizzy.logiclayer;
+package it.quizzy.logiclayer.server;
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.function.Function;
 
-import it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException;
 import it.quizzy.databaselayer.models.Utente;
 
 public class ClientUtente {
@@ -67,15 +66,16 @@ public class ClientUtente {
 			e.printStackTrace();
 		}
 	}
+	
+	public void writeMessage(String text) throws IOException {
+		out.writeUTF(text);
+	}
 
-	private void close() throws IOException {
+	public void close() throws IOException {
 		clientSocket.close();
 		out.close();
 		in.close();
 	}
 
-	public void writeMessage(String text) throws IOException {
-		out.writeUTF(text);
-	}
 
 }

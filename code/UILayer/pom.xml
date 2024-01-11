@@ -45,6 +45,11 @@
 			<artifactId>tomcat-jsp-api</artifactId>
 			<version>${tomcat.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-websocket</artifactId>
+			<version>${tomcat.version}</version>
+		</dependency>
 
 		<!-- TESTING Dependencies -->
 		<dependency>
@@ -65,6 +70,7 @@
 			<artifactId>json</artifactId>
 			<version>20231013</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>

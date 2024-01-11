@@ -1,4 +1,4 @@
-package it.quizzy.logiclayer;
+package it.quizzy.logiclayer.server;
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

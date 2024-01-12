@@ -12,14 +12,14 @@ import javax.websocket.Session;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 
+import it.quizzy.logiclayer.manager.PartitaManager;
 import it.quizzy.logiclayer.manager.UtenteManager;
+import it.quizzy.logiclayer.server.ClientDocente;
 import it.quizzy.logiclayer.server.ClientUtente;
 
-@ServerEndpoint(value = "/join/{sessionId}")
-public class WebSocketClientUtenteWrapper {
-	
-	ClientUtente client;
-	
+@ServerEndpoint(value = "/host/{sessionId}")
+public class WebSocketClientDocenteWrapper {
+	ClientDocente client;
 	@OnOpen
 	public void onOpen(Session session, EndpointConfig config, @PathParam("sessionId") String sessionId) {
 
@@ -33,9 +33,9 @@ public class WebSocketClientUtenteWrapper {
 
 		try {
 			if (httpSession != null) {
-				UtenteManager um = (UtenteManager) httpSession.getAttribute("um");
-				if (um != null) {
-					this.client=new ClientUtente(um.getSessioneUtente(), (String message) -> {
+				PartitaManager pm = (PartitaManager) httpSession.getAttribute("partitaCorrente");
+				if (pm != null) {
+					this.client=new ClientDocente((String message) -> {
 						try {
 							session.getBasicRemote().sendText(message);
 						} catch (IOException e) {
@@ -43,9 +43,12 @@ public class WebSocketClientUtenteWrapper {
 						}
 						return null;
 					});
+					pm.aggiungiDocente(this.client);
+
 				}else {
 					session.close();
 				}
+				
 			} else {
 				session.close();
 			}

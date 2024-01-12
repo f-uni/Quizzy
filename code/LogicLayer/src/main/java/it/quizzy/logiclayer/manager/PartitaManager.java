@@ -3,14 +3,15 @@ package it.quizzy.logiclayer.manager;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Domanda;
 import it.quizzy.databaselayer.models.Partita;
 import it.quizzy.databaselayer.models.Quiz;
 import it.quizzy.databaselayer.models.Utente;
+import it.quizzy.logiclayer.server.ClientDocente;
 import it.quizzy.logiclayer.server.ClientUtente;
 import it.quizzy.logiclayer.server.ServerPartita;
-
 /**
  * Gestisce gestione/creazione di una partita da parte del docente
  */
@@ -21,7 +22,7 @@ public class PartitaManager {
 	private List<Utente> giocatori;
 	private List<Domanda> domande;
 	private ServerPartita server;
-	private ClientUtente docenteSocket;
+	private ClientDocente docenteSocket;
 
 	public PartitaManager(int idDocente, int idQuiz) {
 		try {
@@ -40,7 +41,7 @@ public class PartitaManager {
 				return false;
 			});
 			server.start();
-			docenteSocket = new ClientUtente();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -53,15 +54,17 @@ public class PartitaManager {
 	public String prossimaDomanda() {
 		this.domandaCorrente++;
 		if (this.domande.size() >= domandaCorrente) {
-			String domanda = this.domande.get(domandaCorrente - 1).getDomanda();
-			this.server.broadcastMessage(domanda);
-			return domanda;
+			Domanda domanda = this.domande.get(domandaCorrente - 1);
+			
+			this.server.broadcastMessage("new_domanda_"+domanda.getRecord().getTipo().toString()+"$"+domanda.getDomanda());
+			return domanda.getDomanda();
 		}
 		return null;
 	}
 
 	public boolean aggiungiGiocatore(Utente giocatore) {
 		if (giocatore.getRecord().getIdPartita() == this.partita.getRecord().getId()) {
+			server.messageDocente("new_player$"+giocatore.getRecord().getNickname());
 			return this.giocatori.add(giocatore);
 		}
 		return false;
@@ -77,5 +80,10 @@ public class PartitaManager {
 
 	public List<Utente> getGiocatori() {
 		return giocatori;
+	}
+
+	public void aggiungiDocente(ClientDocente clientDocente) {
+		this.docenteSocket=clientDocente;
+		
 	}
 }

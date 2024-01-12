@@ -19,9 +19,11 @@ if (dmSession == null) {
 				pm.getServer().stopAcceptRequest();
 			}
 			String domanda=pm.prossimaDomanda();
-			out.println(pm.getGiocatori());
+			%>
+			<pre><% out.println(pm.getGiocatori()); %></pre>
+			<%
 			if(domanda==null){
-				response.sendRedirect("/finePartita.jsp");
+				response.sendRedirect("/home/results.jsp");
 			}else{
 				out.println(domanda);
 			}
@@ -29,4 +31,4 @@ if (dmSession == null) {
 	}
 }
 %>
-<a href="/prossimaDomanda.jsp">Prossima domanda</a>
+<a href="/home/placing.jsp">Avanti</a>

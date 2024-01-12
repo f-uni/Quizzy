@@ -17,7 +17,7 @@ if (nickname == null || pin == null) {
 <%out.print("\"" + session.getId() + "\"");%>
 	;
 
-	let socket = new WebSocket("ws://127.0.0.1:8080/partecipa/" + sessionId);
+	let socket = new WebSocket("ws://127.0.0.1:8080/join/" + sessionId);
 
 	socket.onopen = function(e) {
 		alert("[open] Connessione stabilita");
@@ -25,6 +25,7 @@ if (nickname == null || pin == null) {
 
 	socket.onmessage = function(event) {
 		console.log(event.data);
+		
 	};
 
 	socket.onclose = function(event) {

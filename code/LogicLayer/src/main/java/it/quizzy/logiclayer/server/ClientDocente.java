@@ -9,28 +9,13 @@ import java.util.function.Function;
 
 import it.quizzy.databaselayer.models.Utente;
 
-public class ClientUtente {
+public class ClientDocente {
 	private Socket clientSocket;
 	private DataOutputStream out;
 	private DataInputStream in;
 	private Function<String, Void> messageCallaback;
 
-	public ClientUtente(Utente utente, Function<String, Void> messageCallaback) {
-		try {
-			clientSocket = new Socket("127.0.0.1", ServerPartita.PORT);
-			out = new DataOutputStream(clientSocket.getOutputStream());
-			in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
-			writeMessage(utente.getRecord().getId().toString());
-			this.messageCallaback=messageCallaback;
-			new Thread(() -> {
-				readMessages();
-			}).start();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public ClientUtente(Function<String, Void> messageCallaback) {
+	public ClientDocente(Function<String, Void> messageCallaback) {
 		try {
 			clientSocket = new Socket("127.0.0.1", ServerPartita.PORT);
 			if (clientSocket.isConnected()) {

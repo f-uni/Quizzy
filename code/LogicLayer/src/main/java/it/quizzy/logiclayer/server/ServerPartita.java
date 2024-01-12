@@ -15,7 +15,7 @@ public class ServerPartita extends Thread {
 	public static final String STOP_STRING = "##";
 	private List<ConnectedClient> clients;
 	private Thread requestProcessor;
-	private ConnectedClient clientDocente;
+	private ConnectedClientDocente clientDocente;
 	private Function<Integer, Boolean> newClientCallback;
 	
 	public ServerPartita(Function<Integer, Boolean> newClientCallback) {
@@ -43,7 +43,7 @@ public class ServerPartita extends Thread {
 		try {
 			Socket docenteSocket = server.accept();
 			if(docenteSocket.isConnected()) {
-				this.clientDocente=new ConnectedClient(docenteSocket, 0);
+				this.clientDocente=new ConnectedClientDocente(docenteSocket, 0);
 			}
 			while (true) {
 				Socket clientSocket = server.accept();
@@ -69,7 +69,8 @@ public class ServerPartita extends Thread {
 	}
 	
 	public void messageDocente(String str) {
-		this.clientDocente.sendMessage(str);
+		if(this.clientDocente!=null)
+			this.clientDocente.sendMessage(str);
 	}
 
 	public void stopAcceptRequest() {
@@ -77,6 +78,15 @@ public class ServerPartita extends Thread {
 	}
 	
 	public void stopPartita() {
+		this.clients.forEach((client) -> {
+			client.close();
+		});
+		try {
+			this.server.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		this.interrupt();
 	}
 

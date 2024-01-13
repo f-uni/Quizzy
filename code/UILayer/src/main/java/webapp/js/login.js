@@ -13,4 +13,5 @@ function chosenAvatar(op){
     var selection = document.getElementById("selectionButton");
     selection.style.display = "block";
     selection.style.margin = "auto";
+    document.getElementById("avatarInput").value=op;
 }

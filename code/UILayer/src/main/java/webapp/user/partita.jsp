@@ -1,15 +1,17 @@
 <%@page import="it.quizzy.logiclayer.manager.UtenteManager"%>
 <%
 String nickname = (String) request.getParameter("nickname");
+String avatar = (String) request.getParameter("avatar");
 Integer pin = (Integer) session.getAttribute("pin");
 
-if (nickname == null || pin == null) {
+if (nickname == null || pin == null || avatar==null) {
 	response.sendRedirect("/user/pin.jsp");
 } else {
 	UtenteManager um = new UtenteManager(nickname, pin);
 	session.setAttribute("um", um);
 %>
 
+<img class="avataricon" height="100px" src="/images/avatar<% out.print(avatar); %>.png" alt="avatar">
 <div id="domanda"></div>
 
 <script>

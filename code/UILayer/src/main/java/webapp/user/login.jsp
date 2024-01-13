@@ -24,9 +24,10 @@ try {
 	response.sendRedirect("/user/pin.jsp");
 }
 
-if (pin != null) {
+if (pin == null) {
+	response.sendRedirect("/user/pin.jsp");
+} else {
 	session.setAttribute("pin", pin);
-}
 %>
 <body>
 	<div class="centered-div">
@@ -41,7 +42,7 @@ if (pin != null) {
 					Select</span>
 			</i>
 		</button>
-		
+
 		<div class="image-selector" id="image-selector">
 			<div class="image-container">
 				<img class="avataricon" src="/images/avatar1.png"
@@ -51,17 +52,17 @@ if (pin != null) {
 					class="avataricon" src="/images/avatar3.png"
 					onclick="chosenAvatar(3)" alt="Immagine 3"> <img
 					class="avataricon" src="/images/avatar4.png"
-					onclick="chosenAvatar(4)" alt="Immagine 3"> <img
+					onclick="chosenAvatar(4)" alt="Immagine 4"> <img
 					class="avataricon" src="/images/avatar5.png"
-					onclick="chosenAvatar(5)" alt="Immagine 3"> <img
+					onclick="chosenAvatar(5)" alt="Immagine 5"> <img
 					class="avataricon" src="/images/avatar6.png"
-					onclick="chosenAvatar(6)" alt="Immagine 3"> <img
+					onclick="chosenAvatar(6)" alt="Immagine 6"> <img
 					class="avataricon" src="/images/avatar7.png"
-					onclick="chosenAvatar(7)" alt="Immagine 3"> <img
+					onclick="chosenAvatar(7)" alt="Immagine 7"> <img
 					class="avataricon" src="/images/avatar8.png"
-					onclick="chosenAvatar(8)" alt="Immagine 3"> <img
+					onclick="chosenAvatar(8)" alt="Immagine 8"> <img
 					class="avataricon" src="/images/avatar9.png"
-					onclick="chosenAvatar(9)" alt="Immagine 3">
+					onclick="chosenAvatar(9)" alt="Immagine 9">
 			</div>
 		</div>
 		<br> <br>
@@ -72,10 +73,15 @@ if (pin != null) {
 				<input class="nameInput" type="text" placeholder="Enter a name"
 					name="nickname" required> <br>
 				<button class="select" type="submit" value="Submit">Submit</button>
+				<input style="display: none" type="text" name="avatar"
+					id="avatarInput" value="1">
 		</form>
 	</div>
 </body>
 <script src="/js/login.js">
 	
 </script>
+<%
+}
+%>
 </html>

@@ -13,9 +13,7 @@ import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;
 
 import it.quizzy.logiclayer.manager.PartitaManager;
-import it.quizzy.logiclayer.manager.UtenteManager;
 import it.quizzy.logiclayer.server.ClientDocente;
-import it.quizzy.logiclayer.server.ClientUtente;
 
 @ServerEndpoint(value = "/host/{sessionId}")
 public class WebSocketClientDocenteWrapper {

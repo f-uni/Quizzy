@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.function.Function;
 
-import it.quizzy.databaselayer.models.Utente;
-
 public class ClientDocente {
 	private Socket clientSocket;
 	private DataOutputStream out;

@@ -66,10 +66,10 @@
   }
   .is-active{
     background-color: coral !important;
-    color:rgb(112, 28, 28) !important;
+    color:#ffe08a !important;
+    font-weight: bolder;
   }
   .is-active::before{
-    content: '◦▼◦';
     font-size:10px;
     vertical-align: text-top;
     text-align: center;

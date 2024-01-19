@@ -202,19 +202,13 @@ function deleteQuest2(id){
     }
     document.getElementById("questionWrapped").removeChild(document.getElementById(ids));
     //remove arrays questions and answers
-    //removeElement(id);
-    //replace tag 
-	var quest = document.getElementsByClassName("titleQ");
-	var el;
-    for(var j=0; j<quest.length ; j++){
-		el=quest[i];
-		el.innerText = "Question"+(j+1);
-	}
-}
-
-function removeElement(id){
-    var a = answers.slice(0, id-1);
-    var b = answers.slice(id,-1);
-    var answers = a.concat(b);
-    console.log(answers)
+    //Change tile of questions
+    var quest = document.getElementsByClassName("titleQ");
+    var text;
+    for(var j=1; j<=(quest.length) ; j++){
+        if(j!=ids){
+            quest.item(j-1).innerText = "Question#"+j;
+            console.log(quest.item(j-1).innerText)
+        }
+    }
 }

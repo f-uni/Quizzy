@@ -47,7 +47,6 @@ if (dmSession == null) {
 			</div>
 
 			<%
-			pm.calcolaClassifica();
 			List<Utente> giocatori = pm.getGiocatori();
 			
 			%>

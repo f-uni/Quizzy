@@ -14,14 +14,16 @@ public class ClientUtente {
 	private DataOutputStream out;
 	private DataInputStream in;
 	private Function<String, Void> messageCallaback;
+	private Utente utente;
 
 	public ClientUtente(Utente utente, Function<String, Void> messageCallaback) {
 		try {
+			this.utente=utente;
+			this.messageCallaback=messageCallaback;
 			clientSocket = new Socket("127.0.0.1", ServerPartita.PORT);
 			out = new DataOutputStream(clientSocket.getOutputStream());
 			in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
-			writeMessage(utente.getRecord().getId().toString());
-			this.messageCallaback=messageCallaback;
+			writeMessage("{}");
 			new Thread(() -> {
 				readMessages();
 			}).start();
@@ -30,24 +32,6 @@ public class ClientUtente {
 		}
 	}
 
-	public ClientUtente(Function<String, Void> messageCallaback) {
-		try {
-			clientSocket = new Socket("127.0.0.1", ServerPartita.PORT);
-			if (clientSocket.isConnected()) {
-				out = new DataOutputStream(clientSocket.getOutputStream());
-				in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
-				this.messageCallaback=messageCallaback;
-				new Thread(() -> {
-					readMessages();
-				}).start();
-			} else {
-				clientSocket.close();
-			}
-
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 
 	public void readMessages() {
 		String line = "";
@@ -69,8 +53,9 @@ public class ClientUtente {
 	}
 	
 	public void writeMessage(String text) throws IOException {
-		out.writeUTF(text);
+		out.writeUTF(utente.getRecord().getId().toString()+"$"+text);
 	}
+	
 
 	public void close() throws IOException {
 		clientSocket.close();

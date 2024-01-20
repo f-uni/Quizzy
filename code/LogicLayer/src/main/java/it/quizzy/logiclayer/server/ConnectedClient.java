@@ -4,20 +4,24 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.function.Function;
 
 public class ConnectedClient {
+    private Integer id;
     private Socket clientSocket;
     private DataInputStream in;
     private DataOutputStream out;
-    private int id;
+    Function<String, Void> messageCallaback;
 
-    public ConnectedClient(Socket clientSocket, int id) {
+    public ConnectedClient(Socket clientSocket, Function<String, Void> messageCallaback) {
         this.clientSocket = clientSocket;
-        this.id = id;
+        this.messageCallaback=messageCallaback;
         try {
-            System.out.println("Client "+id+ ": Client Connected");
             this.out = new DataOutputStream(clientSocket.getOutputStream());
             this.in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
+            new Thread(() -> {
+				readMessages();
+			}).start();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -28,8 +32,11 @@ public class ConnectedClient {
         while(!line.equals(ServerPartita.STOP_STRING)){
             try {
                 line = in.readUTF();
+                if(this.messageCallaback!=null)
+					this.messageCallaback.apply(line);
             } catch (IOException e) {
                 e.printStackTrace();
+                break;
             }
             System.out.println("Client "+id+ ": "+ line);
         }
@@ -40,7 +47,6 @@ public class ConnectedClient {
     	try {
 			return in.readUTF();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
@@ -50,7 +56,6 @@ public class ConnectedClient {
     	try {
 			out.writeUTF(str);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     }
@@ -63,4 +68,14 @@ public class ConnectedClient {
             e.printStackTrace();
         }
     }
+
+	public void setId(Integer id) {
+		this.id=id;
+        System.out.println("Client "+id+ ": Client Connected");
+		
+	}
+
+	public Integer getId() {
+		return id;
+	}
 }

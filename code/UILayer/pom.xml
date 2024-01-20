@@ -9,7 +9,7 @@
 	<artifactId>UILayer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>LogicLayer</name>
+	<name>UILayer</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -65,11 +65,7 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
  
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20231013</version>
-		</dependency>
+		
 
 	</dependencies>
 

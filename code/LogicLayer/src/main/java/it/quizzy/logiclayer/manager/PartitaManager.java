@@ -1,7 +1,10 @@
 package it.quizzy.logiclayer.manager;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+
+import org.jooq.tools.json.JSONObject;
 
 import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Domanda;
@@ -22,6 +25,7 @@ public class PartitaManager {
 	private List<Domanda> domande;
 	private ServerPartita server;
 	private ClientDocente docenteSocket;
+	private HashMap<Integer, String> risposte;
 
 	public PartitaManager(int idDocente, int idQuiz) {
 		try {
@@ -30,6 +34,7 @@ public class PartitaManager {
 			this.quiz = new Quiz(this.partita.getRecord().getIdQuiz());
 			this.domande = this.quiz.getDomande();
 			this.giocatori = new ArrayList<>();
+			this.risposte = new HashMap<>();
 			this.domandaCorrente = 0;
 			this.server = new ServerPartita((Integer id) -> {
 				try {
@@ -38,6 +43,9 @@ public class PartitaManager {
 					e.printStackTrace();
 				}
 				return false;
+			}, (Integer idUtente, String risposta) -> {
+				this.rispondiDomanda(idUtente, risposta);
+				return null;
 			});
 			server.start();
 
@@ -47,16 +55,44 @@ public class PartitaManager {
 	}
 
 	public void calcolaClassifica() {
-		this.giocatori.sort((g1, g2) -> g1.getRecord().getPunteggio() - g2.getRecord().getPunteggio());
+		this.giocatori.sort((g1, g2) -> g2.getRecord().getPunteggio() - g1.getRecord().getPunteggio());
+	}
+
+	public void valutaRisposte() {
+		for (String s : risposte.values()) {
+			System.err.println(s);
+		}
+		if (!risposte.isEmpty()) {
+			Domanda domanda = this.domande.get(domandaCorrente - 1);
+			for (Utente u : giocatori) {
+				JSONObject jo = new JSONObject();
+				jo.put("punti", u.getRecord().getPunteggio());
+				String risp = risposte.get(u.getRecord().getId());
+				if (risp != null) {
+					if (domanda.controllaRisposta(risp)) {
+						u.aggiungiPunti(100);
+						server.utenteMessage(u.getRecord().getId(), "risposta_corretta$" + jo.toString());
+					} else {
+						server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
+					}
+				} else {
+					server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
+				}
+			}
+			risposte.clear();
+		}
 	}
 
 	public String prossimaDomanda() {
 		this.domandaCorrente++;
 		if (this.domande.size() >= domandaCorrente) {
 			Domanda domanda = this.domande.get(domandaCorrente - 1);
+			JSONObject jo = new JSONObject();
+			jo.put("domanda", domanda.getDomanda());
+			jo.put("risposte", domanda.getRisposteDisponibili());
 
-			this.server.broadcastMessage(
-					"new_domanda_" + domanda.getRecord().getTipo().toString() + "$" + domanda.getDomanda());
+			this.server
+					.broadcastMessage("new_domanda_" + domanda.getRecord().getTipo().toString() + "$" + jo.toString());
 			return domanda.getDomanda();
 		}
 		return null;
@@ -85,4 +121,17 @@ public class PartitaManager {
 	public void aggiungiDocente(ClientDocente clientDocente) {
 		this.docenteSocket = clientDocente;
 	}
+
+	public void rispondiDomanda(Integer idUtente, String risposta) {
+		if (this.domande.size() >= domandaCorrente) {
+			for (Utente u : giocatori) {
+				if (u.getRecord().getId().equals(idUtente)) {
+					risposte.put(idUtente, risposta);
+					break;
+				}
+			}
+		}
+
+	}
+
 }

@@ -50,6 +50,7 @@ if (dmSession == null) {
 		</div>
 		<div class="middle">
 			<%
+			pm.valutaRisposte();
 			pm.calcolaClassifica();
 			List<Utente> giocatori = pm.getGiocatori();
 			for (int i = 0; i < giocatori.size(); i++) {

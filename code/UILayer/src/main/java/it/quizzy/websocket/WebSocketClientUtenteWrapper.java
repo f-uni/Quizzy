@@ -44,6 +44,7 @@ public class WebSocketClientUtenteWrapper {
 						return null;
 					});
 				}else {
+					
 					session.close();
 				}
 			} else {

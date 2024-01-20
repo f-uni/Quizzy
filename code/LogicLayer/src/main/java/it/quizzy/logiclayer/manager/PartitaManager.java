@@ -24,7 +24,6 @@ public class PartitaManager {
 	private List<Utente> giocatori;
 	private List<Domanda> domande;
 	private ServerPartita server;
-	private ClientDocente docenteSocket;
 	private HashMap<Integer, String> risposte;
 
 	public PartitaManager(int idDocente, int idQuiz) {
@@ -66,19 +65,23 @@ public class PartitaManager {
 		if (!risposte.isEmpty()) {
 			Domanda domanda = this.domande.get(domandaCorrente - 1);
 			for (Utente u : giocatori) {
-				JSONObject jo = new JSONObject();
+				HashMap<String, Object> map = new HashMap<String, Object>();
+		        
 				String risp = risposte.get(u.getRecord().getId());
 				if (risp != null) {
 					if (domanda.controllaRisposta(risp)) {
 						u.aggiungiPunti(100);
-						jo.put("punti", u.getRecord().getPunteggio());
+						map.put("punti", u.getRecord().getPunteggio());
+						JSONObject jo = new JSONObject(map);
 						server.utenteMessage(u.getRecord().getId(), "risposta_corretta$" + jo.toString());
 					} else {
-						jo.put("punti", u.getRecord().getPunteggio());
+						map.put("punti", u.getRecord().getPunteggio());
+						JSONObject jo = new JSONObject(map);
 						server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
 					}
 				} else {
-					jo.put("punti", u.getRecord().getPunteggio());
+					map.put("punti", u.getRecord().getPunteggio());
+					JSONObject jo = new JSONObject(map);
 					server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
 				}
 			}
@@ -90,10 +93,10 @@ public class PartitaManager {
 		this.domandaCorrente++;
 		if (this.domande.size() >= domandaCorrente) {
 			Domanda domanda = this.domande.get(domandaCorrente - 1);
-			JSONObject jo = new JSONObject();
-			jo.put("domanda", domanda.getDomanda());
-			jo.put("risposte", domanda.getRisposteDisponibili());
-
+			HashMap<String, Object> map = new HashMap<String, Object>();
+			map.put("domanda", domanda.getDomanda());
+			map.put("risposte", domanda.getRisposteDisponibili());
+			JSONObject jo = new JSONObject(map);
 			this.server
 					.broadcastMessage("new_domanda_" + domanda.getRecord().getTipo().toString() + "$" + jo.toString());
 			return domanda.getDomanda();
@@ -103,9 +106,10 @@ public class PartitaManager {
 
 	public boolean aggiungiGiocatore(Utente giocatore) {
 		if (giocatore.getRecord().getIdPartita() == this.partita.getRecord().getId()) {
-			JSONObject jo = new JSONObject();
-			jo.put("nickname", giocatore.getRecord().getNickname());
-			jo.put("avatar", giocatore.getRecord().getAvatar());
+			HashMap<String, Object> map = new HashMap<String, Object>();
+			map.put("nickname", giocatore.getRecord().getNickname());
+			map.put("avatar", giocatore.getRecord().getAvatar());
+			JSONObject jo = new JSONObject(map);
 			server.messageDocente("new_player$" + jo.toString());
 			return this.giocatori.add(giocatore);
 		}
@@ -129,7 +133,6 @@ public class PartitaManager {
 	}
 
 	public void aggiungiDocente(ClientDocente clientDocente) {
-		this.docenteSocket = clientDocente;
 	}
 
 	public void rispondiDomanda(Integer idUtente, String risposta) {

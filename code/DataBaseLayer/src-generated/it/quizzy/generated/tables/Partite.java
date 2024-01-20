@@ -80,6 +80,16 @@ public class Partite extends TableImpl<PartiteRecord> {
      */
     public final TableField<PartiteRecord, Integer> ID_QUIZ = createField(DSL.name("id_quiz"), SQLDataType.INTEGER.nullable(false), this, "");
 
+    /**
+     * The column <code>partite.port</code>.
+     */
+    public final TableField<PartiteRecord, Integer> PORT = createField(DSL.name("port"), SQLDataType.INTEGER, this, "");
+
+    /**
+     * The column <code>partite.pin</code>.
+     */
+    public final TableField<PartiteRecord, String> PIN = createField(DSL.name("pin"), SQLDataType.CLOB, this, "");
+
     private Partite(Name alias, Table<PartiteRecord> aliased) {
         this(alias, aliased, (Field<?>[]) null, null);
     }

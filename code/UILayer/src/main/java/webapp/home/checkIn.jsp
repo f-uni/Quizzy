@@ -36,6 +36,7 @@ if (dmSession == null) {
 		</div>
 
 		<a href="/home/prossimaDomanda.jsp">Avvia Partita</a>
+		<p style="background: #fff; font-size: 24px"><%out.print(pm.getPin());%></p>
 	</div>
 
 </body>

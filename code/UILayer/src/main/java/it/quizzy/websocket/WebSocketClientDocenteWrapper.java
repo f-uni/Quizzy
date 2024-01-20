@@ -18,10 +18,11 @@ import it.quizzy.logiclayer.server.ClientDocente;
 @ServerEndpoint(value = "/host/{sessionId}")
 public class WebSocketClientDocenteWrapper {
 	ClientDocente client;
+
 	@OnOpen
 	public void onOpen(Session session, EndpointConfig config, @PathParam("sessionId") String sessionId) {
 
-		HttpSession httpSession=null;
+		HttpSession httpSession = null;
 		try {
 			httpSession = SessionManagerShim.getSession(sessionId).getSession();
 		} catch (IOException e) {
@@ -33,7 +34,8 @@ public class WebSocketClientDocenteWrapper {
 			if (httpSession != null) {
 				PartitaManager pm = (PartitaManager) httpSession.getAttribute("partitaCorrente");
 				if (pm != null) {
-					this.client=new ClientDocente((String message) -> {
+
+					this.client = new ClientDocente(pm.getServer().getPort(), (String message) -> {
 						try {
 							session.getBasicRemote().sendText(message);
 						} catch (IOException e) {
@@ -43,10 +45,10 @@ public class WebSocketClientDocenteWrapper {
 					});
 					pm.aggiungiDocente(this.client);
 
-				}else {
+				} else {
 					session.close();
 				}
-				
+
 			} else {
 				session.close();
 			}
@@ -79,7 +81,5 @@ public class WebSocketClientDocenteWrapper {
 		System.err.println("Error on WebSocket connection: " + session.getId());
 		throwable.printStackTrace();
 	}
-
-	
 
 }

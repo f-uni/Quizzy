@@ -15,7 +15,6 @@ import it.quizzy.databaselayer.models.Utente;
 public class ServerPartita extends Thread {
 	private ServerSocket server;
 
-	public static final int PORT = 8702;
 	public static final String STOP_STRING = "##";
 	private List<ConnectedClient> clients;
 	private Thread requestProcessor;
@@ -27,22 +26,21 @@ public class ServerPartita extends Thread {
 			BiFunction<Integer, String, Void> valutaRisposta) {
 		this.newClientCallback = newClientCallback;
 		this.valutaRisposta = valutaRisposta;
+		this.clients = new ArrayList<>();
+		try {
+			server = new ServerSocket(0);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
 	public void run() {
 		super.run();
-		try {
-			server = new ServerSocket(PORT);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		this.clients = new ArrayList<>();
 		this.requestProcessor = new Thread(() -> {
 			processConnections();
 		});
 		this.requestProcessor.start();
-
 		while (true) {
 		}
 	}
@@ -70,7 +68,7 @@ public class ServerPartita extends Thread {
 					});
 
 					try {
-						String message=utente.getMessage();
+						String message = utente.getMessage();
 						String[] msgs = message.split("\\$");
 						Integer idUtente = Integer.parseInt(msgs[0]);
 						Utente u = new Utente(idUtente);
@@ -119,12 +117,16 @@ public class ServerPartita extends Thread {
 	}
 
 	public void utenteMessage(Integer idClient, String message) {
-		for(ConnectedClient c : clients) {
-			if(c.getId().equals(idClient)) {
+		for (ConnectedClient c : clients) {
+			if (c.getId().equals(idClient)) {
 				c.sendMessage(message);
 				break;
 			}
 		}
+	}
+
+	public int getPort() {
+		return this.server.getLocalPort();
 	}
 
 }

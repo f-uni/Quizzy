@@ -47,6 +47,7 @@ public class PartitaManager {
 				this.rispondiDomanda(idUtente, risposta);
 				return null;
 			});
+			this.partita.setSocketPort(server.getPort());
 			server.start();
 
 		} catch (Exception e) {
@@ -117,6 +118,10 @@ public class PartitaManager {
 
 	public ServerPartita getServer() {
 		return server;
+	}
+	
+	public String getPin() {
+		return partita.getRecord().getPin();
 	}
 
 	public List<Utente> getGiocatori() {

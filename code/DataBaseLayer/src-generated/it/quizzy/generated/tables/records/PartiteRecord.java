@@ -76,6 +76,34 @@ public class PartiteRecord extends UpdatableRecordImpl<PartiteRecord> {
         return (Integer) get(3);
     }
 
+    /**
+     * Setter for <code>partite.port</code>.
+     */
+    public void setPort(Integer value) {
+        set(4, value);
+    }
+
+    /**
+     * Getter for <code>partite.port</code>.
+     */
+    public Integer getPort() {
+        return (Integer) get(4);
+    }
+
+    /**
+     * Setter for <code>partite.pin</code>.
+     */
+    public void setPin(String value) {
+        set(5, value);
+    }
+
+    /**
+     * Getter for <code>partite.pin</code>.
+     */
+    public String getPin() {
+        return (String) get(5);
+    }
+
     // -------------------------------------------------------------------------
     // Primary key information
     // -------------------------------------------------------------------------
@@ -99,13 +127,15 @@ public class PartiteRecord extends UpdatableRecordImpl<PartiteRecord> {
     /**
      * Create a detached, initialised PartiteRecord
      */
-    public PartiteRecord(Integer id, LocalDateTime timestamp, Integer idDocente, Integer idQuiz) {
+    public PartiteRecord(Integer id, LocalDateTime timestamp, Integer idDocente, Integer idQuiz, Integer port, String pin) {
         super(Partite.PARTITE);
 
         setId(id);
         setTimestamp(timestamp);
         setIdDocente(idDocente);
         setIdQuiz(idQuiz);
+        setPort(port);
+        setPin(pin);
         resetChangedOnNotNull();
     }
 }

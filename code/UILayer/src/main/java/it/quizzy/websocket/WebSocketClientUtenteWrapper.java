@@ -34,8 +34,9 @@ public class WebSocketClientUtenteWrapper {
 		try {
 			if (httpSession != null) {
 				UtenteManager um = (UtenteManager) httpSession.getAttribute("um");
+				
 				if (um != null) {
-					this.client=new ClientUtente(um.getSessioneUtente(), (String message) -> {
+					this.client=new ClientUtente(um.getPartitaPort(), um.getSessioneUtente(), (String message) -> {
 						try {
 							session.getBasicRemote().sendText(message);
 						} catch (IOException e) {

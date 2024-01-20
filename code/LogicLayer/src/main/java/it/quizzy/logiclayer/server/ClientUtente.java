@@ -16,11 +16,11 @@ public class ClientUtente {
 	private Function<String, Void> messageCallaback;
 	private Utente utente;
 
-	public ClientUtente(Utente utente, Function<String, Void> messageCallaback) {
+	public ClientUtente(int port, Utente utente, Function<String, Void> messageCallaback) {
 		try {
 			this.utente=utente;
 			this.messageCallaback=messageCallaback;
-			clientSocket = new Socket("127.0.0.1", ServerPartita.PORT);
+			clientSocket = new Socket("127.0.0.1", port);
 			out = new DataOutputStream(clientSocket.getOutputStream());
 			in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
 			writeMessage("{}");

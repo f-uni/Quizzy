@@ -13,9 +13,9 @@ public class ClientDocente {
 	private DataInputStream in;
 	private Function<String, Void> messageCallaback;
 
-	public ClientDocente(Function<String, Void> messageCallaback) {
+	public ClientDocente(int port, Function<String, Void> messageCallaback) {
 		try {
-			clientSocket = new Socket("127.0.0.1", ServerPartita.PORT);
+			clientSocket = new Socket("127.0.0.1", port);
 			if (clientSocket.isConnected()) {
 				out = new DataOutputStream(clientSocket.getOutputStream());
 				in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));

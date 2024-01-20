@@ -43,6 +43,7 @@ public class Utente {
 		this.record.setNickname(nickname);
 		this.record.setPunteggio(punteggio);
 		this.record.setIdPartita(idPartita);
+		this.record.setAvatar(avatar);
 
 		int result = this.record.store();
 		if (result != 1)

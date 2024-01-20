@@ -7,6 +7,7 @@ import org.jooq.DSLContext;
 import it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException;
 import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.util.DBConnection;
+import it.quizzy.databaselayer.util.PinGenerator;
 import it.quizzy.generated.tables.Partite;
 import it.quizzy.generated.tables.records.PartiteRecord;
 
@@ -28,6 +29,21 @@ public class Partita {
 		if(this.record == null)
 			throw new RecordNotFoundException();
 	}
+	
+	/**
+	 * Costruttore per la ricerca e la lettura di una partita già esistente 
+	 * 
+	 * @param pin partita da cercare
+	 * @throws RecordNotFoundException
+	 */
+	public Partita(String pin) throws RecordNotFoundException {		
+		DSLContext create = DBConnection.getConnection();
+		this.record = create.fetchOne(Partite.PARTITE, Partite.PARTITE.PIN.eq(pin));
+		if(this.record == null)
+			throw new RecordNotFoundException();
+	}
+	
+	
 
 	/**
 	 * Costruttore per l'inserimento di un nuovo partita
@@ -45,6 +61,7 @@ public class Partita {
 		this.record.setTimestamp(timestamp);
 		this.record.setIdDocente(idDocente);
 		this.record.setIdQuiz(idQuiz);
+		this.record.setPin(PinGenerator.newPin());
 		
 		int result = this.record.store();
 		if(result!=1)
@@ -58,6 +75,11 @@ public class Partita {
 
 	public PartiteRecord getRecord() {
 		return record;
+	}
+	
+	public void setSocketPort(int port) {
+		this.record.setPort(port);
+		this.record.store();
 	}
 	
 	

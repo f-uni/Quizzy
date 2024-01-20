@@ -15,7 +15,7 @@
 <%
 String nickname = (String) request.getParameter("nickname");
 Integer avatar = Integer.parseInt(request.getParameter("avatar"));
-Integer pin = (Integer) session.getAttribute("pin");
+String pin = (String) session.getAttribute("pin");
 
 if (nickname == null || pin == null || avatar == null) {
 	response.sendRedirect("/user/pin.jsp");

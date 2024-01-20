@@ -16,10 +16,10 @@
 </head>
 
 <%
-Integer pin = null;
+String pin = null;
 
 try {
-	pin = Integer.parseInt((String) request.getParameter("pin"));
+	pin = (String) request.getParameter("pin");
 } catch (Exception e) {
 	response.sendRedirect("/user/pin.jsp");
 }

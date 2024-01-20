@@ -74,6 +74,20 @@ public class UtentiRecord extends UpdatableRecordImpl<UtentiRecord> {
         return (Integer) get(3);
     }
 
+    /**
+     * Setter for <code>utenti.avatar</code>.
+     */
+    public void setAvatar(Integer value) {
+        set(4, value);
+    }
+
+    /**
+     * Getter for <code>utenti.avatar</code>.
+     */
+    public Integer getAvatar() {
+        return (Integer) get(4);
+    }
+
     // -------------------------------------------------------------------------
     // Primary key information
     // -------------------------------------------------------------------------
@@ -97,13 +111,14 @@ public class UtentiRecord extends UpdatableRecordImpl<UtentiRecord> {
     /**
      * Create a detached, initialised UtentiRecord
      */
-    public UtentiRecord(Integer id, String nickname, Integer punteggio, Integer idPartita) {
+    public UtentiRecord(Integer id, String nickname, Integer punteggio, Integer idPartita, Integer avatar) {
         super(Utenti.UTENTI);
 
         setId(id);
         setNickname(nickname);
         setPunteggio(punteggio);
         setIdPartita(idPartita);
+        setAvatar(avatar);
         resetChangedOnNotNull();
     }
 }

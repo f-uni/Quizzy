@@ -77,6 +77,11 @@ public class Utenti extends TableImpl<UtentiRecord> {
      */
     public final TableField<UtentiRecord, Integer> ID_PARTITA = createField(DSL.name("id_partita"), SQLDataType.INTEGER.nullable(false), this, "");
 
+    /**
+     * The column <code>utenti.avatar</code>.
+     */
+    public final TableField<UtentiRecord, Integer> AVATAR = createField(DSL.name("avatar"), SQLDataType.INTEGER.nullable(false).defaultValue(DSL.field(DSL.raw("1"), SQLDataType.INTEGER)), this, "");
+
     private Utenti(Name alias, Table<UtentiRecord> aliased) {
         this(alias, aliased, (Field<?>[]) null, null);
     }

@@ -7,9 +7,9 @@ public class UtenteManager {
 	
 	private Utente sessioneUtente;
 	
-	public UtenteManager(String nickname, int idPartita) {
+	public UtenteManager(String nickname, int idPartita, int avatar) {
 		try {
-			this.sessioneUtente=new Utente(nickname,0,idPartita);
+			this.sessioneUtente=new Utente(nickname,0,idPartita, avatar);
 		} catch (InvalidRecordInsertionException e) {
 			e.printStackTrace();
 		}

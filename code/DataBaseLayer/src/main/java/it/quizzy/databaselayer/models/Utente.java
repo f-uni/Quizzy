@@ -35,8 +35,8 @@ public class Utente {
 	 * @param idPartita
 	 * @throws InvalidRecordInsertionException
 	 */
-	public Utente(String nickname, Integer punteggio, Integer idPartita) throws InvalidRecordInsertionException {
-		this.record = new UtentiRecord(null, nickname, punteggio, idPartita);
+	public Utente(String nickname, Integer punteggio, Integer idPartita, Integer avatar) throws InvalidRecordInsertionException {
+		this.record = new UtentiRecord(null, nickname, punteggio, idPartita, avatar);
 		DSLContext create = DBConnection.getConnection();
 
 		this.record = create.newRecord(Utenti.UTENTI);

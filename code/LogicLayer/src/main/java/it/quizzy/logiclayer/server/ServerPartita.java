@@ -10,7 +10,6 @@ import java.util.function.Function;
 
 import org.json.JSONObject;
 
-import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Utente;
 
 public class ServerPartita extends Thread {

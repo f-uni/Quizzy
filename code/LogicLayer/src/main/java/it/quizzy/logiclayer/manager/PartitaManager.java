@@ -66,16 +66,18 @@ public class PartitaManager {
 			Domanda domanda = this.domande.get(domandaCorrente - 1);
 			for (Utente u : giocatori) {
 				JSONObject jo = new JSONObject();
-				jo.put("punti", u.getRecord().getPunteggio());
 				String risp = risposte.get(u.getRecord().getId());
 				if (risp != null) {
 					if (domanda.controllaRisposta(risp)) {
 						u.aggiungiPunti(100);
+						jo.put("punti", u.getRecord().getPunteggio());
 						server.utenteMessage(u.getRecord().getId(), "risposta_corretta$" + jo.toString());
 					} else {
+						jo.put("punti", u.getRecord().getPunteggio());
 						server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
 					}
 				} else {
+					jo.put("punti", u.getRecord().getPunteggio());
 					server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
 				}
 			}
@@ -100,7 +102,10 @@ public class PartitaManager {
 
 	public boolean aggiungiGiocatore(Utente giocatore) {
 		if (giocatore.getRecord().getIdPartita() == this.partita.getRecord().getId()) {
-			server.messageDocente("new_player$" + giocatore.getRecord().getNickname());
+			JSONObject jo = new JSONObject();
+			jo.put("nickname", giocatore.getRecord().getNickname());
+			jo.put("avatar", giocatore.getRecord().getAvatar());
+			server.messageDocente("new_player$" + jo.toString());
 			return this.giocatori.add(giocatore);
 		}
 		return false;

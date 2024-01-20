@@ -32,6 +32,7 @@ if (dmSession == null) {
 		if (pm == null) {
 	response.sendRedirect("/home/dashboard.jsp");
 		} else {
+			pm.getServer().broadcastMessage("wait${}");
 %>
 
 <body>
@@ -59,9 +60,14 @@ if (dmSession == null) {
 			%>
 			<div class="placing-item">
 				<div class="placing">
-					<p class="text-avatar-display grid-item position">1.</p>
+					<p class="text-avatar-display grid-item position">
+						<%
+						out.print((i + 1));
+						%>.
+					</p>
 				</div>
-				<img class="img-avatar-display grid-item" src="/images/avatar1.png">
+				<img class="img-avatar-display grid-item"
+					src="/images/avatar<%out.print(u.getRecord().getAvatar());%>.png">
 				<div>
 					<p class="text-avatar-display grid-item">
 						<%

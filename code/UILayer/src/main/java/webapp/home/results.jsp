@@ -31,25 +31,35 @@ if (dmSession == null) {
 	response.sendRedirect("/home/dashboard.jsp");
 		} else {
 	pm.getServer().stopPartita();
+
+	List<Utente> giocatori = pm.getGiocatori();
 %>
 <body>
 	<div class="centered-div">
 		<div class="container-results">
 			<div class="image-container third">
-				<img class="avatar-podium avatar-third" src="/images/avatar1.png">
+				<img class="avatar-podium avatar-third"
+					src="/images/avatar<%if (giocatori.size() >= 3)
+	out.print(giocatori.get(3 - 1).getRecord().getAvatar());
+else
+	out.print("0");%>.png">
 			</div>
 			<div class="image-container first">
 				<img class="crown" src="/images/corona.png"> <img
-					class="avatar-podium avatar-first" src="/images/avatar2.png">
+					class="avatar-podium avatar-first"
+					src="/images/avatar<%if (giocatori.size() >= 1)
+	out.print(giocatori.get(1 - 1).getRecord().getAvatar());
+else
+	out.print("0");%>.png">
 			</div>
 			<div class="image-container second">
-				<img class="avatar-podium avatar-secomd" src="/images/avatar4.png">
+				<img class="avatar-podium avatar-secomd"
+					src="/images/avatar<%if (giocatori.size() >= 2)
+	out.print(giocatori.get(2 - 1).getRecord().getAvatar());
+else
+	out.print("0");%>.png">
 			</div>
 
-			<%
-			List<Utente> giocatori = pm.getGiocatori();
-			
-			%>
 			<div class="podium thirdPlace">
 				<div class="name">
 					<p>

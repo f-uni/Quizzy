@@ -14,21 +14,21 @@
 <%@page import="it.quizzy.logiclayer.manager.UtenteManager"%>
 <%
 String nickname = (String) request.getParameter("nickname");
-String avatar = (String) request.getParameter("avatar");
+Integer avatar = Integer.parseInt(request.getParameter("avatar"));
 Integer pin = (Integer) session.getAttribute("pin");
 
 if (nickname == null || pin == null || avatar == null) {
 	response.sendRedirect("/user/pin.jsp");
 } else {
-	UtenteManager um = new UtenteManager(nickname, pin);
+	UtenteManager um = new UtenteManager(nickname, pin, avatar);
 	session.setAttribute("um", um);
 %>
 
 
 <div id="domandaVF" class="is-hidden">
 
-<!DOCTYPE html>
-<html lang="en">
+	<!DOCTYPE html>
+	<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -246,18 +246,15 @@ if (nickname == null || pin == null || avatar == null) {
 		case "risposta_errata":
 			rispostaErrata(data);
 			break;
-		case "risultati":
+		case "wait":
+			wait();
 			break;
 		}
 
 	};
 
 	socket.onclose = function(event) {
-		if (event.wasClean) {
-			alert(`[close] Connessione chiusa con successo, code=${event.code} reason=${event.reason}`);
-		} else {
-			alert('[close] Connection morta.');
-		}
+		
 	};
 
 	socket.onerror = function(error) {

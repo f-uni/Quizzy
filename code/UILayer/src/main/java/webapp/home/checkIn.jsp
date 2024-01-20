@@ -28,15 +28,13 @@ if (dmSession == null) {
 
 <body>
 	<div class="container">
-	
-	
+
+
 		<p class="text-join">Player partecipating:</p>
 		<div class="middle">
-			<div class="grid-container" id="players">
-				
-			</div>
+			<div class="grid-container" id="players"></div>
 		</div>
-		
+
 		<a href="/home/prossimaDomanda.jsp">Avvia Partita</a>
 	</div>
 
@@ -56,14 +54,13 @@ if (dmSession == null) {
 	socket.onmessage = function(event) {
 		console.log(event.data);
 		var data = event.data.toString();
-		var evento=data.split("$")[0];
-		if(evento=="new_player"){
-			var nome=data.replace(evento+"$", "");
-			var random= Math.floor(Math.random() * (9 - 1 + 1) + 1)
-			document.getElementById("players").innerHTML+='<div class="grid-item"><img class="img-avatar-display" src="/images/avatar'+random+'.png">'+
-			'<p class="text-avatar-display">'+nome+'</p></div>'
+		var evento = data.split("$")[0];
+		if (evento == "new_player") {
+			var d = JSON.parse(data.replace(evento + "$", ""));
+			document.getElementById("players").innerHTML += '<div class="grid-item"><img class="img-avatar-display" src="/images/avatar'+d.avatar+'.png">'
+					+ '<p class="text-avatar-display">' + d.nickname + '</p></div>'
 		}
-		
+
 	};
 
 	socket.onclose = function(event) {
@@ -82,6 +79,7 @@ if (dmSession == null) {
 </html>
 
 <%
+
 }
 }
 %>

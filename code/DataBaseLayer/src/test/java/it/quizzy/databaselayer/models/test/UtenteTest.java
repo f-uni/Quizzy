@@ -18,7 +18,7 @@ class UtenteTest {
 			Docente d = new Docente("Docente Test", "test@test.it", "password");
 			Quiz q = new Quiz(d.getRecord().getId(), "Quiz di test");
 			Partita p = new Partita(d.getRecord().getId(), q.getRecord().getId());
-			Utente u = new Utente("test nick", 0, p.getRecord().getId());
+			Utente u = new Utente("test nick", 0, p.getRecord().getId(), 1);
 			Utente uf=new Utente(u.getRecord().getId());
 			assertEquals(u.getRecord().getNickname(), uf.getRecord().getNickname());
 			u.getRecord().delete();
@@ -27,7 +27,6 @@ class UtenteTest {
 			d.getRecord().delete();
 			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

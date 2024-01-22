@@ -27,8 +27,8 @@
     font-size:medium;
     color:rgb(101, 26, 26);
 }
-
-.hover-underline-animation {
+@media screen and (min-width: 1026px)  {
+  .hover-underline-animation {
     padding-top:20px;
     display: block;
     position: relative;
@@ -53,10 +53,16 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+}
+.navbar-item:hover{
+  background-color: coral !important;
+  color:rgb(101, 26, 26) !important;
+}
+@media screen and (max-width:1020){
   .navbar-item:hover{
-    background-color: coral !important;
-    color:rgb(101, 26, 26) !important;
+    font-weight: bolder;
   }
+}
   .has-border-yellow{
     border-bottom: 5px solid #ffe08a;
     border-top: 2px solid #701c1c;

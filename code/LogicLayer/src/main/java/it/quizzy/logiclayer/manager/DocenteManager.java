@@ -1,5 +1,7 @@
 package it.quizzy.logiclayer.manager;
 
+import java.util.List;
+
 import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
 import it.quizzy.databaselayer.models.Docente;
 import it.quizzy.databaselayer.models.Quiz;
@@ -55,6 +57,10 @@ public class DocenteManager {
 	
 	public String getNome() {
 		return sessioneDocente!=null?sessioneDocente.getRecord().getNomeCompleto():null;
+	}
+	
+	public List<Quiz> getQuizzies() {
+		return sessioneDocente!=null?sessioneDocente.getQuizzies():null;
 	}
 	
 	public int getId() {

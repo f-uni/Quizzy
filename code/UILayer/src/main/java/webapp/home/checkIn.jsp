@@ -21,9 +21,12 @@ if (dmSession == null) {
 		response.sendRedirect("/home/login.jsp");
 	} else {
 		//TODO: parametrizzare il quiz
-		request.getParameter("idQuiz");
-		PartitaManager pm = new PartitaManager(dmSession.getId(), 26);
-		session.setAttribute("partitaCorrente", pm);
+		Integer idQuiz = Integer.parseInt(request.getParameter("quiz"));
+		if (idQuiz == null) {
+	response.sendRedirect("/home/myQuizzies.jsp");
+		} else {
+	PartitaManager pm = new PartitaManager(dmSession.getId(), 26);
+	session.setAttribute("partitaCorrente", pm);
 %>
 
 <body>
@@ -36,7 +39,11 @@ if (dmSession == null) {
 		</div>
 
 		<a href="/home/prossimaDomanda.jsp">Avvia Partita</a>
-		<p style="background: #fff; font-size: 24px"><%out.print(pm.getPin());%></p>
+		<p style="background: #fff; font-size: 24px">
+			<%
+			out.print(pm.getPin());
+			%>
+		</p>
 	</div>
 
 </body>
@@ -59,7 +66,9 @@ if (dmSession == null) {
 		if (evento == "new_player") {
 			var d = JSON.parse(data.replace(evento + "$", ""));
 			document.getElementById("players").innerHTML += '<div class="grid-item"><img class="img-avatar-display" src="/images/avatar'+d.avatar+'.png">'
-					+ '<p class="text-avatar-display">' + d.nickname + '</p></div>'
+					+ '<p class="text-avatar-display">'
+					+ d.nickname
+					+ '</p></div>'
 		}
 
 	};
@@ -80,6 +89,7 @@ if (dmSession == null) {
 </html>
 
 <%
+}
 }
 }
 %>

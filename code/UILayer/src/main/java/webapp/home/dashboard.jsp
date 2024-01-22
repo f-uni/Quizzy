@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="/images/Logo3.png">
     <link rel="stylesheet" type="text/css" href="/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="/css/scrollbar.css">
     <title>QUIZZY</title>
 </head>
 <%
@@ -36,11 +37,11 @@ if(dmSession==null){
       
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item hover-underline-animation is-active">
+            <a class="navbar-item hover-underline-animation is-active"  href="/home/dashboard.jsp">
               HOME
             </a>
 
-            <a class="navbar-item hover-underline-animation">
+            <a class="navbar-item hover-underline-animation" href="/home/myQuizzies.jsp">
               My Quiz
             </a>
       

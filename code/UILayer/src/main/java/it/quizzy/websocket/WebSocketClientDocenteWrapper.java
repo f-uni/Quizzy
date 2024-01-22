@@ -26,7 +26,6 @@ public class WebSocketClientDocenteWrapper {
 		try {
 			httpSession = SessionManagerShim.getSession(sessionId).getSession();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

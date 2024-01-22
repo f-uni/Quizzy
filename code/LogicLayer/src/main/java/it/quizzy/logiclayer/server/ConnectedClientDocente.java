@@ -40,7 +40,6 @@ public class ConnectedClientDocente {
     	try {
 			return in.readUTF();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return null;
@@ -50,7 +49,6 @@ public class ConnectedClientDocente {
     	try {
 			out.writeUTF(str);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     }

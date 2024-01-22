@@ -25,7 +25,6 @@ public class JooqCodeGenerator {
 		try {
 			GenerationTool.generate(configuration);
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

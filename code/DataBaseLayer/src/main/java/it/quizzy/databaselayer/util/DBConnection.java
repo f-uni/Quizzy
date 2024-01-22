@@ -25,7 +25,6 @@ public class DBConnection {
 		try {
 			conn = DriverManager.getConnection(DBConnection.DB_URL);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return DSL.using(conn, SQLDialect.SQLITE);

@@ -113,7 +113,6 @@ public class PartitaManager {
 			server.messageDocente("new_player$" + jo.toString());
 			return this.giocatori.add(giocatore);
 		}
-		System.out.println("Rifiuto giocatore");
 		return false;
 	}
 

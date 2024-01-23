@@ -226,7 +226,6 @@ if (nickname == null || pin == null || avatar == null) {
 	let socket = new WebSocket("ws://"+url+"/join/" + sessionId);
 
 	socket.onopen = function(e) {
-		alert("[open] Connessione stabilita");
 	};
 
 	socket.onmessage = function(event) {

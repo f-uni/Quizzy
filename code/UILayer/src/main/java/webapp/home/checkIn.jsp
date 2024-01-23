@@ -59,7 +59,6 @@ if (dmSession == null) {
 	let socket = new WebSocket("ws://" + url + "/host/" + sessionId);
 
 	socket.onopen = function(e) {
-		alert("[open] Connessione stabilita");
 	};
 
 	socket.onmessage = function(event) {

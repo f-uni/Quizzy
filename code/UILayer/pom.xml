@@ -64,8 +64,7 @@
 			<artifactId>LogicLayer</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
- 
-		
+
 
 	</dependencies>
 
@@ -111,11 +110,14 @@
 					<artifactId>maven-site-plugin</artifactId>
 					<version>3.7.1</version>
 				</plugin>
-				<plugin> 
+				<plugin>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.0.0</version>
 				</plugin>
+
+
 			</plugins>
 		</pluginManagement>
+
 	</build>
 </project>

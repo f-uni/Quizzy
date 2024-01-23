@@ -105,7 +105,7 @@ public class PartitaManager {
 	}
 
 	public boolean aggiungiGiocatore(Utente giocatore) {
-		if (giocatore.getRecord().getIdPartita() == this.partita.getRecord().getId()) {
+		if (giocatore.getRecord().getIdPartita().equals(this.partita.getRecord().getId())) {
 			HashMap<String, Object> map = new HashMap<String, Object>();
 			map.put("nickname", giocatore.getRecord().getNickname());
 			map.put("avatar", giocatore.getRecord().getAvatar());
@@ -113,6 +113,7 @@ public class PartitaManager {
 			server.messageDocente("new_player$" + jo.toString());
 			return this.giocatori.add(giocatore);
 		}
+		System.out.println("Rifiuto giocatore");
 		return false;
 	}
 

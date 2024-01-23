@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<%@page import="it.quizzy.uilayer.launch.Configuration"%>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QUIZZY</title>
 <link rel="icon" type="image/png" href="/images/Logo3.png">
+<link rel="stylesheet" type="text/css" href="/css/scrollbar.css">
 </head>
 <style>
 .is-hidden {
@@ -218,11 +220,10 @@ if (nickname == null || pin == null || avatar == null) {
 </div>
 
 <script>
-	const sessionId =
-<%out.print("\"" + session.getId() + "\"");%>
-	;
+	const sessionId = <%out.print("\"" + session.getId() + "\"");%>;
+	const url =	<%out.print("\"" + Configuration.publicURL + "\"");%>;
 
-	let socket = new WebSocket("ws://127.0.0.1:8080/join/" + sessionId);
+	let socket = new WebSocket("ws://"+url+"/join/" + sessionId);
 
 	socket.onopen = function(e) {
 		alert("[open] Connessione stabilita");
@@ -252,9 +253,13 @@ if (nickname == null || pin == null || avatar == null) {
 		}
 
 	};
-
+	
 	socket.onclose = function(event) {
-		
+		if (event.wasClean) {
+			alert(`[close] Connessione chiusa con successo, code=${event.code} reason=${event.reason}`);
+		} else {
+			alert('[close] Connection morta.');
+		}
 	};
 
 	socket.onerror = function(error) {

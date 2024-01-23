@@ -1,4 +1,4 @@
-package it.quizzy.websocket;
+package it.quizzy.uilayer.websocket;
 
 import java.io.IOException;
 
@@ -24,7 +24,7 @@ public class WebSocketClientDocenteWrapper {
 
 		HttpSession httpSession = null;
 		try {
-			httpSession = SessionManagerShim.getSession(sessionId).getSession();
+			httpSession = SessionManager.getSession(sessionId).getSession();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

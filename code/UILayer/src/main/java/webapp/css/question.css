@@ -79,7 +79,7 @@
     height:10px;
     background-color: aliceblue;
     width:100%;
-    animation:timeLoader 60s linear
+    animation:timeLoader 30s linear
 }
 
 @keyframes timeLoader {

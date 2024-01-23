@@ -9,6 +9,9 @@
 <link rel="stylesheet" type="text/css" href="/css/background.css">
 <link rel="stylesheet" type="text/css" href="/css/login.css">
 <link rel="stylesheet" type="text/css" href="/css/placing.css">
+
+<link rel="stylesheet" type="text/css" href="/css/scrollbar.css">
+
 </head>
 
 <%@page import="it.quizzy.logiclayer.manager.PartitaManager"%>

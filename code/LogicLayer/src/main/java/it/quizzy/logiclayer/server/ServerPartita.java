@@ -53,7 +53,6 @@ public class ServerPartita extends Thread {
 			}
 			while (true) {
 				Socket clientSocket = server.accept();
-
 				if (clientSocket.isConnected()) {
 					ConnectedClient utente = new ConnectedClient(clientSocket, (String message) -> {
 						String[] msgs = message.split("\\$");

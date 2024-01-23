@@ -4,6 +4,7 @@ import java.io.BufferedInputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.Socket;
 import java.util.function.Function;
 
@@ -15,7 +16,7 @@ public class ClientDocente {
 
 	public ClientDocente(int port, Function<String, Void> messageCallaback) {
 		try {
-			clientSocket = new Socket("127.0.0.1", port);
+			clientSocket = new Socket(InetAddress.getByName(null), port);
 			if (clientSocket.isConnected()) {
 				out = new DataOutputStream(clientSocket.getOutputStream());
 				in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
@@ -40,7 +41,6 @@ public class ClientDocente {
 				if(this.messageCallaback!=null)
 					this.messageCallaback.apply(line);
 			} catch (IOException e) {
-				e.printStackTrace();
 				break;
 			}
 		}

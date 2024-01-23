@@ -1,4 +1,4 @@
-package it.quizzy.websocket;
+package it.quizzy.uilayer.websocket;
 
 import java.io.IOException;
 
@@ -25,7 +25,7 @@ public class WebSocketClientUtenteWrapper {
 
 		HttpSession httpSession=null;
 		try {
-			httpSession = SessionManagerShim.getSession(sessionId).getSession();
+			httpSession = SessionManager.getSession(sessionId).getSession();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -35,6 +35,7 @@ public class WebSocketClientUtenteWrapper {
 				UtenteManager um = (UtenteManager) httpSession.getAttribute("um");
 				
 				if (um != null) {
+					System.out.println("porta di connessione "+ um.getPartitaPort());
 					this.client=new ClientUtente(um.getPartitaPort(), um.getSessioneUtente(), (String message) -> {
 						try {
 							session.getBasicRemote().sendText(message);
@@ -44,7 +45,6 @@ public class WebSocketClientUtenteWrapper {
 						return null;
 					});
 				}else {
-					
 					session.close();
 				}
 			} else {
@@ -68,6 +68,7 @@ public class WebSocketClientUtenteWrapper {
 	@OnClose
 	public void onClose(Session session) {
 		try {
+			System.out.println("Chiudo web socket");
 			this.client.close();
 		} catch (IOException e) {
 			e.printStackTrace();

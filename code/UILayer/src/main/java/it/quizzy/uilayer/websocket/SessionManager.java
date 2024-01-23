@@ -1,4 +1,4 @@
-package it.quizzy.websocket;
+package it.quizzy.uilayer.websocket;
 
 import java.io.IOException;
 import javax.servlet.ServletContextEvent;
@@ -12,7 +12,7 @@ import org.apache.catalina.core.ApplicationContext;
 import org.apache.catalina.core.ApplicationContextFacade;
 
 @WebListener
-public class SessionManagerShim implements ServletContextListener {
+public class SessionManager implements ServletContextListener {
     static Manager manager;
 
     @Override

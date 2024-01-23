@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="it.quizzy.uilayer.launch.Configuration"%>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,24 +15,27 @@
 
 <%
 DocenteManager dmSession = (DocenteManager) session.getAttribute("dm");
+String quiz = request.getParameter("quiz");
 if (dmSession == null) {
 	response.sendRedirect("/home/login.jsp");
 } else {
 	if (!dmSession.isLogged()) {
 		response.sendRedirect("/home/login.jsp");
 	} else {
-		//TODO: parametrizzare il quiz
-		Integer idQuiz = Integer.parseInt(request.getParameter("quiz"));
-		if (idQuiz == null) {
+		if (quiz == null) {
 	response.sendRedirect("/home/myQuizzies.jsp");
 		} else {
-	PartitaManager pm = new PartitaManager(dmSession.getId(), 26);
+	PartitaManager pm = new PartitaManager(dmSession.getId(), Integer.parseInt(quiz));
 	session.setAttribute("partitaCorrente", pm);
 %>
 
 <body>
 	<div class="container">
-
+		<div class="text-pin">
+			PIN: <%
+			out.print(pm.getPin());
+			%>
+		</div>
 
 		<p class="text-join">Player partecipating:</p>
 		<div class="middle">
@@ -39,11 +43,7 @@ if (dmSession == null) {
 		</div>
 
 		<a href="/home/prossimaDomanda.jsp">Avvia Partita</a>
-		<p style="background: #fff; font-size: 24px">
-			<%
-			out.print(pm.getPin());
-			%>
-		</p>
+
 	</div>
 
 </body>
@@ -52,8 +52,11 @@ if (dmSession == null) {
 	const sessionId =
 <%out.print("\"" + session.getId() + "\"");%>
 	;
+	const url =
+<%out.print("\"" + Configuration.publicURL + "\"");%>
+	;
 
-	let socket = new WebSocket("ws://127.0.0.1:8080/host/" + sessionId);
+	let socket = new WebSocket("ws://" + url + "/host/" + sessionId);
 
 	socket.onopen = function(e) {
 		alert("[open] Connessione stabilita");

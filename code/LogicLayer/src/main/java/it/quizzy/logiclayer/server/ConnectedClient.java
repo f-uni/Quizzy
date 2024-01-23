@@ -11,11 +11,12 @@ public class ConnectedClient {
     private Socket clientSocket;
     private DataInputStream in;
     private DataOutputStream out;
-    Function<String, Void> messageCallaback;
+    Function<String, Void> messageCallback;
+    
 
-    public ConnectedClient(Socket clientSocket, Function<String, Void> messageCallaback) {
+    public ConnectedClient(Socket clientSocket, Function<String, Void> messageCallback) {
         this.clientSocket = clientSocket;
-        this.messageCallaback=messageCallaback;
+        this.messageCallback=messageCallback;
         try {
             this.out = new DataOutputStream(clientSocket.getOutputStream());
             this.in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
@@ -32,8 +33,8 @@ public class ConnectedClient {
         while(!line.equals(ServerPartita.STOP_STRING)){
             try {
                 line = in.readUTF();
-                if(this.messageCallaback!=null)
-					this.messageCallaback.apply(line);
+                if(this.messageCallback!=null)
+					this.messageCallback.apply(line);
             } catch (IOException e) {
                 e.printStackTrace();
                 break;

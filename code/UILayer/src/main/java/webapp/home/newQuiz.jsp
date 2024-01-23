@@ -23,7 +23,7 @@ if(dmSession==null){
 <body>
     <nav class="navbar is-high shadow has-border-yellow" role="navigation" aria-label="main navigation" >
         <div class="navbar-brand">
-          <a class="navbar-item " href="https://bulma.io">
+          <a class="navbar-item " href="/index.html">
             <img src="/images/logo4.png" width="100" height="100">
           </a>
       
@@ -36,11 +36,11 @@ if(dmSession==null){
       
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item hover-underline-animation is-active">
+            <a class="navbar-item hover-underline-animation" href="/home/dashboard.jsp">
               HOME
             </a>
 
-            <a class="navbar-item hover-underline-animation">
+            <a class="navbar-item hover-underline-animation" href="/home/myQuizzies.jsp">
               My Quiz
             </a>
       
@@ -71,7 +71,7 @@ if(dmSession==null){
             <input type="text" class="inputName" placeholder="Insert Title..." id="titoloQuiz">
       </div>
       <div id="questionWrapped"></div>
-      <div id="questions"></div>
+      <div id="question"></div>
 
       <div class="questionName">
         <button class="addQuestion " onclick=openPop() id="addQ">

@@ -24,7 +24,7 @@ if(dmSession==null){
 <body>
     <nav class="navbar is-high shadow has-border-yellow" role="navigation" aria-label="main navigation" >
         <div class="navbar-brand">
-          <a class="navbar-item " href="https://bulma.io">
+          <a class="navbar-item " href="/index.html">
             <img src="/images/logo4.png" width="100" height="100">
           </a>
       

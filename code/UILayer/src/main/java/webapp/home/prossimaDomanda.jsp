@@ -53,6 +53,14 @@ if (dmSession == null) {
 
 </body>
 
+<script type="text/javascript">
+	window.setTimeout(function(){
+	    window.location.href = "/home/placing.jsp";
+	}, 30100);
+</script>
+
+
+
 <%
 }
 }

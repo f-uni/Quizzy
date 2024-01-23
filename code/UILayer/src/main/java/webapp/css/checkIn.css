@@ -4,7 +4,6 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    height: 570px;
     width: 85%;
     background: linear-gradient(14deg, rgba(228,178,70,1) 0%, rgba(241,130,56,1) 100%);
     border-radius: 15px;
@@ -32,6 +31,13 @@
     font-weight: bold;
     text-shadow: #3f1011;
     filter: drop-shadow(2px 2px 4px rgba(82, 6, 6, 0.47));
+}
+
+.text-pin{
+    font-size:2rem;
+    color:#9e2a2b;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
 .grid-container {
     padding: 20px;

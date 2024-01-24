@@ -4,8 +4,6 @@ import java.util.List;
 
 import it.quizzy.databaselayer.models.Domanda;
 import it.quizzy.databaselayer.models.Quiz;
-import it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla;
-import it.quizzy.databaselayer.models.domande.DomandaVeroFalso;
 import it.quizzy.databaselayer.models.domande.TipoDomanda;
 import it.quizzy.logiclayer.factory.DomandeFactory;
 

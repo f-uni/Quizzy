@@ -14,6 +14,19 @@ import it.quizzy.databaselayer.models.domande.TipoDomanda;
  */
 public class DomandeFactory { 
 	
+	/**
+	 * Metodo per la creazione delle domande
+	 * 
+	 * @param type tipo di domanda
+	 * @param idQuiz quiz che conterrà la domanda
+	 * @param domanda stringa della domanda 
+	 * @param rispostaCorretta stringa risposta corretta
+	 * @param possibiliRisposte lista di possibili risposte, se di tipo VeroFalso il parametro viene ignorato
+	 * @return Domanda creata
+	 * @throws IllegalArgumentException
+	 * @throws InvalidRecordInsertionException
+	 * @throws IOException
+	 */
 	public static Domanda createDomanda(TipoDomanda type, Integer idQuiz, String domanda, String rispostaCorretta, List<String> possibiliRisposte ) throws IllegalArgumentException, InvalidRecordInsertionException, IOException {
 		Domanda obj = null;
         switch (type){
@@ -26,4 +39,5 @@ public class DomandeFactory {
         }
         return obj;
 	}
+	
 }

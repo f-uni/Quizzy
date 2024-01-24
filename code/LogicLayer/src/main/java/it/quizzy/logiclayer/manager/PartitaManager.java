@@ -11,7 +11,6 @@ import it.quizzy.databaselayer.models.Domanda;
 import it.quizzy.databaselayer.models.Partita;
 import it.quizzy.databaselayer.models.Quiz;
 import it.quizzy.databaselayer.models.Utente;
-import it.quizzy.logiclayer.server.ClientDocente;
 import it.quizzy.logiclayer.server.ServerPartita;
 
 /**
@@ -127,9 +126,6 @@ public class PartitaManager {
 
 	public List<Utente> getGiocatori() {
 		return giocatori;
-	}
-
-	public void aggiungiDocente(ClientDocente clientDocente) {
 	}
 
 	public void rispondiDomanda(Integer idUtente, String risposta) {

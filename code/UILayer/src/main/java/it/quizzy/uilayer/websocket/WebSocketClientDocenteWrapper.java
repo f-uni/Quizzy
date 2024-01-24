@@ -42,7 +42,6 @@ public class WebSocketClientDocenteWrapper {
 						}
 						return null;
 					});
-					pm.aggiungiDocente(this.client);
 
 				} else {
 					session.close();

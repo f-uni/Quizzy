@@ -23,6 +23,8 @@ class DomandaRispostaMultiplaTest {
 			
 			DomandaRispostaMultipla domf = new DomandaRispostaMultipla(dom.getRecord().getId());
 			
+			System.out.println(dom.toString());
+			
 			assertEquals(dom.getDomanda(), domf.getDomanda());
 			
 			dom.getRecord().delete();

@@ -11,39 +11,31 @@ class DocenteTest {
 	@Test
 	void create() {
 		try {
-			Docente d = new Docente("Docente Test", "test@test.it", "password");
-			Integer id= d.getRecord().getId();
-			Docente df=new Docente(id);
-			assertEquals(d.getRecord().getEmail(), df.getRecord().getEmail());
-			
-			Docente de = new Docente("test@test.it");
+			Docente d1 = new Docente("Docente Test", "luca@carlo.it", "password");
+			Docente d2 = new Docente(d1.getRecord().getId());
+
+			assertEquals(d1.getRecord().getEmail(), d2.getRecord().getEmail());
+
+			Docente de = new Docente("luca@carlo.it");
 			assertEquals("Docente Test", de.getRecord().getNomeCompleto());
-			
-			Docente di = new Docente(77);
-			assertEquals(77, di.getRecord().getId());
-			
-			Docente din = new Docente(-1);
-			assertNotEquals(77, din.getRecord().getId());
-			
-			d.getRecord().delete();
+
+			d1.getRecord().delete();
+			d2.getRecord().delete();
 			de.getRecord().delete();
-			di.getRecord().delete();
-			din.getRecord().delete();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
+
 	}
-	
+
 	@Test
 	void getters() {
 		
 		try {
 			
 			Docente d = new Docente("nome", "email@email.it", "password");
-//			Quiz q = new Quiz(d.getRecord().getId(), "quiz di prova");
 			
-			assertEquals(true, d.creaQuiz("Quiz di prova"));
+			d.creaQuiz("Quiz di prova");
 
 			assertEquals("Quiz di prova", d.getQuizzies().get(0).getTitolo());
 

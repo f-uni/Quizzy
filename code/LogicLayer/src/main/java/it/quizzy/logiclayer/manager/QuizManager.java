@@ -6,6 +6,8 @@ import it.quizzy.databaselayer.models.Domanda;
 import it.quizzy.databaselayer.models.Quiz;
 import it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla;
 import it.quizzy.databaselayer.models.domande.DomandaVeroFalso;
+import it.quizzy.databaselayer.models.domande.TipoDomanda;
+import it.quizzy.logiclayer.factory.DomandeFactory;
 
 /**
  * Gestisce le modifiche da parte del docente sui quiz 
@@ -30,7 +32,7 @@ public class QuizManager {
 	 */
 	public boolean aggiungiDomandaVeroFalso(String domanda, String rispostaCorretta) {
 		try {
-			new DomandaVeroFalso(quiz.getRecord().getId(), domanda, rispostaCorretta);
+			DomandeFactory.createDomanda(TipoDomanda.VeroFalso, quiz.getRecord().getId(), domanda, rispostaCorretta, null);
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -48,7 +50,7 @@ public class QuizManager {
 	 */
 	public boolean aggiungiDomandaRispostaMultipla(String domanda, String rispostaCorretta, List<String> possibiliRisposte) {
 		try {
-			new DomandaRispostaMultipla(quiz.getRecord().getId(), domanda, rispostaCorretta, possibiliRisposte);
+			DomandeFactory.createDomanda(TipoDomanda.RispostaMultipla, quiz.getRecord().getId(), domanda, rispostaCorretta, possibiliRisposte);
 			return true;
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -59,9 +59,6 @@ public class PartitaManager {
 	}
 
 	public void valutaRisposte() {
-		for (String s : risposte.values()) {
-			System.err.println(s);
-		}
 		if (!risposte.isEmpty()) {
 			Domanda domanda = this.domande.get(domandaCorrente - 1);
 			for (Utente u : giocatori) {

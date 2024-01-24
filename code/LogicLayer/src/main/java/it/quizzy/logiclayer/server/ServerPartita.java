@@ -80,11 +80,10 @@ public class ServerPartita extends Thread {
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
-
 				}
 			}
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("Server Chiuso");
 		}
 	}
 

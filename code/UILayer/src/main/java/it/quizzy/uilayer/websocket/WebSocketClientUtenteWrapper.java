@@ -35,7 +35,6 @@ public class WebSocketClientUtenteWrapper {
 				UtenteManager um = (UtenteManager) httpSession.getAttribute("um");
 				
 				if (um != null) {
-					System.out.println("porta di connessione "+ um.getPartitaPort());
 					this.client=new ClientUtente(um.getPartitaPort(), um.getSessioneUtente(), (String message) -> {
 						try {
 							session.getBasicRemote().sendText(message);

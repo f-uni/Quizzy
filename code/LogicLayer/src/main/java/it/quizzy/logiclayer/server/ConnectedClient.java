@@ -36,7 +36,6 @@ public class ConnectedClient {
                 if(this.messageCallback!=null)
 					this.messageCallback.apply(line);
             } catch (IOException e) {
-                e.printStackTrace();
                 break;
             }
             System.out.println("Client "+id+ ": "+ line);

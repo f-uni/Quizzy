@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="/css/background.css">
 <link rel="stylesheet" type="text/css" href="/css/question.css">
 
+<link rel="stylesheet" type="text/css" href="/css/btn.css">
 </head>
 
 <%@page import="it.quizzy.logiclayer.manager.PartitaManager"%>
@@ -47,15 +48,15 @@ if (dmSession == null) {
 		out.print(domanda);
 		%>
 	</div>
-	<button>
+	<button class="simple-btn" style="float: right">
 		<a href="/home/placing.jsp">Avanti</a>
 	</button>
 
 </body>
 
 <script type="text/javascript">
-	window.setTimeout(function(){
-	    window.location.href = "/home/placing.jsp";
+	window.setTimeout(function() {
+		window.location.href = "/home/placing.jsp";
 	}, 30100);
 </script>
 

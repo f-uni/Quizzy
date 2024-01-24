@@ -86,7 +86,7 @@ if(dmSession==null){
               Scelta Multipla
           </div>
       </div>
-        <button class="addQuestion floated-rigth" onclick=confirmData() id="confirmbutton">
+        <button class="addQuestion floated-rigth" onclick=confirmAllData() id="confirmbutton">
           Confirm
         </button>
     </div>

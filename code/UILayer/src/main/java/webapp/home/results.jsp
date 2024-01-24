@@ -8,6 +8,8 @@
 <link rel="stylesheet" type="text/css" href="/css/login.css">
 <link rel="stylesheet" type="text/css" href="/css/background.css">
 <link rel="stylesheet" type="text/css" href="/css/results.css">
+
+<link rel="stylesheet" type="text/css" href="/css/btn.css">
 </head>
 <%@page import="it.quizzy.logiclayer.manager.PartitaManager"%>
 <%@page import="it.quizzy.logiclayer.manager.DocenteManager"%>
@@ -111,6 +113,12 @@ else
 
 		</div>
 
+		
+	</div>
+	<div style="text-align: center;">
+	<button class="simple-btn" style="margin-top:20px">
+			<a href="/home/myQuizzies.jsp">Chiudi</a>
+		</button>
 	</div>
 </body>
 <%

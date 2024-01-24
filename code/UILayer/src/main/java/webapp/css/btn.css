@@ -1,0 +1,28 @@
+.simple-btn{
+	background-color: #e8560d;
+    padding: 10px;
+    border-color: transparent;
+    margin: 20px;
+    border-radius: 15px;
+    filter: drop-shadow(2px 0px 10px rgba(0, 0, 0, 0.253));
+}
+
+.simple-btn a{
+	font-size:1.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+	color: white;
+}
+
+.simple-btn a:link { 
+  text-decoration: none; 
+} 
+.simple-btn a:visited { 
+  text-decoration: none; 
+} 
+.simple-btn a:hover { 
+  text-decoration: none; 
+} 
+.simple-btn a:active { 
+  text-decoration: none; 
+}

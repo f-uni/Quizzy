@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="/css/placing.css">
 
 <link rel="stylesheet" type="text/css" href="/css/scrollbar.css">
+<link rel="stylesheet" type="text/css" href="/css/btn.css">
 
 </head>
 
@@ -93,7 +94,7 @@ if (dmSession == null) {
 			;
 			%>
 		</div>
-		<a href="/home/prossimaDomanda.jsp">Prossima Domanda</a>
+		<button class="simple-btn"><a href="/home/prossimaDomanda.jsp">Prossima Domanda</a></button>
 	</div>
 </body>
 <%

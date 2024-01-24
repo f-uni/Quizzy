@@ -8,6 +8,8 @@
 <link rel="icon" type="image/png" href="/images/Logo3.png">
 <link rel="stylesheet" type="text/css" href="/css/background.css">
 <link rel="stylesheet" type="text/css" href="/css/checkIn.css">
+<link rel="stylesheet" type="text/css" href="/css/btn.css">
+
 </head>
 
 <%@page import="it.quizzy.logiclayer.manager.PartitaManager"%>
@@ -42,7 +44,7 @@ if (dmSession == null) {
 			<div class="grid-container" id="players"></div>
 		</div>
 
-		<a href="/home/prossimaDomanda.jsp">Avvia Partita</a>
+		<button class="simple-btn"><a href="/home/prossimaDomanda.jsp">Avvia Partita</a></button>
 
 	</div>
 

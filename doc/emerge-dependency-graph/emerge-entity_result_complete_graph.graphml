@@ -1,0 +1,2313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d207" for="node" attr.name="metric_tag_input" attr.type="float"/>
+<key id="d206" for="node" attr.name="metric_tag_meta" attr.type="float"/>
+<key id="d205" for="node" attr.name="metric_tag_answer" attr.type="float"/>
+<key id="d204" for="node" attr.name="metric_tag_chosenavatar" attr.type="float"/>
+<key id="d203" for="node" attr.name="metric_tag_immagine" attr.type="float"/>
+<key id="d202" for="node" attr.name="metric_tag_podium" attr.type="float"/>
+<key id="d201" for="node" attr.name="metric_tag_img" attr.type="float"/>
+<key id="d200" for="node" attr.name="metric_tag_pagecontext" attr.type="float"/>
+<key id="d199" for="node" attr.name="metric_tag_span" attr.type="float"/>
+<key id="d198" for="node" attr.name="metric_tag_button" attr.type="float"/>
+<key id="d197" for="node" attr.name="metric_tag_signin" attr.type="float"/>
+<key id="d196" for="node" attr.name="metric_tag_success" attr.type="float"/>
+<key id="d195" for="node" attr.name="metric_tag_dm" attr.type="float"/>
+<key id="d194" for="node" attr.name="metric_tag_mail" attr.type="float"/>
+<key id="d193" for="node" attr.name="metric_tag_che" attr.type="float"/>
+<key id="d192" for="node" attr.name="metric_tag_la" attr.type="float"/>
+<key id="d191" for="node" attr.name="metric_tag_una" attr.type="float"/>
+<key id="d190" for="node" attr.name="metric_tag_link" attr.type="float"/>
+<key id="d189" for="node" attr.name="metric_tag_out" attr.type="float"/>
+<key id="d188" for="node" attr.name="metric_tag_alert" attr.type="float"/>
+<key id="d187" for="node" attr.name="metric_tag_evento" attr.type="float"/>
+<key id="d186" for="node" attr.name="metric_tag_var" attr.type="float"/>
+<key id="d185" for="node" attr.name="metric_tag_function" attr.type="float"/>
+<key id="d184" for="node" attr.name="metric_tag_div" attr.type="float"/>
+<key id="d183" for="node" attr.name="metric_tag_um" attr.type="float"/>
+<key id="d182" for="node" attr.name="metric_tag_throwable" attr.type="float"/>
+<key id="d181" for="node" attr.name="metric_tag_sessionid" attr.type="float"/>
+<key id="d180" for="node" attr.name="metric_tag_httpsession" attr.type="float"/>
+<key id="d179" for="node" attr.name="metric_tag_session" attr.type="float"/>
+<key id="d178" for="node" attr.name="metric_tag_servletcontextevent" attr.type="float"/>
+<key id="d177" for="node" attr.name="metric_tag_applicationcontext" attr.type="float"/>
+<key id="d176" for="node" attr.name="metric_tag_sce" attr.type="float"/>
+<key id="d175" for="node" attr.name="metric_tag_context" attr.type="float"/>
+<key id="d174" for="node" attr.name="metric_tag_manager" attr.type="float"/>
+<key id="d173" for="node" attr.name="metric_tag_ctx" attr.type="float"/>
+<key id="d172" for="node" attr.name="metric_tag_standardcontext" attr.type="float"/>
+<key id="d171" for="node" attr.name="metric_tag_webport" attr.type="float"/>
+<key id="d170" for="node" attr.name="metric_tag_resources" attr.type="float"/>
+<key id="d169" for="node" attr.name="metric_tag_tomcat" attr.type="float"/>
+<key id="d168" for="node" attr.name="metric_tag_webappdirlocation" attr.type="float"/>
+<key id="d167" for="node" attr.name="metric_tag_class" attr.type="float"/>
+<key id="d166" for="node" attr.name="metric_tag_deleteid" attr.type="float"/>
+<key id="d165" for="node" attr.name="metric_tag_vero" attr.type="float"/>
+<key id="d164" for="node" attr.name="metric_tag_assertfalse" attr.type="float"/>
+<key id="d163" for="node" attr.name="metric_tag_asserttrue" attr.type="float"/>
+<key id="d162" for="node" attr.name="metric_tag_docentemanagertest" attr.type="float"/>
+<key id="d161" for="node" attr.name="metric_tag_failedlogin" attr.type="float"/>
+<key id="d160" for="node" attr.name="metric_tag_passwordsbagliata" attr.type="float"/>
+<key id="d159" for="node" attr.name="metric_tag_lm" attr.type="float"/>
+<key id="d158" for="node" attr.name="metric_tag_docentemanager" attr.type="float"/>
+<key id="d157" for="node" attr.name="metric_tag_catch" attr.type="float"/>
+<key id="d156" for="node" attr.name="metric_tag_connectedclientdocente" attr.type="float"/>
+<key id="d155" for="node" attr.name="metric_tag_try" attr.type="float"/>
+<key id="d154" for="node" attr.name="metric_tag_clientsocket" attr.type="float"/>
+<key id="d153" for="node" attr.name="metric_tag_client" attr.type="float"/>
+<key id="d152" for="node" attr.name="metric_tag_clientutente" attr.type="float"/>
+<key id="d151" for="node" attr.name="metric_tag_writemessage" attr.type="float"/>
+<key id="d150" for="node" attr.name="metric_tag_messagecallback" attr.type="float"/>
+<key id="d149" for="node" attr.name="metric_tag_dataoutputstream" attr.type="float"/>
+<key id="d148" for="node" attr.name="metric_tag_readmessages" attr.type="float"/>
+<key id="d147" for="node" attr.name="metric_tag_clientdocente" attr.type="float"/>
+<key id="d146" for="node" attr.name="metric_tag_text" attr.type="float"/>
+<key id="d145" for="node" attr.name="metric_tag_messagecallaback" attr.type="float"/>
+<key id="d144" for="node" attr.name="metric_tag_line" attr.type="float"/>
+<key id="d143" for="node" attr.name="metric_tag_ioexception" attr.type="float"/>
+<key id="d142" for="node" attr.name="metric_tag_pin" attr.type="float"/>
+<key id="d141" for="node" attr.name="metric_tag_utentemanager" attr.type="float"/>
+<key id="d140" for="node" attr.name="metric_tag_sessioneutente" attr.type="float"/>
+<key id="d139" for="node" attr.name="metric_tag_quizmanager" attr.type="float"/>
+<key id="d138" for="node" attr.name="metric_tag_iddomanda" attr.type="float"/>
+<key id="d137" for="node" attr.name="metric_tag_newclientcallback" attr.type="float"/>
+<key id="d136" for="node" attr.name="metric_tag_valutarisposta" attr.type="float"/>
+<key id="d135" for="node" attr.name="metric_tag_risposta" attr.type="float"/>
+<key id="d134" for="node" attr.name="metric_tag_message" attr.type="float"/>
+<key id="d133" for="node" attr.name="metric_tag_connectedclient" attr.type="float"/>
+<key id="d132" for="node" attr.name="metric_tag_msgs" attr.type="float"/>
+<key id="d131" for="node" attr.name="metric_tag_idutente" attr.type="float"/>
+<key id="d130" for="node" attr.name="metric_tag_jo" attr.type="float"/>
+<key id="d129" for="node" attr.name="metric_tag_domandacorrente" attr.type="float"/>
+<key id="d128" for="node" attr.name="metric_tag_object" attr.type="float"/>
+<key id="d127" for="node" attr.name="metric_tag_hashmap" attr.type="float"/>
+<key id="d126" for="node" attr.name="metric_tag_map" attr.type="float"/>
+<key id="d125" for="node" attr.name="metric_tag_jsonobject" attr.type="float"/>
+<key id="d124" for="node" attr.name="metric_tag_boolean" attr.type="float"/>
+<key id="d123" for="node" attr.name="metric_tag_nome" attr.type="float"/>
+<key id="d122" for="node" attr.name="metric_tag_password" attr.type="float"/>
+<key id="d121" for="node" attr.name="metric_tag_sessionedocente" attr.type="float"/>
+<key id="d120" for="node" attr.name="metric_tag_type" attr.type="float"/>
+<key id="d119" for="node" attr.name="metric_tag_obj" attr.type="float"/>
+<key id="d118" for="node" attr.name="metric_tag_utentipath" attr.type="float"/>
+<key id="d117" for="node" attr.name="metric_tag_quizziespath" attr.type="float"/>
+<key id="d116" for="node" attr.name="metric_tag_path" attr.type="float"/>
+<key id="d115" for="node" attr.name="metric_tag_partitepath" attr.type="float"/>
+<key id="d114" for="node" attr.name="metric_tag_docentipath" attr.type="float"/>
+<key id="d113" for="node" attr.name="metric_tag_tables" attr.type="float"/>
+<key id="d112" for="node" attr.name="metric_tag_foreignkey" attr.type="float"/>
+<key id="d111" for="node" attr.name="metric_tag_uniquekey" attr.type="float"/>
+<key id="d110" for="node" attr.name="metric_tag_tablefield" attr.type="float"/>
+<key id="d109" for="node" attr.name="metric_tag_defaultschema" attr.type="float"/>
+<key id="d108" for="node" attr.name="metric_tag_catalogimpl" attr.type="float"/>
+<key id="d107" for="node" attr.name="metric_tag_getschemas" attr.type="float"/>
+<key id="d106" for="node" attr.name="metric_tag_defaultcatalog" attr.type="float"/>
+<key id="d105" for="node" attr.name="metric_tag_nick" attr.type="float"/>
+<key id="d104" for="node" attr.name="metric_tag_utentetest" attr.type="float"/>
+<key id="d103" for="node" attr.name="metric_tag_quiztest" attr.type="float"/>
+<key id="d102" for="node" attr.name="metric_tag_partitatest" attr.type="float"/>
+<key id="d101" for="node" attr.name="metric_tag_assertequals" attr.type="float"/>
+<key id="d100" for="node" attr.name="metric_tag_domandaverofalsotest" attr.type="float"/>
+<key id="d99" for="node" attr.name="metric_tag_domandarispostamultiplatest" attr.type="float"/>
+<key id="d98" for="node" attr.name="metric_tag_di" attr.type="float"/>
+<key id="d97" for="node" attr.name="metric_tag_test" attr.type="float"/>
+<key id="d96" for="node" attr.name="metric_tag_utenti" attr.type="float"/>
+<key id="d95" for="node" attr.name="metric_tag_avatar" attr.type="float"/>
+<key id="d94" for="node" attr.name="metric_tag_utente" attr.type="float"/>
+<key id="d93" for="node" attr.name="metric_tag_nickname" attr.type="float"/>
+<key id="d92" for="node" attr.name="metric_tag_utentirecord" attr.type="float"/>
+<key id="d91" for="node" attr.name="metric_tag_punteggio" attr.type="float"/>
+<key id="d90" for="node" attr.name="metric_tag_idpartita" attr.type="float"/>
+<key id="d89" for="node" attr.name="metric_tag_setiddocente" attr.type="float"/>
+<key id="d88" for="node" attr.name="metric_tag_settitolo" attr.type="float"/>
+<key id="d87" for="node" attr.name="metric_tag_domandepath" attr.type="float"/>
+<key id="d86" for="node" attr.name="metric_tag_domande" attr.type="float"/>
+<key id="d85" for="node" attr.name="metric_tag_data" attr.type="float"/>
+<key id="d84" for="node" attr.name="metric_tag_domandaverofalso" attr.type="float"/>
+<key id="d83" for="node" attr.name="metric_tag_idquiz" attr.type="float"/>
+<key id="d82" for="node" attr.name="metric_tag_numerodomanda" attr.type="float"/>
+<key id="d81" for="node" attr.name="metric_tag_domanda" attr.type="float"/>
+<key id="d80" for="node" attr.name="metric_tag_rispostacorretta" attr.type="float"/>
+<key id="d79" for="node" attr.name="metric_tag_domandarispostamultipla" attr.type="float"/>
+<key id="d78" for="node" attr.name="metric_tag_possibilirisposte" attr.type="float"/>
+<key id="d77" for="node" attr.name="metric_tag_res" attr.type="float"/>
+<key id="d76" for="node" attr.name="metric_tag_case" attr.type="float"/>
+<key id="d75" for="node" attr.name="metric_tag_localdatetime" attr.type="float"/>
+<key id="d74" for="node" attr.name="metric_tag_partite" attr.type="float"/>
+<key id="d73" for="node" attr.name="metric_tag_newpin" attr.type="float"/>
+<key id="d72" for="node" attr.name="metric_tag_pingenerator" attr.type="float"/>
+<key id="d71" for="node" attr.name="metric_tag_rnd" attr.type="float"/>
+<key id="d70" for="node" attr.name="metric_tag_number" attr.type="float"/>
+<key id="d69" for="node" attr.name="metric_tag_random" attr.type="float"/>
+<key id="d68" for="node" attr.name="metric_tag_partiterecord" attr.type="float"/>
+<key id="d67" for="node" attr.name="metric_tag_port" attr.type="float"/>
+<key id="d66" for="node" attr.name="metric_tag_timestamp" attr.type="float"/>
+<key id="d65" for="node" attr.name="metric_tag_partita" attr.type="float"/>
+<key id="d64" for="node" attr.name="metric_tag_byte" attr.type="float"/>
+<key id="d63" for="node" attr.name="metric_tag_domanderecord" attr.type="float"/>
+<key id="d62" for="node" attr.name="metric_tag_abstract" attr.type="float"/>
+<key id="d61" for="node" attr.name="metric_tag_passwordhash" attr.type="float"/>
+<key id="d60" for="node" attr.name="metric_tag_setemail" attr.type="float"/>
+<key id="d59" for="node" attr.name="metric_tag_setnomecompleto" attr.type="float"/>
+<key id="d58" for="node" attr.name="metric_tag_setpasswordhash" attr.type="float"/>
+<key id="d57" for="node" attr.name="metric_tag_integer" attr.type="float"/>
+<key id="d56" for="node" attr.name="metric_tag_value" attr.type="float"/>
+<key id="d55" for="node" attr.name="metric_tag_quizziesrecord" attr.type="float"/>
+<key id="d54" for="node" attr.name="metric_tag_quizzies" attr.type="float"/>
+<key id="d53" for="node" attr.name="metric_tag_condition" attr.type="float"/>
+<key id="d52" for="node" attr.name="metric_tag_alias" attr.type="float"/>
+<key id="d51" for="node" attr.name="metric_tag_docentirecord" attr.type="float"/>
+<key id="d50" for="node" attr.name="metric_tag_docenti" attr.type="float"/>
+<key id="d49" for="node" attr.name="metric_tag_str" attr.type="float"/>
+<key id="d48" for="node" attr.name="metric_tag_hash" attr.type="float"/>
+<key id="d47" for="node" attr.name="metric_tag_nosuchalgorithmexception" attr.type="float"/>
+<key id="d46" for="node" attr.name="metric_tag_stringhash" attr.type="float"/>
+<key id="d45" for="node" attr.name="metric_tag_messagedigest" attr.type="float"/>
+<key id="d44" for="node" attr.name="metric_tag_create" attr.type="float"/>
+<key id="d43" for="node" attr.name="metric_tag_docente" attr.type="float"/>
+<key id="d42" for="node" attr.name="metric_tag_quiz" attr.type="float"/>
+<key id="d41" for="node" attr.name="metric_tag_dslcontext" attr.type="float"/>
+<key id="d40" for="node" attr.name="metric_tag_email" attr.type="float"/>
+<key id="d39" for="node" attr.name="metric_tag_result" attr.type="float"/>
+<key id="d38" for="node" attr.name="metric_tag_serialversionuid" attr.type="float"/>
+<key id="d37" for="node" attr.name="metric_tag_record" attr.type="float"/>
+<key id="d36" for="node" attr.name="metric_tag_nel" attr.type="float"/>
+<key id="d35" for="node" attr.name="metric_tag_presente" attr.type="float"/>
+<key id="d34" for="node" attr.name="metric_tag_recordnotfoundexception" attr.type="float"/>
+<key id="d33" for="node" attr.name="metric_tag_il" attr.type="float"/>
+<key id="d32" for="node" attr.name="metric_tag_non" attr.type="float"/>
+<key id="d31" for="node" attr.name="metric_tag_inserire" attr.type="float"/>
+<key id="d30" for="node" attr.name="metric_tag_nuovo" attr.type="float"/>
+<key id="d29" for="node" attr.name="metric_tag_possibile" attr.type="float"/>
+<key id="d28" for="node" attr.name="metric_tag_stato" attr.type="float"/>
+<key id="d27" for="node" attr.name="metric_tag_invalidrecordinsertionexception" attr.type="float"/>
+<key id="d26" for="node" attr.name="metric_tag_dbconnection" attr.type="float"/>
+<key id="d25" for="node" attr.name="metric_tag_getconnection" attr.type="float"/>
+<key id="d24" for="node" attr.name="metric_tag_sqlexception" attr.type="float"/>
+<key id="d23" for="node" attr.name="metric_tag_sqlite" attr.type="float"/>
+<key id="d22" for="node" attr.name="metric_tag_conn" attr.type="float"/>
+<key id="d21" for="node" attr.name="metric_tag_args" attr.type="float"/>
+<key id="d20" for="node" attr.name="metric_tag_database" attr.type="float"/>
+<key id="d19" for="node" attr.name="metric_tag_jdbc" attr.type="float"/>
+<key id="d18" for="node" attr.name="metric_tag_generator" attr.type="float"/>
+<key id="d17" for="node" attr.name="metric_tag_jooqcodegenerator" attr.type="float"/>
+<key id="d16" for="node" attr.name="metric_tag_target" attr.type="float"/>
+<key id="d15" for="node" attr.name="metric_tag_configuration" attr.type="float"/>
+<key id="d14" for="node" attr.name="metric_tag_person" attr.type="float"/>
+<key id="d13" for="node" attr.name="metric_entity_result_complete_graph_louvain-modularity-in-entity" attr.type="long"/>
+<key id="d12" for="node" attr.name="metric_fan-out-complete-graph" attr.type="long"/>
+<key id="d11" for="node" attr.name="metric_fan-in-complete-graph" attr.type="long"/>
+<key id="d10" for="node" attr.name="metric_tag_getname" attr.type="float"/>
+<key id="d9" for="node" attr.name="metric_tag_serializable" attr.type="float"/>
+<key id="d8" for="node" attr.name="metric_tag_setname" attr.type="float"/>
+<key id="d7" for="node" attr.name="metric_tag_greeting" attr.type="float"/>
+<key id="d6" for="node" attr.name="metric_tag_sayhello" attr.type="float"/>
+<key id="d5" for="node" attr.name="metric_tag_user" attr.type="float"/>
+<key id="d4" for="node" attr.name="metric_tag_name" attr.type="float"/>
+<key id="d3" for="node" attr.name="metric_sloc-in-entity" attr.type="long"/>
+<key id="d2" for="node" attr.name="metric_number-of-methods-in-entity" attr.type="long"/>
+<key id="d1" for="node" attr.name="display_name" attr.type="string"/>
+<key id="d0" for="node" attr.name="absolute_name" attr.type="string"/>
+<graph edgedefault="directed"><node id="demo.User">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\.metadata\.plugins\org.jboss.tools.common.projecttemplates\templates\jsf-2.3\JSFKickStartWithoutLibs\JavaSource\demo\User.java/User</data>
+  <data key="d1">User</data>
+  <data key="d2">4</data>
+  <data key="d3">14</data>
+  <data key="d4">0.6409553340538793</data>
+  <data key="d5">0.4785356004103369</data>
+  <data key="d6">0.26517696645899924</data>
+  <data key="d7">0.26517696645899924</data>
+  <data key="d8">0.2208849541985734</data>
+  <data key="d9">0.2768272895871035</data>
+  <data key="d10">0.2208849541985734</data>
+  <data key="d11">0</data>
+  <data key="d12">1</data>
+  <data key="d13">4</data>
+</node>
+<node id="java.io.Serializable">
+  <data key="d1">java.io.Serializable</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">4</data>
+</node>
+<node id="demo.Person">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\.metadata\.plugins\org.jboss.tools.common.projecttemplates\templates\jsf-1.2-facelets\FaceletsKickStartWithRILibs\JavaSource\demo\Person.java/Person</data>
+  <data key="d1">Person</data>
+  <data key="d2">3</data>
+  <data key="d3">10</data>
+  <data key="d4">0.6946130666518177</data>
+  <data key="d14">0.6309089590523024</data>
+  <data key="d8">0.23937639217808573</data>
+  <data key="d10">0.23937639217808573</data>
+  <data key="d11">0</data>
+  <data key="d12">0</data>
+  <data key="d13">11</data>
+</node>
+<node id="it.quizzy.databaselayer.JooqCodeGenerator">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\JooqCodeGenerator.java/JooqCodeGenerator</data>
+  <data key="d1">JooqCodeGenerator</data>
+  <data key="d2">1</data>
+  <data key="d3">16</data>
+  <data key="d15">0.8172653099080917</data>
+  <data key="d16">0.22840799147485336</data>
+  <data key="d17">0.22840799147485336</data>
+  <data key="d18">0.22840799147485336</data>
+  <data key="d19">0.2043163274770229</data>
+  <data key="d20">0.2042629662370924</data>
+  <data key="d21">0.2043163274770229</data>
+  <data key="d11">0</data>
+  <data key="d12">7</data>
+  <data key="d13">5</data>
+</node>
+<node id="org.jooq.codegen.GenerationTool">
+  <data key="d1">org.jooq.codegen.GenerationTool</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="org.jooq.meta.jaxb.Configuration">
+  <data key="d1">org.jooq.meta.jaxb.Configuration</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="org.jooq.meta.jaxb.Database">
+  <data key="d1">org.jooq.meta.jaxb.Database</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="org.jooq.meta.jaxb.Generator">
+  <data key="d1">org.jooq.meta.jaxb.Generator</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="org.jooq.meta.jaxb.Jdbc">
+  <data key="d1">org.jooq.meta.jaxb.Jdbc</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="org.jooq.meta.jaxb.Target">
+  <data key="d1">org.jooq.meta.jaxb.Target</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="it.quizzy.databaselayer.util.DBConnection">
+  <data key="d1">DBConnection</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\util\DBConnection.java/DBConnection</data>
+  <data key="d2">1</data>
+  <data key="d3">11</data>
+  <data key="d22">0.772923784659698</data>
+  <data key="d23">0.2576412615532327</data>
+  <data key="d24">0.2576412615532327</data>
+  <data key="d25">0.2576412615532327</data>
+  <data key="d26">0.2576412615532327</data>
+  <data key="d19">0.23046617601774697</data>
+  <data key="d11">7</data>
+  <data key="d12">6</data>
+  <data key="d13">5</data>
+</node>
+<node id="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\exceptions\InvalidRecordInsertionException.java/InvalidRecordInsertionException</data>
+  <data key="d1">it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException</data>
+  <data key="d2">1</data>
+  <data key="d3">5</data>
+  <data key="d27">0.474554953261242</data>
+  <data key="d28">0.3696857610026373</data>
+  <data key="d29">0.3696857610026373</data>
+  <data key="d30">0.30500849374428884</data>
+  <data key="d31">0.330692619469591</data>
+  <data key="d32">0.330692619469591</data>
+  <data key="d33">0.25775502339185685</data>
+  <data key="d11">7</data>
+  <data key="d12">1</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.exceptions.RecordNotFoundException">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\exceptions\RecordNotFoundException.java/RecordNotFoundException</data>
+  <data key="d1">it.quizzy.databaselayer.exceptions.RecordNotFoundException</data>
+  <data key="d2">1</data>
+  <data key="d3">5</data>
+  <data key="d34">0.4939012240178571</data>
+  <data key="d35">0.412820063302132</data>
+  <data key="d36">0.412820063302132</data>
+  <data key="d32">0.369277268707167</data>
+  <data key="d20">0.35373617262982887</data>
+  <data key="d37">0.21654762692255497</data>
+  <data key="d38">0.20312079137650507</data>
+  <data key="d11">9</data>
+  <data key="d12">1</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.models.Docente">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\models\Docente.java/Docente</data>
+  <data key="d1">it.quizzy.databaselayer.models.Docente</data>
+  <data key="d2">4</data>
+  <data key="d3">54</data>
+  <data key="d39">0.40334051204361976</data>
+  <data key="d40">0.3386358812912267</data>
+  <data key="d41">0.30899787862261324</data>
+  <data key="d42">0.2816740269873512</data>
+  <data key="d43">0.2768450281055176</data>
+  <data key="d34">0.2768450281055176</data>
+  <data key="d44">0.22803119405435912</data>
+  <data key="d11">8</data>
+  <data key="d12">12</data>
+  <data key="d13">0</data>
+</node>
+<node id="java.util.ArrayList">
+  <data key="d1">java.util.ArrayList</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="java.util.List">
+  <data key="d1">java.util.List</data>
+  <data key="d11">19</data>
+  <data key="d12">0</data>
+  <data key="d13">4</data>
+</node>
+<node id="org.jooq.DSLContext">
+  <data key="d1">org.jooq.DSLContext</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.jooq.Record1">
+  <data key="d1">org.jooq.Record1</data>
+  <data key="d11">6</data>
+  <data key="d12">0</data>
+  <data key="d13">6</data>
+</node>
+<node id="org.jooq.Result">
+  <data key="d1">org.jooq.Result</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.util.StringHash">
+  <data key="d1">it.quizzy.databaselayer.util.StringHash</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\util\StringHash.java/StringHash</data>
+  <data key="d2">1</data>
+  <data key="d3">12</data>
+  <data key="d45">0.8369504888735536</data>
+  <data key="d46">0.2789834962911846</data>
+  <data key="d47">0.2789834962911846</data>
+  <data key="d48">0.2789834962911846</data>
+  <data key="d49">0.20962845758589982</data>
+  <data key="d11">2</data>
+  <data key="d12">2</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.generated.tables.Docenti">
+  <data key="d1">it.quizzy.generated.tables.Docenti</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Docenti.java/Docenti</data>
+  <data key="d2">30</data>
+  <data key="d3">141</data>
+  <data key="d50">0.7040182146695045</data>
+  <data key="d51">0.3394271142957118</data>
+  <data key="d52">0.34775093564855575</data>
+  <data key="d53">0.2916504823438995</data>
+  <data key="d11">5</data>
+  <data key="d12">29</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.Quizzies">
+  <data key="d1">it.quizzy.generated.tables.Quizzies</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Quizzies.java/Quizzies</data>
+  <data key="d2">32</data>
+  <data key="d3">150</data>
+  <data key="d54">0.6957341921071594</data>
+  <data key="d55">0.3429600654872373</data>
+  <data key="d52">0.3513705259249628</data>
+  <data key="d53">0.2946861470734066</data>
+  <data key="d11">6</data>
+  <data key="d12">32</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.records.DocentiRecord">
+  <data key="d1">DocentiRecord</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\records\DocentiRecord.java/DocentiRecord</data>
+  <data key="d2">11</data>
+  <data key="d3">41</data>
+  <data key="d56">0.6309106462256969</data>
+  <data key="d51">0.3622406289947389</data>
+  <data key="d57">0.25505535790234357</data>
+  <data key="d58">0.24104350702065086</data>
+  <data key="d59">0.24104350702065086</data>
+  <data key="d60">0.24104350702065086</data>
+  <data key="d61">0.21561909370436133</data>
+  <data key="d11">4</data>
+  <data key="d12">4</data>
+  <data key="d13">6</data>
+</node>
+<node id="it.quizzy.databaselayer.models.Domanda">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\models\Domanda.java/Domanda</data>
+  <data key="d1">it.quizzy.databaselayer.models.Domanda</data>
+  <data key="d2">2</data>
+  <data key="d3">13</data>
+  <data key="d62">0.7057868765468904</data>
+  <data key="d63">0.3535526086232975</data>
+  <data key="d37">0.24681693360020385</data>
+  <data key="d9">0.21044766088145062</data>
+  <data key="d11">6</data>
+  <data key="d12">3</data>
+  <data key="d13">4</data>
+</node>
+<node id="it.quizzy.generated.tables.records.DomandeRecord">
+  <data key="d1">DomandeRecord</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\records\DomandeRecord.java/DomandeRecord</data>
+  <data key="d2">13</data>
+  <data key="d3">48</data>
+  <data key="d57">0.5966838741441708</data>
+  <data key="d56">0.5426362485476258</data>
+  <data key="d64">0.25646228113040165</data>
+  <data key="d63">0.249245939551218</data>
+  <data key="d11">4</data>
+  <data key="d12">4</data>
+  <data key="d13">6</data>
+</node>
+<node id="it.quizzy.databaselayer.models.Partita">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\models\Partita.java/Partita</data>
+  <data key="d1">it.quizzy.databaselayer.models.Partita</data>
+  <data key="d2">3</data>
+  <data key="d3">37</data>
+  <data key="d65">0.4350493581805963</data>
+  <data key="d34">0.3732616988513955</data>
+  <data key="d41">0.3124593041423358</data>
+  <data key="d44">0.2305856225763639</data>
+  <data key="d66">0.2574028387438121</data>
+  <data key="d67">0.22828620981162492</data>
+  <data key="d68">0.23442603829943184</data>
+  <data key="d11">4</data>
+  <data key="d12">8</data>
+  <data key="d13">0</data>
+</node>
+<node id="java.time.LocalDateTime">
+  <data key="d1">java.time.LocalDateTime</data>
+  <data key="d11">3</data>
+  <data key="d12">0</data>
+  <data key="d13">6</data>
+</node>
+<node id="it.quizzy.databaselayer.util.PinGenerator">
+  <data key="d1">PinGenerator</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\util\PinGenerator.java/PinGenerator</data>
+  <data key="d2">1</data>
+  <data key="d3">6</data>
+  <data key="d69">0.6018407297418509</data>
+  <data key="d70">0.6018407297418509</data>
+  <data key="d71">0.30092036487092544</data>
+  <data key="d72">0.30092036487092544</data>
+  <data key="d73">0.30092036487092544</data>
+  <data key="d11">1</data>
+  <data key="d12">1</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.generated.tables.Partite">
+  <data key="d1">it.quizzy.generated.tables.Partite</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Partite.java/Partite</data>
+  <data key="d2">32</data>
+  <data key="d3">153</data>
+  <data key="d74">0.6721514462023322</data>
+  <data key="d68">0.38980590850401614</data>
+  <data key="d52">0.3394604000100105</data>
+  <data key="d53">0.28469740624832685</data>
+  <data key="d11">5</data>
+  <data key="d12">33</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.records.PartiteRecord">
+  <data key="d1">PartiteRecord</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\records\PartiteRecord.java/PartiteRecord</data>
+  <data key="d2">15</data>
+  <data key="d3">55</data>
+  <data key="d56">0.6014828682210213</data>
+  <data key="d57">0.5511597763112568</data>
+  <data key="d75">0.2527951807043972</data>
+  <data key="d68">0.23022967812994044</data>
+  <data key="d11">4</data>
+  <data key="d12">5</data>
+  <data key="d13">6</data>
+</node>
+<node id="it.quizzy.databaselayer.models.Quiz">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\models\Quiz.java/Quiz</data>
+  <data key="d1">it.quizzy.databaselayer.models.Quiz</data>
+  <data key="d2">4</data>
+  <data key="d3">50</data>
+  <data key="d39">0.47419746506835103</data>
+  <data key="d57">0.34543398639725337</data>
+  <data key="d41">0.2724608730944221</data>
+  <data key="d44">0.20106797658858583</data>
+  <data key="d76">0.21695141749478022</data>
+  <data key="d77">0.21033519080686616</data>
+  <data key="d42">0.20556870446894485</data>
+  <data key="d55">0.20441677435866593</data>
+  <data key="d11">10</data>
+  <data key="d12">13</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.jooq.Record2">
+  <data key="d1">org.jooq.Record2</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla">
+  <data key="d1">it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\models\domande\DomandaRispostaMultipla.java/DomandaRispostaMultipla</data>
+  <data key="d2">3</data>
+  <data key="d3">49</data>
+  <data key="d78">0.4025973407776838</data>
+  <data key="d79">0.3772756941812355</data>
+  <data key="d80">0.35705674985911945</data>
+  <data key="d81">0.34292168392512107</data>
+  <data key="d82">0.30194800558326285</data>
+  <data key="d83">0.2189284820610953</data>
+  <data key="d11">3</data>
+  <data key="d12">10</data>
+  <data key="d13">4</data>
+</node>
+<node id="it.quizzy.databaselayer.models.domande.DomandaVeroFalso">
+  <data key="d1">it.quizzy.databaselayer.models.domande.DomandaVeroFalso</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\models\domande\DomandaVeroFalso.java/DomandaVeroFalso</data>
+  <data key="d2">3</data>
+  <data key="d3">47</data>
+  <data key="d84">0.4016040457478596</data>
+  <data key="d80">0.3800812973552429</data>
+  <data key="d81">0.36503474186927104</data>
+  <data key="d82">0.32141890537343526</data>
+  <data key="d83">0.23304592763650805</data>
+  <data key="d77">0.2008020228739298</data>
+  <data key="d85">0.2008020228739298</data>
+  <data key="d11">3</data>
+  <data key="d12">12</data>
+  <data key="d13">4</data>
+</node>
+<node id="it.quizzy.generated.tables.Domande">
+  <data key="d1">it.quizzy.generated.tables.Domande</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Domande.java/Domande</data>
+  <data key="d2">30</data>
+  <data key="d3">140</data>
+  <data key="d86">0.6386242062851908</data>
+  <data key="d63">0.3944434794620435</data>
+  <data key="d52">0.3615778989340851</data>
+  <data key="d53">0.3032468293215292</data>
+  <data key="d87">0.213069182614025</data>
+  <data key="d11">7</data>
+  <data key="d12">30</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.records.QuizziesRecord">
+  <data key="d1">QuizziesRecord</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\records\QuizziesRecord.java/QuizziesRecord</data>
+  <data key="d2">9</data>
+  <data key="d3">34</data>
+  <data key="d56">0.5226529503463737</data>
+  <data key="d57">0.5070972358071354</data>
+  <data key="d55">0.4001118797873816</data>
+  <data key="d88">0.26624393561876314</data>
+  <data key="d89">0.23816147056589995</data>
+  <data key="d11">4</data>
+  <data key="d12">4</data>
+  <data key="d13">6</data>
+</node>
+<node id="it.quizzy.databaselayer.models.Utente">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\main\java\it\quizzy\databaselayer\models\Utente.java/Utente</data>
+  <data key="d1">it.quizzy.databaselayer.models.Utente</data>
+  <data key="d2">3</data>
+  <data key="d3">31</data>
+  <data key="d90">0.4008925613984533</data>
+  <data key="d91">0.3697561696464653</data>
+  <data key="d92">0.33675026433280647</data>
+  <data key="d93">0.31247165935126564</data>
+  <data key="d94">0.2876471072175179</data>
+  <data key="d95">0.2876471072175179</data>
+  <data key="d57">0.25291463502285444</data>
+  <data key="d11">7</data>
+  <data key="d12">6</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.generated.tables.Utenti">
+  <data key="d1">it.quizzy.generated.tables.Utenti</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Utenti.java/Utenti</data>
+  <data key="d2">30</data>
+  <data key="d3">140</data>
+  <data key="d96">0.7062765425325137</data>
+  <data key="d92">0.36263603470910605</data>
+  <data key="d52">0.33242069481471564</data>
+  <data key="d53">0.27879337205230803</data>
+  <data key="d11">5</data>
+  <data key="d12">30</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.records.UtentiRecord">
+  <data key="d1">UtentiRecord</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\records\UtentiRecord.java/UtentiRecord</data>
+  <data key="d2">13</data>
+  <data key="d3">48</data>
+  <data key="d57">0.6144530222356398</data>
+  <data key="d56">0.5587958671967334</data>
+  <data key="d92">0.2566684428280751</data>
+  <data key="d11">4</data>
+  <data key="d12">4</data>
+  <data key="d13">6</data>
+</node>
+<node id="java.io.IOException">
+  <data key="d1">java.io.IOException</data>
+  <data key="d11">11</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="org.apache.commons.lang3.SerializationUtils">
+  <data key="d1">org.apache.commons.lang3.SerializationUtils</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">4</data>
+</node>
+<node id="org.jooq.impl.DSL">
+  <data key="d1">org.jooq.impl.DSL</data>
+  <data key="d11">14</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="java.util.Arrays">
+  <data key="d1">java.util.Arrays</data>
+  <data key="d11">9</data>
+  <data key="d12">0</data>
+  <data key="d13">8</data>
+</node>
+<node id="java.sql.Connection">
+  <data key="d1">java.sql.Connection</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="java.sql.DriverManager">
+  <data key="d1">java.sql.DriverManager</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="java.sql.SQLException">
+  <data key="d1">java.sql.SQLException</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="org.jooq.SQLDialect">
+  <data key="d1">org.jooq.SQLDialect</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">5</data>
+</node>
+<node id="java.util.Random">
+  <data key="d1">java.util.Random</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="java.security.MessageDigest">
+  <data key="d1">java.security.MessageDigest</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="java.security.NoSuchAlgorithmException">
+  <data key="d1">java.security.NoSuchAlgorithmException</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.models.domande.test.DomandaRispostaMultiplaTest">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\test\java\it\quizzy\databaselayer\models\domande\test\DomandaRispostaMultiplaTest.java/DomandaRispostaMultiplaTest</data>
+  <data key="d1">DomandaRispostaMultiplaTest</data>
+  <data key="d2">1</data>
+  <data key="d3">17</data>
+  <data key="d79">0.6274632027610444</data>
+  <data key="d97">0.40639697856331264</data>
+  <data key="d43">0.3641092406649424</data>
+  <data key="d42">0.2963683091099208</data>
+  <data key="d98">0.2074474990308363</data>
+  <data key="d99">0.20289023050319901</data>
+  <data key="d11">0</data>
+  <data key="d12">5</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.junit.jupiter.api.Test">
+  <data key="d1">org.junit.jupiter.api.Test</data>
+  <data key="d11">8</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.models.domande.test.DomandaVeroFalsoTest">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\test\java\it\quizzy\databaselayer\models\domande\test\DomandaVeroFalsoTest.java/DomandaVeroFalsoTest</data>
+  <data key="d1">DomandaVeroFalsoTest</data>
+  <data key="d2">1</data>
+  <data key="d3">16</data>
+  <data key="d84">0.6206607701279764</data>
+  <data key="d97">0.401991161526083</data>
+  <data key="d43">0.3601618720068252</data>
+  <data key="d42">0.2931553311242392</data>
+  <data key="d98">0.2051985262929193</data>
+  <data key="d100">0.20069066386911985</data>
+  <data key="d11">0</data>
+  <data key="d12">4</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.models.test.DocenteTest">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\test\java\it\quizzy\databaselayer\models\test\DocenteTest.java/DocenteTest</data>
+  <data key="d1">DocenteTest</data>
+  <data key="d2">2</data>
+  <data key="d3">34</data>
+  <data key="d43">0.8187813049199268</data>
+  <data key="d101">0.391660615544834</data>
+  <data key="d11">0</data>
+  <data key="d12">2</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.models.test.PartitaTest">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\test\java\it\quizzy\databaselayer\models\test\PartitaTest.java/PartitaTest</data>
+  <data key="d1">PartitaTest</data>
+  <data key="d2">1</data>
+  <data key="d3">17</data>
+  <data key="d65">0.6629651564523873</data>
+  <data key="d43">0.4266059056119352</data>
+  <data key="d42">0.34723774291369974</data>
+  <data key="d97">0.31743468116206475</data>
+  <data key="d102">0.2377148417479458</data>
+  <data key="d11">0</data>
+  <data key="d12">5</data>
+  <data key="d13">0</data>
+</node>
+<node id="java.time.ZoneOffset">
+  <data key="d1">java.time.ZoneOffset</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.models.test.QuizTest">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\test\java\it\quizzy\databaselayer\models\test\QuizTest.java/QuizTest</data>
+  <data key="d1">QuizTest</data>
+  <data key="d2">1</data>
+  <data key="d3">14</data>
+  <data key="d42">0.6574642777498231</data>
+  <data key="d43">0.48464456875588274</data>
+  <data key="d97">0.36062087312006</data>
+  <data key="d103">0.2700553495633159</data>
+  <data key="d11">0</data>
+  <data key="d12">3</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.databaselayer.models.test.UtenteTest">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src\test\java\it\quizzy\databaselayer\models\test\UtenteTest.java/UtenteTest</data>
+  <data key="d1">UtenteTest</data>
+  <data key="d2">1</data>
+  <data key="d3">18</data>
+  <data key="d94">0.551343090081494</data>
+  <data key="d97">0.4301574884971488</data>
+  <data key="d43">0.38539734487380056</data>
+  <data key="d42">0.3136958546482138</data>
+  <data key="d65">0.2994625808966363</data>
+  <data key="d104">0.21475246273334964</data>
+  <data key="d105">0.21475246273334964</data>
+  <data key="d11">0</data>
+  <data key="d12">5</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.generated.DefaultCatalog">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\DefaultCatalog.java/DefaultCatalog</data>
+  <data key="d1">DefaultCatalog</data>
+  <data key="d2">2</data>
+  <data key="d3">14</data>
+  <data key="d106">0.8961587864212865</data>
+  <data key="d107">0.22403969660532164</data>
+  <data key="d108">0.22403969660532164</data>
+  <data key="d109">0.20040878484107402</data>
+  <data key="d11">0</data>
+  <data key="d12">6</data>
+  <data key="d13">8</data>
+</node>
+<node id="org.jooq.Constants">
+  <data key="d1">org.jooq.Constants</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">8</data>
+</node>
+<node id="org.jooq.Schema">
+  <data key="d1">org.jooq.Schema</data>
+  <data key="d11">6</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.impl.CatalogImpl">
+  <data key="d1">org.jooq.impl.CatalogImpl</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">8</data>
+</node>
+<node id="it.quizzy.generated.DefaultSchema">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\DefaultSchema.java/DefaultSchema</data>
+  <data key="d1">it.quizzy.generated.DefaultSchema</data>
+  <data key="d2">3</data>
+  <data key="d3">25</data>
+  <data key="d109">0.6872238723102305</data>
+  <data key="d96">0.2810748699722536</data>
+  <data key="d50">0.2678248543418951</data>
+  <data key="d54">0.26194692689491966</data>
+  <data key="d74">0.26194692689491966</data>
+  <data key="d86">0.23365699557312974</data>
+  <data key="d11">5</data>
+  <data key="d12">11</data>
+  <data key="d13">8</data>
+</node>
+<node id="org.jooq.Catalog">
+  <data key="d1">org.jooq.Catalog</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">8</data>
+</node>
+<node id="org.jooq.Table">
+  <data key="d1">org.jooq.Table</data>
+  <data key="d11">11</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="org.jooq.impl.SchemaImpl">
+  <data key="d1">org.jooq.impl.SchemaImpl</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">8</data>
+</node>
+<node id="it.quizzy.generated.Keys">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\Keys.java/Keys</data>
+  <data key="d1">it.quizzy.generated.Keys</data>
+  <data key="d2">0</data>
+  <data key="d3">11</data>
+  <data key="d110">0.826386877271104</data>
+  <data key="d111">0.2754622924237014</data>
+  <data key="d55">0.23749225764663334</data>
+  <data key="d68">0.23749225764663334</data>
+  <data key="d112">0.2489151355751936</data>
+  <data key="d11">5</data>
+  <data key="d12">15</data>
+  <data key="d13">6</data>
+</node>
+<node id="org.jooq.ForeignKey">
+  <data key="d1">org.jooq.ForeignKey</data>
+  <data key="d11">11</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="org.jooq.TableField">
+  <data key="d1">org.jooq.TableField</data>
+  <data key="d11">6</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.UniqueKey">
+  <data key="d1">org.jooq.UniqueKey</data>
+  <data key="d11">6</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.impl.Internal">
+  <data key="d1">org.jooq.impl.Internal</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">6</data>
+</node>
+<node id="it.quizzy.generated.Tables">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\Tables.java/Tables</data>
+  <data key="d1">Tables</data>
+  <data key="d2">0</data>
+  <data key="d3">6</data>
+  <data key="d96">0.4578999916954077</data>
+  <data key="d50">0.43631434781445844</data>
+  <data key="d54">0.4267385969498509</data>
+  <data key="d74">0.4267385969498509</data>
+  <data key="d86">0.3806513771333301</data>
+  <data key="d113">0.29430624581059356</data>
+  <data key="d11">0</data>
+  <data key="d12">5</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.Partite.PartitePath">
+  <data key="d1">it.quizzy.generated.tables.Partite.PartitePath</data>
+  <data key="d11">3</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.Quizzies.QuizziesPath">
+  <data key="d1">it.quizzy.generated.tables.Quizzies.QuizziesPath</data>
+  <data key="d11">3</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="java.util.Collection">
+  <data key="d1">java.util.Collection</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.Condition">
+  <data key="d1">org.jooq.Condition</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.Field">
+  <data key="d1">org.jooq.Field</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.Identity">
+  <data key="d1">org.jooq.Identity</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.InverseForeignKey">
+  <data key="d1">org.jooq.InverseForeignKey</data>
+  <data key="d11">10</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="org.jooq.Name">
+  <data key="d1">org.jooq.Name</data>
+  <data key="d11">10</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="org.jooq.Path">
+  <data key="d1">org.jooq.Path</data>
+  <data key="d11">10</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="org.jooq.PlainSQL">
+  <data key="d1">org.jooq.PlainSQL</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.QueryPart">
+  <data key="d1">org.jooq.QueryPart</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.Record">
+  <data key="d1">org.jooq.Record</data>
+  <data key="d11">10</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="org.jooq.SQL">
+  <data key="d1">org.jooq.SQL</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.Select">
+  <data key="d1">org.jooq.Select</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.Stringly">
+  <data key="d1">org.jooq.Stringly</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.TableOptions">
+  <data key="d1">org.jooq.TableOptions</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.impl.SQLDataType">
+  <data key="d1">org.jooq.impl.SQLDataType</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="org.jooq.impl.TableImpl">
+  <data key="d1">org.jooq.impl.TableImpl</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.DocentiPath">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Docenti.java/DocentiPath</data>
+  <data key="d1">DocentiPath</data>
+  <data key="d2">5</data>
+  <data key="d3">19</data>
+  <data key="d114">0.7271383170904154</data>
+  <data key="d52">0.4640526971389846</data>
+  <data key="d51">0.30450087962570954</data>
+  <data key="d11">0</data>
+  <data key="d12">9</data>
+  <data key="d13">2</data>
+</node>
+<node id="it.quizzy.generated.tables.DomandePath">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Domande.java/DomandePath</data>
+  <data key="d1">DomandePath</data>
+  <data key="d2">5</data>
+  <data key="d3">19</data>
+  <data key="d87">0.7516297846036265</data>
+  <data key="d52">0.44642988833796365</data>
+  <data key="d63">0.29293719124619905</data>
+  <data key="d11">0</data>
+  <data key="d12">9</data>
+  <data key="d13">2</data>
+</node>
+<node id="it.quizzy.generated.tables.Docenti.DocentiPath">
+  <data key="d1">it.quizzy.generated.tables.Docenti.DocentiPath</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.Utenti.UtentiPath">
+  <data key="d1">it.quizzy.generated.tables.Utenti.UtentiPath</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.PartitePath">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Partite.java/PartitePath</data>
+  <data key="d1">PartitePath</data>
+  <data key="d2">5</data>
+  <data key="d3">19</data>
+  <data key="d115">0.7064845968481983</data>
+  <data key="d52">0.4785187164247142</data>
+  <data key="d68">0.3139931541547548</data>
+  <data key="d116">0.20507944989630608</data>
+  <data key="d11">0</data>
+  <data key="d12">9</data>
+  <data key="d13">2</data>
+</node>
+<node id="it.quizzy.generated.tables.Domande.DomandePath">
+  <data key="d1">it.quizzy.generated.tables.Domande.DomandePath</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="it.quizzy.generated.tables.QuizziesPath">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Quizzies.java/QuizziesPath</data>
+  <data key="d1">QuizziesPath</data>
+  <data key="d2">5</data>
+  <data key="d3">19</data>
+  <data key="d117">0.7064845968481983</data>
+  <data key="d52">0.4785187164247142</data>
+  <data key="d55">0.3139931541547548</data>
+  <data key="d116">0.20507944989630608</data>
+  <data key="d11">0</data>
+  <data key="d12">9</data>
+  <data key="d13">2</data>
+</node>
+<node id="it.quizzy.generated.tables.UtentiPath">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\DataBaseLayer\src-generated\it\quizzy\generated\tables\Utenti.java/UtentiPath</data>
+  <data key="d1">UtentiPath</data>
+  <data key="d2">5</data>
+  <data key="d3">19</data>
+  <data key="d118">0.7510399661512871</data>
+  <data key="d52">0.44607956615647054</data>
+  <data key="d92">0.2927073177575312</data>
+  <data key="d11">0</data>
+  <data key="d12">9</data>
+  <data key="d13">2</data>
+</node>
+<node id="org.jooq.impl.UpdatableRecordImpl">
+  <data key="d1">org.jooq.impl.UpdatableRecordImpl</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">6</data>
+</node>
+<node id="it.quizzy.logiclayer.factory.DomandeFactory">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\factory\DomandeFactory.java/DomandeFactory</data>
+  <data key="d1">it.quizzy.logiclayer.factory.DomandeFactory</data>
+  <data key="d2">0</data>
+  <data key="d3">13</data>
+  <data key="d119">0.4539461310129506</data>
+  <data key="d81">0.4359754344923464</data>
+  <data key="d80">0.34045959825971295</data>
+  <data key="d120">0.24736967297261606</data>
+  <data key="d83">0.2783359716330373</data>
+  <data key="d78">0.2559222102288234</data>
+  <data key="d76">0.24736967297261606</data>
+  <data key="d11">1</data>
+  <data key="d12">7</data>
+  <data key="d13">4</data>
+</node>
+<node id="it.quizzy.databaselayer.models.domande.TipoDomanda">
+  <data key="d1">it.quizzy.databaselayer.models.domande.TipoDomanda</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">4</data>
+</node>
+<node id="it.quizzy.logiclayer.manager.DocenteManager">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\manager\DocenteManager.java/DocenteManager</data>
+  <data key="d1">it.quizzy.logiclayer.manager.DocenteManager</data>
+  <data key="d2">7</data>
+  <data key="d3">43</data>
+  <data key="d121">0.6323014443200665</data>
+  <data key="d40">0.3701346271503963</data>
+  <data key="d43">0.30259620116319763</data>
+  <data key="d122">0.29309444954720504</data>
+  <data key="d123">0.21672192099674828</data>
+  <data key="d124">0.20726032610537914</data>
+  <data key="d11">9</data>
+  <data key="d12">5</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.logiclayer.manager.PartitaManager">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\manager\PartitaManager.java/PartitaManager</data>
+  <data key="d1">it.quizzy.logiclayer.manager.PartitaManager</data>
+  <data key="d2">10</data>
+  <data key="d3">110</data>
+  <data key="d125">0.4322782451087183</data>
+  <data key="d126">0.3865997669115715</data>
+  <data key="d127">0.3865997669115715</data>
+  <data key="d128">0.2899498251836786</data>
+  <data key="d129">0.2899498251836786</data>
+  <data key="d130">0.21613912255435916</data>
+  <data key="d131">0.21613912255435916</data>
+  <data key="d11">5</data>
+  <data key="d12">10</data>
+  <data key="d13">0</data>
+</node>
+<node id="java.util.HashMap">
+  <data key="d1">java.util.HashMap</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.jooq.tools.json.JSONObject">
+  <data key="d1">org.jooq.tools.json.JSONObject</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.logiclayer.server.ServerPartita">
+  <data key="d1">ServerPartita</data>
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\server\ServerPartita.java/ServerPartita</data>
+  <data key="d2">9</data>
+  <data key="d3">103</data>
+  <data key="d132">0.41755692704452385</data>
+  <data key="d131">0.3112620873998657</data>
+  <data key="d133">0.24900966991989257</data>
+  <data key="d134">0.22966966868461666</data>
+  <data key="d49">0.2091684412263386</data>
+  <data key="d135">0.21722659091103408</data>
+  <data key="d57">0.21135255232874467</data>
+  <data key="d136">0.20877846352226193</data>
+  <data key="d137">0.20877846352226193</data>
+  <data key="d11">1</data>
+  <data key="d12">10</data>
+  <data key="d13">3</data>
+</node>
+<node id="it.quizzy.logiclayer.manager.QuizManager">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\manager\QuizManager.java/QuizManager</data>
+  <data key="d1">it.quizzy.logiclayer.manager.QuizManager</data>
+  <data key="d2">4</data>
+  <data key="d3">42</data>
+  <data key="d81">0.5907683323543446</data>
+  <data key="d80">0.38444969828044223</data>
+  <data key="d42">0.31978151362996116</data>
+  <data key="d86">0.2396942177490073</data>
+  <data key="d138">0.262702359260609</data>
+  <data key="d139">0.2349934471079415</data>
+  <data key="d124">0.21587627175496782</data>
+  <data key="d78">0.216742053261223</data>
+  <data key="d11">1</data>
+  <data key="d12">5</data>
+  <data key="d13">4</data>
+</node>
+<node id="it.quizzy.logiclayer.manager.UtenteManager">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\manager\UtenteManager.java/UtenteManager</data>
+  <data key="d1">it.quizzy.logiclayer.manager.UtenteManager</data>
+  <data key="d2">5</data>
+  <data key="d3">28</data>
+  <data key="d140">0.6262070545844199</data>
+  <data key="d65">0.4366086850756513</data>
+  <data key="d94">0.3014414783458986</data>
+  <data key="d141">0.25832543559809845</data>
+  <data key="d93">0.21830434253782566</data>
+  <data key="d142">0.20096098556393238</data>
+  <data key="d95">0.20096098556393238</data>
+  <data key="d11">2</data>
+  <data key="d12">3</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.logiclayer.server.ClientDocente">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\server\ClientDocente.java/ClientDocente</data>
+  <data key="d1">it.quizzy.logiclayer.server.ClientDocente</data>
+  <data key="d2">2</data>
+  <data key="d3">47</data>
+  <data key="d143">0.42384168600053823</data>
+  <data key="d144">0.33933497215571795</data>
+  <data key="d145">0.29259724093468215</data>
+  <data key="d146">0.2617351228022407</data>
+  <data key="d147">0.2414067652732384</data>
+  <data key="d148">0.2262233147704786</data>
+  <data key="d149">0.2262233147704786</data>
+  <data key="d11">1</data>
+  <data key="d12">7</data>
+  <data key="d13">3</data>
+</node>
+<node id="java.io.BufferedInputStream">
+  <data key="d1">java.io.BufferedInputStream</data>
+  <data key="d11">4</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="java.io.DataInputStream">
+  <data key="d1">java.io.DataInputStream</data>
+  <data key="d11">4</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="java.io.DataOutputStream">
+  <data key="d1">java.io.DataOutputStream</data>
+  <data key="d11">4</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="java.net.InetAddress">
+  <data key="d1">java.net.InetAddress</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="java.net.Socket">
+  <data key="d1">java.net.Socket</data>
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="java.util.function.Function">
+  <data key="d1">java.util.function.Function</data>
+  <data key="d11">4</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="it.quizzy.logiclayer.server.ClientUtente">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\server\ClientUtente.java/ClientUtente</data>
+  <data key="d1">it.quizzy.logiclayer.server.ClientUtente</data>
+  <data key="d2">2</data>
+  <data key="d3">53</data>
+  <data key="d94">0.40399611125684237</data>
+  <data key="d143">0.3647092902749599</data>
+  <data key="d150">0.3378286068720249</data>
+  <data key="d144">0.29199255511697836</data>
+  <data key="d151">0.22521907124801657</data>
+  <data key="d146">0.22521907124801657</data>
+  <data key="d152">0.22521907124801657</data>
+  <data key="d11">1</data>
+  <data key="d12">8</data>
+  <data key="d13">3</data>
+</node>
+<node id="it.quizzy.logiclayer.server.ConnectedClient">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\server\ConnectedClient.java/ConnectedClient</data>
+  <data key="d1">ConnectedClient</data>
+  <data key="d2">7</data>
+  <data key="d3">63</data>
+  <data key="d153">0.43700234872028204</data>
+  <data key="d144">0.36939867858501735</data>
+  <data key="d143">0.34604425917968223</data>
+  <data key="d154">0.2622014092321692</data>
+  <data key="d150">0.21369284726582916</data>
+  <data key="d133">0.21369284726582916</data>
+  <data key="d155">0.20704371525652998</data>
+  <data key="d11">0</data>
+  <data key="d12">6</data>
+  <data key="d13">3</data>
+</node>
+<node id="it.quizzy.logiclayer.server.ConnectedClientDocente">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\main\java\it\quizzy\logiclayer\server\ConnectedClientDocente.java/ConnectedClientDocente</data>
+  <data key="d1">ConnectedClientDocente</data>
+  <data key="d2">5</data>
+  <data key="d3">51</data>
+  <data key="d153">0.49063660020551675</data>
+  <data key="d143">0.3885150259300565</data>
+  <data key="d144">0.31105183812874493</data>
+  <data key="d154">0.29438196012331</data>
+  <data key="d156">0.23991983653582846</data>
+  <data key="d155">0.23245464205137417</data>
+  <data key="d157">0.23245464205137417</data>
+  <data key="d11">0</data>
+  <data key="d12">5</data>
+  <data key="d13">3</data>
+</node>
+<node id="java.net.ServerSocket">
+  <data key="d1">java.net.ServerSocket</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="java.util.function.BiFunction">
+  <data key="d1">java.util.function.BiFunction</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="org.json.JSONObject">
+  <data key="d1">org.json.JSONObject</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<node id="it.quizzy.logiclayer.manager.test.DocenteManagerTest">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\test\java\it\quizzy\logiclayer\manager\test\DocenteManagerTest.java/DocenteManagerTest</data>
+  <data key="d1">DocenteManagerTest</data>
+  <data key="d2">2</data>
+  <data key="d3">13</data>
+  <data key="d158">0.6022594066488081</data>
+  <data key="d159">0.5033896542197602</data>
+  <data key="d160">0.2516948271098801</data>
+  <data key="d161">0.2516948271098801</data>
+  <data key="d162">0.2516948271098801</data>
+  <data key="d163">0.2516948271098801</data>
+  <data key="d164">0.2516948271098801</data>
+  <data key="d11">0</data>
+  <data key="d12">2</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.logiclayer.manager.test.QuizManagerTest">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\LogicLayer\src\test\java\it\quizzy\logiclayer\manager\test\QuizManagerTest.java/QuizManagerTest</data>
+  <data key="d1">QuizManagerTest</data>
+  <data key="d2">1</data>
+  <data key="d3">26</data>
+  <data key="d165">0.44854169842180097</data>
+  <data key="d97">0.30696341028077406</data>
+  <data key="d101">0.30696341028077406</data>
+  <data key="d86">0.27965388453133333</data>
+  <data key="d166">0.3064977367109618</data>
+  <data key="d43">0.2750222568690712</data>
+  <data key="d139">0.2741694436365536</data>
+  <data key="d11">0</data>
+  <data key="d12">7</data>
+  <data key="d13">4</data>
+</node>
+<node id="it.quizzy.uilayer.launch.Configuration">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\src\main\java\it\quizzy\uilayer\launch\Configuration.java/Configuration</data>
+  <data key="d1">it.quizzy.uilayer.launch.Configuration</data>
+  <data key="d2">0</data>
+  <data key="d3">4</data>
+  <data key="d15">0.9740239441414696</data>
+  <data key="d167">0.2264450402174782</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="it.quizzy.uilayer.launch.Main">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\src\main\java\it\quizzy\uilayer\launch\Main.java/Main</data>
+  <data key="d1">Main</data>
+  <data key="d2">0</data>
+  <data key="d3">18</data>
+  <data key="d168">0.424885559846771</data>
+  <data key="d169">0.28368740300055456</data>
+  <data key="d170">0.424885559846771</data>
+  <data key="d171">0.28325703989784734</data>
+  <data key="d172">0.28325703989784734</data>
+  <data key="d173">0.28325703989784734</data>
+  <data key="d11">0</data>
+  <data key="d12">8</data>
+  <data key="d13">9</data>
+</node>
+<node id="java.io.File">
+  <data key="d1">java.io.File</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">9</data>
+</node>
+<node id="org.apache.catalina.WebResourceRoot">
+  <data key="d1">org.apache.catalina.WebResourceRoot</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">9</data>
+</node>
+<node id="org.apache.catalina.core.StandardContext">
+  <data key="d1">org.apache.catalina.core.StandardContext</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">9</data>
+</node>
+<node id="org.apache.catalina.startup.Tomcat">
+  <data key="d1">org.apache.catalina.startup.Tomcat</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">9</data>
+</node>
+<node id="org.apache.catalina.webresources.DirResourceSet">
+  <data key="d1">org.apache.catalina.webresources.DirResourceSet</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">9</data>
+</node>
+<node id="org.apache.catalina.webresources.StandardRoot">
+  <data key="d1">org.apache.catalina.webresources.StandardRoot</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">9</data>
+</node>
+<node id="org.apache.tomcat.websocket.server.WsContextListener">
+  <data key="d1">org.apache.tomcat.websocket.server.WsContextListener</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">9</data>
+</node>
+<node id="org.apache.tomcat.websocket.server.WsSci">
+  <data key="d1">org.apache.tomcat.websocket.server.WsSci</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">9</data>
+</node>
+<node id="it.quizzy.uilayer.websocket.SessionManager">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\src\main\java\it\quizzy\uilayer\websocket\SessionManager.java/SessionManager</data>
+  <data key="d1">SessionManager</data>
+  <data key="d2">2</data>
+  <data key="d3">28</data>
+  <data key="d174">0.43228645654305925</data>
+  <data key="d175">0.45958647007275727</data>
+  <data key="d176">0.3676691760582058</data>
+  <data key="d177">0.3676691760582058</data>
+  <data key="d178">0.27575188204365436</data>
+  <data key="d11">0</data>
+  <data key="d12">8</data>
+  <data key="d13">10</data>
+</node>
+<node id="javax.servlet.ServletContextEvent">
+  <data key="d1">javax.servlet.ServletContextEvent</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">10</data>
+</node>
+<node id="javax.servlet.ServletContextListener">
+  <data key="d1">javax.servlet.ServletContextListener</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">10</data>
+</node>
+<node id="org.apache.catalina.Context">
+  <data key="d1">org.apache.catalina.Context</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">10</data>
+</node>
+<node id="org.apache.catalina.Manager">
+  <data key="d1">org.apache.catalina.Manager</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">10</data>
+</node>
+<node id="org.apache.catalina.Session">
+  <data key="d1">org.apache.catalina.Session</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">10</data>
+</node>
+<node id="org.apache.catalina.core.ApplicationContext">
+  <data key="d1">org.apache.catalina.core.ApplicationContext</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">10</data>
+</node>
+<node id="org.apache.catalina.core.ApplicationContextFacade">
+  <data key="d1">org.apache.catalina.core.ApplicationContextFacade</data>
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">10</data>
+</node>
+<node id="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\src\main\java\it\quizzy\uilayer\websocket\WebSocketClientDocenteWrapper.java/WebSocketClientDocenteWrapper</data>
+  <data key="d1">WebSocketClientDocenteWrapper</data>
+  <data key="d2">3</data>
+  <data key="d3">53</data>
+  <data key="d179">0.4756781785905543</data>
+  <data key="d180">0.4002443098740601</data>
+  <data key="d134">0.36915826630849613</data>
+  <data key="d143">0.32406851112091406</data>
+  <data key="d181">0.24555015160518404</data>
+  <data key="d182">0.20012215493703006</data>
+  <data key="d11">0</data>
+  <data key="d12">11</data>
+  <data key="d13">7</data>
+</node>
+<node id="javax.servlet.http.HttpSession">
+  <data key="d1">javax.servlet.http.HttpSession</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">7</data>
+</node>
+<node id="javax.websocket.EndpointConfig">
+  <data key="d1">javax.websocket.EndpointConfig</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">7</data>
+</node>
+<node id="javax.websocket.OnClose">
+  <data key="d1">javax.websocket.OnClose</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">7</data>
+</node>
+<node id="javax.websocket.OnError">
+  <data key="d1">javax.websocket.OnError</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">7</data>
+</node>
+<node id="javax.websocket.OnMessage">
+  <data key="d1">javax.websocket.OnMessage</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">7</data>
+</node>
+<node id="javax.websocket.OnOpen">
+  <data key="d1">javax.websocket.OnOpen</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">7</data>
+</node>
+<node id="javax.websocket.Session">
+  <data key="d1">javax.websocket.Session</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">7</data>
+</node>
+<node id="javax.websocket.server.PathParam">
+  <data key="d1">javax.websocket.server.PathParam</data>
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">7</data>
+</node>
+<node id="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\src\main\java\it\quizzy\uilayer\websocket\WebSocketClientUtenteWrapper.java/WebSocketClientUtenteWrapper</data>
+  <data key="d1">WebSocketClientUtenteWrapper</data>
+  <data key="d2">3</data>
+  <data key="d3">54</data>
+  <data key="d179">0.46814882794685014</data>
+  <data key="d134">0.36331498369609133</data>
+  <data key="d143">0.31893893914844657</data>
+  <data key="d183">0.2954317325136668</data>
+  <data key="d180">0.2954317325136668</data>
+  <data key="d181">0.24166342045950004</data>
+  <data key="d11">0</data>
+  <data key="d12">11</data>
+  <data key="d13">7</data>
+</node>
+<node id="org.apache.jsp.home.checkIn">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\home\checkIn_jsp.java/checkIn</data>
+  <data key="d1">checkIn</data>
+  <data key="d2">13</data>
+  <data key="d3">200</data>
+  <data key="d184">0.2807954607794204</data>
+  <data key="d185">0.25072569242494797</data>
+  <data key="d186">0.2519322709390471</data>
+  <data key="d187">0.2519322709390471</data>
+  <data key="d188">0.2519322709390471</data>
+  <data key="d189">0.24304764943203666</data>
+  <data key="d190">0.21758261523742478</data>
+  <data key="d11">0</data>
+  <data key="d12">3</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.home.dashboard">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\home\dashboard_jsp.java/dashboard</data>
+  <data key="d1">dashboard</data>
+  <data key="d2">9</data>
+  <data key="d3">192</data>
+  <data key="d184">0.5252080330881195</data>
+  <data key="d98">0.22818753296329491</data>
+  <data key="d191">0.2047212233318438</data>
+  <data key="d192">0.2047212233318438</data>
+  <data key="d193">0.2047212233318438</data>
+  <data key="d11">0</data>
+  <data key="d12">1</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.home.login">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\home\login_jsp.java/login</data>
+  <data key="d1">login</data>
+  <data key="d2">9</data>
+  <data key="d3">145</data>
+  <data key="d194">0.32108958752628697</data>
+  <data key="d189">0.2770930448421488</data>
+  <data key="d195">0.27478229760675316</data>
+  <data key="d158">0.25610276630790707</data>
+  <data key="d122">0.24806094402371415</data>
+  <data key="d196">0.21405972501752463</data>
+  <data key="d197">0.21405972501752463</data>
+  <data key="d11">0</data>
+  <data key="d12">1</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.home.myQuizzies">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\home\myQuizzies_jsp.java/myQuizzies</data>
+  <data key="d1">myQuizzies</data>
+  <data key="d2">9</data>
+  <data key="d3">189</data>
+  <data key="d184">0.6859889050209336</data>
+  <data key="d189">0.2474042707679431</data>
+  <data key="d42">0.23265152911016998</data>
+  <data key="d190">0.22148277665055027</data>
+  <data key="d11">0</data>
+  <data key="d12">2</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.home.newQuiz">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\home\newQuiz_jsp.java/newQuiz</data>
+  <data key="d1">newQuiz</data>
+  <data key="d2">9</data>
+  <data key="d3">191</data>
+  <data key="d184">0.6768548443859471</data>
+  <data key="d189">0.2703988137755673</data>
+  <data key="d198">0.20826302904182986</data>
+  <data key="d190">0.20172341101244665</data>
+  <data key="d199">0.20187905744061857</data>
+  <data key="d11">0</data>
+  <data key="d12">1</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.home.placing">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\home\placing_jsp.java/placing</data>
+  <data key="d1">placing</data>
+  <data key="d2">9</data>
+  <data key="d3">203</data>
+  <data key="d184">0.605117596556639</data>
+  <data key="d190">0.3516698653697434</data>
+  <data key="d189">0.2618853044575883</data>
+  <data key="d11">0</data>
+  <data key="d12">4</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.home.prossimaDomanda">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\home\prossimaDomanda_jsp.java/prossimaDomanda</data>
+  <data key="d1">prossimaDomanda</data>
+  <data key="d2">10</data>
+  <data key="d3">163</data>
+  <data key="d190">0.3797991768628146</data>
+  <data key="d189">0.33939953186793764</data>
+  <data key="d184">0.23526707169202973</data>
+  <data key="d200">0.22787950611768878</data>
+  <data key="d81">0.22110831711951093</data>
+  <data key="d11">0</data>
+  <data key="d12">2</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.home.results">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\home\results_jsp.java/results</data>
+  <data key="d1">results</data>
+  <data key="d2">9</data>
+  <data key="d3">228</data>
+  <data key="d184">0.762343129075937</data>
+  <data key="d201">0.27835726475683675</data>
+  <data key="d190">0.21717793326716742</data>
+  <data key="d202">0.22489174436391685</data>
+  <data key="d11">0</data>
+  <data key="d12">4</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.user.login">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\user\login_jsp.java/login</data>
+  <data key="d1">login</data>
+  <data key="d2">9</data>
+  <data key="d3">176</data>
+  <data key="d203">0.5665570080178618</data>
+  <data key="d204">0.5665570080178618</data>
+  <data key="d142">0.2424242990682632</data>
+  <data key="d11">0</data>
+  <data key="d12">0</data>
+  <data key="d13">13</data>
+</node>
+<node id="org.apache.jsp.user.partita">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\user\partita_jsp.java/partita</data>
+  <data key="d1">partita</data>
+  <data key="d2">20</data>
+  <data key="d3">426</data>
+  <data key="d184">0.539651437422363</data>
+  <data key="d190">0.3643102218637354</data>
+  <data key="d199">0.2959001997673225</data>
+  <data key="d205">0.2186956146958003</data>
+  <data key="d206">0.20591447322732873</data>
+  <data key="d185">0.2007755632579611</data>
+  <data key="d11">0</data>
+  <data key="d12">2</data>
+  <data key="d13">0</data>
+</node>
+<node id="org.apache.jsp.user.pin">
+  <data key="d0">C:\Users\filippo\Documents\Github\Quizzy\code\UILayer\tomcat.8080\work\Tomcat\localhost\ROOT\org\apache\jsp\user\pin_jsp.java/pin</data>
+  <data key="d1">pin</data>
+  <data key="d2">9</data>
+  <data key="d3">114</data>
+  <data key="d189">0.41420921975260816</data>
+  <data key="d200">0.2781081986387217</data>
+  <data key="d190">0.2781081986387217</data>
+  <data key="d207">0.2231020261079049</data>
+  <data key="d11">0</data>
+  <data key="d12">0</data>
+  <data key="d13">12</data>
+</node>
+<node id="Exception">
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">0</data>
+</node>
+<node id="Domanda">
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">4</data>
+</node>
+<node id="CatalogImpl">
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">8</data>
+</node>
+<node id="SchemaImpl">
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">8</data>
+</node>
+<node id="TableImpl">
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">1</data>
+</node>
+<node id="Docenti">
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="Domande">
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="Partite">
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="Quizzies">
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="Utenti">
+  <data key="d11">2</data>
+  <data key="d12">0</data>
+  <data key="d13">2</data>
+</node>
+<node id="UpdatableRecordImpl">
+  <data key="d11">5</data>
+  <data key="d12">0</data>
+  <data key="d13">6</data>
+</node>
+<node id="Thread">
+  <data key="d11">1</data>
+  <data key="d12">0</data>
+  <data key="d13">3</data>
+</node>
+<edge source="demo.User" target="java.io.Serializable"/>
+<edge source="it.quizzy.databaselayer.JooqCodeGenerator" target="org.jooq.codegen.GenerationTool"/>
+<edge source="it.quizzy.databaselayer.JooqCodeGenerator" target="org.jooq.meta.jaxb.Configuration"/>
+<edge source="it.quizzy.databaselayer.JooqCodeGenerator" target="org.jooq.meta.jaxb.Database"/>
+<edge source="it.quizzy.databaselayer.JooqCodeGenerator" target="org.jooq.meta.jaxb.Generator"/>
+<edge source="it.quizzy.databaselayer.JooqCodeGenerator" target="org.jooq.meta.jaxb.Jdbc"/>
+<edge source="it.quizzy.databaselayer.JooqCodeGenerator" target="org.jooq.meta.jaxb.Target"/>
+<edge source="it.quizzy.databaselayer.JooqCodeGenerator" target="it.quizzy.databaselayer.util.DBConnection"/>
+<edge source="it.quizzy.databaselayer.util.DBConnection" target="java.sql.Connection"/>
+<edge source="it.quizzy.databaselayer.util.DBConnection" target="java.sql.DriverManager"/>
+<edge source="it.quizzy.databaselayer.util.DBConnection" target="java.sql.SQLException"/>
+<edge source="it.quizzy.databaselayer.util.DBConnection" target="org.jooq.DSLContext"/>
+<edge source="it.quizzy.databaselayer.util.DBConnection" target="org.jooq.SQLDialect"/>
+<edge source="it.quizzy.databaselayer.util.DBConnection" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException" target="Exception"/>
+<edge source="it.quizzy.databaselayer.exceptions.RecordNotFoundException" target="Exception"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="java.util.ArrayList"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="java.util.List"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="org.jooq.DSLContext"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="org.jooq.Record1"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="org.jooq.Result"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="it.quizzy.databaselayer.util.DBConnection"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="it.quizzy.databaselayer.util.StringHash"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="it.quizzy.generated.tables.Docenti"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="it.quizzy.generated.tables.Quizzies"/>
+<edge source="it.quizzy.databaselayer.models.Docente" target="it.quizzy.generated.tables.records.DocentiRecord"/>
+<edge source="it.quizzy.databaselayer.util.StringHash" target="java.security.MessageDigest"/>
+<edge source="it.quizzy.databaselayer.util.StringHash" target="java.security.NoSuchAlgorithmException"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="it.quizzy.generated.DefaultSchema"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="it.quizzy.generated.Keys"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="it.quizzy.generated.tables.Partite.PartitePath"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="it.quizzy.generated.tables.Quizzies.QuizziesPath"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="it.quizzy.generated.tables.records.DocentiRecord"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="java.util.Collection"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Condition"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Field"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Identity"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.PlainSQL"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.QueryPart"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.SQL"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Schema"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Select"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Stringly"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.TableField"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.TableOptions"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.UniqueKey"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.impl.SQLDataType"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="org.jooq.impl.TableImpl"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="TableImpl"/>
+<edge source="it.quizzy.generated.tables.Docenti" target="Docenti"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="it.quizzy.generated.DefaultSchema"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="it.quizzy.generated.Keys"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="it.quizzy.generated.tables.Docenti.DocentiPath"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="it.quizzy.generated.tables.Domande.DomandePath"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="it.quizzy.generated.tables.Partite.PartitePath"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="it.quizzy.generated.tables.records.QuizziesRecord"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="java.util.Arrays"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="java.util.Collection"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="java.util.List"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Condition"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Field"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Identity"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.PlainSQL"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.QueryPart"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.SQL"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Schema"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Select"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Stringly"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.TableField"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.TableOptions"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.UniqueKey"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.impl.SQLDataType"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="org.jooq.impl.TableImpl"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="TableImpl"/>
+<edge source="it.quizzy.generated.tables.Quizzies" target="Quizzies"/>
+<edge source="it.quizzy.generated.tables.records.DocentiRecord" target="it.quizzy.generated.tables.Docenti"/>
+<edge source="it.quizzy.generated.tables.records.DocentiRecord" target="org.jooq.Record1"/>
+<edge source="it.quizzy.generated.tables.records.DocentiRecord" target="org.jooq.impl.UpdatableRecordImpl"/>
+<edge source="it.quizzy.generated.tables.records.DocentiRecord" target="UpdatableRecordImpl"/>
+<edge source="it.quizzy.databaselayer.models.Domanda" target="java.io.Serializable"/>
+<edge source="it.quizzy.databaselayer.models.Domanda" target="java.util.List"/>
+<edge source="it.quizzy.databaselayer.models.Domanda" target="it.quizzy.generated.tables.records.DomandeRecord"/>
+<edge source="it.quizzy.generated.tables.records.DomandeRecord" target="it.quizzy.generated.tables.Domande"/>
+<edge source="it.quizzy.generated.tables.records.DomandeRecord" target="org.jooq.Record1"/>
+<edge source="it.quizzy.generated.tables.records.DomandeRecord" target="org.jooq.impl.UpdatableRecordImpl"/>
+<edge source="it.quizzy.generated.tables.records.DomandeRecord" target="UpdatableRecordImpl"/>
+<edge source="it.quizzy.databaselayer.models.Partita" target="java.time.LocalDateTime"/>
+<edge source="it.quizzy.databaselayer.models.Partita" target="org.jooq.DSLContext"/>
+<edge source="it.quizzy.databaselayer.models.Partita" target="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException"/>
+<edge source="it.quizzy.databaselayer.models.Partita" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.databaselayer.models.Partita" target="it.quizzy.databaselayer.util.DBConnection"/>
+<edge source="it.quizzy.databaselayer.models.Partita" target="it.quizzy.databaselayer.util.PinGenerator"/>
+<edge source="it.quizzy.databaselayer.models.Partita" target="it.quizzy.generated.tables.Partite"/>
+<edge source="it.quizzy.databaselayer.models.Partita" target="it.quizzy.generated.tables.records.PartiteRecord"/>
+<edge source="it.quizzy.databaselayer.util.PinGenerator" target="java.util.Random"/>
+<edge source="it.quizzy.generated.tables.Partite" target="it.quizzy.generated.DefaultSchema"/>
+<edge source="it.quizzy.generated.tables.Partite" target="it.quizzy.generated.Keys"/>
+<edge source="it.quizzy.generated.tables.Partite" target="it.quizzy.generated.tables.Docenti.DocentiPath"/>
+<edge source="it.quizzy.generated.tables.Partite" target="it.quizzy.generated.tables.Quizzies.QuizziesPath"/>
+<edge source="it.quizzy.generated.tables.Partite" target="it.quizzy.generated.tables.Utenti.UtentiPath"/>
+<edge source="it.quizzy.generated.tables.Partite" target="it.quizzy.generated.tables.records.PartiteRecord"/>
+<edge source="it.quizzy.generated.tables.Partite" target="java.time.LocalDateTime"/>
+<edge source="it.quizzy.generated.tables.Partite" target="java.util.Arrays"/>
+<edge source="it.quizzy.generated.tables.Partite" target="java.util.Collection"/>
+<edge source="it.quizzy.generated.tables.Partite" target="java.util.List"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Condition"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Field"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Identity"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.PlainSQL"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.QueryPart"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.SQL"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Schema"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Select"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Stringly"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.TableField"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.TableOptions"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.UniqueKey"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.impl.SQLDataType"/>
+<edge source="it.quizzy.generated.tables.Partite" target="org.jooq.impl.TableImpl"/>
+<edge source="it.quizzy.generated.tables.Partite" target="TableImpl"/>
+<edge source="it.quizzy.generated.tables.Partite" target="Partite"/>
+<edge source="it.quizzy.generated.tables.records.PartiteRecord" target="it.quizzy.generated.tables.Partite"/>
+<edge source="it.quizzy.generated.tables.records.PartiteRecord" target="java.time.LocalDateTime"/>
+<edge source="it.quizzy.generated.tables.records.PartiteRecord" target="org.jooq.Record1"/>
+<edge source="it.quizzy.generated.tables.records.PartiteRecord" target="org.jooq.impl.UpdatableRecordImpl"/>
+<edge source="it.quizzy.generated.tables.records.PartiteRecord" target="UpdatableRecordImpl"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="java.util.ArrayList"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="java.util.List"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="org.jooq.DSLContext"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="org.jooq.Record2"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="org.jooq.Result"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="it.quizzy.databaselayer.models.domande.DomandaVeroFalso"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="it.quizzy.databaselayer.util.DBConnection"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="it.quizzy.generated.tables.Domande"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="it.quizzy.generated.tables.Quizzies"/>
+<edge source="it.quizzy.databaselayer.models.Quiz" target="it.quizzy.generated.tables.records.QuizziesRecord"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="java.io.IOException"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="java.util.List"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="org.apache.commons.lang3.SerializationUtils"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="it.quizzy.databaselayer.models.Domanda"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="it.quizzy.databaselayer.util.DBConnection"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="it.quizzy.generated.tables.Domande"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla" target="Domanda"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="java.io.IOException"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="java.util.ArrayList"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="java.util.Arrays"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="java.util.List"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="org.apache.commons.lang3.SerializationUtils"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="it.quizzy.databaselayer.models.Domanda"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="it.quizzy.databaselayer.util.DBConnection"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="it.quizzy.generated.tables.Domande"/>
+<edge source="it.quizzy.databaselayer.models.domande.DomandaVeroFalso" target="Domanda"/>
+<edge source="it.quizzy.generated.tables.Domande" target="it.quizzy.generated.DefaultSchema"/>
+<edge source="it.quizzy.generated.tables.Domande" target="it.quizzy.generated.Keys"/>
+<edge source="it.quizzy.generated.tables.Domande" target="it.quizzy.generated.tables.Quizzies.QuizziesPath"/>
+<edge source="it.quizzy.generated.tables.Domande" target="it.quizzy.generated.tables.records.DomandeRecord"/>
+<edge source="it.quizzy.generated.tables.Domande" target="java.util.Arrays"/>
+<edge source="it.quizzy.generated.tables.Domande" target="java.util.Collection"/>
+<edge source="it.quizzy.generated.tables.Domande" target="java.util.List"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Condition"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Field"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Identity"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.PlainSQL"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.QueryPart"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.SQL"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Schema"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Select"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Stringly"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.TableField"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.TableOptions"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.UniqueKey"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.impl.SQLDataType"/>
+<edge source="it.quizzy.generated.tables.Domande" target="org.jooq.impl.TableImpl"/>
+<edge source="it.quizzy.generated.tables.Domande" target="TableImpl"/>
+<edge source="it.quizzy.generated.tables.Domande" target="Domande"/>
+<edge source="it.quizzy.generated.tables.records.QuizziesRecord" target="it.quizzy.generated.tables.Quizzies"/>
+<edge source="it.quizzy.generated.tables.records.QuizziesRecord" target="org.jooq.Record1"/>
+<edge source="it.quizzy.generated.tables.records.QuizziesRecord" target="org.jooq.impl.UpdatableRecordImpl"/>
+<edge source="it.quizzy.generated.tables.records.QuizziesRecord" target="UpdatableRecordImpl"/>
+<edge source="it.quizzy.databaselayer.models.Utente" target="org.jooq.DSLContext"/>
+<edge source="it.quizzy.databaselayer.models.Utente" target="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException"/>
+<edge source="it.quizzy.databaselayer.models.Utente" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.databaselayer.models.Utente" target="it.quizzy.databaselayer.util.DBConnection"/>
+<edge source="it.quizzy.databaselayer.models.Utente" target="it.quizzy.generated.tables.Utenti"/>
+<edge source="it.quizzy.databaselayer.models.Utente" target="it.quizzy.generated.tables.records.UtentiRecord"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="it.quizzy.generated.DefaultSchema"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="it.quizzy.generated.Keys"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="it.quizzy.generated.tables.Partite.PartitePath"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="it.quizzy.generated.tables.records.UtentiRecord"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="java.util.Arrays"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="java.util.Collection"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="java.util.List"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Condition"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Field"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Identity"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.PlainSQL"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.QueryPart"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.SQL"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Schema"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Select"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Stringly"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.TableField"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.TableOptions"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.UniqueKey"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.impl.SQLDataType"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="org.jooq.impl.TableImpl"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="TableImpl"/>
+<edge source="it.quizzy.generated.tables.Utenti" target="Utenti"/>
+<edge source="it.quizzy.generated.tables.records.UtentiRecord" target="it.quizzy.generated.tables.Utenti"/>
+<edge source="it.quizzy.generated.tables.records.UtentiRecord" target="org.jooq.Record1"/>
+<edge source="it.quizzy.generated.tables.records.UtentiRecord" target="org.jooq.impl.UpdatableRecordImpl"/>
+<edge source="it.quizzy.generated.tables.records.UtentiRecord" target="UpdatableRecordImpl"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaRispostaMultiplaTest" target="java.util.Arrays"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaRispostaMultiplaTest" target="org.junit.jupiter.api.Test"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaRispostaMultiplaTest" target="it.quizzy.databaselayer.models.Docente"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaRispostaMultiplaTest" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaRispostaMultiplaTest" target="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaVeroFalsoTest" target="org.junit.jupiter.api.Test"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaVeroFalsoTest" target="it.quizzy.databaselayer.models.Docente"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaVeroFalsoTest" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.databaselayer.models.domande.test.DomandaVeroFalsoTest" target="it.quizzy.databaselayer.models.domande.DomandaVeroFalso"/>
+<edge source="it.quizzy.databaselayer.models.test.DocenteTest" target="org.junit.jupiter.api.Test"/>
+<edge source="it.quizzy.databaselayer.models.test.DocenteTest" target="it.quizzy.databaselayer.models.Docente"/>
+<edge source="it.quizzy.databaselayer.models.test.PartitaTest" target="java.time.ZoneOffset"/>
+<edge source="it.quizzy.databaselayer.models.test.PartitaTest" target="org.junit.jupiter.api.Test"/>
+<edge source="it.quizzy.databaselayer.models.test.PartitaTest" target="it.quizzy.databaselayer.models.Docente"/>
+<edge source="it.quizzy.databaselayer.models.test.PartitaTest" target="it.quizzy.databaselayer.models.Partita"/>
+<edge source="it.quizzy.databaselayer.models.test.PartitaTest" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.databaselayer.models.test.QuizTest" target="org.junit.jupiter.api.Test"/>
+<edge source="it.quizzy.databaselayer.models.test.QuizTest" target="it.quizzy.databaselayer.models.Docente"/>
+<edge source="it.quizzy.databaselayer.models.test.QuizTest" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.databaselayer.models.test.UtenteTest" target="org.junit.jupiter.api.Test"/>
+<edge source="it.quizzy.databaselayer.models.test.UtenteTest" target="it.quizzy.databaselayer.models.Docente"/>
+<edge source="it.quizzy.databaselayer.models.test.UtenteTest" target="it.quizzy.databaselayer.models.Partita"/>
+<edge source="it.quizzy.databaselayer.models.test.UtenteTest" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.databaselayer.models.test.UtenteTest" target="it.quizzy.databaselayer.models.Utente"/>
+<edge source="it.quizzy.generated.DefaultCatalog" target="java.util.Arrays"/>
+<edge source="it.quizzy.generated.DefaultCatalog" target="java.util.List"/>
+<edge source="it.quizzy.generated.DefaultCatalog" target="org.jooq.Constants"/>
+<edge source="it.quizzy.generated.DefaultCatalog" target="org.jooq.Schema"/>
+<edge source="it.quizzy.generated.DefaultCatalog" target="org.jooq.impl.CatalogImpl"/>
+<edge source="it.quizzy.generated.DefaultCatalog" target="CatalogImpl"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="it.quizzy.generated.tables.Docenti"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="it.quizzy.generated.tables.Domande"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="it.quizzy.generated.tables.Partite"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="it.quizzy.generated.tables.Quizzies"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="it.quizzy.generated.tables.Utenti"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="java.util.Arrays"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="java.util.List"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="org.jooq.Catalog"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="org.jooq.impl.SchemaImpl"/>
+<edge source="it.quizzy.generated.DefaultSchema" target="SchemaImpl"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.Docenti"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.Domande"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.Partite"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.Quizzies"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.Utenti"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.records.DocentiRecord"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.records.DomandeRecord"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.records.PartiteRecord"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.records.QuizziesRecord"/>
+<edge source="it.quizzy.generated.Keys" target="it.quizzy.generated.tables.records.UtentiRecord"/>
+<edge source="it.quizzy.generated.Keys" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.Keys" target="org.jooq.TableField"/>
+<edge source="it.quizzy.generated.Keys" target="org.jooq.UniqueKey"/>
+<edge source="it.quizzy.generated.Keys" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.Keys" target="org.jooq.impl.Internal"/>
+<edge source="it.quizzy.generated.Tables" target="it.quizzy.generated.tables.Docenti"/>
+<edge source="it.quizzy.generated.Tables" target="it.quizzy.generated.tables.Domande"/>
+<edge source="it.quizzy.generated.Tables" target="it.quizzy.generated.tables.Partite"/>
+<edge source="it.quizzy.generated.Tables" target="it.quizzy.generated.tables.Quizzies"/>
+<edge source="it.quizzy.generated.Tables" target="it.quizzy.generated.tables.Utenti"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="it.quizzy.generated.tables.records.DocentiRecord"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.DocentiPath" target="Docenti"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="it.quizzy.generated.tables.records.DomandeRecord"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.DomandePath" target="Domande"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="it.quizzy.generated.tables.records.PartiteRecord"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.PartitePath" target="Partite"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="it.quizzy.generated.tables.records.QuizziesRecord"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.QuizziesPath" target="Quizzies"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="it.quizzy.generated.tables.records.UtentiRecord"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="org.jooq.ForeignKey"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="org.jooq.InverseForeignKey"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="org.jooq.Name"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="org.jooq.Path"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="org.jooq.Record"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="org.jooq.Table"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="org.jooq.impl.DSL"/>
+<edge source="it.quizzy.generated.tables.UtentiPath" target="Utenti"/>
+<edge source="it.quizzy.logiclayer.factory.DomandeFactory" target="java.io.IOException"/>
+<edge source="it.quizzy.logiclayer.factory.DomandeFactory" target="java.util.List"/>
+<edge source="it.quizzy.logiclayer.factory.DomandeFactory" target="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException"/>
+<edge source="it.quizzy.logiclayer.factory.DomandeFactory" target="it.quizzy.databaselayer.models.Domanda"/>
+<edge source="it.quizzy.logiclayer.factory.DomandeFactory" target="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla"/>
+<edge source="it.quizzy.logiclayer.factory.DomandeFactory" target="it.quizzy.databaselayer.models.domande.DomandaVeroFalso"/>
+<edge source="it.quizzy.logiclayer.factory.DomandeFactory" target="it.quizzy.databaselayer.models.domande.TipoDomanda"/>
+<edge source="it.quizzy.logiclayer.manager.DocenteManager" target="java.util.List"/>
+<edge source="it.quizzy.logiclayer.manager.DocenteManager" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.logiclayer.manager.DocenteManager" target="it.quizzy.databaselayer.models.Docente"/>
+<edge source="it.quizzy.logiclayer.manager.DocenteManager" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.logiclayer.manager.DocenteManager" target="it.quizzy.databaselayer.util.StringHash"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="java.util.ArrayList"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="java.util.HashMap"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="java.util.List"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="org.jooq.tools.json.JSONObject"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="it.quizzy.databaselayer.models.Domanda"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="it.quizzy.databaselayer.models.Partita"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="it.quizzy.databaselayer.models.Utente"/>
+<edge source="it.quizzy.logiclayer.manager.PartitaManager" target="it.quizzy.logiclayer.server.ServerPartita"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="java.io.IOException"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="java.net.ServerSocket"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="java.net.Socket"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="java.util.ArrayList"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="java.util.List"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="java.util.function.BiFunction"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="java.util.function.Function"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="org.json.JSONObject"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="it.quizzy.databaselayer.models.Utente"/>
+<edge source="it.quizzy.logiclayer.server.ServerPartita" target="Thread"/>
+<edge source="it.quizzy.logiclayer.manager.QuizManager" target="java.util.List"/>
+<edge source="it.quizzy.logiclayer.manager.QuizManager" target="it.quizzy.databaselayer.models.Domanda"/>
+<edge source="it.quizzy.logiclayer.manager.QuizManager" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.logiclayer.manager.QuizManager" target="it.quizzy.databaselayer.models.domande.TipoDomanda"/>
+<edge source="it.quizzy.logiclayer.manager.QuizManager" target="it.quizzy.logiclayer.factory.DomandeFactory"/>
+<edge source="it.quizzy.logiclayer.manager.UtenteManager" target="it.quizzy.databaselayer.exceptions.RecordNotFoundException"/>
+<edge source="it.quizzy.logiclayer.manager.UtenteManager" target="it.quizzy.databaselayer.models.Partita"/>
+<edge source="it.quizzy.logiclayer.manager.UtenteManager" target="it.quizzy.databaselayer.models.Utente"/>
+<edge source="it.quizzy.logiclayer.server.ClientDocente" target="java.io.BufferedInputStream"/>
+<edge source="it.quizzy.logiclayer.server.ClientDocente" target="java.io.DataInputStream"/>
+<edge source="it.quizzy.logiclayer.server.ClientDocente" target="java.io.DataOutputStream"/>
+<edge source="it.quizzy.logiclayer.server.ClientDocente" target="java.io.IOException"/>
+<edge source="it.quizzy.logiclayer.server.ClientDocente" target="java.net.InetAddress"/>
+<edge source="it.quizzy.logiclayer.server.ClientDocente" target="java.net.Socket"/>
+<edge source="it.quizzy.logiclayer.server.ClientDocente" target="java.util.function.Function"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="java.io.BufferedInputStream"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="java.io.DataInputStream"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="java.io.DataOutputStream"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="java.io.IOException"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="java.net.InetAddress"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="java.net.Socket"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="java.util.function.Function"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="it.quizzy.databaselayer.models.Utente"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClient" target="java.io.BufferedInputStream"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClient" target="java.io.DataInputStream"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClient" target="java.io.DataOutputStream"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClient" target="java.io.IOException"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClient" target="java.net.Socket"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClient" target="java.util.function.Function"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClientDocente" target="java.io.BufferedInputStream"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClientDocente" target="java.io.DataInputStream"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClientDocente" target="java.io.DataOutputStream"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClientDocente" target="java.io.IOException"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClientDocente" target="java.net.Socket"/>
+<edge source="it.quizzy.logiclayer.manager.test.DocenteManagerTest" target="org.junit.jupiter.api.Test"/>
+<edge source="it.quizzy.logiclayer.manager.test.DocenteManagerTest" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="it.quizzy.logiclayer.manager.test.QuizManagerTest" target="java.util.Arrays"/>
+<edge source="it.quizzy.logiclayer.manager.test.QuizManagerTest" target="java.util.List"/>
+<edge source="it.quizzy.logiclayer.manager.test.QuizManagerTest" target="org.junit.jupiter.api.Test"/>
+<edge source="it.quizzy.logiclayer.manager.test.QuizManagerTest" target="it.quizzy.databaselayer.models.Docente"/>
+<edge source="it.quizzy.logiclayer.manager.test.QuizManagerTest" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="it.quizzy.logiclayer.manager.test.QuizManagerTest" target="it.quizzy.databaselayer.models.Domanda"/>
+<edge source="it.quizzy.logiclayer.manager.test.QuizManagerTest" target="it.quizzy.logiclayer.manager.QuizManager"/>
+<edge source="it.quizzy.uilayer.launch.Main" target="java.io.File"/>
+<edge source="it.quizzy.uilayer.launch.Main" target="org.apache.catalina.WebResourceRoot"/>
+<edge source="it.quizzy.uilayer.launch.Main" target="org.apache.catalina.core.StandardContext"/>
+<edge source="it.quizzy.uilayer.launch.Main" target="org.apache.catalina.startup.Tomcat"/>
+<edge source="it.quizzy.uilayer.launch.Main" target="org.apache.catalina.webresources.DirResourceSet"/>
+<edge source="it.quizzy.uilayer.launch.Main" target="org.apache.catalina.webresources.StandardRoot"/>
+<edge source="it.quizzy.uilayer.launch.Main" target="org.apache.tomcat.websocket.server.WsContextListener"/>
+<edge source="it.quizzy.uilayer.launch.Main" target="org.apache.tomcat.websocket.server.WsSci"/>
+<edge source="it.quizzy.uilayer.websocket.SessionManager" target="java.io.IOException"/>
+<edge source="it.quizzy.uilayer.websocket.SessionManager" target="javax.servlet.ServletContextEvent"/>
+<edge source="it.quizzy.uilayer.websocket.SessionManager" target="javax.servlet.ServletContextListener"/>
+<edge source="it.quizzy.uilayer.websocket.SessionManager" target="org.apache.catalina.Context"/>
+<edge source="it.quizzy.uilayer.websocket.SessionManager" target="org.apache.catalina.Manager"/>
+<edge source="it.quizzy.uilayer.websocket.SessionManager" target="org.apache.catalina.Session"/>
+<edge source="it.quizzy.uilayer.websocket.SessionManager" target="org.apache.catalina.core.ApplicationContext"/>
+<edge source="it.quizzy.uilayer.websocket.SessionManager" target="org.apache.catalina.core.ApplicationContextFacade"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="java.io.IOException"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="javax.servlet.http.HttpSession"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="javax.websocket.EndpointConfig"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="javax.websocket.OnClose"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="javax.websocket.OnError"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="javax.websocket.OnMessage"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="javax.websocket.OnOpen"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="javax.websocket.Session"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="javax.websocket.server.PathParam"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="it.quizzy.logiclayer.manager.PartitaManager"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper" target="it.quizzy.logiclayer.server.ClientDocente"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="java.io.IOException"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="javax.servlet.http.HttpSession"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="javax.websocket.EndpointConfig"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="javax.websocket.OnClose"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="javax.websocket.OnError"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="javax.websocket.OnMessage"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="javax.websocket.OnOpen"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="javax.websocket.Session"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="javax.websocket.server.PathParam"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="it.quizzy.logiclayer.manager.UtenteManager"/>
+<edge source="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper" target="it.quizzy.logiclayer.server.ClientUtente"/>
+<edge source="org.apache.jsp.home.checkIn" target="it.quizzy.uilayer.launch.Configuration"/>
+<edge source="org.apache.jsp.home.checkIn" target="it.quizzy.logiclayer.manager.PartitaManager"/>
+<edge source="org.apache.jsp.home.checkIn" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="org.apache.jsp.home.dashboard" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="org.apache.jsp.home.login" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="org.apache.jsp.home.myQuizzies" target="it.quizzy.databaselayer.models.Quiz"/>
+<edge source="org.apache.jsp.home.myQuizzies" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="org.apache.jsp.home.newQuiz" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="org.apache.jsp.home.placing" target="it.quizzy.logiclayer.manager.PartitaManager"/>
+<edge source="org.apache.jsp.home.placing" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="org.apache.jsp.home.placing" target="it.quizzy.databaselayer.models.Utente"/>
+<edge source="org.apache.jsp.home.placing" target="java.util.List"/>
+<edge source="org.apache.jsp.home.prossimaDomanda" target="it.quizzy.logiclayer.manager.PartitaManager"/>
+<edge source="org.apache.jsp.home.prossimaDomanda" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="org.apache.jsp.home.results" target="it.quizzy.logiclayer.manager.PartitaManager"/>
+<edge source="org.apache.jsp.home.results" target="it.quizzy.logiclayer.manager.DocenteManager"/>
+<edge source="org.apache.jsp.home.results" target="it.quizzy.databaselayer.models.Utente"/>
+<edge source="org.apache.jsp.home.results" target="java.util.List"/>
+<edge source="org.apache.jsp.user.partita" target="it.quizzy.uilayer.launch.Configuration"/>
+<edge source="org.apache.jsp.user.partita" target="it.quizzy.logiclayer.manager.UtenteManager"/>
+</graph></graphml>

@@ -1,0 +1,148 @@
+[data-theme="dark"] {
+    background-color: #00040a !important;
+    color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #141414 !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: #000000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+    background-color: #eeeeee !important;
+}
+
+[data-theme="dark"] .card {
+    background-color: #0e0e0e !important;
+}
+
+[data-theme="dark"] .jumbotron {
+    background-color: #00040a !important;
+}
+
+[data-theme="dark"] .list-group-item {
+    background-color: #0e0e0e !important;
+    color: #eeeeee !important;
+}
+
+[data-theme="dark"] .card-header {
+    background-color: #121212 !important;
+}
+
+[data-theme="dark"] .tooltip table tbody tr td {
+    background-color: #121212 !important;
+}
+
+[data-theme="dark"] .modal-title {
+    color: #eee;
+}
+
+[data-theme="dark"] .modal-body table {
+    color: #eee;
+}
+
+[data-theme="dark"] .node text {
+    fill: #ffffff;
+}
+
+[data-theme="dark"] .canvas-content-dark-mode-node-label {
+    color: #ffffff;
+}
+
+[data-theme="dark"] #dropdown-apply-metric {
+    background-color: #121212 !important;
+    color: #eee;
+}
+
+[data-theme="dark"] #dropdown-graph {
+    background-color: #121212 !important;
+    color: #eee;
+}
+
+[data-theme="dark"] .dropdown-item {
+    background-color: #121212 !important;
+    color: #eee;
+}
+
+[data-theme="dark"] .modal-content {
+    background-color: #111111 !important;
+    color: #eee;
+}
+
+[data-theme="dark"] .tooltip-inner {
+    background-color: black !important;
+    font-size: smaller;
+}
+
+[data-theme="dark"] .tooltip-inner {
+    background-color: black !important;
+    color: white;
+    font-size: smaller;
+}
+
+/* daterangepicker in dark mode */
+
+[data-theme="dark"] .daterangepicker {
+    background-color: #111111 !important;
+    border: 1px solid #121212;
+    color: #eee;
+}
+
+[data-theme="dark"] .daterangepicker .calendar-table .next span, .daterangepicker .calendar-table .prev span {
+    color: #141414;
+}
+
+[data-theme="dark"] .daterangepicker .calendar-table {
+    border: 1px solid #202020;
+    background-color: #202020; 
+}
+
+[data-theme="dark"] .daterangepicker .cancelBtn {
+    color: #eee;
+}
+
+[data-theme="dark"] .daterangepicker .th.month {
+    color: #eee;
+}
+
+[data-theme="dark"] .daterangepicker .drp-selected {
+    color: #eee;
+}
+
+[data-theme="dark"] .daterangepicker .calendar-table .next span {
+  color: #eee;
+  border: solid #eee;
+  border-width: 0 2px 2px 0;
+  border-radius: 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+[data-theme="dark"] .daterangepicker .calendar-table .prev span {
+  color: #eee;
+  border: solid #eee;
+  border-width: 0 2px 2px 0;
+  border-radius: 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+[data-theme="dark"] .daterangepicker td.in-range {
+  background-color: #89bbe5;
+  border-color: transparent;
+  color: #000;
+  border-radius: 0;
+}
+
+[data-theme="dark"] .daterangepicker td.off, .daterangepicker td.off.in-range, .daterangepicker td.off.start-date, .daterangepicker td.off.end-date {
+  background-color: #363636;
+  border-color: transparent;
+  color: #dcdbdb;
+}
+
+[data-theme="dark"] .toast {
+    background-color: #363636;
+}

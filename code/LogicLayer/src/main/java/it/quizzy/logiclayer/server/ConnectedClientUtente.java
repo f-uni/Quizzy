@@ -13,6 +13,11 @@ public class ConnectedClientUtente extends ConnectedClient{
     Function<String, Void> messageCallback;
     
 
+    /**
+     * Costruttore per la rappresentazione di un client utente connesso al server partita
+     * @param clientSocket socket che ha ricevuto la richiesta
+     * @param messageCallback callback per il processamento dei messaggi
+     */
     public ConnectedClientUtente(Socket clientSocket, Function<String, Void> messageCallback) {
         this.clientSocket = clientSocket;
         this.messageCallback=messageCallback;

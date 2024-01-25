@@ -25,6 +25,11 @@ public class ServerPartita extends Thread {
 	private Function<Integer, Boolean> newClientCallback;
 	private BiFunction<Integer, String, Void> valutaRisposta;
 
+	/** Costruttore per la creazione di un server per una partita
+	 * 
+	 * @param newClientCallback callback per la connessione di nuovi client
+	 * @param valutaRisposta callback per valutare le risposte
+	 */
 	public ServerPartita(Function<Integer, Boolean> newClientCallback,
 			BiFunction<Integer, String, Void> valutaRisposta) {
 		this.newClientCallback = newClientCallback;
@@ -48,11 +53,14 @@ public class ServerPartita extends Thread {
 		}
 	}
 
+	/**
+	 * Metodo per la processione continua di nuove connessioni da parte dei client
+	 */
 	private void processConnections() {
 		try {
 			Socket docenteSocket = server.accept();
 			if (docenteSocket.isConnected()) {
-				this.clientDocente = new ConnectedClientDocente(docenteSocket, 0);
+				this.clientDocente = new ConnectedClientDocente(docenteSocket);
 			}
 			while (true) {
 				Socket clientSocket = server.accept();
@@ -90,21 +98,36 @@ public class ServerPartita extends Thread {
 		}
 	}
 
+	/**
+	 * Metodo per inviare a tutti i client un messaggio
+	 * 
+	 * @param str stringa contenete il messaggio
+	 */
 	public void broadcastMessage(String str) {
 		this.clients.forEach((client) -> {
 			client.sendMessage(str);
 		});
 	}
 
+	/**
+	 * Metodo per mandare un messaggio al docente che ha creato la partita
+	 * @param str
+	 */
 	public void messageDocente(String str) {
 		if (this.clientDocente != null)
 			this.clientDocente.sendMessage(str);
 	}
 
+	/**
+	 * Metodo per interrompere l'accettazione di nuovi client una volta iniziata la partita
+	 */
 	public void stopAcceptRequest() {
 		this.requestProcessor.interrupt();
 	}
 
+	/**
+	 * Metodo per terminare la partita, chiude le connessioni con tutti i client e chiude la socket del server
+	 */
 	public void stopPartita() {
 		this.clients.forEach((client) -> {
 			client.close();
@@ -117,6 +140,12 @@ public class ServerPartita extends Thread {
 		this.interrupt();
 	}
 
+	/**
+	 * Metodo per inviare ad uno specifico client un messaggio
+	 * 
+	 * @param idClient id del client a cui si desidera inviare il messaggio
+	 * @param message stringa contenete il messaggio
+	 */
 	public void utenteMessage(Integer idClient, String message) {
 		for (ConnectedClientUtente c : clients) {
 			if (c.getId().equals(idClient)) {
@@ -126,6 +155,9 @@ public class ServerPartita extends Thread {
 		}
 	}
 
+	/**
+	 * @return intero con la porta della socket creata
+	 */
 	public int getPort() {
 		return this.server.getLocalPort();
 	}

@@ -13,6 +13,11 @@ import java.util.function.Function;
  */
 public class ClientDocente extends Client {
 
+	/**
+	 * Costruttore per la creazione di un client per la connessione di un docente ad un server partita
+	 * @param port porta di connessione
+	 * @param messageCallback callback per il processamento dei messaggi
+	 */
 	public ClientDocente(int port, Function<String, Void> messageCallback) {
 		try {
 			clientSocket = new Socket(InetAddress.getByName(null), port);

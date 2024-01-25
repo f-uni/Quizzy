@@ -10,6 +10,9 @@ import org.apache.catalina.webresources.StandardRoot;
 import org.apache.tomcat.websocket.server.WsContextListener;
 import org.apache.tomcat.websocket.server.WsSci;
 
+/**
+ * Classe per l'esecuzione del web server
+ */
 public class Main {
 
     public static void main(String[] args) throws Exception {

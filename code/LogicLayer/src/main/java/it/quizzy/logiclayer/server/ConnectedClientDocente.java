@@ -10,9 +10,13 @@ import java.net.Socket;
  */
 public class ConnectedClientDocente extends ConnectedClient {
 	
-    public ConnectedClientDocente(Socket clientSocket, int id) {
+	/**
+     * Costruttore per la rappresentazione di un client docente connesso al server partita
+     * @param clientSocket socket che ha ricevuto la richiesta
+     */
+    public ConnectedClientDocente(Socket clientSocket) {
         this.clientSocket = clientSocket;
-        this.id = id;
+        this.id = 0;
         try {
             System.out.println("Client "+id+ ": Client Connected");
             this.out = new DataOutputStream(clientSocket.getOutputStream());

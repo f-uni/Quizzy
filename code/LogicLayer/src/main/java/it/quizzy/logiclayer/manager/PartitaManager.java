@@ -25,6 +25,11 @@ public class PartitaManager {
 	private ServerPartita server;
 	private HashMap<Integer, String> risposte;
 
+	/**
+	 * Costruttore per la creazione di una partia, questo metodo gestisce anche l'avvio del servizio del server
+	 * @param idDocente id del docente che crea la partita
+	 * @param idQuiz id del quiz su cui è basata la partita
+	 */
 	public PartitaManager(int idDocente, int idQuiz) {
 		try {
 			this.partita = new Partita(idDocente, idQuiz);
@@ -53,16 +58,22 @@ public class PartitaManager {
 		}
 	}
 
+	/**
+	 * Metodo per il calcolo della classifica, riordina la lista dei giocatori in ordine discendete
+	 */
 	public void calcolaClassifica() {
 		this.giocatori.sort((g1, g2) -> g2.getRecord().getPunteggio() - g1.getRecord().getPunteggio());
 	}
 
+	/**
+	 * Metodo per la valutazione delle risposte alla domanda corrente
+	 */
 	public void valutaRisposte() {
 		if (!risposte.isEmpty()) {
 			Domanda domanda = this.domande.get(domandaCorrente - 1);
 			for (Utente u : giocatori) {
 				HashMap<String, Object> map = new HashMap<String, Object>();
-		        
+
 				String risp = risposte.get(u.getRecord().getId());
 				if (risp != null) {
 					if (domanda.controllaRisposta(risp)) {
@@ -85,6 +96,10 @@ public class PartitaManager {
 		}
 	}
 
+	/**
+	 * Metodo per cambiare domanda corrente della partita
+	 * @return
+	 */
 	public String prossimaDomanda() {
 		this.domandaCorrente++;
 		if (this.domande.size() >= domandaCorrente) {
@@ -100,6 +115,12 @@ public class PartitaManager {
 		return null;
 	}
 
+	/**
+	 * Metodo per l'aggiunta di un giocatore alla partita
+	 * 
+	 * @param giocatore oggetto Utente che rappresenta il giocatore 
+	 * @return
+	 */
 	public boolean aggiungiGiocatore(Utente giocatore) {
 		if (giocatore.getRecord().getIdPartita().equals(this.partita.getRecord().getId())) {
 			HashMap<String, Object> map = new HashMap<String, Object>();
@@ -112,22 +133,11 @@ public class PartitaManager {
 		return false;
 	}
 
-	public int getDomandaCorrente() {
-		return domandaCorrente;
-	}
-
-	public ServerPartita getServer() {
-		return server;
-	}
-	
-	public String getPin() {
-		return partita.getRecord().getPin();
-	}
-
-	public List<Utente> getGiocatori() {
-		return giocatori;
-	}
-
+	/** 
+	 * Metodo per registrare la risposta di un utente alla domanda corrente
+	 * @param idUtente id dell'utente che risponde
+	 * @param risposta stringa contenete la risposta
+	 */
 	public void rispondiDomanda(Integer idUtente, String risposta) {
 		if (this.domande.size() >= domandaCorrente) {
 			for (Utente u : giocatori) {
@@ -138,6 +148,22 @@ public class PartitaManager {
 			}
 		}
 
+	}
+
+	public int getDomandaCorrente() {
+		return domandaCorrente;
+	}
+
+	public ServerPartita getServer() {
+		return server;
+	}
+
+	public String getPin() {
+		return partita.getRecord().getPin();
+	}
+
+	public List<Utente> getGiocatori() {
+		return giocatori;
 	}
 
 }

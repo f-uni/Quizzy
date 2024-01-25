@@ -11,12 +11,18 @@ import java.util.function.Function;
 import it.quizzy.databaselayer.models.Utente;
 
 /**
- * Client socket per la connessione ad un server partita
+ * Client socket per la connessione di un utente ad un server partita
  */
 public class ClientUtente extends Client{
 	
 	private Utente utente;
 
+	/**
+	 * Costruttore per la creazione di un client per la connessione di un utente ad un server partita
+	 * @param port porta di connessione
+	 * @param utente oggetto utente che avvia la connessione
+	 * @param messageCallback callback per il processamento dei messaggi
+	 */
 	public ClientUtente(int port, Utente utente, Function<String, Void> messageCallback) {
 		try {
 			this.utente = utente;

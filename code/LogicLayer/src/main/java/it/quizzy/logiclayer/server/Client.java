@@ -12,6 +12,9 @@ public abstract class Client {
 	protected DataInputStream in;
 	protected Function<String, Void> messageCallback;
 	
+	/**
+	 * Metodod per il processamento dei messaggi, ad ogni messaggio arrivato, se definita, richiama la callback messaggeCallback
+	 */
 	public void readMessages() {
 		String line = "";
 		while (!line.equals(ServerPartita.STOP_STRING)) {
@@ -30,10 +33,19 @@ public abstract class Client {
 		}
 	}
 	
+	/**
+	 * Metodo per l'invio di un messaggio al server partita
+	 * @param text stringa contenente il messaggio
+	 * @throws IOException
+	 */
 	public void writeMessage(String text) throws IOException {
 		out.writeUTF(text);
 	}
 
+	/**
+	 * Metodo per la chiusura della connessione con il server
+	 * @throws IOException
+	 */
 	public void close() throws IOException {
 		clientSocket.close();
 		out.close();

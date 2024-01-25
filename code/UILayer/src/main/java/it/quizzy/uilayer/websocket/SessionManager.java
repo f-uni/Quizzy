@@ -11,9 +11,23 @@ import org.apache.catalina.Session;
 import org.apache.catalina.core.ApplicationContext;
 import org.apache.catalina.core.ApplicationContextFacade;
 
+/**
+ * Classe per la gestione delle sessioni in tomcat, weblistener per la persistenza delle sessioni
+ */
 @WebListener
 public class SessionManager implements ServletContextListener {
     static Manager manager;
+    
+    /**
+     * Metodo per la ricerca di un oggetto Session dato il sessionID
+     * 
+     * @param sessionID id della sessione da cercare
+     * @return la sessione o null se non esiste
+     * @throws IOException
+     */
+    public static Session getSession(String sessionID) throws IOException {
+        return manager.findSession(sessionID);
+    }
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
@@ -48,7 +62,5 @@ public class SessionManager implements ServletContextListener {
         return context.getManager();
     }
 
-    public static Session getSession(String sessionID) throws IOException {
-        return manager.findSession(sessionID);
-    }
+
 }

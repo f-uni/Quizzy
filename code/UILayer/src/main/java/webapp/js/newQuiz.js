@@ -78,7 +78,7 @@ function changeContent(opt){
         '<button class="deleteSingleQuestion" onclick="deleteQuest2(this.id)" id="'+ contatore +'"><img class="bin" src="/images/rubbish.png" ></button>'+
         '<p style="padding:20px" class="titleQ" id="titleQ'+contatore+'">Question#'+ contatore +": <br>" + output[0].slice(0,-1)+'</p><p class="p-answer">'+
         '</p><p class="p-answer is-padded">Answer:</p><br><p class="p-answer is-padded">&#8226; True</p><br><p class="p-answer is-padded"> &#8226; False</p><br>'+
-        '<p class="p-answer is-padded is-right">Right Answer:'+ checked +'</p></div>'
+        '<p class="p-answer is-padded is-right ">Right Answer:'+ checked +'</p></div>'
         document.getElementById("question").removeChild(document.getElementById("question").firstChild);
     }
     else{
@@ -89,7 +89,7 @@ function changeContent(opt){
         '</p><p class="p-answer is-padded" id="ans2"'+ contatore +'> &#8226;'+ output[2]+'</p><br>'+
         '</p><p class="p-answer is-padded" id="ans3"'+ contatore +'> &#8226;'+ output[3]+'</p><br>'+
         '</p><p class="p-answer is-padded" id="ans4"'+ contatore +'> &#8226;'+ output[4]+'</p><br>'+
-        '<p class="p-answer is-padded is-right">Right Answer:'+ checked +'</p></div>'
+        '<p class="p-answer is-padded is-right ">Right Answer:'+ checked +'</p></div>'
         document.getElementById("question").removeChild(document.getElementById("question").firstChild);
     }
     
@@ -178,7 +178,7 @@ function confirmAllData(){
         for(var i=1;i<5;i++){
             temp[i]=document.getElementById("ans"+i+j);
         }
-        confirmedRigthAns.push(temp);
+        confirmedAnsw.push(temp);
     }
 }
     

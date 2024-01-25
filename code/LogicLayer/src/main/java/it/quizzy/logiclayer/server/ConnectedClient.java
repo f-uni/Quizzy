@@ -1,42 +1,23 @@
 package it.quizzy.logiclayer.server;
-import java.io.BufferedInputStream;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
-import java.util.function.Function;
 
-public class ConnectedClient {
-    private Integer id;
-    private Socket clientSocket;
-    private DataInputStream in;
-    private DataOutputStream out;
-    Function<String, Void> messageCallback;
-    
-
-    public ConnectedClient(Socket clientSocket, Function<String, Void> messageCallback) {
-        this.clientSocket = clientSocket;
-        this.messageCallback=messageCallback;
-        try {
-            this.out = new DataOutputStream(clientSocket.getOutputStream());
-            this.in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
-            new Thread(() -> {
-				readMessages();
-			}).start();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void readMessages(){
+public abstract class ConnectedClient {
+	protected int id;
+	protected Socket clientSocket;
+	protected DataInputStream in;
+	protected DataOutputStream out;
+	
+	public void readMessages(){
         String line = "";
         while(!line.equals(ServerPartita.STOP_STRING)){
             try {
                 line = in.readUTF();
-                if(this.messageCallback!=null)
-					this.messageCallback.apply(line);
             } catch (IOException e) {
-                break;
+                e.printStackTrace();
             }
             System.out.println("Client "+id+ ": "+ line);
         }
@@ -68,14 +49,4 @@ public class ConnectedClient {
             e.printStackTrace();
         }
     }
-
-	public void setId(Integer id) {
-		this.id=id;
-        System.out.println("Client "+id+ ": Client Connected");
-		
-	}
-
-	public Integer getId() {
-		return id;
-	}
 }

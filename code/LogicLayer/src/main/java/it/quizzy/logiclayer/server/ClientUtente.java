@@ -10,11 +10,11 @@ import java.util.function.Function;
 
 import it.quizzy.databaselayer.models.Utente;
 
-public class ClientUtente {
-	private Socket clientSocket;
-	private DataOutputStream out;
-	private DataInputStream in;
-	private Function<String, Void> messageCallback;
+/**
+ * Client socket per la connessione ad un server partita
+ */
+public class ClientUtente extends Client{
+	
 	private Utente utente;
 
 	public ClientUtente(int port, Utente utente, Function<String, Void> messageCallback) {
@@ -36,37 +36,11 @@ public class ClientUtente {
 			e.printStackTrace();
 		}
 	}
-
-	public void readMessages() {
-		String line = "";
-		while (!line.equals(ServerPartita.STOP_STRING)) {
-			try {
-				if (in.available() > 0) {
-					line = in.readUTF();
-					if (this.messageCallback != null)
-						this.messageCallback.apply(line);
-				}
-
-			} catch (IOException e) {
-				e.printStackTrace();
-				break;
-			}
-		}
-		try {
-			close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
+	
+	@Override
 	public void writeMessage(String text) throws IOException {
 		out.writeUTF(utente.getRecord().getId().toString() + "$" + text);
 	}
 
-	public void close() throws IOException {
-		clientSocket.close();
-		out.close();
-		in.close();
-	}
 
 }

@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
     	
-        String webappDirLocation = "src/main/java/webapp/";
+        String webappDirLocation = "src/main/java/webapp";
         Tomcat tomcat = new Tomcat();
 
         String webPort = Configuration.tomcatPort;
@@ -24,7 +24,7 @@ public class Main {
         StandardContext ctx = (StandardContext) tomcat.addWebapp("/", new File(webappDirLocation).getAbsolutePath());
         System.out.println("configuring app with basedir: " + new File("./" + webappDirLocation).getAbsolutePath());
 
-        // Aggiungi il listener per WebSocket
+        // Listener per WebSocket
         ctx.addApplicationListener(WsContextListener.class.getName());
         ctx.addServletContainerInitializer(new WsSci(), null);
         

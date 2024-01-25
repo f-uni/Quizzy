@@ -8,19 +8,18 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.util.function.Function;
 
-public class ClientDocente {
-	private Socket clientSocket;
-	private DataOutputStream out;
-	private DataInputStream in;
-	private Function<String, Void> messageCallaback;
+/**
+ * Client socket docente per la connessione ad un server partita
+ */
+public class ClientDocente extends Client {
 
-	public ClientDocente(int port, Function<String, Void> messageCallaback) {
+	public ClientDocente(int port, Function<String, Void> messageCallback) {
 		try {
 			clientSocket = new Socket(InetAddress.getByName(null), port);
 			if (clientSocket.isConnected()) {
 				out = new DataOutputStream(clientSocket.getOutputStream());
 				in = new DataInputStream(new BufferedInputStream(clientSocket.getInputStream()));
-				this.messageCallaback=messageCallaback;
+				this.messageCallback=messageCallback;
 				new Thread(() -> {
 					readMessages();
 				}).start();
@@ -33,33 +32,7 @@ public class ClientDocente {
 		}
 	}
 
-	public void readMessages() {
-		String line = "";
-		while (!line.equals(ServerPartita.STOP_STRING)) {
-			try {
-				line = in.readUTF();
-				if(this.messageCallaback!=null)
-					this.messageCallaback.apply(line);
-			} catch (IOException e) {
-				break;
-			}
-		}
-		try {
-			close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 	
-	public void writeMessage(String text) throws IOException {
-		out.writeUTF(text);
-	}
-
-	public void close() throws IOException {
-		clientSocket.close();
-		out.close();
-		in.close();
-	}
 
 
 }

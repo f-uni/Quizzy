@@ -69,6 +69,7 @@ function swapContent(opt){
     out[0]=document.getElementById("InputQM"+contatore).value;
     return out
 }
+
 //Change the place in which the questions are stored
 function changeContent(opt){
     var output = swapContent(opt);
@@ -77,24 +78,23 @@ function changeContent(opt){
         document.getElementById("questionWrapped").innerHTML+='<div class="question wrapped" id="'+opt+'Wrapped'+contatore+'">'+
         '<button class="deleteSingleQuestion" onclick="deleteQuest2(this.id)" id="'+ contatore +'"><img class="bin" src="/images/rubbish.png" ></button>'+
         '<p style="padding:20px" class="titleQ" id="titleQ'+contatore+'">Question#'+ contatore +": <br>" + output[0].slice(0,-1)+'</p><p class="p-answer">'+
-        '</p><p class="p-answer is-padded">Answer:</p><br><p class="p-answer is-padded">&#8226; True</p><br><p class="p-answer is-padded"> &#8226; False</p><br>'+
-        '<p class="p-answer is-padded is-right ">Right Answer:'+ checked +'</p></div>'
+        '</p><p class="p-answer is-padded is-answer">Answer:</p><br><p class="p-answer is-padded is-answer" id="'+contatore+'ans1">&#8226; True</p><br><p class="p-answer is-padded" id="'+contatore+'ans2"> &#8226; False</p><br>'+
+        '<p class="p-answer is-padded is-right">Right Answer:'+ checked +'</p></div>'
         document.getElementById("question").removeChild(document.getElementById("question").firstChild);
     }
     else{
         document.getElementById("questionWrapped").innerHTML+='<div class="question wrapped" id="'+opt+'Wrapped'+contatore+'">'+
         '<button class="deleteSingleQuestion" onclick="deleteQuest2(this.id)" id="'+ contatore +'"><img class="bin" src="/images/rubbish.png" ></button>'+
         '<p style="padding:20px" class="titleQ" id="titleQ'+contatore+'">Question#'+contatore +": <br>" + output[0]+'</p><p class="p-answer">'+
-        '</p><p class="p-answer is-padded">Answer:</p><br><p class="p-answer is-padded" id="ans1"'+ contatore +'>&#8226;'+ output[1]+'<br>'+
-        '</p><p class="p-answer is-padded" id="ans2"'+ contatore +'> &#8226;'+ output[2]+'</p><br>'+
-        '</p><p class="p-answer is-padded" id="ans3"'+ contatore +'> &#8226;'+ output[3]+'</p><br>'+
-        '</p><p class="p-answer is-padded" id="ans4"'+ contatore +'> &#8226;'+ output[4]+'</p><br>'+
-        '<p class="p-answer is-padded is-right ">Right Answer:'+ checked +'</p></div>'
+        '</p><p class="p-answer is-padded">Answer:</p><br><p class="p-answer is-padded is-answer" id="'+contatore+'ans1">&#8226;'+ output[1]+'<br>'+
+        '</p><p class="p-answer is-padded is-answer" id="'+contatore+'ans2"> &#8226;'+ output[2]+'</p><br>'+
+        '</p><p class="p-answer is-padded is-answer" id="'+contatore+'ans3"> &#8226;'+ output[3]+'</p><br>'+
+        '</p><p class="p-answer is-padded is-answer" id="'+contatore+'ans4"> &#8226;'+ output[4]+'</p><br>'+
+        '<p class="p-answer is-padded is-right">Right Answer:'+ checked +'</p></div>'
         document.getElementById("question").removeChild(document.getElementById("question").firstChild);
     }
     
 }
-
 //Checks which answers is checked ad correct, in case is not selected is choosen the last one
 function checkOpt(opt){
     var radioCheck;
@@ -171,14 +171,30 @@ function deleteQuest2(id){
 
 //saves all data in confirmed variables
 function confirmAllData(){
-    confirmedQuest = document.getElementsByClassName("titleQ");
-    confirmedRigthAns = document.getElementsByClassName("is-right");
-    var temp = [];
-    for(var j=0; j<confirmedRigthAns.length;j++){ 
-        for(var i=1;i<5;i++){
-            temp[i]=document.getElementById("ans"+i+j);
-        }
-        confirmedAnsw.push(temp);
+    var Quest = document.getElementsByClassName("titleQ");
+    for(var i=0; i<contatore; i++){
+        confirmedQuest[i]=Quest[i].innerText.slice(12);   
     }
+    var rans = document.getElementsByClassName("is-right");
+    for(var j=0; j<contatore; j++){
+        confirmedRigthAns[j]=rans[j].innerText.slice(13);
+    }
+    var temp = [];
+    var temp2 = [];
+    for(var j=1; j<(contatore+1); j++){ 
+        for(var k=1;k<5;k++){
+            temp[k-1]=document.getElementById(j+"ans"+k);
+            if(temp[k-1]!=null){
+                temp[k-1]=temp[k-1].innerText.slice(1);
+                if(temp[k-1].includes("\n")){
+                    temp[k-1]=temp[k-1].slice(-(temp[k-1].length-2));
+                }
+            }
+            temp2=temp;
+        }
+        temp = [];
+        confirmedAnsw.push(temp2);
+    }
+    temp = [];
 }
     

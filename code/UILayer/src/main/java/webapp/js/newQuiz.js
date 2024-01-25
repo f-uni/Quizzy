@@ -187,7 +187,7 @@ function confirmAllData(){
             if(temp[k-1]!=null){
                 temp[k-1]=temp[k-1].innerText.slice(1);
                 if(temp[k-1].includes("\n")){
-                    temp[k-1]=temp[k-1].slice(-(temp[k-1].length-2));
+                    temp[k-1]=temp[k-1].slice(-2);
                 }
             }
             temp2=temp;

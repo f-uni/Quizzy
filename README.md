@@ -7,3 +7,4 @@ Quizzy è una piattaforma di apprendimento tramite gioco, utilizzata a scopo did
 ## Documentazione
 - [Project Plan](https://github.com/f-uni/Quizzy/blob/main/doc/Project%20Plan%20-%20Quizzy.pdf) 
 - [Analisi e Progettazione](https://github.com/f-uni/Quizzy/blob/main/doc/Analisi%20e%20Progettazione%20-%20Quizzy.pdf) 
+- [JavaDoc](https://github.com/f-uni/Quizzy/tree/main/doc/javadoc)

@@ -77,7 +77,7 @@ function changeContent(opt){
     if(opt=="QuestVF"){
         document.getElementById("questionWrapped").innerHTML+='<div class="question wrapped" id="'+opt+'Wrapped'+contatore+'">'+
         '<button class="deleteSingleQuestion" onclick="deleteQuest2(this.id)" id="'+ contatore +'"><img class="bin" src="/images/rubbish.png" ></button>'+
-        '<p style="padding:20px" class="titleQ" id="titleQ'+contatore+'">Question#'+ contatore +": <br>" + output[0].slice(0,-1)+'</p><p class="p-answer">'+
+        '<p style="padding:20px" class="titleQ" id="titleQ'+contatore+'">Question#'+ contatore +": <br>" + output[0]+'</p><p class="p-answer">'+
         '</p><p class="p-answer is-padded is-answer">Answer:</p><br><p class="p-answer is-padded is-answer" id="'+contatore+'ans1">&#8226; True</p><br><p class="p-answer is-padded" id="'+contatore+'ans2"> &#8226; False</p><br>'+
         '<p class="p-answer is-padded is-right">Right Answer:'+ checked +'</p></div>'
         document.getElementById("question").removeChild(document.getElementById("question").firstChild);

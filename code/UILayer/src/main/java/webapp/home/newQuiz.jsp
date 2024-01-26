@@ -55,8 +55,8 @@ if(dmSession==null){
                 
               <div class="buttons">
                 <input class="searchBar" type="text" placeholder="Search...">
-                <a class="button is-warning shadow">
-                  <i class="fa-solid fa-plus" aria-hidden="true" ></i><strong>Log Out</strong>
+                <a class="button is-danger shadow" href="/home/login.jsp?logout=true">
+                  <i class="fa-solid fa-plus" aria-hidden="true" ></i><strong>LogOut</strong>
                 </a>
                 <a class="button is-profile">
                     <img class="profile-image" src="/images/profileDoc.png" height="100" width="100" onclick=openLog()>

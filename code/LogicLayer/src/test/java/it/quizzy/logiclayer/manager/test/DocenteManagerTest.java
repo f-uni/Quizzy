@@ -42,7 +42,6 @@ class DocenteManagerTest {
 			Docente d = new Docente(email);
 			d.getRecord().delete();
 		} catch (RecordNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -77,7 +76,6 @@ class DocenteManagerTest {
 		} catch (InvalidRecordInsertionException e) {
 			e.printStackTrace();
 		} catch (RecordNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

@@ -59,6 +59,9 @@ if(dmSession==null){
                 <a class="button is-warning shadow" href="/home/newQuiz.jsp">
                   <i class="fa-solid fa-plus" aria-hidden="true" ></i><strong>New Quiz</strong>
                 </a>
+                <a class="button is-danger shadow" href="/home/login.jsp?logout=true">
+                  <i class="fa-solid fa-plus" aria-hidden="true" ></i><strong>LogOut</strong>
+                </a>
                 <a class="button is-profile">
                     <img class="profile-image" src="/images/profileDoc.png" height="100" width="100">
                 </a>
@@ -77,12 +80,14 @@ if(dmSession==null){
             <div class="container informative-div">
               <h1  class="informative-header"> About Us</h1>
               <p class="informative-content">
-                Una scuola bergamasca commissiona la realizzazione di una piattaforma
-                che permetta una diversa interazione professore-studente per migliorare la didattica e l'apprendimento.
-                 Secondo un sondaggio svolto dai professori della scuola, il risultato con piÃ¹ votazioni Ã¨
-                  lâ€™utilizzo di uno strumento di quiz alternativo che possa essere svolto in classe, ma anche 
-                  a distanza che risvegli la curiositÃ  degli studenti e gli permetta di imparare e di divertirsi
-                 allo stesso momento.</p>
+               Una scuola bergamasca commissiona
+					la realizzazione di una piattaforma che permetta una diversa
+					interazione professore-studente per migliorare la didattica e
+					l'apprendimento. Secondo un sondaggio svolto dai professori della
+					scuola, il risultato con più votazioni è l'™utilizzo di uno
+					strumento di quiz alternativo che possa essere svolto in classe, ma
+					anche a distanza che risvegli la curiosità  degli studenti e gli
+					permetta di imparare e di divertirsi allo stesso momento.</p>
             </div>
             <img src="/images/aboutus.png" class="informative-img" style="display: flex;">
         </div>

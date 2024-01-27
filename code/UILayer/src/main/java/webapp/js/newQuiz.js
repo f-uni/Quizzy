@@ -238,13 +238,12 @@ function uploadData() {
 	}
 	
 	//TODO: inserire controlli
-	
 	fetch("/home/ap/creaQuiz.jsp", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
 		},
-		body: JSON.stringify(data),
+		body: JSON.stringify(data)
 	}).then((resp) => {
 		console.log(resp);
 		if (resp.ok) {

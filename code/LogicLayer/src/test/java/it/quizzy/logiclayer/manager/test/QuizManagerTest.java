@@ -18,7 +18,7 @@ class QuizManagerTest {
 	void editQuiz() {
 		Docente d;
 		try {
-			d = new Docente("Docente Test", "test@test.it", "password");
+			d = new Docente("Docente Test", "docente@QMTest.it", "password");
 			Quiz q = new Quiz(d.getRecord().getId(), "Quiz di test");
 
 			QuizManager qm = new QuizManager(q);

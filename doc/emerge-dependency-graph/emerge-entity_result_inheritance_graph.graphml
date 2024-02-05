@@ -1,170 +1,173 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d205" for="node" attr.name="metric_tag_input" attr.type="float"/>
-<key id="d204" for="node" attr.name="metric_tag_meta" attr.type="float"/>
-<key id="d203" for="node" attr.name="metric_tag_answer" attr.type="float"/>
-<key id="d202" for="node" attr.name="metric_tag_chosenavatar" attr.type="float"/>
-<key id="d201" for="node" attr.name="metric_tag_immagine" attr.type="float"/>
-<key id="d200" for="node" attr.name="metric_tag_podium" attr.type="float"/>
-<key id="d199" for="node" attr.name="metric_tag_img" attr.type="float"/>
-<key id="d198" for="node" attr.name="metric_tag_pagecontext" attr.type="float"/>
-<key id="d197" for="node" attr.name="metric_tag_span" attr.type="float"/>
-<key id="d196" for="node" attr.name="metric_tag_button" attr.type="float"/>
-<key id="d195" for="node" attr.name="metric_tag_signin" attr.type="float"/>
-<key id="d194" for="node" attr.name="metric_tag_success" attr.type="float"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d208" for="node" attr.name="metric_tag_input" attr.type="float"/>
+<key id="d207" for="node" attr.name="metric_tag_meta" attr.type="float"/>
+<key id="d206" for="node" attr.name="metric_tag_answer" attr.type="float"/>
+<key id="d205" for="node" attr.name="metric_tag_chosenavatar" attr.type="float"/>
+<key id="d204" for="node" attr.name="metric_tag_immagine" attr.type="float"/>
+<key id="d203" for="node" attr.name="metric_tag_illegalargumentexception" attr.type="float"/>
+<key id="d202" for="node" attr.name="metric_tag_unexpected" attr.type="float"/>
+<key id="d201" for="node" attr.name="metric_tag_podium" attr.type="float"/>
+<key id="d200" for="node" attr.name="metric_tag_img" attr.type="float"/>
+<key id="d199" for="node" attr.name="metric_tag_pagecontext" attr.type="float"/>
+<key id="d198" for="node" attr.name="metric_tag_span" attr.type="float"/>
+<key id="d197" for="node" attr.name="metric_tag_button" attr.type="float"/>
+<key id="d196" for="node" attr.name="metric_tag_signin" attr.type="float"/>
+<key id="d195" for="node" attr.name="metric_tag_success" attr.type="float"/>
+<key id="d194" for="node" attr.name="metric_tag_mail" attr.type="float"/>
 <key id="d193" for="node" attr.name="metric_tag_dm" attr.type="float"/>
-<key id="d192" for="node" attr.name="metric_tag_mail" attr.type="float"/>
-<key id="d191" for="node" attr.name="metric_tag_che" attr.type="float"/>
-<key id="d190" for="node" attr.name="metric_tag_la" attr.type="float"/>
-<key id="d189" for="node" attr.name="metric_tag_una" attr.type="float"/>
-<key id="d188" for="node" attr.name="metric_tag_link" attr.type="float"/>
-<key id="d187" for="node" attr.name="metric_tag_out" attr.type="float"/>
-<key id="d186" for="node" attr.name="metric_tag_alert" attr.type="float"/>
-<key id="d185" for="node" attr.name="metric_tag_evento" attr.type="float"/>
-<key id="d184" for="node" attr.name="metric_tag_var" attr.type="float"/>
-<key id="d183" for="node" attr.name="metric_tag_function" attr.type="float"/>
-<key id="d182" for="node" attr.name="metric_tag_div" attr.type="float"/>
-<key id="d181" for="node" attr.name="metric_tag_um" attr.type="float"/>
-<key id="d180" for="node" attr.name="metric_tag_throwable" attr.type="float"/>
-<key id="d179" for="node" attr.name="metric_tag_sessionid" attr.type="float"/>
-<key id="d178" for="node" attr.name="metric_tag_httpsession" attr.type="float"/>
-<key id="d177" for="node" attr.name="metric_tag_session" attr.type="float"/>
-<key id="d176" for="node" attr.name="metric_tag_servletcontextevent" attr.type="float"/>
-<key id="d175" for="node" attr.name="metric_tag_applicationcontext" attr.type="float"/>
-<key id="d174" for="node" attr.name="metric_tag_sce" attr.type="float"/>
-<key id="d173" for="node" attr.name="metric_tag_context" attr.type="float"/>
-<key id="d172" for="node" attr.name="metric_tag_manager" attr.type="float"/>
-<key id="d171" for="node" attr.name="metric_tag_ctx" attr.type="float"/>
-<key id="d170" for="node" attr.name="metric_tag_standardcontext" attr.type="float"/>
-<key id="d169" for="node" attr.name="metric_tag_webport" attr.type="float"/>
-<key id="d168" for="node" attr.name="metric_tag_resources" attr.type="float"/>
-<key id="d167" for="node" attr.name="metric_tag_tomcat" attr.type="float"/>
-<key id="d166" for="node" attr.name="metric_tag_webappdirlocation" attr.type="float"/>
-<key id="d165" for="node" attr.name="metric_tag_class" attr.type="float"/>
-<key id="d164" for="node" attr.name="metric_tag_deleteid" attr.type="float"/>
-<key id="d163" for="node" attr.name="metric_tag_vero" attr.type="float"/>
-<key id="d162" for="node" attr.name="metric_tag_assertfalse" attr.type="float"/>
-<key id="d161" for="node" attr.name="metric_tag_asserttrue" attr.type="float"/>
-<key id="d160" for="node" attr.name="metric_tag_docentemanagertest" attr.type="float"/>
-<key id="d159" for="node" attr.name="metric_tag_failedlogin" attr.type="float"/>
-<key id="d158" for="node" attr.name="metric_tag_passwordsbagliata" attr.type="float"/>
-<key id="d157" for="node" attr.name="metric_tag_lm" attr.type="float"/>
-<key id="d156" for="node" attr.name="metric_tag_docentemanager" attr.type="float"/>
-<key id="d155" for="node" attr.name="metric_tag_newclientcallback" attr.type="float"/>
-<key id="d154" for="node" attr.name="metric_tag_valutarisposta" attr.type="float"/>
-<key id="d153" for="node" attr.name="metric_tag_risposta" attr.type="float"/>
-<key id="d152" for="node" attr.name="metric_tag_message" attr.type="float"/>
-<key id="d151" for="node" attr.name="metric_tag_msgs" attr.type="float"/>
-<key id="d150" for="node" attr.name="metric_tag_catch" attr.type="float"/>
-<key id="d149" for="node" attr.name="metric_tag_connectedclientdocente" attr.type="float"/>
-<key id="d148" for="node" attr.name="metric_tag_try" attr.type="float"/>
-<key id="d147" for="node" attr.name="metric_tag_connectedclient" attr.type="float"/>
-<key id="d146" for="node" attr.name="metric_tag_clientsocket" attr.type="float"/>
-<key id="d145" for="node" attr.name="metric_tag_client" attr.type="float"/>
-<key id="d144" for="node" attr.name="metric_tag_clientutente" attr.type="float"/>
-<key id="d143" for="node" attr.name="metric_tag_writemessage" attr.type="float"/>
-<key id="d142" for="node" attr.name="metric_tag_messagecallback" attr.type="float"/>
-<key id="d141" for="node" attr.name="metric_tag_dataoutputstream" attr.type="float"/>
-<key id="d140" for="node" attr.name="metric_tag_readmessages" attr.type="float"/>
-<key id="d139" for="node" attr.name="metric_tag_clientdocente" attr.type="float"/>
-<key id="d138" for="node" attr.name="metric_tag_text" attr.type="float"/>
-<key id="d137" for="node" attr.name="metric_tag_messagecallaback" attr.type="float"/>
-<key id="d136" for="node" attr.name="metric_tag_line" attr.type="float"/>
-<key id="d135" for="node" attr.name="metric_tag_ioexception" attr.type="float"/>
-<key id="d134" for="node" attr.name="metric_tag_pin" attr.type="float"/>
-<key id="d133" for="node" attr.name="metric_tag_utentemanager" attr.type="float"/>
-<key id="d132" for="node" attr.name="metric_tag_sessioneutente" attr.type="float"/>
-<key id="d131" for="node" attr.name="metric_tag_quizmanager" attr.type="float"/>
-<key id="d130" for="node" attr.name="metric_tag_iddomanda" attr.type="float"/>
-<key id="d129" for="node" attr.name="metric_tag_idutente" attr.type="float"/>
-<key id="d128" for="node" attr.name="metric_tag_jo" attr.type="float"/>
-<key id="d127" for="node" attr.name="metric_tag_domandacorrente" attr.type="float"/>
-<key id="d126" for="node" attr.name="metric_tag_object" attr.type="float"/>
-<key id="d125" for="node" attr.name="metric_tag_hashmap" attr.type="float"/>
-<key id="d124" for="node" attr.name="metric_tag_map" attr.type="float"/>
-<key id="d123" for="node" attr.name="metric_tag_jsonobject" attr.type="float"/>
-<key id="d122" for="node" attr.name="metric_tag_boolean" attr.type="float"/>
-<key id="d121" for="node" attr.name="metric_tag_nome" attr.type="float"/>
-<key id="d120" for="node" attr.name="metric_tag_password" attr.type="float"/>
-<key id="d119" for="node" attr.name="metric_tag_sessionedocente" attr.type="float"/>
-<key id="d118" for="node" attr.name="metric_tag_type" attr.type="float"/>
-<key id="d117" for="node" attr.name="metric_tag_obj" attr.type="float"/>
-<key id="d116" for="node" attr.name="metric_tag_setiddocente" attr.type="float"/>
-<key id="d115" for="node" attr.name="metric_tag_settitolo" attr.type="float"/>
-<key id="d114" for="node" attr.name="metric_tag_localdatetime" attr.type="float"/>
-<key id="d113" for="node" attr.name="metric_tag_byte" attr.type="float"/>
-<key id="d112" for="node" attr.name="metric_tag_passwordhash" attr.type="float"/>
-<key id="d111" for="node" attr.name="metric_tag_setemail" attr.type="float"/>
-<key id="d110" for="node" attr.name="metric_tag_setnomecompleto" attr.type="float"/>
-<key id="d109" for="node" attr.name="metric_tag_setpasswordhash" attr.type="float"/>
-<key id="d108" for="node" attr.name="metric_tag_value" attr.type="float"/>
-<key id="d107" for="node" attr.name="metric_tag_utentipath" attr.type="float"/>
-<key id="d106" for="node" attr.name="metric_tag_quizziespath" attr.type="float"/>
-<key id="d105" for="node" attr.name="metric_tag_path" attr.type="float"/>
-<key id="d104" for="node" attr.name="metric_tag_partitepath" attr.type="float"/>
-<key id="d103" for="node" attr.name="metric_tag_domandepath" attr.type="float"/>
-<key id="d102" for="node" attr.name="metric_tag_docentipath" attr.type="float"/>
-<key id="d101" for="node" attr.name="metric_tag_condition" attr.type="float"/>
-<key id="d100" for="node" attr.name="metric_tag_alias" attr.type="float"/>
-<key id="d99" for="node" attr.name="metric_tag_docentirecord" attr.type="float"/>
-<key id="d98" for="node" attr.name="metric_tag_tables" attr.type="float"/>
-<key id="d97" for="node" attr.name="metric_tag_foreignkey" attr.type="float"/>
-<key id="d96" for="node" attr.name="metric_tag_uniquekey" attr.type="float"/>
-<key id="d95" for="node" attr.name="metric_tag_tablefield" attr.type="float"/>
-<key id="d94" for="node" attr.name="metric_tag_domande" attr.type="float"/>
-<key id="d93" for="node" attr.name="metric_tag_partite" attr.type="float"/>
-<key id="d92" for="node" attr.name="metric_tag_quizzies" attr.type="float"/>
-<key id="d91" for="node" attr.name="metric_tag_docenti" attr.type="float"/>
-<key id="d90" for="node" attr.name="metric_tag_utenti" attr.type="float"/>
-<key id="d89" for="node" attr.name="metric_tag_defaultschema" attr.type="float"/>
-<key id="d88" for="node" attr.name="metric_tag_catalogimpl" attr.type="float"/>
-<key id="d87" for="node" attr.name="metric_tag_getschemas" attr.type="float"/>
-<key id="d86" for="node" attr.name="metric_tag_defaultcatalog" attr.type="float"/>
-<key id="d85" for="node" attr.name="metric_tag_nick" attr.type="float"/>
-<key id="d84" for="node" attr.name="metric_tag_utentetest" attr.type="float"/>
-<key id="d83" for="node" attr.name="metric_tag_quiztest" attr.type="float"/>
-<key id="d82" for="node" attr.name="metric_tag_partitatest" attr.type="float"/>
-<key id="d81" for="node" attr.name="metric_tag_assertequals" attr.type="float"/>
-<key id="d80" for="node" attr.name="metric_tag_domandaverofalsotest" attr.type="float"/>
-<key id="d79" for="node" attr.name="metric_tag_domandarispostamultiplatest" attr.type="float"/>
-<key id="d78" for="node" attr.name="metric_tag_di" attr.type="float"/>
-<key id="d77" for="node" attr.name="metric_tag_test" attr.type="float"/>
-<key id="d76" for="node" attr.name="metric_tag_str" attr.type="float"/>
-<key id="d75" for="node" attr.name="metric_tag_hash" attr.type="float"/>
-<key id="d74" for="node" attr.name="metric_tag_nosuchalgorithmexception" attr.type="float"/>
-<key id="d73" for="node" attr.name="metric_tag_stringhash" attr.type="float"/>
-<key id="d72" for="node" attr.name="metric_tag_messagedigest" attr.type="float"/>
-<key id="d71" for="node" attr.name="metric_tag_newpin" attr.type="float"/>
-<key id="d70" for="node" attr.name="metric_tag_pingenerator" attr.type="float"/>
-<key id="d69" for="node" attr.name="metric_tag_rnd" attr.type="float"/>
-<key id="d68" for="node" attr.name="metric_tag_number" attr.type="float"/>
-<key id="d67" for="node" attr.name="metric_tag_random" attr.type="float"/>
-<key id="d66" for="node" attr.name="metric_tag_dbconnection" attr.type="float"/>
-<key id="d65" for="node" attr.name="metric_tag_getconnection" attr.type="float"/>
-<key id="d64" for="node" attr.name="metric_tag_sqlexception" attr.type="float"/>
-<key id="d63" for="node" attr.name="metric_tag_sqlite" attr.type="float"/>
-<key id="d62" for="node" attr.name="metric_tag_conn" attr.type="float"/>
-<key id="d61" for="node" attr.name="metric_tag_data" attr.type="float"/>
-<key id="d60" for="node" attr.name="metric_tag_domandaverofalso" attr.type="float"/>
-<key id="d59" for="node" attr.name="metric_tag_idquiz" attr.type="float"/>
-<key id="d58" for="node" attr.name="metric_tag_numerodomanda" attr.type="float"/>
-<key id="d57" for="node" attr.name="metric_tag_domanda" attr.type="float"/>
-<key id="d56" for="node" attr.name="metric_tag_rispostacorretta" attr.type="float"/>
-<key id="d55" for="node" attr.name="metric_tag_domandarispostamultipla" attr.type="float"/>
-<key id="d54" for="node" attr.name="metric_tag_possibilirisposte" attr.type="float"/>
-<key id="d53" for="node" attr.name="metric_tag_avatar" attr.type="float"/>
-<key id="d52" for="node" attr.name="metric_tag_utente" attr.type="float"/>
-<key id="d51" for="node" attr.name="metric_tag_nickname" attr.type="float"/>
-<key id="d50" for="node" attr.name="metric_tag_utentirecord" attr.type="float"/>
-<key id="d49" for="node" attr.name="metric_tag_punteggio" attr.type="float"/>
-<key id="d48" for="node" attr.name="metric_tag_idpartita" attr.type="float"/>
-<key id="d47" for="node" attr.name="metric_tag_quizziesrecord" attr.type="float"/>
-<key id="d46" for="node" attr.name="metric_tag_res" attr.type="float"/>
-<key id="d45" for="node" attr.name="metric_tag_case" attr.type="float"/>
-<key id="d44" for="node" attr.name="metric_tag_integer" attr.type="float"/>
-<key id="d43" for="node" attr.name="metric_tag_partiterecord" attr.type="float"/>
-<key id="d42" for="node" attr.name="metric_tag_port" attr.type="float"/>
-<key id="d41" for="node" attr.name="metric_tag_timestamp" attr.type="float"/>
-<key id="d40" for="node" attr.name="metric_tag_partita" attr.type="float"/>
+<key id="d192" for="node" attr.name="metric_tag_che" attr.type="float"/>
+<key id="d191" for="node" attr.name="metric_tag_la" attr.type="float"/>
+<key id="d190" for="node" attr.name="metric_tag_una" attr.type="float"/>
+<key id="d189" for="node" attr.name="metric_tag_link" attr.type="float"/>
+<key id="d188" for="node" attr.name="metric_tag_out" attr.type="float"/>
+<key id="d187" for="node" attr.name="metric_tag_alert" attr.type="float"/>
+<key id="d186" for="node" attr.name="metric_tag_evento" attr.type="float"/>
+<key id="d185" for="node" attr.name="metric_tag_var" attr.type="float"/>
+<key id="d184" for="node" attr.name="metric_tag_div" attr.type="float"/>
+<key id="d183" for="node" attr.name="metric_tag_um" attr.type="float"/>
+<key id="d182" for="node" attr.name="metric_tag_throwable" attr.type="float"/>
+<key id="d181" for="node" attr.name="metric_tag_sessionid" attr.type="float"/>
+<key id="d180" for="node" attr.name="metric_tag_httpsession" attr.type="float"/>
+<key id="d179" for="node" attr.name="metric_tag_session" attr.type="float"/>
+<key id="d178" for="node" attr.name="metric_tag_servletcontextevent" attr.type="float"/>
+<key id="d177" for="node" attr.name="metric_tag_applicationcontext" attr.type="float"/>
+<key id="d176" for="node" attr.name="metric_tag_sce" attr.type="float"/>
+<key id="d175" for="node" attr.name="metric_tag_context" attr.type="float"/>
+<key id="d174" for="node" attr.name="metric_tag_manager" attr.type="float"/>
+<key id="d173" for="node" attr.name="metric_tag_ctx" attr.type="float"/>
+<key id="d172" for="node" attr.name="metric_tag_standardcontext" attr.type="float"/>
+<key id="d171" for="node" attr.name="metric_tag_webport" attr.type="float"/>
+<key id="d170" for="node" attr.name="metric_tag_resources" attr.type="float"/>
+<key id="d169" for="node" attr.name="metric_tag_tomcat" attr.type="float"/>
+<key id="d168" for="node" attr.name="metric_tag_webappdirlocation" attr.type="float"/>
+<key id="d167" for="node" attr.name="metric_tag_class" attr.type="float"/>
+<key id="d166" for="node" attr.name="metric_tag_deleteid" attr.type="float"/>
+<key id="d165" for="node" attr.name="metric_tag_quizmanager" attr.type="float"/>
+<key id="d164" for="node" attr.name="metric_tag_vero" attr.type="float"/>
+<key id="d163" for="node" attr.name="metric_tag_asserttrue" attr.type="float"/>
+<key id="d162" for="node" attr.name="metric_tag_lm" attr.type="float"/>
+<key id="d161" for="node" attr.name="metric_tag_docentemanager" attr.type="float"/>
+<key id="d160" for="node" attr.name="metric_tag_valutarisposta" attr.type="float"/>
+<key id="d159" for="node" attr.name="metric_tag_message" attr.type="float"/>
+<key id="d158" for="node" attr.name="metric_tag_msgs" attr.type="float"/>
+<key id="d157" for="node" attr.name="metric_tag_function" attr.type="float"/>
+<key id="d156" for="node" attr.name="metric_tag_connectedclientutente" attr.type="float"/>
+<key id="d155" for="node" attr.name="metric_tag_connectedclient" attr.type="float"/>
+<key id="d154" for="node" attr.name="metric_tag_connected" attr.type="float"/>
+<key id="d153" for="node" attr.name="metric_tag_clientsocket" attr.type="float"/>
+<key id="d152" for="node" attr.name="metric_tag_connectedclientdocente" attr.type="float"/>
+<key id="d151" for="node" attr.name="metric_tag_catch" attr.type="float"/>
+<key id="d150" for="node" attr.name="metric_tag_try" attr.type="float"/>
+<key id="d149" for="node" attr.name="metric_tag_client" attr.type="float"/>
+<key id="d148" for="node" attr.name="metric_tag_clientutente" attr.type="float"/>
+<key id="d147" for="node" attr.name="metric_tag_writemessage" attr.type="float"/>
+<key id="d146" for="node" attr.name="metric_tag_dataoutputstream" attr.type="float"/>
+<key id="d145" for="node" attr.name="metric_tag_readmessages" attr.type="float"/>
+<key id="d144" for="node" attr.name="metric_tag_bufferedinputstream" attr.type="float"/>
+<key id="d143" for="node" attr.name="metric_tag_messagecallback" attr.type="float"/>
+<key id="d142" for="node" attr.name="metric_tag_thread" attr.type="float"/>
+<key id="d141" for="node" attr.name="metric_tag_clientdocente" attr.type="float"/>
+<key id="d140" for="node" attr.name="metric_tag_close" attr.type="float"/>
+<key id="d139" for="node" attr.name="metric_tag_text" attr.type="float"/>
+<key id="d138" for="node" attr.name="metric_tag_ioexception" attr.type="float"/>
+<key id="d137" for="node" attr.name="metric_tag_line" attr.type="float"/>
+<key id="d136" for="node" attr.name="metric_tag_pin" attr.type="float"/>
+<key id="d135" for="node" attr.name="metric_tag_utentemanager" attr.type="float"/>
+<key id="d134" for="node" attr.name="metric_tag_sessioneutente" attr.type="float"/>
+<key id="d133" for="node" attr.name="metric_tag_iddomanda" attr.type="float"/>
+<key id="d132" for="node" attr.name="metric_tag_jo" attr.type="float"/>
+<key id="d131" for="node" attr.name="metric_tag_idutente" attr.type="float"/>
+<key id="d130" for="node" attr.name="metric_tag_object" attr.type="float"/>
+<key id="d129" for="node" attr.name="metric_tag_domandacorrente" attr.type="float"/>
+<key id="d128" for="node" attr.name="metric_tag_hashmap" attr.type="float"/>
+<key id="d127" for="node" attr.name="metric_tag_map" attr.type="float"/>
+<key id="d126" for="node" attr.name="metric_tag_jsonobject" attr.type="float"/>
+<key id="d125" for="node" attr.name="metric_tag_nome" attr.type="float"/>
+<key id="d124" for="node" attr.name="metric_tag_boolean" attr.type="float"/>
+<key id="d123" for="node" attr.name="metric_tag_password" attr.type="float"/>
+<key id="d122" for="node" attr.name="metric_tag_sessionedocente" attr.type="float"/>
+<key id="d121" for="node" attr.name="metric_tag_type" attr.type="float"/>
+<key id="d120" for="node" attr.name="metric_tag_obj" attr.type="float"/>
+<key id="d119" for="node" attr.name="metric_tag_setiddocente" attr.type="float"/>
+<key id="d118" for="node" attr.name="metric_tag_settitolo" attr.type="float"/>
+<key id="d117" for="node" attr.name="metric_tag_localdatetime" attr.type="float"/>
+<key id="d116" for="node" attr.name="metric_tag_byte" attr.type="float"/>
+<key id="d115" for="node" attr.name="metric_tag_passwordhash" attr.type="float"/>
+<key id="d114" for="node" attr.name="metric_tag_setemail" attr.type="float"/>
+<key id="d113" for="node" attr.name="metric_tag_setnomecompleto" attr.type="float"/>
+<key id="d112" for="node" attr.name="metric_tag_setpasswordhash" attr.type="float"/>
+<key id="d111" for="node" attr.name="metric_tag_value" attr.type="float"/>
+<key id="d110" for="node" attr.name="metric_tag_utentipath" attr.type="float"/>
+<key id="d109" for="node" attr.name="metric_tag_quizziespath" attr.type="float"/>
+<key id="d108" for="node" attr.name="metric_tag_path" attr.type="float"/>
+<key id="d107" for="node" attr.name="metric_tag_partitepath" attr.type="float"/>
+<key id="d106" for="node" attr.name="metric_tag_domandepath" attr.type="float"/>
+<key id="d105" for="node" attr.name="metric_tag_docentipath" attr.type="float"/>
+<key id="d104" for="node" attr.name="metric_tag_condition" attr.type="float"/>
+<key id="d103" for="node" attr.name="metric_tag_alias" attr.type="float"/>
+<key id="d102" for="node" attr.name="metric_tag_docentirecord" attr.type="float"/>
+<key id="d101" for="node" attr.name="metric_tag_tables" attr.type="float"/>
+<key id="d100" for="node" attr.name="metric_tag_foreignkey" attr.type="float"/>
+<key id="d99" for="node" attr.name="metric_tag_uniquekey" attr.type="float"/>
+<key id="d98" for="node" attr.name="metric_tag_tablefield" attr.type="float"/>
+<key id="d97" for="node" attr.name="metric_tag_domande" attr.type="float"/>
+<key id="d96" for="node" attr.name="metric_tag_partite" attr.type="float"/>
+<key id="d95" for="node" attr.name="metric_tag_quizzies" attr.type="float"/>
+<key id="d94" for="node" attr.name="metric_tag_docenti" attr.type="float"/>
+<key id="d93" for="node" attr.name="metric_tag_utenti" attr.type="float"/>
+<key id="d92" for="node" attr.name="metric_tag_defaultschema" attr.type="float"/>
+<key id="d91" for="node" attr.name="metric_tag_catalogimpl" attr.type="float"/>
+<key id="d90" for="node" attr.name="metric_tag_getschemas" attr.type="float"/>
+<key id="d89" for="node" attr.name="metric_tag_defaultcatalog" attr.type="float"/>
+<key id="d88" for="node" attr.name="metric_tag_nick" attr.type="float"/>
+<key id="d87" for="node" attr.name="metric_tag_port" attr.type="float"/>
+<key id="d86" for="node" attr.name="metric_tag_prova" attr.type="float"/>
+<key id="d85" for="node" attr.name="metric_tag_assertequals" attr.type="float"/>
+<key id="d84" for="node" attr.name="metric_tag_domandaverofalsotest" attr.type="float"/>
+<key id="d83" for="node" attr.name="metric_tag_domandarispostamultiplatest" attr.type="float"/>
+<key id="d82" for="node" attr.name="metric_tag_di" attr.type="float"/>
+<key id="d81" for="node" attr.name="metric_tag_test" attr.type="float"/>
+<key id="d80" for="node" attr.name="metric_tag_str" attr.type="float"/>
+<key id="d79" for="node" attr.name="metric_tag_hash" attr.type="float"/>
+<key id="d78" for="node" attr.name="metric_tag_nosuchalgorithmexception" attr.type="float"/>
+<key id="d77" for="node" attr.name="metric_tag_stringhash" attr.type="float"/>
+<key id="d76" for="node" attr.name="metric_tag_messagedigest" attr.type="float"/>
+<key id="d75" for="node" attr.name="metric_tag_newpin" attr.type="float"/>
+<key id="d74" for="node" attr.name="metric_tag_pingenerator" attr.type="float"/>
+<key id="d73" for="node" attr.name="metric_tag_rnd" attr.type="float"/>
+<key id="d72" for="node" attr.name="metric_tag_number" attr.type="float"/>
+<key id="d71" for="node" attr.name="metric_tag_random" attr.type="float"/>
+<key id="d70" for="node" attr.name="metric_tag_dbconnection" attr.type="float"/>
+<key id="d69" for="node" attr.name="metric_tag_getconnection" attr.type="float"/>
+<key id="d68" for="node" attr.name="metric_tag_sqlexception" attr.type="float"/>
+<key id="d67" for="node" attr.name="metric_tag_sqlite" attr.type="float"/>
+<key id="d66" for="node" attr.name="metric_tag_conn" attr.type="float"/>
+<key id="d65" for="node" attr.name="metric_tag_data" attr.type="float"/>
+<key id="d64" for="node" attr.name="metric_tag_risposta" attr.type="float"/>
+<key id="d63" for="node" attr.name="metric_tag_domandaverofalso" attr.type="float"/>
+<key id="d62" for="node" attr.name="metric_tag_idquiz" attr.type="float"/>
+<key id="d61" for="node" attr.name="metric_tag_numerodomanda" attr.type="float"/>
+<key id="d60" for="node" attr.name="metric_tag_domanda" attr.type="float"/>
+<key id="d59" for="node" attr.name="metric_tag_rispostacorretta" attr.type="float"/>
+<key id="d58" for="node" attr.name="metric_tag_domandarispostamultipla" attr.type="float"/>
+<key id="d57" for="node" attr.name="metric_tag_possibilirisposte" attr.type="float"/>
+<key id="d56" for="node" attr.name="metric_tag_avatar" attr.type="float"/>
+<key id="d55" for="node" attr.name="metric_tag_utente" attr.type="float"/>
+<key id="d54" for="node" attr.name="metric_tag_nickname" attr.type="float"/>
+<key id="d53" for="node" attr.name="metric_tag_utentirecord" attr.type="float"/>
+<key id="d52" for="node" attr.name="metric_tag_punteggio" attr.type="float"/>
+<key id="d51" for="node" attr.name="metric_tag_idpartita" attr.type="float"/>
+<key id="d50" for="node" attr.name="metric_tag_quizziesrecord" attr.type="float"/>
+<key id="d49" for="node" attr.name="metric_tag_case" attr.type="float"/>
+<key id="d48" for="node" attr.name="metric_tag_res" attr.type="float"/>
+<key id="d47" for="node" attr.name="metric_tag_integer" attr.type="float"/>
+<key id="d46" for="node" attr.name="metric_tag_iddocente" attr.type="float"/>
+<key id="d45" for="node" attr.name="metric_tag_partiterecord" attr.type="float"/>
+<key id="d44" for="node" attr.name="metric_tag_timestamp" attr.type="float"/>
+<key id="d43" for="node" attr.name="metric_tag_partita" attr.type="float"/>
+<key id="d42" for="node" attr.name="metric_tag_controllarisposta" attr.type="float"/>
+<key id="d41" for="node" attr.name="metric_tag_getdomanda" attr.type="float"/>
+<key id="d40" for="node" attr.name="metric_tag_getrispostedisponibili" attr.type="float"/>
 <key id="d39" for="node" attr.name="metric_tag_domanderecord" attr.type="float"/>
 <key id="d38" for="node" attr.name="metric_tag_abstract" attr.type="float"/>
 <key id="d37" for="node" attr.name="metric_tag_create" attr.type="float"/>
@@ -208,184 +211,188 @@
 <graph edgedefault="directed"><node id="demo.User">
   <data key="d0">4</data>
   <data key="d1">14</data>
-  <data key="d2">0.6409553340538793</data>
-  <data key="d3">0.4785356004103369</data>
-  <data key="d4">0.26517696645899924</data>
-  <data key="d5">0.26517696645899924</data>
-  <data key="d6">0.2208849541985734</data>
-  <data key="d7">0.2768272895871035</data>
-  <data key="d8">0.2208849541985734</data>
-  <data key="d9">0</data>
-  <data key="d10">0</data>
-  <data key="d11">11</data>
-</node>
-<node id="demo.Person">
-  <data key="d0">3</data>
-  <data key="d1">10</data>
-  <data key="d2">0.6946130666518177</data>
-  <data key="d12">0.6309089590523024</data>
-  <data key="d6">0.23937639217808573</data>
-  <data key="d8">0.23937639217808573</data>
-  <data key="d9">0</data>
-  <data key="d10">0</data>
-  <data key="d11">12</data>
-</node>
-<node id="it.quizzy.databaselayer.JooqCodeGenerator">
-  <data key="d0">1</data>
-  <data key="d1">16</data>
-  <data key="d13">0.8172653099080917</data>
-  <data key="d14">0.22840799147485336</data>
-  <data key="d15">0.22840799147485336</data>
-  <data key="d16">0.22840799147485336</data>
-  <data key="d17">0.2043163274770229</data>
-  <data key="d18">0.2042629662370924</data>
-  <data key="d19">0.2043163274770229</data>
+  <data key="d2">0.6438451601491907</data>
+  <data key="d3">0.47725104523493883</data>
+  <data key="d4">0.26408726909007285</data>
+  <data key="d5">0.26408726909007285</data>
+  <data key="d6">0.2205601259976292</data>
+  <data key="d7">0.2755364053110363</data>
+  <data key="d8">0.2205601259976292</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">13</data>
 </node>
+<node id="demo.Person">
+  <data key="d0">3</data>
+  <data key="d1">10</data>
+  <data key="d2">0.6978631997076677</data>
+  <data key="d12">0.6276838438172068</data>
+  <data key="d6">0.23906492551868466</data>
+  <data key="d8">0.23906492551868466</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">14</data>
+</node>
+<node id="it.quizzy.databaselayer.JooqCodeGenerator">
+  <data key="d0">1</data>
+  <data key="d1">16</data>
+  <data key="d13">0.8180334624124892</data>
+  <data key="d14">0.22831727299482144</data>
+  <data key="d15">0.22831727299482144</data>
+  <data key="d16">0.22831727299482144</data>
+  <data key="d17">0.2045083656031223</data>
+  <data key="d18">0.2044639553024313</data>
+  <data key="d19">0.2045083656031223</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">15</data>
+</node>
 <node id="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException">
   <data key="d0">1</data>
   <data key="d1">5</data>
-  <data key="d20">0.474554953261242</data>
-  <data key="d21">0.3696857610026373</data>
-  <data key="d22">0.3696857610026373</data>
-  <data key="d23">0.30500849374428884</data>
-  <data key="d24">0.330692619469591</data>
-  <data key="d25">0.330692619469591</data>
-  <data key="d26">0.25775502339185685</data>
+  <data key="d20">0.43571787390770933</data>
+  <data key="d21">0.38411610866613405</data>
+  <data key="d22">0.38411610866613405</data>
+  <data key="d23">0.31767656308100994</data>
+  <data key="d24">0.3440605108616733</data>
+  <data key="d25">0.32976404919206975</data>
+  <data key="d26">0.23535639191354477</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">2</data>
+  <data key="d11">3</data>
 </node>
 <node id="Exception">
   <data key="d9">2</data>
   <data key="d10">0</data>
-  <data key="d11">2</data>
+  <data key="d11">3</data>
 </node>
 <node id="it.quizzy.databaselayer.exceptions.RecordNotFoundException">
   <data key="d0">1</data>
   <data key="d1">5</data>
-  <data key="d27">0.4939012240178571</data>
-  <data key="d28">0.412820063302132</data>
-  <data key="d29">0.412820063302132</data>
-  <data key="d25">0.369277268707167</data>
-  <data key="d18">0.35373617262982887</data>
-  <data key="d30">0.21654762692255497</data>
-  <data key="d31">0.20312079137650507</data>
+  <data key="d27">0.488044311204502</data>
+  <data key="d28">0.41770953799013916</data>
+  <data key="d29">0.41770953799013916</data>
+  <data key="d25">0.35860404061705903</data>
+  <data key="d18">0.35860404061705903</data>
+  <data key="d30">0.22136532570421308</data>
+  <data key="d31">0.20348220269557865</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">2</data>
+  <data key="d11">3</data>
 </node>
 <node id="it.quizzy.databaselayer.models.Docente">
   <data key="d0">4</data>
   <data key="d1">54</data>
-  <data key="d32">0.40334051204361976</data>
-  <data key="d33">0.3386358812912267</data>
-  <data key="d34">0.30899787862261324</data>
-  <data key="d35">0.2816740269873512</data>
-  <data key="d36">0.2768450281055176</data>
-  <data key="d27">0.2768450281055176</data>
-  <data key="d37">0.22803119405435912</data>
-  <data key="d9">0</data>
-  <data key="d10">0</data>
-  <data key="d11">16</data>
-</node>
-<node id="it.quizzy.databaselayer.models.Domanda">
-  <data key="d0">2</data>
-  <data key="d1">13</data>
-  <data key="d38">0.7057868765468904</data>
-  <data key="d39">0.3535526086232975</data>
-  <data key="d30">0.24681693360020385</data>
-  <data key="d7">0.21044766088145062</data>
+  <data key="d32">0.4135843901440181</data>
+  <data key="d33">0.3308675121152145</data>
+  <data key="d34">0.3170727005662254</data>
+  <data key="d35">0.2781518912580525</data>
+  <data key="d36">0.2640486556481808</data>
+  <data key="d27">0.275867425445087</data>
+  <data key="d37">0.2353938368185555</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">17</data>
 </node>
-<node id="it.quizzy.databaselayer.models.Partita">
-  <data key="d0">3</data>
-  <data key="d1">37</data>
-  <data key="d40">0.4350493581805963</data>
-  <data key="d27">0.3732616988513955</data>
-  <data key="d34">0.3124593041423358</data>
-  <data key="d37">0.2305856225763639</data>
-  <data key="d41">0.2574028387438121</data>
-  <data key="d42">0.22828620981162492</data>
-  <data key="d43">0.23442603829943184</data>
+<node id="it.quizzy.databaselayer.models.Domanda">
+  <data key="d0">2</data>
+  <data key="d1">13</data>
+  <data key="d38">0.6647949955807229</data>
+  <data key="d39">0.3731838297427775</data>
+  <data key="d30">0.2622161133189</data>
+  <data key="d7">0.22159833186024094</data>
+  <data key="d40">0.20460527793074393</data>
+  <data key="d41">0.20460527793074393</data>
+  <data key="d42">0.20460527793074393</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">18</data>
 </node>
-<node id="it.quizzy.databaselayer.models.Quiz">
-  <data key="d0">4</data>
-  <data key="d1">50</data>
-  <data key="d32">0.47419746506835103</data>
-  <data key="d44">0.34543398639725337</data>
-  <data key="d34">0.2724608730944221</data>
-  <data key="d37">0.20106797658858583</data>
-  <data key="d45">0.21695141749478022</data>
-  <data key="d46">0.21033519080686616</data>
-  <data key="d35">0.20556870446894485</data>
-  <data key="d47">0.20441677435866593</data>
+<node id="it.quizzy.databaselayer.models.Partita">
+  <data key="d0">3</data>
+  <data key="d1">37</data>
+  <data key="d43">0.3929559962933024</data>
+  <data key="d27">0.37465825874180353</data>
+  <data key="d34">0.32296466055309014</data>
+  <data key="d37">0.23976801051819205</data>
+  <data key="d44">0.2651997452238013</data>
+  <data key="d45">0.24185167061752533</data>
+  <data key="d46">0.23561263076730474</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">19</data>
 </node>
-<node id="it.quizzy.databaselayer.models.Utente">
-  <data key="d0">3</data>
-  <data key="d1">31</data>
-  <data key="d48">0.4008925613984533</data>
-  <data key="d49">0.3697561696464653</data>
-  <data key="d50">0.33675026433280647</data>
-  <data key="d51">0.31247165935126564</data>
-  <data key="d52">0.2876471072175179</data>
-  <data key="d53">0.2876471072175179</data>
-  <data key="d44">0.25291463502285444</data>
+<node id="it.quizzy.databaselayer.models.Quiz">
+  <data key="d0">4</data>
+  <data key="d1">50</data>
+  <data key="d32">0.48136312190112773</data>
+  <data key="d47">0.3613421624157826</data>
+  <data key="d34">0.2767762311357399</data>
+  <data key="d37">0.20547785687911443</data>
+  <data key="d48">0.21317410528781905</data>
+  <data key="d49">0.20726352466169398</data>
+  <data key="d35">0.20058034651241213</data>
+  <data key="d50">0.20726352466169398</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">20</data>
 </node>
+<node id="it.quizzy.databaselayer.models.Utente">
+  <data key="d0">3</data>
+  <data key="d1">31</data>
+  <data key="d51">0.40201125442943586</data>
+  <data key="d52">0.3711834098809822</data>
+  <data key="d53">0.33850457778331366</data>
+  <data key="d54">0.31446656251854027</data>
+  <data key="d55">0.28465111244181657</data>
+  <data key="d56">0.289888010184669</data>
+  <data key="d47">0.2622876173884631</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">21</data>
+</node>
 <node id="it.quizzy.databaselayer.models.domande.DomandaRispostaMultipla">
   <data key="d0">3</data>
   <data key="d1">49</data>
-  <data key="d54">0.4025973407776838</data>
-  <data key="d55">0.3772756941812355</data>
-  <data key="d56">0.35705674985911945</data>
-  <data key="d57">0.34292168392512107</data>
-  <data key="d58">0.30194800558326285</data>
-  <data key="d59">0.2189284820610953</data>
+  <data key="d57">0.4123463013370479</data>
+  <data key="d58">0.36634272315458555</data>
+  <data key="d59">0.3493397616835119</data>
+  <data key="d60">0.32611008272048814</data>
+  <data key="d61">0.30925972600278595</data>
+  <data key="d62">0.22539618659785599</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">3</data>
+  <data key="d11">5</data>
 </node>
 <node id="Domanda">
   <data key="d9">2</data>
   <data key="d10">0</data>
-  <data key="d11">3</data>
+  <data key="d11">5</data>
 </node>
 <node id="it.quizzy.databaselayer.models.domande.DomandaVeroFalso">
   <data key="d0">3</data>
   <data key="d1">47</data>
-  <data key="d60">0.4016040457478596</data>
-  <data key="d56">0.3800812973552429</data>
-  <data key="d57">0.36503474186927104</data>
-  <data key="d58">0.32141890537343526</data>
-  <data key="d59">0.23304592763650805</data>
-  <data key="d46">0.2008020228739298</data>
-  <data key="d61">0.2008020228739298</data>
+  <data key="d63">0.391500764486054</data>
+  <data key="d59">0.3733301499392943</data>
+  <data key="d60">0.3485052073432548</data>
+  <data key="d61">0.33049767745420217</data>
+  <data key="d62">0.24087493428405324</data>
+  <data key="d64">0.2042698243654005</data>
+  <data key="d48">0.2066639431578201</data>
+  <data key="d65">0.2066639431578201</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">3</data>
+  <data key="d11">5</data>
 </node>
 <node id="it.quizzy.databaselayer.util.DBConnection">
   <data key="d0">1</data>
   <data key="d1">11</data>
-  <data key="d62">0.772923784659698</data>
-  <data key="d63">0.2576412615532327</data>
-  <data key="d64">0.2576412615532327</data>
-  <data key="d65">0.2576412615532327</data>
-  <data key="d66">0.2576412615532327</data>
-  <data key="d17">0.23046617601774697</data>
+  <data key="d66">0.7745855645031315</data>
+  <data key="d67">0.25819518816771053</data>
+  <data key="d68">0.25819518816771053</data>
+  <data key="d69">0.25819518816771053</data>
+  <data key="d70">0.25819518816771053</data>
+  <data key="d17">0.2312706141158525</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">22</data>
@@ -393,11 +400,11 @@
 <node id="it.quizzy.databaselayer.util.PinGenerator">
   <data key="d0">1</data>
   <data key="d1">6</data>
-  <data key="d67">0.6018407297418509</data>
-  <data key="d68">0.6018407297418509</data>
-  <data key="d69">0.30092036487092544</data>
-  <data key="d70">0.30092036487092544</data>
-  <data key="d71">0.30092036487092544</data>
+  <data key="d71">0.6018682067127694</data>
+  <data key="d72">0.6018682067127694</data>
+  <data key="d73">0.3009341033563847</data>
+  <data key="d74">0.3009341033563847</data>
+  <data key="d75">0.3009341033563847</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">23</data>
@@ -405,24 +412,24 @@
 <node id="it.quizzy.databaselayer.util.StringHash">
   <data key="d0">1</data>
   <data key="d1">12</data>
-  <data key="d72">0.8369504888735536</data>
-  <data key="d73">0.2789834962911846</data>
-  <data key="d74">0.2789834962911846</data>
-  <data key="d75">0.2789834962911846</data>
-  <data key="d76">0.20962845758589982</data>
+  <data key="d76">0.8353991878713349</data>
+  <data key="d77">0.27846639595711165</data>
+  <data key="d78">0.27846639595711165</data>
+  <data key="d79">0.27846639595711165</data>
+  <data key="d80">0.22271005986792827</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">24</data>
 </node>
 <node id="it.quizzy.databaselayer.models.domande.test.DomandaRispostaMultiplaTest">
   <data key="d0">1</data>
-  <data key="d1">17</data>
-  <data key="d55">0.6274632027610444</data>
-  <data key="d77">0.40639697856331264</data>
-  <data key="d36">0.3641092406649424</data>
-  <data key="d35">0.2963683091099208</data>
-  <data key="d78">0.2074474990308363</data>
-  <data key="d79">0.20289023050319901</data>
+  <data key="d1">18</data>
+  <data key="d58">0.6268913967542847</data>
+  <data key="d81">0.3987750969373556</data>
+  <data key="d36">0.357802901701339</data>
+  <data key="d35">0.3015309540176625</data>
+  <data key="d82">0.2591714569057997</data>
+  <data key="d83">0.2132967300444357</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">25</data>
@@ -430,58 +437,63 @@
 <node id="it.quizzy.databaselayer.models.domande.test.DomandaVeroFalsoTest">
   <data key="d0">1</data>
   <data key="d1">16</data>
-  <data key="d60">0.6206607701279764</data>
-  <data key="d77">0.401991161526083</data>
-  <data key="d36">0.3601618720068252</data>
-  <data key="d35">0.2931553311242392</data>
-  <data key="d78">0.2051985262929193</data>
-  <data key="d80">0.20069066386911985</data>
+  <data key="d63">0.6205594344971646</data>
+  <data key="d81">0.39474723999760486</data>
+  <data key="d36">0.3541888874066924</data>
+  <data key="d35">0.2984853186331628</data>
+  <data key="d82">0.2564871398053248</data>
+  <data key="d84">0.21114231087199029</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">26</data>
 </node>
 <node id="it.quizzy.databaselayer.models.test.DocenteTest">
   <data key="d0">2</data>
-  <data key="d1">34</data>
-  <data key="d36">0.8187813049199268</data>
-  <data key="d81">0.391660615544834</data>
+  <data key="d1">28</data>
+  <data key="d36">0.7778172856847073</data>
+  <data key="d85">0.3467542180609534</data>
+  <data key="d86">0.27820772188214904</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">27</data>
 </node>
 <node id="it.quizzy.databaselayer.models.test.PartitaTest">
-  <data key="d0">1</data>
-  <data key="d1">17</data>
-  <data key="d40">0.6629651564523873</data>
-  <data key="d36">0.4266059056119352</data>
-  <data key="d35">0.34723774291369974</data>
-  <data key="d77">0.31743468116206475</data>
-  <data key="d82">0.2377148417479458</data>
+  <data key="d0">2</data>
+  <data key="d1">34</data>
+  <data key="d43">0.614112093147033</data>
+  <data key="d36">0.4203236647581668</data>
+  <data key="d35">0.3542190268108043</data>
+  <data key="d81">0.3123034299274852</data>
+  <data key="d87">0.2633443539038186</data>
+  <data key="d85">0.2342275724456139</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">28</data>
 </node>
 <node id="it.quizzy.databaselayer.models.test.QuizTest">
   <data key="d0">1</data>
-  <data key="d1">14</data>
-  <data key="d35">0.6574642777498231</data>
-  <data key="d36">0.48464456875588274</data>
-  <data key="d77">0.36062087312006</data>
-  <data key="d83">0.2700553495633159</data>
+  <data key="d1">23</data>
+  <data key="d81">0.45057386612897454</data>
+  <data key="d85">0.45057386612897454</data>
+  <data key="d35">0.42587278127675776</data>
+  <data key="d82">0.25012278305228625</data>
+  <data key="d36">0.3032097000976912</data>
+  <data key="d63">0.2656204735901644</data>
+  <data key="d58">0.2656204735901644</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">29</data>
 </node>
 <node id="it.quizzy.databaselayer.models.test.UtenteTest">
-  <data key="d0">1</data>
-  <data key="d1">18</data>
-  <data key="d52">0.551343090081494</data>
-  <data key="d77">0.4301574884971488</data>
-  <data key="d36">0.38539734487380056</data>
-  <data key="d35">0.3136958546482138</data>
-  <data key="d40">0.2994625808966363</data>
-  <data key="d84">0.21475246273334964</data>
-  <data key="d85">0.21475246273334964</data>
+  <data key="d0">2</data>
+  <data key="d1">33</data>
+  <data key="d55">0.46244703082557576</data>
+  <data key="d81">0.45439923248712666</data>
+  <data key="d36">0.4077119287624326</data>
+  <data key="d35">0.3435907485924603</data>
+  <data key="d43">0.29784288509828266</data>
+  <data key="d88">0.24304895458261552</data>
+  <data key="d85">0.22719961624356333</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">30</data>
@@ -489,45 +501,45 @@
 <node id="it.quizzy.generated.DefaultCatalog">
   <data key="d0">2</data>
   <data key="d1">14</data>
-  <data key="d86">0.8961587864212865</data>
-  <data key="d87">0.22403969660532164</data>
-  <data key="d88">0.22403969660532164</data>
-  <data key="d89">0.20040878484107402</data>
+  <data key="d89">0.8963682445208617</data>
+  <data key="d90">0.22409206113021543</data>
+  <data key="d91">0.22409206113021543</data>
+  <data key="d92">0.2007237585016828</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">9</data>
+  <data key="d11">11</data>
 </node>
 <node id="CatalogImpl">
   <data key="d9">1</data>
   <data key="d10">0</data>
-  <data key="d11">9</data>
+  <data key="d11">11</data>
 </node>
 <node id="it.quizzy.generated.DefaultSchema">
   <data key="d0">3</data>
   <data key="d1">25</data>
-  <data key="d89">0.6872238723102305</data>
-  <data key="d90">0.2810748699722536</data>
-  <data key="d91">0.2678248543418951</data>
-  <data key="d92">0.26194692689491966</data>
-  <data key="d93">0.26194692689491966</data>
-  <data key="d94">0.23365699557312974</data>
+  <data key="d92">0.6877909698573494</data>
+  <data key="d93">0.28209947994772033</data>
+  <data key="d94">0.2690064763601016</data>
+  <data key="d95">0.263198202068358</data>
+  <data key="d96">0.263198202068358</data>
+  <data key="d97">0.22777349001387343</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">10</data>
+  <data key="d11">12</data>
 </node>
 <node id="SchemaImpl">
   <data key="d9">1</data>
   <data key="d10">0</data>
-  <data key="d11">10</data>
+  <data key="d11">12</data>
 </node>
 <node id="it.quizzy.generated.Keys">
   <data key="d0">0</data>
   <data key="d1">11</data>
-  <data key="d95">0.826386877271104</data>
-  <data key="d96">0.2754622924237014</data>
-  <data key="d47">0.23749225764663334</data>
-  <data key="d43">0.23749225764663334</data>
-  <data key="d97">0.2489151355751936</data>
+  <data key="d98">0.8264938322137889</data>
+  <data key="d99">0.27549794407126293</data>
+  <data key="d100">0.24937721717454414</data>
+  <data key="d50">0.23724573955621264</data>
+  <data key="d45">0.23724573955621264</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">33</data>
@@ -535,12 +547,12 @@
 <node id="it.quizzy.generated.Tables">
   <data key="d0">0</data>
   <data key="d1">6</data>
-  <data key="d90">0.4578999916954077</data>
-  <data key="d91">0.43631434781445844</data>
-  <data key="d92">0.4267385969498509</data>
-  <data key="d93">0.4267385969498509</data>
-  <data key="d94">0.3806513771333301</data>
-  <data key="d98">0.29430624581059356</data>
+  <data key="d93">0.45970018408452823</data>
+  <data key="d94">0.43836424911377553</data>
+  <data key="d95">0.42889927327751093</data>
+  <data key="d96">0.42889927327751093</data>
+  <data key="d97">0.37117230881942015</data>
+  <data key="d101">0.29445028218860286</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">34</data>
@@ -548,10 +560,10 @@
 <node id="it.quizzy.generated.tables.Docenti">
   <data key="d0">30</data>
   <data key="d1">141</data>
-  <data key="d91">0.7040182146695045</data>
-  <data key="d99">0.3394271142957118</data>
-  <data key="d100">0.34775093564855575</data>
-  <data key="d101">0.2916504823438995</data>
+  <data key="d94">0.7041168579211321</data>
+  <data key="d102">0.3390784115287227</data>
+  <data key="d103">0.34816861099718277</data>
+  <data key="d104">0.29146872047414524</data>
   <data key="d9">0</data>
   <data key="d10">2</data>
   <data key="d11">1</data>
@@ -569,9 +581,9 @@
 <node id="it.quizzy.generated.tables.DocentiPath">
   <data key="d0">5</data>
   <data key="d1">19</data>
-  <data key="d102">0.7271383170904154</data>
-  <data key="d100">0.4640526971389846</data>
-  <data key="d99">0.30450087962570954</data>
+  <data key="d105">0.7264572683965093</data>
+  <data key="d103">0.4650563813878171</data>
+  <data key="d102">0.3044802718495442</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
   <data key="d11">1</data>
@@ -579,120 +591,120 @@
 <node id="it.quizzy.generated.tables.Domande">
   <data key="d0">30</data>
   <data key="d1">140</data>
-  <data key="d94">0.6386242062851908</data>
-  <data key="d39">0.3944434794620435</data>
-  <data key="d100">0.3615778989340851</data>
-  <data key="d101">0.3032468293215292</data>
-  <data key="d103">0.213069182614025</data>
+  <data key="d97">0.6273863033010257</data>
+  <data key="d39">0.39879955960301705</data>
+  <data key="d103">0.36638650192158667</data>
+  <data key="d104">0.3067197947805436</data>
+  <data key="d106">0.21502339818701144</data>
   <data key="d9">0</data>
   <data key="d10">2</data>
-  <data key="d11">4</data>
+  <data key="d11">6</data>
 </node>
 <node id="Domande">
   <data key="d9">2</data>
   <data key="d10">0</data>
-  <data key="d11">4</data>
+  <data key="d11">6</data>
 </node>
 <node id="it.quizzy.generated.tables.DomandePath">
   <data key="d0">5</data>
   <data key="d1">19</data>
-  <data key="d103">0.7516297846036265</data>
-  <data key="d100">0.44642988833796365</data>
-  <data key="d39">0.29293719124619905</data>
+  <data key="d106">0.7507344913372547</data>
+  <data key="d103">0.44772171431222274</data>
+  <data key="d39">0.2931309723778381</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">4</data>
+  <data key="d11">6</data>
 </node>
 <node id="it.quizzy.generated.tables.Partite">
   <data key="d0">32</data>
   <data key="d1">153</data>
-  <data key="d93">0.6721514462023322</data>
-  <data key="d43">0.38980590850401614</data>
-  <data key="d100">0.3394604000100105</data>
-  <data key="d101">0.28469740624832685</data>
+  <data key="d96">0.6723366669217495</data>
+  <data key="d45">0.3893167474011052</data>
+  <data key="d103">0.3397906991012803</data>
+  <data key="d104">0.28445516674352594</data>
   <data key="d9">0</data>
   <data key="d10">2</data>
-  <data key="d11">5</data>
+  <data key="d11">7</data>
 </node>
 <node id="Partite">
   <data key="d9">2</data>
   <data key="d10">0</data>
-  <data key="d11">5</data>
+  <data key="d11">7</data>
 </node>
 <node id="it.quizzy.generated.tables.PartitePath">
   <data key="d0">5</data>
   <data key="d1">19</data>
-  <data key="d104">0.7064845968481983</data>
-  <data key="d100">0.4785187164247142</data>
-  <data key="d43">0.3139931541547548</data>
-  <data key="d105">0.20507944989630608</data>
+  <data key="d107">0.7060879617977119</data>
+  <data key="d103">0.47931689623907237</data>
+  <data key="d45">0.3138168719100942</data>
+  <data key="d108">0.20542152695960242</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">5</data>
+  <data key="d11">7</data>
 </node>
 <node id="it.quizzy.generated.tables.Quizzies">
   <data key="d0">32</data>
   <data key="d1">150</data>
-  <data key="d92">0.6957341921071594</data>
-  <data key="d47">0.3429600654872373</data>
-  <data key="d100">0.3513705259249628</data>
-  <data key="d101">0.2946861470734066</data>
+  <data key="d95">0.6959768439412899</data>
+  <data key="d50">0.3425547591085914</data>
+  <data key="d103">0.35173815440388173</data>
+  <data key="d104">0.2944569572553061</data>
   <data key="d9">0</data>
   <data key="d10">2</data>
-  <data key="d11">6</data>
+  <data key="d11">8</data>
 </node>
 <node id="Quizzies">
   <data key="d9">2</data>
   <data key="d10">0</data>
-  <data key="d11">6</data>
+  <data key="d11">8</data>
 </node>
 <node id="it.quizzy.generated.tables.QuizziesPath">
   <data key="d0">5</data>
   <data key="d1">19</data>
-  <data key="d106">0.7064845968481983</data>
-  <data key="d100">0.4785187164247142</data>
-  <data key="d47">0.3139931541547548</data>
-  <data key="d105">0.20507944989630608</data>
+  <data key="d109">0.7060879617977118</data>
+  <data key="d103">0.47931689623907225</data>
+  <data key="d50">0.31381687191009416</data>
+  <data key="d108">0.2054215269596024</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">6</data>
+  <data key="d11">8</data>
 </node>
 <node id="it.quizzy.generated.tables.Utenti">
   <data key="d0">30</data>
   <data key="d1">140</data>
-  <data key="d90">0.7062765425325137</data>
-  <data key="d50">0.36263603470910605</data>
-  <data key="d100">0.33242069481471564</data>
-  <data key="d101">0.27879337205230803</data>
+  <data key="d93">0.7060398399066434</data>
+  <data key="d53">0.3623679134854923</data>
+  <data key="d103">0.3329158947987194</data>
+  <data key="d104">0.27869993680525396</data>
   <data key="d9">0</data>
   <data key="d10">2</data>
-  <data key="d11">7</data>
+  <data key="d11">9</data>
 </node>
 <node id="Utenti">
   <data key="d9">2</data>
   <data key="d10">0</data>
-  <data key="d11">7</data>
+  <data key="d11">9</data>
 </node>
 <node id="it.quizzy.generated.tables.UtentiPath">
   <data key="d0">5</data>
   <data key="d1">19</data>
-  <data key="d107">0.7510399661512871</data>
-  <data key="d100">0.44607956615647054</data>
-  <data key="d50">0.2927073177575312</data>
+  <data key="d110">0.750069453353237</data>
+  <data key="d103">0.44732510013008125</data>
+  <data key="d53">0.29287130237043496</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">7</data>
+  <data key="d11">9</data>
 </node>
 <node id="it.quizzy.generated.tables.records.DocentiRecord">
   <data key="d0">11</data>
   <data key="d1">41</data>
-  <data key="d108">0.6309106462256969</data>
-  <data key="d99">0.3622406289947389</data>
-  <data key="d44">0.25505535790234357</data>
-  <data key="d109">0.24104350702065086</data>
-  <data key="d110">0.24104350702065086</data>
-  <data key="d111">0.24104350702065086</data>
-  <data key="d112">0.21561909370436133</data>
+  <data key="d111">0.6178352477050759</data>
+  <data key="d102">0.3673620978853621</data>
+  <data key="d47">0.2668571629928728</data>
+  <data key="d112">0.24353742328759015</data>
+  <data key="d113">0.24353742328759015</data>
+  <data key="d114">0.24353742328759015</data>
+  <data key="d115">0.2181413598123629</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
   <data key="d11">0</data>
@@ -705,10 +717,10 @@
 <node id="it.quizzy.generated.tables.records.DomandeRecord">
   <data key="d0">13</data>
   <data key="d1">48</data>
-  <data key="d44">0.5966838741441708</data>
-  <data key="d108">0.5426362485476258</data>
-  <data key="d113">0.25646228113040165</data>
-  <data key="d39">0.249245939551218</data>
+  <data key="d47">0.6155628306289833</data>
+  <data key="d111">0.5239589952883348</data>
+  <data key="d116">0.256342445047864</data>
+  <data key="d39">0.24923495566819584</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
   <data key="d11">0</data>
@@ -716,10 +728,10 @@
 <node id="it.quizzy.generated.tables.records.PartiteRecord">
   <data key="d0">15</data>
   <data key="d1">55</data>
-  <data key="d108">0.6014828682210213</data>
-  <data key="d44">0.5511597763112568</data>
-  <data key="d114">0.2527951807043972</data>
-  <data key="d43">0.23022967812994044</data>
+  <data key="d111">0.5828476492137216</data>
+  <data key="d47">0.5706224978190816</data>
+  <data key="d117">0.25334332500396706</data>
+  <data key="d45">0.23103908467295575</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
   <data key="d11">0</data>
@@ -727,11 +739,11 @@
 <node id="it.quizzy.generated.tables.records.QuizziesRecord">
   <data key="d0">9</data>
   <data key="d1">34</data>
-  <data key="d108">0.5226529503463737</data>
-  <data key="d44">0.5070972358071354</data>
-  <data key="d47">0.4001118797873816</data>
-  <data key="d115">0.26624393561876314</data>
-  <data key="d116">0.23816147056589995</data>
+  <data key="d111">0.5070175669633287</data>
+  <data key="d47">0.5255819379420151</data>
+  <data key="d50">0.4019605285955702</data>
+  <data key="d118">0.26647395569923726</data>
+  <data key="d119">0.23868607241593098</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
   <data key="d11">0</data>
@@ -739,9 +751,9 @@
 <node id="it.quizzy.generated.tables.records.UtentiRecord">
   <data key="d0">13</data>
   <data key="d1">48</data>
-  <data key="d44">0.6144530222356398</data>
-  <data key="d108">0.5587958671967334</data>
-  <data key="d50">0.2566684428280751</data>
+  <data key="d47">0.6332750540562085</data>
+  <data key="d111">0.5390354071986652</data>
+  <data key="d53">0.2564064497887212</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
   <data key="d11">0</data>
@@ -749,13 +761,13 @@
 <node id="it.quizzy.logiclayer.factory.DomandeFactory">
   <data key="d0">0</data>
   <data key="d1">13</data>
-  <data key="d117">0.4539461310129506</data>
-  <data key="d57">0.4359754344923464</data>
-  <data key="d56">0.34045959825971295</data>
-  <data key="d118">0.24736967297261606</data>
-  <data key="d59">0.2783359716330373</data>
-  <data key="d54">0.2559222102288234</data>
-  <data key="d45">0.24736967297261606</data>
+  <data key="d120">0.46639044733865387</data>
+  <data key="d60">0.41517032480395294</data>
+  <data key="d59">0.3335579993000179</data>
+  <data key="d121">0.2538274405695313</data>
+  <data key="d62">0.28695159382609653</data>
+  <data key="d57">0.2624787716308402</data>
+  <data key="d49">0.23937025040119572</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">51</data>
@@ -763,26 +775,26 @@
 <node id="it.quizzy.logiclayer.manager.DocenteManager">
   <data key="d0">7</data>
   <data key="d1">43</data>
-  <data key="d119">0.6323014443200665</data>
-  <data key="d33">0.3701346271503963</data>
-  <data key="d36">0.30259620116319763</data>
-  <data key="d120">0.29309444954720504</data>
-  <data key="d121">0.21672192099674828</data>
-  <data key="d122">0.20726032610537914</data>
+  <data key="d122">0.647207913240564</data>
+  <data key="d33">0.3627791983851285</data>
+  <data key="d36">0.2895157612130908</data>
+  <data key="d123">0.2936612649885324</data>
+  <data key="d124">0.21414504705690807</data>
+  <data key="d125">0.2070479098339791</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">52</data>
 </node>
 <node id="it.quizzy.logiclayer.manager.PartitaManager">
   <data key="d0">10</data>
-  <data key="d1">110</data>
-  <data key="d123">0.4322782451087183</data>
-  <data key="d124">0.3865997669115715</data>
-  <data key="d125">0.3865997669115715</data>
-  <data key="d126">0.2899498251836786</data>
-  <data key="d127">0.2899498251836786</data>
-  <data key="d128">0.21613912255435916</data>
-  <data key="d129">0.21613912255435916</data>
+  <data key="d1">108</data>
+  <data key="d126">0.4134017261531398</data>
+  <data key="d127">0.39988914718978014</data>
+  <data key="d128">0.39988914718978014</data>
+  <data key="d129">0.2999168603923351</data>
+  <data key="d130">0.2686415536202004</data>
+  <data key="d131">0.223867961350167</data>
+  <data key="d132">0.2067008630765699</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">53</data>
@@ -790,14 +802,13 @@
 <node id="it.quizzy.logiclayer.manager.QuizManager">
   <data key="d0">4</data>
   <data key="d1">42</data>
-  <data key="d57">0.5907683323543446</data>
-  <data key="d56">0.38444969828044223</data>
-  <data key="d35">0.31978151362996116</data>
-  <data key="d94">0.2396942177490073</data>
-  <data key="d130">0.262702359260609</data>
-  <data key="d131">0.2349934471079415</data>
-  <data key="d122">0.21587627175496782</data>
-  <data key="d54">0.216742053261223</data>
+  <data key="d60">0.5741402173412168</data>
+  <data key="d59">0.3843985844934967</data>
+  <data key="d35">0.32315410053481575</data>
+  <data key="d133">0.27431099338672676</data>
+  <data key="d97">0.24410882685201013</data>
+  <data key="d124">0.22690676127902026</data>
+  <data key="d57">0.22686414765847593</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">54</data>
@@ -805,311 +816,371 @@
 <node id="it.quizzy.logiclayer.manager.UtenteManager">
   <data key="d0">5</data>
   <data key="d1">28</data>
-  <data key="d132">0.6262070545844199</data>
-  <data key="d40">0.4366086850756513</data>
-  <data key="d52">0.3014414783458986</data>
-  <data key="d133">0.25832543559809845</data>
-  <data key="d51">0.21830434253782566</data>
-  <data key="d134">0.20096098556393238</data>
-  <data key="d53">0.20096098556393238</data>
+  <data key="d134">0.6439869221759423</data>
+  <data key="d43">0.3945849575774419</data>
+  <data key="d55">0.30632701194106166</data>
+  <data key="d135">0.2497797726263098</data>
+  <data key="d54">0.2256085859524415</data>
+  <data key="d136">0.20797512949719166</data>
+  <data key="d56">0.20797512949719166</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">55</data>
 </node>
-<node id="it.quizzy.logiclayer.server.ClientDocente">
-  <data key="d0">2</data>
-  <data key="d1">47</data>
-  <data key="d135">0.42384168600053823</data>
-  <data key="d136">0.33933497215571795</data>
-  <data key="d137">0.29259724093468215</data>
-  <data key="d138">0.2617351228022407</data>
-  <data key="d139">0.2414067652732384</data>
-  <data key="d140">0.2262233147704786</data>
-  <data key="d141">0.2262233147704786</data>
+<node id="it.quizzy.logiclayer.server.Client">
+  <data key="d0">1</data>
+  <data key="d1">30</data>
+  <data key="d137">0.4905513296905936</data>
+  <data key="d138">0.4649710838154297</data>
+  <data key="d139">0.37762026604385807</data>
+  <data key="d140">0.32703421979372904</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">56</data>
 </node>
-<node id="it.quizzy.logiclayer.server.ClientUtente">
-  <data key="d0">2</data>
-  <data key="d1">53</data>
-  <data key="d52">0.40399611125684237</data>
-  <data key="d135">0.3647092902749599</data>
-  <data key="d142">0.3378286068720249</data>
-  <data key="d136">0.29199255511697836</data>
-  <data key="d143">0.22521907124801657</data>
-  <data key="d138">0.22521907124801657</data>
-  <data key="d144">0.22521907124801657</data>
+<node id="it.quizzy.logiclayer.server.ClientDocente">
+  <data key="d0">1</data>
+  <data key="d1">18</data>
+  <data key="d141">0.4849059828549509</data>
+  <data key="d87">0.4379816346276115</data>
+  <data key="d142">0.24245299142747545</data>
+  <data key="d143">0.24245299142747545</data>
+  <data key="d144">0.24245299142747545</data>
+  <data key="d145">0.22964947354967655</data>
+  <data key="d146">0.21899081731380576</data>
   <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">2</data>
+</node>
+<node id="Client">
+  <data key="d9">2</data>
   <data key="d10">0</data>
-  <data key="d11">14</data>
+  <data key="d11">2</data>
+</node>
+<node id="it.quizzy.logiclayer.server.ClientUtente">
+  <data key="d0">1</data>
+  <data key="d1">25</data>
+  <data key="d55">0.5813194160811065</data>
+  <data key="d147">0.3283977296673604</data>
+  <data key="d139">0.3283977296673604</data>
+  <data key="d148">0.3032148671263131</data>
+  <data key="d143">0.2844055390060122</data>
+  <data key="d87">0.2568836171861812</data>
+  <data key="d138">0.20218121485596394</data>
+  <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">2</data>
 </node>
 <node id="it.quizzy.logiclayer.server.ConnectedClient">
-  <data key="d0">7</data>
-  <data key="d1">63</data>
-  <data key="d145">0.43700234872028204</data>
-  <data key="d136">0.36939867858501735</data>
-  <data key="d135">0.34604425917968223</data>
-  <data key="d146">0.2622014092321692</data>
-  <data key="d142">0.21369284726582916</data>
-  <data key="d147">0.21369284726582916</data>
-  <data key="d148">0.20704371525652998</data>
+  <data key="d0">4</data>
+  <data key="d1">40</data>
+  <data key="d137">0.44951630115114977</data>
+  <data key="d138">0.42607586421340204</data>
+  <data key="d149">0.349285923949515</data>
+  <data key="d80">0.30896622988196276</data>
+  <data key="d150">0.2527966602252711</data>
+  <data key="d151">0.2527966602252711</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
-  <data key="d11">15</data>
+  <data key="d11">16</data>
 </node>
 <node id="it.quizzy.logiclayer.server.ConnectedClientDocente">
-  <data key="d0">5</data>
-  <data key="d1">51</data>
-  <data key="d145">0.49063660020551675</data>
-  <data key="d135">0.3885150259300565</data>
-  <data key="d136">0.31105183812874493</data>
-  <data key="d146">0.29438196012331</data>
-  <data key="d149">0.23991983653582846</data>
-  <data key="d148">0.23245464205137417</data>
-  <data key="d150">0.23245464205137417</data>
+  <data key="d0">1</data>
+  <data key="d1">12</data>
+  <data key="d152">0.5506790644582853</data>
+  <data key="d153">0.4127998716132938</data>
+  <data key="d149">0.37057157972305355</data>
+  <data key="d154">0.27533953222914265</data>
+  <data key="d155">0.25422538628402247</data>
+  <data key="d144">0.23845502267208774</data>
+  <data key="d146">0.21537973196409457</data>
   <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">4</data>
+</node>
+<node id="ConnectedClient">
+  <data key="d9">2</data>
   <data key="d10">0</data>
-  <data key="d11">21</data>
+  <data key="d11">4</data>
+</node>
+<node id="it.quizzy.logiclayer.server.ConnectedClientUtente">
+  <data key="d0">4</data>
+  <data key="d1">37</data>
+  <data key="d137">0.4926304544322188</data>
+  <data key="d149">0.47848343597713294</data>
+  <data key="d156">0.284415562660896</data>
+  <data key="d143">0.2463152272161094</data>
+  <data key="d145">0.23330775143011187</data>
+  <data key="d153">0.21320350695869666</data>
+  <data key="d157">0.20509043121774645</data>
+  <data key="d9">0</data>
+  <data key="d10">1</data>
+  <data key="d11">4</data>
 </node>
 <node id="it.quizzy.logiclayer.server.ServerPartita">
   <data key="d0">9</data>
   <data key="d1">103</data>
-  <data key="d151">0.41755692704452385</data>
-  <data key="d129">0.3112620873998657</data>
-  <data key="d147">0.24900966991989257</data>
-  <data key="d152">0.22966966868461666</data>
-  <data key="d76">0.2091684412263386</data>
-  <data key="d153">0.21722659091103408</data>
-  <data key="d44">0.21135255232874467</data>
-  <data key="d154">0.20877846352226193</data>
-  <data key="d155">0.20877846352226193</data>
+  <data key="d158">0.42234856094315704</data>
+  <data key="d131">0.315255071668314</data>
+  <data key="d156">0.2522040573346512</data>
+  <data key="d80">0.2251888071197666</data>
+  <data key="d47">0.2159687713758434</data>
+  <data key="d64">0.21875255583040318</data>
+  <data key="d159">0.21841877816396418</data>
+  <data key="d160">0.21117428047157852</data>
   <data key="d9">0</data>
   <data key="d10">1</data>
-  <data key="d11">8</data>
+  <data key="d11">10</data>
 </node>
 <node id="Thread">
   <data key="d9">1</data>
   <data key="d10">0</data>
-  <data key="d11">8</data>
+  <data key="d11">10</data>
 </node>
 <node id="it.quizzy.logiclayer.manager.test.DocenteManagerTest">
-  <data key="d0">2</data>
-  <data key="d1">13</data>
-  <data key="d156">0.6022594066488081</data>
-  <data key="d157">0.5033896542197602</data>
-  <data key="d158">0.2516948271098801</data>
-  <data key="d159">0.2516948271098801</data>
-  <data key="d160">0.2516948271098801</data>
-  <data key="d161">0.2516948271098801</data>
-  <data key="d162">0.2516948271098801</data>
+  <data key="d0">4</data>
+  <data key="d1">54</data>
+  <data key="d33">0.45165882120065853</data>
+  <data key="d123">0.4113081429099336</data>
+  <data key="d36">0.36044610057740367</data>
+  <data key="d161">0.3656072381421632</data>
+  <data key="d162">0.32230862680902184</data>
+  <data key="d125">0.25777391676244665</data>
+  <data key="d163">0.24173147010676635</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">31</data>
 </node>
-<node id="it.quizzy.logiclayer.manager.test.QuizManagerTest">
+<node id="it.quizzy.logiclayer.manager.test.PartitaManagerTest">
   <data key="d0">1</data>
-  <data key="d1">26</data>
-  <data key="d163">0.44854169842180097</data>
-  <data key="d77">0.30696341028077406</data>
-  <data key="d81">0.30696341028077406</data>
-  <data key="d94">0.27965388453133333</data>
-  <data key="d164">0.3064977367109618</data>
-  <data key="d36">0.2750222568690712</data>
-  <data key="d131">0.2741694436365536</data>
+  <data key="d1">46</data>
+  <data key="d164">0.4797483062477471</data>
+  <data key="d85">0.3562154214568878</data>
+  <data key="d81">0.26716156609266584</data>
+  <data key="d148">0.23636479923946038</data>
+  <data key="d135">0.22170238143943868</data>
+  <data key="d165">0.22170238143943868</data>
+  <data key="d159">0.22170238143943868</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">32</data>
 </node>
-<node id="it.quizzy.uilayer.launch.Configuration">
-  <data key="d0">0</data>
-  <data key="d1">4</data>
-  <data key="d13">0.9740239441414696</data>
-  <data key="d165">0.2264450402174782</data>
+<node id="it.quizzy.logiclayer.manager.test.QuizManagerTest">
+  <data key="d0">1</data>
+  <data key="d1">26</data>
+  <data key="d164">0.43821553670853813</data>
+  <data key="d166">0.32632059080202364</data>
+  <data key="d81">0.3050410693183686</data>
+  <data key="d97">0.29039206783096166</data>
+  <data key="d85">0.3050410693183686</data>
+  <data key="d36">0.27369958800947225</data>
+  <data key="d60">0.2561241338884129</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">35</data>
 </node>
-<node id="it.quizzy.uilayer.launch.Main">
+<node id="it.quizzy.uilayer.launch.Configuration">
   <data key="d0">0</data>
-  <data key="d1">18</data>
-  <data key="d166">0.424885559846771</data>
-  <data key="d167">0.28368740300055456</data>
-  <data key="d168">0.424885559846771</data>
-  <data key="d169">0.28325703989784734</data>
-  <data key="d170">0.28325703989784734</data>
-  <data key="d171">0.28325703989784734</data>
+  <data key="d1">4</data>
+  <data key="d13">0.9746719196782853</data>
+  <data key="d167">0.22363955148999462</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">36</data>
 </node>
-<node id="it.quizzy.uilayer.websocket.SessionManager">
-  <data key="d0">2</data>
-  <data key="d1">28</data>
-  <data key="d172">0.43228645654305925</data>
-  <data key="d173">0.45958647007275727</data>
-  <data key="d174">0.3676691760582058</data>
-  <data key="d175">0.3676691760582058</data>
-  <data key="d176">0.27575188204365436</data>
+<node id="it.quizzy.uilayer.launch.Main">
+  <data key="d0">0</data>
+  <data key="d1">18</data>
+  <data key="d168">0.4254397322418014</data>
+  <data key="d169">0.28005613532745566</data>
+  <data key="d170">0.4254397322418014</data>
+  <data key="d171">0.28362648816120095</data>
+  <data key="d172">0.28362648816120095</data>
+  <data key="d173">0.28362648816120095</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">37</data>
 </node>
-<node id="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper">
-  <data key="d0">3</data>
-  <data key="d1">53</data>
-  <data key="d177">0.4756781785905543</data>
-  <data key="d178">0.4002443098740601</data>
-  <data key="d152">0.36915826630849613</data>
-  <data key="d135">0.32406851112091406</data>
-  <data key="d179">0.24555015160518404</data>
-  <data key="d180">0.20012215493703006</data>
+<node id="it.quizzy.uilayer.websocket.SessionManager">
+  <data key="d0">2</data>
+  <data key="d1">28</data>
+  <data key="d174">0.4326337386130001</data>
+  <data key="d175">0.4596264053432944</data>
+  <data key="d176">0.3677011242746355</data>
+  <data key="d177">0.3677011242746355</data>
+  <data key="d178">0.27577584320597665</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">38</data>
 </node>
-<node id="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper">
+<node id="it.quizzy.uilayer.websocket.WebSocketClientDocenteWrapper">
   <data key="d0">3</data>
-  <data key="d1">54</data>
-  <data key="d177">0.46814882794685014</data>
-  <data key="d152">0.36331498369609133</data>
-  <data key="d135">0.31893893914844657</data>
-  <data key="d181">0.2954317325136668</data>
-  <data key="d178">0.2954317325136668</data>
-  <data key="d179">0.24166342045950004</data>
+  <data key="d1">53</data>
+  <data key="d179">0.48050590998462345</data>
+  <data key="d180">0.41126929070086593</data>
+  <data key="d159">0.35617561795228664</data>
+  <data key="d138">0.3165023587064557</data>
+  <data key="d181">0.25302495549464293</data>
+  <data key="d182">0.20563464535043297</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">39</data>
 </node>
-<node id="org.apache.jsp.home.checkIn">
-  <data key="d0">13</data>
-  <data key="d1">200</data>
-  <data key="d182">0.2807954607794204</data>
-  <data key="d183">0.25072569242494797</data>
-  <data key="d184">0.2519322709390471</data>
-  <data key="d185">0.2519322709390471</data>
-  <data key="d186">0.2519322709390471</data>
-  <data key="d187">0.24304764943203666</data>
-  <data key="d188">0.21758261523742478</data>
+<node id="it.quizzy.uilayer.websocket.WebSocketClientUtenteWrapper">
+  <data key="d0">3</data>
+  <data key="d1">54</data>
+  <data key="d179">0.476696219741817</data>
+  <data key="d159">0.3533516802061686</data>
+  <data key="d138">0.31399297032488965</data>
+  <data key="d180">0.30600640715211225</data>
+  <data key="d183">0.28254060153951843</data>
+  <data key="d181">0.2510188475902358</data>
+  <data key="d182">0.2040042714347415</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">40</data>
 </node>
-<node id="org.apache.jsp.home.dashboard">
-  <data key="d0">9</data>
-  <data key="d1">192</data>
-  <data key="d182">0.5252080330881195</data>
-  <data key="d78">0.22818753296329491</data>
-  <data key="d189">0.2047212233318438</data>
-  <data key="d190">0.2047212233318438</data>
-  <data key="d191">0.2047212233318438</data>
+<node id="org.apache.jsp.home.checkIn">
+  <data key="d0">13</data>
+  <data key="d1">200</data>
+  <data key="d184">0.28551317382373864</data>
+  <data key="d185">0.2545680285076503</data>
+  <data key="d186">0.2545680285076503</data>
+  <data key="d187">0.2545680285076503</data>
+  <data key="d157">0.24475672733906884</data>
+  <data key="d188">0.24180803905955442</data>
+  <data key="d189">0.22137325642757585</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">41</data>
 </node>
-<node id="org.apache.jsp.home.login">
+<node id="org.apache.jsp.home.dashboard">
   <data key="d0">9</data>
-  <data key="d1">145</data>
-  <data key="d192">0.32108958752628697</data>
-  <data key="d187">0.2770930448421488</data>
-  <data key="d193">0.27478229760675316</data>
-  <data key="d156">0.25610276630790707</data>
-  <data key="d120">0.24806094402371415</data>
-  <data key="d194">0.21405972501752463</data>
-  <data key="d195">0.21405972501752463</data>
+  <data key="d1">197</data>
+  <data key="d184">0.534301004838456</data>
+  <data key="d82">0.22125824533569952</data>
+  <data key="d190">0.20426426124641414</data>
+  <data key="d191">0.20426426124641414</data>
+  <data key="d192">0.20426426124641414</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">42</data>
 </node>
-<node id="org.apache.jsp.home.myQuizzies">
+<node id="org.apache.jsp.home.login">
   <data key="d0">9</data>
-  <data key="d1">189</data>
-  <data key="d182">0.6859889050209336</data>
-  <data key="d187">0.2474042707679431</data>
-  <data key="d35">0.23265152911016998</data>
-  <data key="d188">0.22148277665055027</data>
+  <data key="d1">150</data>
+  <data key="d193">0.31643254345277355</data>
+  <data key="d194">0.31498258307824895</data>
+  <data key="d188">0.26799440390858975</data>
+  <data key="d123">0.2381980141254674</data>
+  <data key="d161">0.2381980141254674</data>
+  <data key="d195">0.20998838871883263</data>
+  <data key="d196">0.20998838871883263</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">43</data>
 </node>
-<node id="org.apache.jsp.home.newQuiz">
+<node id="org.apache.jsp.home.myQuizzies">
   <data key="d0">9</data>
-  <data key="d1">191</data>
-  <data key="d182">0.6768548443859471</data>
-  <data key="d187">0.2703988137755673</data>
-  <data key="d196">0.20826302904182986</data>
-  <data key="d188">0.20172341101244665</data>
-  <data key="d197">0.20187905744061857</data>
+  <data key="d1">189</data>
+  <data key="d184">0.6934940192487615</data>
+  <data key="d188">0.2447237177772585</data>
+  <data key="d35">0.22589783860287244</data>
+  <data key="d189">0.2240425361378164</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">44</data>
 </node>
-<node id="org.apache.jsp.home.placing">
+<node id="org.apache.jsp.home.newQuiz">
   <data key="d0">9</data>
-  <data key="d1">203</data>
-  <data key="d182">0.605117596556639</data>
-  <data key="d188">0.3516698653697434</data>
-  <data key="d187">0.2618853044575883</data>
+  <data key="d1">191</data>
+  <data key="d184">0.6909302044332707</data>
+  <data key="d188">0.2250636790960615</data>
+  <data key="d197">0.212593909056391</data>
+  <data key="d189">0.20604393360468565</data>
+  <data key="d198">0.20519956809103793</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">45</data>
 </node>
-<node id="org.apache.jsp.home.prossimaDomanda">
-  <data key="d0">10</data>
-  <data key="d1">163</data>
-  <data key="d188">0.3797991768628146</data>
-  <data key="d187">0.33939953186793764</data>
-  <data key="d182">0.23526707169202973</data>
-  <data key="d198">0.22787950611768878</data>
-  <data key="d57">0.22110831711951093</data>
+<node id="org.apache.jsp.home.placing">
+  <data key="d0">9</data>
+  <data key="d1">203</data>
+  <data key="d184">0.6129952950467537</data>
+  <data key="d189">0.35646542019911476</data>
+  <data key="d188">0.2595802993305949</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">46</data>
 </node>
-<node id="org.apache.jsp.home.results">
-  <data key="d0">9</data>
-  <data key="d1">228</data>
-  <data key="d182">0.762343129075937</data>
-  <data key="d199">0.27835726475683675</data>
-  <data key="d188">0.21717793326716742</data>
-  <data key="d200">0.22489174436391685</data>
+<node id="org.apache.jsp.home.prossimaDomanda">
+  <data key="d0">10</data>
+  <data key="d1">163</data>
+  <data key="d189">0.3890935703254858</data>
+  <data key="d188">0.34000838138952916</data>
+  <data key="d184">0.24087753031226838</data>
+  <data key="d199">0.22665395261562543</data>
+  <data key="d60">0.20910537801367027</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">47</data>
 </node>
-<node id="org.apache.jsp.user.login">
+<node id="org.apache.jsp.home.results">
   <data key="d0">9</data>
-  <data key="d1">176</data>
-  <data key="d201">0.5665570080178618</data>
-  <data key="d202">0.5665570080178618</data>
-  <data key="d134">0.2424242990682632</data>
+  <data key="d1">228</data>
+  <data key="d184">0.7675315159374182</data>
+  <data key="d200">0.2800755974333262</data>
+  <data key="d189">0.21878941904841956</data>
+  <data key="d201">0.22471015450779813</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">48</data>
 </node>
-<node id="org.apache.jsp.user.partita">
-  <data key="d0">20</data>
-  <data key="d1">426</data>
-  <data key="d182">0.539651437422363</data>
-  <data key="d188">0.3643102218637354</data>
-  <data key="d197">0.2959001997673225</data>
-  <data key="d203">0.2186956146958003</data>
-  <data key="d204">0.20591447322732873</data>
-  <data key="d183">0.2007755632579611</data>
+<node id="org.apache.jsp.home.api.creaQuiz">
+  <data key="d0">9</data>
+  <data key="d1">156</data>
+  <data key="d202">0.3722275996410615</data>
+  <data key="d126">0.35858361403426825</data>
+  <data key="d203">0.33633959638811445</data>
+  <data key="d111">0.2749886496031437</data>
+  <data key="d188">0.2213391412847702</data>
+  <data key="d137">0.2018037578328687</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">49</data>
 </node>
-<node id="org.apache.jsp.user.pin">
+<node id="org.apache.jsp.user.login">
   <data key="d0">9</data>
-  <data key="d1">114</data>
-  <data key="d187">0.41420921975260816</data>
-  <data key="d198">0.2781081986387217</data>
-  <data key="d188">0.2781081986387217</data>
-  <data key="d205">0.2231020261079049</data>
+  <data key="d1">176</data>
+  <data key="d204">0.5673293243801358</data>
+  <data key="d205">0.5673293243801358</data>
+  <data key="d136">0.24429148200057615</data>
   <data key="d9">0</data>
   <data key="d10">0</data>
   <data key="d11">50</data>
+</node>
+<node id="org.apache.jsp.user.partita">
+  <data key="d0">20</data>
+  <data key="d1">426</data>
+  <data key="d184">0.5426719710672488</data>
+  <data key="d189">0.3665728549563276</data>
+  <data key="d198">0.2962892182305346</data>
+  <data key="d206">0.2182567006538418</data>
+  <data key="d207">0.20719335280140252</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">57</data>
+</node>
+<node id="org.apache.jsp.user.pin">
+  <data key="d0">9</data>
+  <data key="d1">114</data>
+  <data key="d188">0.4134054811698024</data>
+  <data key="d189">0.28385196977165594</data>
+  <data key="d199">0.275581401720663</data>
+  <data key="d208">0.22696263104357386</data>
+  <data key="d9">0</data>
+  <data key="d10">0</data>
+  <data key="d11">58</data>
 </node>
 <edge source="it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException" target="Exception"/>
 <edge source="it.quizzy.databaselayer.exceptions.RecordNotFoundException" target="Exception"/>
@@ -1137,5 +1208,9 @@
 <edge source="it.quizzy.generated.tables.records.PartiteRecord" target="UpdatableRecordImpl"/>
 <edge source="it.quizzy.generated.tables.records.QuizziesRecord" target="UpdatableRecordImpl"/>
 <edge source="it.quizzy.generated.tables.records.UtentiRecord" target="UpdatableRecordImpl"/>
+<edge source="it.quizzy.logiclayer.server.ClientDocente" target="Client"/>
+<edge source="it.quizzy.logiclayer.server.ClientUtente" target="Client"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClientDocente" target="ConnectedClient"/>
+<edge source="it.quizzy.logiclayer.server.ConnectedClientUtente" target="ConnectedClient"/>
 <edge source="it.quizzy.logiclayer.server.ServerPartita" target="Thread"/>
 </graph></graphml>

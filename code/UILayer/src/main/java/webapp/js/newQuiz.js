@@ -238,7 +238,7 @@ function uploadData() {
 	}
 	
 	//TODO: inserire controlli
-	fetch("/home/ap/creaQuiz.jsp", {
+	fetch("/home/api/creaQuiz.jsp", {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",

@@ -35,7 +35,8 @@ public class Utente {
 	 * @param idPartita
 	 * @throws InvalidRecordInsertionException
 	 */
-	public Utente(String nickname, Integer punteggio, Integer idPartita, Integer avatar) throws InvalidRecordInsertionException {
+	public Utente(String nickname, Integer punteggio, Integer idPartita, Integer avatar)
+			throws InvalidRecordInsertionException {
 		this.record = new UtentiRecord(null, nickname, punteggio, idPartita, avatar);
 		DSLContext create = DBConnection.getConnection();
 
@@ -49,13 +50,12 @@ public class Utente {
 		if (result != 1)
 			throw new InvalidRecordInsertionException();
 	}
-	
-	
+
 	public void aggiungiPunti(int punti) {
-		this.record.setPunteggio(this.record.getPunteggio()+punti);
+		this.record.setPunteggio(this.record.getPunteggio() + punti);
 		this.record.store();
 	}
-	
+
 	@Override
 	public String toString() {
 		return record.toString();
@@ -64,6 +64,5 @@ public class Utente {
 	public UtentiRecord getRecord() {
 		return record;
 	}
-	
-	
+
 }

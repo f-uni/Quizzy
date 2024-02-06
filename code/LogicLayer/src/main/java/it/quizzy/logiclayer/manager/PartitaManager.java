@@ -26,9 +26,11 @@ public class PartitaManager {
 	private HashMap<Integer, String> risposte;
 
 	/**
-	 * Costruttore per la creazione di una partia, questo metodo gestisce anche l'avvio del servizio del server
+	 * Costruttore per la creazione di una partia, questo metodo gestisce anche
+	 * l'avvio del servizio del server
+	 * 
 	 * @param idDocente id del docente che crea la partita
-	 * @param idQuiz id del quiz su cui è basata la partita
+	 * @param idQuiz    id del quiz su cui è basata la partita
 	 */
 	public PartitaManager(int idDocente, int idQuiz) {
 		try {
@@ -59,7 +61,8 @@ public class PartitaManager {
 	}
 
 	/**
-	 * Metodo per il calcolo della classifica, riordina la lista dei giocatori in ordine discendete
+	 * Metodo per il calcolo della classifica, riordina la lista dei giocatori in
+	 * ordine discendete
 	 */
 	public void calcolaClassifica() {
 		this.giocatori.sort((g1, g2) -> g2.getRecord().getPunteggio() - g1.getRecord().getPunteggio());
@@ -69,35 +72,35 @@ public class PartitaManager {
 	 * Metodo per la valutazione delle risposte alla domanda corrente
 	 */
 	public void valutaRisposte() {
-		if (!risposte.isEmpty()) {
-			Domanda domanda = this.domande.get(domandaCorrente - 1);
-			for (Utente u : giocatori) {
-				HashMap<String, Object> map = new HashMap<String, Object>();
+		Domanda domanda = this.domande.get(domandaCorrente - 1);
+		for (Utente u : giocatori) {
+			HashMap<String, Object> map = new HashMap<String, Object>();
 
-				String risp = risposte.get(u.getRecord().getId());
-				if (risp != null) {
-					if (domanda.controllaRisposta(risp)) {
-						u.aggiungiPunti(100);
-						map.put("punti", u.getRecord().getPunteggio());
-						JSONObject jo = new JSONObject(map);
-						server.utenteMessage(u.getRecord().getId(), "risposta_corretta$" + jo.toString());
-					} else {
-						map.put("punti", u.getRecord().getPunteggio());
-						JSONObject jo = new JSONObject(map);
-						server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
-					}
+			String risp = risposte.get(u.getRecord().getId());
+			if (risp != null) {
+				if (domanda.controllaRisposta(risp)) {
+					u.aggiungiPunti(100);
+					map.put("punti", u.getRecord().getPunteggio());
+					JSONObject jo = new JSONObject(map);
+					server.utenteMessage(u.getRecord().getId(), "risposta_corretta$" + jo.toString());
 				} else {
 					map.put("punti", u.getRecord().getPunteggio());
 					JSONObject jo = new JSONObject(map);
 					server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
 				}
+			} else {
+				map.put("punti", u.getRecord().getPunteggio());
+				JSONObject jo = new JSONObject(map);
+				server.utenteMessage(u.getRecord().getId(), "risposta_errata$" + jo.toString());
 			}
-			risposte.clear();
 		}
+		risposte.clear();
+
 	}
 
 	/**
 	 * Metodo per cambiare domanda corrente della partita
+	 * 
 	 * @return
 	 */
 	public String prossimaDomanda() {
@@ -118,7 +121,7 @@ public class PartitaManager {
 	/**
 	 * Metodo per l'aggiunta di un giocatore alla partita
 	 * 
-	 * @param giocatore oggetto Utente che rappresenta il giocatore 
+	 * @param giocatore oggetto Utente che rappresenta il giocatore
 	 * @return
 	 */
 	public boolean aggiungiGiocatore(Utente giocatore) {
@@ -133,8 +136,9 @@ public class PartitaManager {
 		return false;
 	}
 
-	/** 
+	/**
 	 * Metodo per registrare la risposta di un utente alla domanda corrente
+	 * 
 	 * @param idUtente id dell'utente che risponde
 	 * @param risposta stringa contenete la risposta
 	 */

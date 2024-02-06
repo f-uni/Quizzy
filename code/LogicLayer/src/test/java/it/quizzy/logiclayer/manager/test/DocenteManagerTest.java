@@ -15,14 +15,15 @@ class DocenteManagerTest {
 	@Test
 	void login() {
 		DocenteManager lm = new DocenteManager();
-		lm.login("test@test.it", "password");
+		lm.signUp("Docente Test", "docente@DCTest.it", "password");
+		lm.login("docente@DCTest.it", "password");
 		assertTrue(lm.isLogged());
 	}
 
 	@Test
 	void failedLogin() {
 		DocenteManager lm = new DocenteManager();
-		lm.login("test@test.it", "passwordsbagliata");
+		lm.login("docente@DCTest.it", "passwordsbagliata");
 		assertFalse(lm.isLogged());
 	}
 	
@@ -42,7 +43,6 @@ class DocenteManagerTest {
 			Docente d = new Docente(email);
 			d.getRecord().delete();
 		} catch (RecordNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -77,7 +77,6 @@ class DocenteManagerTest {
 		} catch (InvalidRecordInsertionException e) {
 			e.printStackTrace();
 		} catch (RecordNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

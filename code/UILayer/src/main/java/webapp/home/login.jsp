@@ -13,7 +13,12 @@
 DocenteManager dmSession = (DocenteManager)session.getAttribute("dm");  
 if(dmSession!=null){
 	if(dmSession.isLogged()){
-		response.sendRedirect("/home/dashboard.jsp");
+		String logout=request.getParameter("logout");
+		if(logout!=null){
+			session.setAttribute("dm",null);
+		}else{
+			response.sendRedirect("/home/dashboard.jsp");
+		}
 	}
 }
 

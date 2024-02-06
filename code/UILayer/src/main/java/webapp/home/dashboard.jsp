@@ -39,7 +39,7 @@ if (dmSession == null) {
 					href="/home/dashboard.jsp"> HOME </a> <a
 					class="navbar-item hover-underline-animation"
 					href="/home/myQuizzies.jsp"> My Quiz </a> <a
-					class="navbar-item hover-underline-animation"> All Quiz </a>
+					class="navbar-item hover-underline-animation" href="/home/wip.jsp"> All Quiz </a>
 
 			</div>
 
@@ -68,7 +68,7 @@ if (dmSession == null) {
 				width="500">
 		</div>
 	</div>
-	<div class="container-fluid dashedBorder">
+	<div class="container-fluid dashedBorder" style="height: 100%">
 		<div class="container informative">
 			<div class="container informative-div">
 				<h1 class="informative-header">About Us</h1>

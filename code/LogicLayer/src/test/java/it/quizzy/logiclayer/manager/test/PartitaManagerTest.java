@@ -7,10 +7,7 @@ import java.util.Arrays;
 import org.junit.jupiter.api.Test;
 
 import it.quizzy.databaselayer.exceptions.InvalidRecordInsertionException;
-import it.quizzy.databaselayer.exceptions.RecordNotFoundException;
-import it.quizzy.databaselayer.models.Partita;
 import it.quizzy.databaselayer.models.Quiz;
-import it.quizzy.databaselayer.models.Utente;
 import it.quizzy.logiclayer.manager.DocenteManager;
 import it.quizzy.logiclayer.manager.PartitaManager;
 import it.quizzy.logiclayer.manager.QuizManager;
